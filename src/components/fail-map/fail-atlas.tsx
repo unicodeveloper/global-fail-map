@@ -2,12 +2,14 @@
 
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
+import * as DialogPrimitive from '@radix-ui/react-dialog';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ArrowRight,
   ArrowUpRight,
   ChevronRight,
   Globe2,
+  Github,
   Loader2,
   MapPin,
   Search,
@@ -54,6 +56,7 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
   } = useAuthStore();
   const signedIn = !!user;
   const searchInput = useRef<HTMLInputElement>(null);
+  const focusSearchOnOpen = useRef(false);
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState<Category>('all');
   const [places, setPlaces] = useState<PlaceResult[]>([]);
@@ -78,6 +81,15 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
   const [explorerOpen, setExplorerOpen] = useState(false);
   const reportOpen =
     !!selectedExample || (showInvestigation && !!activeInvestigation);
+
+  const openSearch = useCallback(() => {
+    focusSearchOnOpen.current = true;
+    setExplorerOpen(true);
+    setActiveTab('atlas');
+    requestAnimationFrame(() =>
+      searchInput.current?.focus({ preventScroll: true }),
+    );
+  }, []);
 
   const filteredExamples = useMemo(
     () =>
@@ -127,14 +139,12 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
         )
       ) {
         event.preventDefault();
-        setExplorerOpen(true);
-        setActiveTab('atlas');
-        searchInput.current?.focus();
+        openSearch();
       }
     };
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, []);
+  }, [openSearch]);
 
   useEffect(() => {
     if (!notice) return;
@@ -486,16 +496,15 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
           setCategory('all');
           setFocus(null);
         }}
-        onSearch={() => {
-          setExplorerOpen(true);
-          setActiveTab('atlas');
-        }}
+        onSearch={openSearch}
         onStories={() => {
+          focusSearchOnOpen.current = false;
           setExplorerOpen(true);
           setActiveTab('atlas');
           setQuery('');
         }}
         onHistory={() => {
+          focusSearchOnOpen.current = false;
           setExplorerOpen(true);
           setActiveTab('history');
           void loadInvestigations();
@@ -512,36 +521,35 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
         <button
           id="atlas-search-trigger"
           className="search-trigger"
-          onClick={() => {
-            setExplorerOpen(true);
-            setActiveTab('atlas');
-          }}
+          onClick={openSearch}
         >
           <Search size={18} />
           <span>Search a place or an idea</span>
           <kbd>/</kbd>
         </button>
-        <div className="featured-stories">
-          {['theranos', 'concorde', 'fordlandia']
-            .map((id) => examples.find((example) => example.id === id))
-            .filter((example): example is FailExample => !!example)
-            .map((example) => (
-              <button key={example.id} onClick={() => chooseExample(example)}>
-                {example.title}
-                <ArrowUpRight size={12} />
-              </button>
-            ))}
-        </div>
       </div>
-      <a
-        className="atlas-valyu"
-        href="https://valyu.ai?utm_source=global-fail-map&utm_medium=app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span>By</span>
-        <Image src="/valyu.svg" width={78} height={26} alt="Valyu" />
-      </a>
+      <footer className="atlas-footer">
+        <a
+          className="atlas-valyu"
+          href="https://valyu.ai?utm_source=global-fail-map&utm_medium=app"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Research by Valyu"
+        >
+          <span>Research by</span>
+          <Image src="/valyu.svg" width={51} height={17} alt="Valyu" />
+        </a>
+        <a
+          className="atlas-github"
+          href="https://github.com/yorkeccak/global-fail-map"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View source on GitHub"
+          title="View source on GitHub"
+        >
+          <Github size={16} aria-hidden="true" />
+        </a>
+      </footer>
       {notice && (
         <div className="atlas-toast" role="status">
           {notice}
@@ -554,202 +562,218 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
         </div>
       )}
 
-      <Dialog open={explorerOpen} onOpenChange={setExplorerOpen}>
-        <DialogContent
-          className="explorer"
-          showCloseButton={false}
-          onOpenAutoFocus={(event) => {
-            if (activeTab === 'atlas') {
-              event.preventDefault();
-              searchInput.current?.focus();
-            }
-          }}
-        >
-          <div className="explorer-topline">
-            <DialogTitle>
-              {activeTab === 'atlas' ? 'Explore' : 'My research'}
-            </DialogTitle>
-            <DialogClose className="icon-button" aria-label="Close explorer">
-              <X size={18} />
-            </DialogClose>
-          </div>
-          <DialogDescription className="sr-only">
-            Find a story or research a place or idea.
-          </DialogDescription>
-          {activeTab === 'atlas' && (
-            <div className="explorer-search">
-              <Search size={16} />
-              <input
-                ref={searchInput}
-                id="atlas-search"
-                autoComplete="off"
-                placeholder="Search a place or idea"
-                aria-label="Search places, ideas and reports"
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-              />
-              {query && (
-                <button onClick={() => setQuery('')} aria-label="Clear search">
-                  <X size={14} />
-                </button>
-              )}
+      <Dialog open={explorerOpen} onOpenChange={setExplorerOpen} modal={false}>
+        <DialogPrimitive.Portal>
+          <DialogPrimitive.Content
+            className="explorer"
+            data-slot="explorer-content"
+            onInteractOutside={(event) => {
+              if (
+                event.target instanceof Element &&
+                event.target.closest('.atlas-dock, #atlas-search-trigger')
+              ) {
+                event.preventDefault();
+              }
+            }}
+            onOpenAutoFocus={(event) => {
+              if (activeTab === 'atlas' && focusSearchOnOpen.current) {
+                event.preventDefault();
+                searchInput.current?.focus({ preventScroll: true });
+              }
+            }}
+          >
+            <div className="explorer-topline">
+              <DialogTitle>
+                {activeTab === 'atlas' ? 'Explore' : 'My research'}
+              </DialogTitle>
+              <DialogClose className="icon-button" aria-label="Close explorer">
+                <X size={18} />
+              </DialogClose>
             </div>
-          )}
-          <div className="explorer-tabs" aria-label="Report collections">
-            <button
-              aria-pressed={activeTab === 'atlas'}
-              onClick={() => setActiveTab('atlas')}
-            >
-              Stories <span>{examples.length}</span>
-            </button>
-            <button
-              aria-pressed={activeTab === 'history'}
-              onClick={() => {
-                setActiveTab('history');
-                void loadInvestigations();
-              }}
-            >
-              My research
-            </button>
-          </div>
-          <div className="explorer-results">
-            {activeTab === 'atlas' ? (
-              <>
-                {query.trim().length >= 3 && (
-                  <div className="place-results">
-                    <span className="section-label">
-                      Research{' '}
-                      {searching && <Loader2 size={12} className="spin" />}
-                    </span>
-                    {places.map((place) => (
+            <DialogDescription className="sr-only">
+              Find a story or research a place or idea.
+            </DialogDescription>
+            {activeTab === 'atlas' && (
+              <div className="explorer-search">
+                <Search size={16} />
+                <input
+                  ref={searchInput}
+                  id="atlas-search"
+                  autoComplete="off"
+                  placeholder="Search a place or idea"
+                  aria-label="Search places, ideas and reports"
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                />
+                {query && (
+                  <button
+                    onClick={() => setQuery('')}
+                    aria-label="Clear search"
+                  >
+                    <X size={14} />
+                  </button>
+                )}
+              </div>
+            )}
+            <div className="explorer-tabs" aria-label="Report collections">
+              <button
+                aria-pressed={activeTab === 'atlas'}
+                onClick={() => setActiveTab('atlas')}
+              >
+                Stories <span>{examples.length}</span>
+              </button>
+              <button
+                aria-pressed={activeTab === 'history'}
+                onClick={() => {
+                  setActiveTab('history');
+                  void loadInvestigations();
+                }}
+              >
+                My research
+              </button>
+            </div>
+            <div className="explorer-results">
+              {activeTab === 'atlas' ? (
+                <>
+                  {query.trim().length >= 3 && (
+                    <div className="place-results">
+                      <span className="section-label">
+                        Research{' '}
+                        {searching && <Loader2 size={12} className="spin" />}
+                      </span>
+                      {places.map((place) => (
+                        <button
+                          key={place.id}
+                          onClick={() =>
+                            chooseLocation({
+                              name: place.place_name,
+                              latitude: place.center[1],
+                              longitude: place.center[0],
+                            })
+                          }
+                        >
+                          <MapPin size={15} />
+                          <span>{place.place_name}</span>
+                          <ArrowUpRight size={14} />
+                        </button>
+                      ))}
                       <button
-                        key={place.id}
                         onClick={() =>
                           chooseLocation({
-                            name: place.place_name,
-                            latitude: place.center[1],
-                            longitude: place.center[0],
+                            name: query.trim(),
+                            latitude: 0,
+                            longitude: 0,
+                            scope: 'worldwide',
                           })
                         }
                       >
-                        <MapPin size={15} />
-                        <span>{place.place_name}</span>
+                        <Globe2 size={15} />
+                        <span>“{query.trim()}” worldwide</span>
                         <ArrowUpRight size={14} />
                       </button>
-                    ))}
-                    <button
-                      onClick={() =>
-                        chooseLocation({
-                          name: query.trim(),
-                          latitude: 0,
-                          longitude: 0,
-                          scope: 'worldwide',
-                        })
+                    </div>
+                  )}
+                  <div className="collection-filter">
+                    <span>{query ? 'Matching stories' : 'Stories'}</span>
+                    <select
+                      aria-label="Filter stories by category"
+                      value={category}
+                      onChange={(event) =>
+                        setCategory(event.target.value as Category)
                       }
                     >
-                      <Globe2 size={15} />
-                      <span>“{query.trim()}” worldwide</span>
-                      <ArrowUpRight size={14} />
-                    </button>
+                      {categories.map((item) => (
+                        <option key={item.id} value={item.id}>
+                          {item.label}
+                        </option>
+                      ))}
+                    </select>
                   </div>
-                )}
-                <div className="collection-filter">
-                  <span>{query ? 'Matching stories' : 'Stories'}</span>
-                  <select
-                    aria-label="Filter stories by category"
-                    value={category}
-                    onChange={(event) =>
-                      setCategory(event.target.value as Category)
-                    }
-                  >
-                    {categories.map((item) => (
-                      <option key={item.id} value={item.id}>
-                        {item.label}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                {filteredExamples.map((example) => (
-                  <button
-                    className="case-row"
-                    key={example.id}
-                    onClick={() => chooseExample(example)}
-                  >
-                    <MapPin size={16} />
-                    <span>
-                      <strong>{example.title}</strong>
-                      <small>
-                        {example.location} · {example.country}
-                      </small>
-                    </span>
-                    <ChevronRight size={15} />
-                  </button>
-                ))}
-                {!filteredExamples.length && (
-                  <div className="empty-state">
-                    <p>No matching stories.</p>
-                    <button
-                      className="text-button"
-                      onClick={() => {
-                        setCategory('all');
-                        setQuery('');
-                      }}
-                    >
-                      Show all stories <ArrowRight size={14} />
-                    </button>
-                  </div>
-                )}
-              </>
-            ) : (
-              <>
-                {historyLoading && (
-                  <div className="empty-state" role="status">
-                    <Loader2 size={19} className="spin" />
-                    <p>Loading your research...</p>
-                  </div>
-                )}
-                {!signedIn && !isSelfHosted ? (
-                  <div className="empty-state">
-                    <p>
-                      Connect Valyu to research any place and save your reports.
-                    </p>
-                    <button className="secondary-button" onClick={connect}>
-                      Connect Valyu <ArrowUpRight size={15} />
-                    </button>
-                  </div>
-                ) : !investigations.length && !historyLoading ? (
-                  <div className="empty-state">
-                    <p>
-                      No research yet. Search a place or click the globe to
-                      begin.
-                    </p>
-                  </div>
-                ) : (
-                  investigations.map((investigation) => (
+                  {filteredExamples.map((example) => (
                     <button
                       className="case-row"
-                      key={investigation.id}
-                      onClick={() => chooseInvestigation(investigation)}
+                      key={example.id}
+                      onClick={() => chooseExample(example)}
                     >
                       <MapPin size={16} />
                       <span>
-                        <strong>{investigation.location.name}</strong>
+                        <strong>{example.title}</strong>
                         <small>
-                          {new Date(investigation.createdAt).toLocaleDateString(
-                            'en-GB',
-                            { day: 'numeric', month: 'short' },
-                          )}{' '}
-                          · {investigation.status}
+                          {example.location} · {example.country}
                         </small>
                       </span>
                       <ChevronRight size={15} />
                     </button>
-                  ))
-                )}
-              </>
-            )}
-          </div>
-        </DialogContent>
+                  ))}
+                  {!filteredExamples.length && (
+                    <div className="empty-state">
+                      <p>No matching stories.</p>
+                      <button
+                        className="text-button"
+                        onClick={() => {
+                          setCategory('all');
+                          setQuery('');
+                        }}
+                      >
+                        Show all stories <ArrowRight size={14} />
+                      </button>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <>
+                  {historyLoading && (
+                    <div className="empty-state" role="status">
+                      <Loader2 size={19} className="spin" />
+                      <p>Loading your research...</p>
+                    </div>
+                  )}
+                  {!signedIn && !isSelfHosted ? (
+                    <div className="empty-state">
+                      <p>
+                        Connect Valyu to research any place and save your
+                        reports.
+                      </p>
+                      <button className="secondary-button" onClick={connect}>
+                        Connect Valyu <ArrowUpRight size={15} />
+                      </button>
+                    </div>
+                  ) : !investigations.length && !historyLoading ? (
+                    <div className="empty-state">
+                      <p>
+                        No research yet. Search a place or click the globe to
+                        begin.
+                      </p>
+                    </div>
+                  ) : (
+                    investigations.map((investigation) => (
+                      <button
+                        className="case-row"
+                        key={investigation.id}
+                        onClick={() => chooseInvestigation(investigation)}
+                      >
+                        <MapPin size={16} />
+                        <span>
+                          <strong>{investigation.location.name}</strong>
+                          <small>
+                            {new Date(
+                              investigation.createdAt,
+                            ).toLocaleDateString('en-GB', {
+                              day: 'numeric',
+                              month: 'short',
+                            })}{' '}
+                            · {investigation.status}
+                          </small>
+                        </span>
+                        <ChevronRight size={15} />
+                      </button>
+                    ))
+                  )}
+                </>
+              )}
+            </div>
+          </DialogPrimitive.Content>
+        </DialogPrimitive.Portal>
       </Dialog>
 
       <ReportPanel

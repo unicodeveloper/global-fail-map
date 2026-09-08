@@ -20,7 +20,7 @@ export function AtlasDock(props: AtlasDockProps) {
   return (
     <nav className="atlas-dock" aria-label="Atlas navigation">
       <button className="dock-item" onClick={props.onHome} aria-label="Home">
-        <Image src="/nabla.png" alt="" width={25} height={25} />
+        <Image src="/favicon-64.png" alt="" width={25} height={25} />
         <span className="dock-tooltip">Home</span>
       </button>
       <span className="dock-divider" />

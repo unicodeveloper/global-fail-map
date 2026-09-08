@@ -4,7 +4,7 @@
 
 Global Fail Map is an interactive atlas of ambitious companies, unfinished megaprojects, abandoned inventions, terminated experiments, and futures that never arrived.
 
-Twenty cited field reports are ready to explore. Click any signal on the globe to read what was attempted, what ended, and what survived. Click anywhere else to research that place with the Valyu DeepResearch API.
+Cited reports cover discontinued drugs, terminated clinical trials, companies, patented inventions and cancelled infrastructure. Click a symbol on the globe to read what was attempted, what ended, and what survived. Click anywhere else to research that place with the Valyu DeepResearch API.
 
 ## Why this exists
 

@@ -2522,5 +2522,609 @@
         "url": "http://www.pjsymes.com.au/articles/NewAustralia.htm"
       }
     ]
+  },
+  {
+    "id": "exubera",
+    "title": "Exubera",
+    "category": "science",
+    "location": "San Carlos, California",
+    "country": "United States",
+    "lat": 37.5072,
+    "lng": -122.2605,
+    "locationRole": "Co-developer headquarters at launch",
+    "status": "Commercially discontinued",
+    "statusDate": "2007-10-18",
+    "period": "2006-2007",
+    "year": 2006,
+    "summary": "An approved inhaled insulin for diabetes reached the market, then Pfizer withdrew it after disappointing sales.",
+    "lesson": "A working therapy also needs a delivery system, economics and clinical workflow that people will adopt.",
+    "subtitle": "An approved inhaled insulin for diabetes reached the market, then Pfizer withdrew it after disappointing sales.",
+    "confidence": "high",
+    "reportPath": "/reports/exubera.md",
+    "deepresearchMode": "fast",
+    "deepresearchId": "65ccf0a0-f476-40db-9531-3ad24d34dd9f",
+    "sources": [
+      {
+        "title": "Pfizer Receives FDA Approval for Exubera, the First Inhaleable Form of Insulin for Controlling Type 1 and Type 2 Diabetes in Adults | Nektar Therapeutics",
+        "url": "https://ir.nektar.com/news-releases/news-release-details/pfizer-receives-fda-approval-exubera-first-inhaleable-form"
+      },
+      {
+        "title": "Pfizer announces Exubera discontinuation: SEC-filed announcement, 18 October 2007",
+        "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752307009976/0001157523-07-009976.txt"
+      },
+      {
+        "title": "Nektar Terminates All Negotiations With Potential Partners for Inhaled Insulin; Increased Number of Lung Cancer Cases Observed in Ongoing Clinical Studies of Inhaled Insulin Patients | Nektar Therapeutics",
+        "url": "https://ir.nektar.com/news-releases/news-release-details/nektar-terminates-all-negotiations-potential-partners-inhaled"
+      },
+      {
+        "title": "Pfizer Statement on Exubera Labeling Update in the United States | Pfizer",
+        "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_statement_on_exubera_labeling_update_in_the_united_states"
+      },
+      {
+        "title": "Nektar Reports Pfizer to Acquire the Sanofi-Aventis Worldwide Rights to Exubera® (Inhaled Human Insulin) | Nektar Therapeutics",
+        "url": "https://ir.nektar.com/news-releases/news-release-details/nektar-reports-pfizer-acquire-sanofi-aventis-worldwide-rights"
+      },
+      {
+        "title": "Nektar Reports That Pfizer to Introduce Exubera in U.S. With a Comprehensive Education Program | Nektar Therapeutics",
+        "url": "https://ir.nektar.com/news-releases/news-release-details/nektar-reports-pfizer-introduce-exubera-us-comprehensive"
+      },
+      {
+        "title": "Commentary: Why Was Inhaled Insulin a Failure in the Market? | Diabetes Spectrum | American Diabetes Association",
+        "url": "https://diabetesjournals.org/spectrum/article/29/3/180/32800/Commentary-Why-Was-Inhaled-Insulin-a-Failure-in"
+      },
+      {
+        "title": "Exubera | European Medicines Agency (EMA)",
+        "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/exubera"
+      }
+    ]
+  },
+  {
+    "id": "torcetrapib",
+    "title": "Torcetrapib: ILLUMINATE",
+    "category": "science",
+    "location": "New York",
+    "country": "United States",
+    "lat": 40.7537,
+    "lng": -73.9712,
+    "locationRole": "Sponsor headquarters at termination",
+    "status": "Trial terminated",
+    "statusDate": "2006-12-02",
+    "period": "2004-2006",
+    "year": 2004,
+    "summary": "A cholesterol drug improved a key biomarker but increased deaths and cardiovascular events in a major trial.",
+    "lesson": "Changing a biomarker is not the same as improving patient outcomes.",
+    "subtitle": "A cholesterol drug improved a key biomarker but increased deaths and cardiovascular events in a major trial.",
+    "confidence": "high",
+    "reportPath": "/reports/torcetrapib.md",
+    "deepresearchMode": "fast",
+    "deepresearchId": "69ded90b-ba9b-4d8d-b76a-3f562ff9ef2f",
+    "sources": [
+      {
+        "title": "Effects of Torcetrapib in Patients at High Risk for Coronary Events | New England Journal of Medicine",
+        "url": "https://www.nejm.org/doi/full/10.1056/nejmoa0706628"
+      },
+      {
+        "title": "Pfizer stops all torcetrapib clinical trials: 2 December 2006 announcement",
+        "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800306000334/ex991202.htm"
+      },
+      {
+        "title": "ILLUMINATE: torcetrapib and atorvastatin cardiovascular outcomes trial (NCT00134264)",
+        "url": "https://clinicaltrials.gov/study/NCT00134264"
+      },
+      {
+        "title": "CETP Inhibitors to Increase HDL Cholesterol Levels | NEJM",
+        "url": "https://www.nejm.org/doi/full/10.1056/nejme078029"
+      },
+      {
+        "title": "Merck announces its investigational CETP-Inhibitor, MK-0859, produced positive effects on lipids with no observed blood pressure changes | Reuters",
+        "url": "https://www.reuters.com/article/world/merck-announces-its-investigational-cetp-inhibitor-mk-0859-produced-positive-e-idUSIN20071004163052MRK/"
+      }
+    ]
+  },
+  {
+    "id": "verubecestat",
+    "title": "Verubecestat: EPOCH",
+    "category": "science",
+    "location": "Kenilworth, New Jersey",
+    "country": "United States",
+    "lat": 40.6765,
+    "lng": -74.2943,
+    "locationRole": "Sponsor headquarters at termination",
+    "status": "Trial terminated",
+    "statusDate": "2017-02-14",
+    "period": "2012-2017",
+    "year": 2012,
+    "summary": "An Alzheimer's drug lowered amyloid production but did not slow cognitive or functional decline in EPOCH.",
+    "lesson": "Strong biological target engagement must still translate into meaningful clinical benefit.",
+    "subtitle": "An Alzheimer's drug lowered amyloid production but did not slow cognitive or functional decline in EPOCH.",
+    "confidence": "high",
+    "reportPath": "/reports/verubecestat.md",
+    "deepresearchMode": "fast",
+    "deepresearchId": "a605d751-9de7-4884-b665-d7565db91c07",
+    "sources": [
+      {
+        "title": "Merck Scientists Publish New Research Detailing the Early Development of Verubecestat, an Investigational BACE1 Inhibitor in Science Translational Medicine - Merck.com",
+        "url": "https://www.merck.com/news/merck-scientists-publish-new-research-detailing-the-early-development-of-verubecestat-an-investigational-bace1-inhibitor-in-science-translational-medicine/"
+      },
+      {
+        "title": "Merck Announces EPOCH Study of Verubecestat for Treatment of People with Mild-to-Moderate Alzheimer's Disease to Stop for Lack of Efficacy",
+        "url": "https://www.merck.com/news/merck-announces-epoch-study-of-verubecestat-for-the-treatment-of-people-with-mild-to-moderate-alzheimers-disease-to-stop-for-lack-of-efficacy/"
+      },
+      {
+        "title": "EPOCH: verubecestat for mild-to-moderate Alzheimer's disease (NCT01739348)",
+        "url": "https://clinicaltrials.gov/study/NCT01739348"
+      },
+      {
+        "title": "Randomized Trial of Verubecestat for Mild-to-Moderate Alzheimer’s Disease | New England Journal of Medicine",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1706441"
+      },
+      {
+        "title": "The BACE1 inhibitor verubecestat (MK-8931) reduces CNS β-amyloid in animal models and in Alzheimer’s disease patients | Science Translational Medicine",
+        "url": "https://www.science.org/doi/10.1126/scitranslmed.aad9704"
+      },
+      {
+        "title": "APECS: verubecestat for prodromal Alzheimer's disease (NCT01953601)",
+        "url": "https://clinicaltrials.gov/study/NCT01953601"
+      },
+      {
+        "title": "Randomized Trial of Verubecestat for Prodromal Alzheimer’s Disease | New England Journal of Medicine",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1812840"
+      },
+      {
+        "title": "Merck SEC filing index: company address, 12 May 2017",
+        "url": "https://www.sec.gov/Archives/edgar/data/310158/000122520817009615/0001225208-17-009615-index.htm"
+      }
+    ]
+  },
+  {
+    "id": "bapineuzumab",
+    "title": "Bapineuzumab",
+    "category": "science",
+    "location": "South San Francisco, California",
+    "country": "United States",
+    "lat": 37.6547,
+    "lng": -122.4077,
+    "locationRole": "Co-developer headquarters",
+    "status": "IV programme discontinued",
+    "statusDate": "2012-08-06",
+    "period": "2007-2012",
+    "year": 2007,
+    "summary": "Two late-stage Alzheimer's studies missed their clinical goals, ending development of the intravenous antibody.",
+    "lesson": "An unsuccessful trial can refine who to study, when to intervene and how to measure benefit.",
+    "subtitle": "Two late-stage Alzheimer's studies missed their clinical goals, ending development of the intravenous antibody.",
+    "confidence": "high",
+    "reportPath": "/reports/bapineuzumab.md",
+    "deepresearchMode": "fast",
+    "deepresearchId": "d60faa1d-65a5-4696-a6e2-74dc3004d47e",
+    "sources": [
+      {
+        "title": "Pfizer Announces Co-Primary Clinical Endpoints Not Met In Second Phase 3 Bapineuzumab Study In Mild-To-Moderate Alzheimer’s Disease Patients Who Do Not Carry The Apoe4 Genotype | Pfizer",
+        "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_announces_co_primary_clinical_endpoints_not_met_in_second_phase_3_bapineuzumab_study_in_mild_to_moderate_alzheimer_s_disease_patients_who_do_not_carry_the_apoe4_genotype"
+      },
+      {
+        "title": "Pfizer Announces Topline Results Of First Of Four Studies In Bapineuzumab Phase 3 Program | Pfizer",
+        "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_announces_topline_results_of_first_of_four_studies_in_bapineuzumab_phase_3_program"
+      },
+      {
+        "title": "Bapineuzumab phase 3 trial in APOE4 carriers (NCT00575055)",
+        "url": "https://clinicaltrials.gov/study/NCT00575055"
+      },
+      {
+        "title": "Bapineuzumab phase 3 trial in APOE4 non-carriers (NCT00574132)",
+        "url": "https://clinicaltrials.gov/study/NCT00574132"
+      },
+      {
+        "title": "Alzheimer's drug bapineuzumab fails late-stage trial, research dropped - San Francisco Business Times",
+        "url": "https://www.bizjournals.com/sanfrancisco/blog/biotech/2012/08/pfizer-janssen-bapineuzumab-alzheimers.html"
+      }
+    ]
+  },
+  {
+    "id": "aduhelm",
+    "title": "Aduhelm",
+    "category": "science",
+    "location": "Cambridge, Massachusetts",
+    "country": "United States",
+    "lat": 42.3665,
+    "lng": -71.0914,
+    "locationRole": "Developer headquarters",
+    "status": "Commercial programme discontinued",
+    "statusDate": "2024-01-31",
+    "period": "2021-2024",
+    "year": 2021,
+    "summary": "Biogen ended Aduhelm commercialisation and its confirmatory study, redirecting resources to other Alzheimer's treatments.",
+    "lesson": "Regulatory approval does not settle the evidence, reimbursement and adoption questions that follow.",
+    "subtitle": "Biogen ended Aduhelm commercialisation and its confirmatory study, redirecting resources to other Alzheimer's treatments.",
+    "confidence": "high",
+    "reportPath": "/reports/aduhelm.md",
+    "deepresearchMode": "fast",
+    "deepresearchId": "d78c0b90-e4f0-4219-9874-f15e796aeb5f",
+    "sources": [
+      {
+        "title": "Biogen to Realign Resources for Alzheimer's Disease Franchise | Biogen",
+        "url": "https://investors.biogen.com/news-releases/news-release-details/biogen-realign-resources-alzheimers-disease-franchise"
+      },
+      {
+        "title": "FDA accelerated approval letter for Aduhelm, 7 June 2021",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/761178Orig1s000ltr.pdf"
+      },
+      {
+        "title": "Investigating partially discordant results in phase 3 studies of aducanumab",
+        "url": "https://www.jpreventionalzheimer.com/6775-investigating-partially-discordant-results-in-phase-3-studies-of-aducanumab.html"
+      },
+      {
+        "title": "Emerge and Engage topline results: Phase 3 studies of aducanumab in early Alzheimer’s disease - Haeberlein - 2020 - Alzheimer's & Dementia - Wiley Online Library",
+        "url": "https://alz-journals.onlinelibrary.wiley.com/doi/abs/10.1002/alz.047259"
+      },
+      {
+        "title": "Update on the Phase 4 ENVISION Confirmatory Study of ADUHELM® | Biogen",
+        "url": "https://investors.biogen.com/news-releases/news-release-details/update-phase-4-envision-confirmatory-study-aduhelmr"
+      },
+      {
+        "title": "ENVISION: confirmatory study of aducanumab in Alzheimer's disease (NCT05310071)",
+        "url": "https://clinicaltrials.gov/study/NCT05310071"
+      },
+      {
+        "title": "Maloney and Pallone Release Staff Report on Review, Approval, and Pricing of Biogen’s Alzheimer’s Drug Aduhelm | The U.S. House Committee on Oversight",
+        "url": "https://oversightdemocrats.house.gov/news/press-releases/maloney-and-pallone-release-staff-report-on-review-approval-and-pricing-of"
+      }
+    ]
+  },
+  {
+    "id": "loon",
+    "title": "Loon",
+    "category": "companies",
+    "location": "Mountain View, California",
+    "country": "United States",
+    "lat": 37.4198,
+    "lng": -122.0828,
+    "locationRole": "Company headquarters",
+    "status": "Company wound down",
+    "statusDate": "2021-01-21",
+    "period": "2013-2021",
+    "year": 2013,
+    "summary": "Internet balloons reached commercial service in Kenya, but Loon could not build a sustainable business.",
+    "lesson": "Technical reach and commercial viability are different milestones.",
+    "subtitle": "Internet balloons reached commercial service in Kenya, but Loon could not build a sustainable business.",
+    "confidence": "high",
+    "reportPath": "/reports/loon.md",
+    "deepresearchMode": "fast",
+    "deepresearchId": "a0de8490-8482-48f5-8e42-04a537ea9789",
+    "sources": [
+      {
+        "title": "Telkom and Loon announce progressive deployment of LOON technology to customers from July – Telkom",
+        "url": "https://telkom.co.ke/press-release/telkom-and-loon-announce-progressive-deployment-of-loon-technology-to-customers-from-july/"
+      },
+      {
+        "title": "Alphabet is shutting down Loon, its internet balloon company | The Verge",
+        "url": "https://www.theverge.com/2021/1/21/22243484/alphabet-google-shutting-down-loon-internet-balloon-company-x"
+      },
+      {
+        "title": "The Loon Collection - Shared resources from the internet balloon project",
+        "url": "https://x.company/collection/loon/"
+      },
+      {
+        "title": "Take Me to Kenya - Loon flight operations",
+        "url": "https://x.company/blog/posts/take-me-to-kenya/"
+      },
+      {
+        "title": "Alphabet cancels Loon, project to beam internet to earth from balloons",
+        "url": "https://www.cnbc.com/2021/01/21/alphabet-cancels-loon-project-to-beam-internet-to-earth-from-balloons.html"
+      },
+      {
+        "title": "Taara - A Google X Moonshot",
+        "url": "https://x.company/projects/taara/"
+      },
+      {
+        "title": "Loon - X project archive",
+        "url": "https://x.company/projects/loon/"
+      },
+      {
+        "title": "Factbox: Inside Loon's internet balloon venture | Reuters",
+        "url": "https://www.reuters.com/article/us-alphabet-loon-factbox/factbox-inside-loons-internet-balloon-venture-idUSKCN1TW1H0/"
+      }
+    ]
+  },
+  {
+    "id": "argo-ai",
+    "title": "Argo AI",
+    "category": "companies",
+    "location": "Pittsburgh, Pennsylvania",
+    "country": "United States",
+    "lat": 40.4527,
+    "lng": -79.9771,
+    "locationRole": "Company headquarters",
+    "status": "Company shut down",
+    "statusDate": "2022-10-26",
+    "period": "2016-2022",
+    "year": 2016,
+    "summary": "Ford and Volkswagen wound down their autonomous-driving venture as deployment economics and timelines changed.",
+    "lesson": "A difficult technical frontier needs a financing horizon that matches its real deployment timeline.",
+    "subtitle": "Ford and Volkswagen wound down their autonomous-driving venture as deployment economics and timelines changed.",
+    "confidence": "high",
+    "reportPath": "/reports/argo-ai.md",
+    "deepresearchMode": "fast",
+    "deepresearchId": "aabbc7d4-29d6-4574-a7bf-cddd25eb63bf",
+    "sources": [
+      {
+        "title": "Argo AI, driverless startup backed by Ford and VW, is shutting down | The Verge",
+        "url": "https://www.theverge.com/2022/10/26/23423998/argo-ai-shut-down-ford-vw-av-self-driving"
+      },
+      {
+        "title": "Volkswagen focuses development for autonomous driving | Volkswagen Group",
+        "url": "https://www.volkswagen-group.com/en/press-releases/volkswagen-focuses-development-for-autonomous-driving-16777"
+      },
+      {
+        "title": "Ford Establishes Latitude AI to Develop Future Automated Driving Technology",
+        "url": "https://www.fromtheroad.ford.com/us/en/articles/2023/ford-establishes-latitude-ai-to-develop-future-automated-driving-technology"
+      },
+      {
+        "title": "Ford – Volkswagen expand their global collaboration to advance autonomous driving, electrification and better serve customers | Volkswagen Group",
+        "url": "https://www.volkswagen-group.com/en/press-releases/ford-volkswagen-expand-their-global-collaboration-to-advance-autonomous-driving-electrification-and-better-serve-customers-16636"
+      },
+      {
+        "title": "Argoverse 2 - Argoverse User Guide",
+        "url": "https://argoverse.github.io/user-guide/"
+      },
+      {
+        "title": "Argoverse 2",
+        "url": "https://www.argoverse.org/av2.html"
+      },
+      {
+        "title": "Self-driving car company Argo AI expands Strip District headquarters",
+        "url": "https://archive.triblive.com/local/self-driving-car-company-argo-ai-expands-strip-district-headquarters/"
+      }
+    ]
+  },
+  {
+    "id": "fisker-ocean",
+    "title": "Fisker Ocean",
+    "category": "companies",
+    "location": "La Palma, California",
+    "country": "United States",
+    "lat": 33.8562,
+    "lng": -118.0294,
+    "locationRole": "Principal executive offices at bankruptcy",
+    "status": "Liquidation plan confirmed",
+    "statusDate": "2024-10-16",
+    "period": "2022-2024",
+    "year": 2022,
+    "summary": "Ocean production stopped as Fisker ran out of cash; the company entered bankruptcy and a liquidation process.",
+    "lesson": "Selling a durable product creates service and software obligations that outlive the manufacturer.",
+    "subtitle": "Ocean production stopped as Fisker ran out of cash; the company entered bankruptcy and a liquidation process.",
+    "confidence": "high",
+    "reportPath": "/reports/fisker-ocean.md",
+    "deepresearchMode": "fast",
+    "deepresearchId": "d59f00e3-ddbf-450b-8cee-095c613a7ad4",
+    "sources": [
+      {
+        "title": "Fisker Form 8-K: bankruptcy proceedings, filed 24 June 2024",
+        "url": "https://www.sec.gov/Archives/edgar/data/1720990/000119312524167032/0001193125-24-167032.txt"
+      },
+      {
+        "title": "Fisker confirms and consummates chapter 11 plan | Davis Polk",
+        "url": "https://www.davispolk.com/experience/fisker-confirms-and-consummates-chapter-11-plan"
+      },
+      {
+        "title": "Fisker - Fisker Ocean to Ramp up Production to an Expected 300 Units Per Day in Q4 and Accelerate U.S. Deliveries in September: 3,123 Customer Vehicles Built",
+        "url": "https://investors.fiskerinc.com/news/news-details/2023/Fisker-Ocean-to-Ramp-up-Production-to-an-Expected-300-Units-Per-Day-in-Q4-and-Accelerate-U.S.-Deliveries-in-September-3123-Customer-Vehicles-Built/default.aspx"
+      },
+      {
+        "title": "Fisker Suspends Its EV Production | WIRED",
+        "url": "https://www.wired.com/story/fisker-suspends-electric-vehicle-production/"
+      },
+      {
+        "title": "Fisker pauses production with just $121M in the bank | TechCrunch",
+        "url": "https://techcrunch.com/2024/03/18/fisker-production-pause-going-concern-cash-raise/"
+      },
+      {
+        "title": "Fisker Form 8-K: financing and strategic negotiations, 25 March 2024",
+        "url": "https://www.sec.gov/Archives/edgar/data/1720990/000172099024000029/0001720990-24-000029.txt"
+      },
+      {
+        "title": "NHTSA recall 24V-865: Fisker Ocean unintended vehicle movement",
+        "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V865-6551.PDF"
+      }
+    ]
+  },
+  {
+    "id": "dyson-ev",
+    "title": "Dyson electric car",
+    "category": "technology",
+    "location": "Hullavington, Wiltshire",
+    "country": "United Kingdom",
+    "lat": 51.5364,
+    "lng": -2.1462,
+    "locationRole": "Vehicle development and test campus",
+    "status": "Programme cancelled",
+    "statusDate": "2019-10-10",
+    "period": "2015-2019",
+    "year": 2015,
+    "summary": "Dyson built a working electric-car prototype and filed vehicle patents, then cancelled the programme as commercially unviable.",
+    "lesson": "A technically credible prototype is only one part of a commercially credible product.",
+    "subtitle": "Dyson built a working electric-car prototype and filed vehicle patents, then cancelled the programme as commercially unviable.",
+    "confidence": "high",
+    "reportPath": "/reports/dyson-ev.md",
+    "deepresearchMode": "fast",
+    "deepresearchId": "6e847baa-7777-4909-a92d-46cf6958118c",
+    "sources": [
+      {
+        "title": "Dyson scraps its electric car plans",
+        "url": "https://www.cnbc.com/2019/10/10/dyson-scraps-its-electric-car-plans.html"
+      },
+      {
+        "title": "Inside the collapse of Dyson's electric car dream | WIRED",
+        "url": "https://www.wired.com/story/dyson-electric-car-cancelled-inside-story/"
+      },
+      {
+        "title": "The Car - Invention: A Life, James Dyson",
+        "url": "https://www.dyson.com/james-dyson/invention-a-life/09"
+      },
+      {
+        "title": "The Dyson Battery Electric Vehicle - James Dyson",
+        "url": "https://www.dyson.com/newsroom/news/corporate/dyson-battery-electric-vehicle"
+      },
+      {
+        "title": "Dyson to end electric car project, EDB says disruption to firm's Singapore workforce is minimal | The Straits Times",
+        "url": "https://www.straitstimes.com/singapore/dyson-to-close-automotive-division"
+      },
+      {
+        "title": "Vacuum-maker Dyson releases patents for new EV line to debut in 2021",
+        "url": "https://www.cnbc.com/2019/05/10/vacuum-maker-dyson-releases-patents-for-new-ev-line-to-debut-in-2021.html"
+      },
+      {
+        "title": "Dyson EV patents reveal possible large wheels, third row seats | Electrek",
+        "url": "https://electrek.co/2019/05/09/dyson-ev-patent-reveal/"
+      },
+      {
+        "title": "Dyson acquires Sakti3 for $90M to help commercialize 'breakthrough' solid-state battery tech | VentureBeat",
+        "url": "https://venturebeat.com/business/dyson-acquires-sakti3-for-90m-to-help-commercialize-breakthrough-solid-state-battery-tech"
+      },
+      {
+        "title": "US9065080B2: electric vehicle propulsion using solid-state rechargeable cells",
+        "url": "https://patents.google.com/patent/US9065080"
+      }
+    ]
+  },
+  {
+    "id": "apple-airpower",
+    "title": "AirPower",
+    "category": "technology",
+    "location": "Cupertino, California",
+    "country": "United States",
+    "lat": 37.3349,
+    "lng": -122.009,
+    "locationRole": "Developer headquarters",
+    "status": "Product cancelled before launch",
+    "statusDate": "2019-03-29",
+    "period": "2017-2019",
+    "year": 2017,
+    "summary": "Apple announced a mat to charge three devices together, then cancelled it before any units shipped.",
+    "lesson": "A patent and a public demonstration are not evidence of a production-ready system.",
+    "subtitle": "Apple announced a mat to charge three devices together, then cancelled it before any units shipped.",
+    "confidence": "high",
+    "reportPath": "/reports/apple-airpower.md",
+    "deepresearchMode": "fast",
+    "deepresearchId": "561b09d6-5974-4eb8-8b75-606852da25fb",
+    "sources": [
+      {
+        "title": "The future is here: iPhone X - Apple",
+        "url": "https://www.apple.com/newsroom/2017/09/the-future-is-here-iphone-x/"
+      },
+      {
+        "title": "Apple cancels AirPower product, citing inability to meet its high standards for hardware | TechCrunch",
+        "url": "https://techcrunch.com/2019/03/29/apple-cancels-airpower-product-citing-inability-to-meet-its-high-standards-for-hardware/"
+      },
+      {
+        "title": "US10491017B2: wireless charging systems with multiple power-receiving devices",
+        "url": "https://patents.google.com/patent/US10491017"
+      },
+      {
+        "title": "US10840007B2: shielding for multi-coil wireless power transfer systems",
+        "url": "https://patents.google.com/patent/US10840007"
+      },
+      {
+        "title": "US10897148B2: wireless charging mats with multi-layer transmitter coils",
+        "url": "https://patents.google.com/patent/US10897148B2/en"
+      }
+    ]
+  },
+  {
+    "id": "keystone-xl",
+    "title": "Keystone XL",
+    "category": "infrastructure",
+    "location": "Hardisty, Alberta",
+    "country": "Canada",
+    "lat": 52.6743,
+    "lng": -111.3018,
+    "locationRole": "Planned pipeline origin",
+    "status": "Project terminated",
+    "statusDate": "2021-06-09",
+    "period": "2008-2021",
+    "year": 2008,
+    "summary": "A planned cross-border oil pipeline was terminated after its US presidential permit was revoked.",
+    "lesson": "Cross-border infrastructure depends on political and legal durability as well as engineering.",
+    "subtitle": "A planned cross-border oil pipeline was terminated after its US presidential permit was revoked.",
+    "confidence": "high",
+    "reportPath": "/reports/keystone-xl.md",
+    "deepresearchMode": "fast",
+    "deepresearchId": "36ddf93f-d26f-45de-9b12-84882f36ecce",
+    "sources": [
+      {
+        "title": "TC Energy confirms termination of Keystone XL Pipeline Project",
+        "url": "https://www.tcenergy.com/announcements/2021/2021-06-09-tc-energy-confirms-termination-of-keystone-xl-pipeline-project/"
+      },
+      {
+        "title": "TC Energy to Build Keystone XL Pipeline",
+        "url": "https://www.tcenergy.com/announcements/2020/2020-03-31tc-energy-to-build-keystone-xl-pipeline/"
+      },
+      {
+        "title": "Canada Energy Regulator: Keystone pipeline profile",
+        "url": "https://apps.cer-rec.gc.ca/PPS/en/pipeline-profiles/keystone"
+      },
+      {
+        "title": "CER – TransCanada Keystone Pipeline GP Ltd. – Keystone XL Pipeline – Project Background",
+        "url": "https://www.cer-rec.gc.ca/en/applications-hearings/view-applications-projects/keystone-xl/project-background.html"
+      },
+      {
+        "title": "Pipeline Project – Keystone XL | Alberta.ca",
+        "url": "https://www.alberta.ca/keystone-xl-pipeline-project"
+      }
+    ]
+  },
+  {
+    "id": "texcoco-airport",
+    "title": "Texcoco airport",
+    "category": "infrastructure",
+    "location": "Lake Texcoco",
+    "country": "Mexico",
+    "lat": 19.4992,
+    "lng": -98.9951,
+    "locationRole": "Airport construction site",
+    "status": "Project cancelled",
+    "statusDate": "2018-10-29",
+    "period": "2014-2018",
+    "year": 2014,
+    "summary": "Construction of a new Mexico City airport was abandoned after a change in government and a public consultation.",
+    "lesson": "A megaproject needs durable public legitimacy, not only construction progress.",
+    "subtitle": "Construction of a new Mexico City airport was abandoned after a change in government and a public consultation.",
+    "confidence": "high",
+    "reportPath": "/reports/texcoco-airport.md",
+    "deepresearchMode": "fast",
+    "deepresearchId": "067feae4-779a-4393-8e62-8e9867a83fb7",
+    "sources": [
+      {
+        "title": "Mexico president-elect halts partly built airport",
+        "url": "https://www.bbc.com/news/world-latin-america-46026860"
+      },
+      {
+        "title": "What is next for Mexico City airport after mega project axed? | Reuters",
+        "url": "https://www.reuters.com/article/us-mexico-airport/what-is-next-for-mexico-city-airport-after-mega-project-axed-idUSKCN1N51BQ/"
+      },
+      {
+        "title": "Felipe Ángeles International Airport – Mexico City",
+        "url": "https://mexicocity.cdmx.gob.mx/venues/felipe-angeles-airport/?lang=en"
+      },
+      {
+        "title": "Characterization of soil permeability in the former Lake Texcoco, Mexico",
+        "url": "https://www.degruyterbrill.com/document/doi/10.1515/geo-2019-0010/html"
+      },
+      {
+        "title": "Scotiabank economic report: Mexico airport consultation, 26 October 2018",
+        "url": "https://cdn.aglty.io/scotia-bank-mexico/pdf/emp-gob/guia-economica/2018/naim261018.pdf"
+      },
+      {
+        "title": "Mexico referendum rejects part-built $14bn airport project | Andres Manuel Lopez Obrador News | Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2018/10/29/mexico-referendum-rejects-part-built-14bn-airport-project"
+      },
+      {
+        "title": "IMCO: Nuevo Aeropuerto Internacional de México, un proyecto indispensable - riesgos y oportunidades",
+        "url": "https://imco.org.mx/wp-content/uploads/2019/11/Bolet%C3%ADn_NAIM-Indispensable.pdf"
+      },
+      {
+        "title": "Presidente AMLO inaugura Parque Ecológico Lago de Texcoco",
+        "url": "https://www.gob.mx/presidencia/prensa/presidente-amlo-inaugura-parque-ecologico-lago-de-texcoco-14-mil-hectareas-recuperadas-en-beneficio-del-valle-de-mexico?idiom=es"
+      }
+    ]
   }
 ]

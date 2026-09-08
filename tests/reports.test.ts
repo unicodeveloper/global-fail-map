@@ -41,8 +41,12 @@ test('downloaded reports preserve readable, clickable source links', () => {
   assert.doesNotMatch(reportMarkdown('Title', 'Body', []), /## Source links/);
 });
 
-test('all twenty cached stories have reports and matching numbered citation sources', () => {
-  assert.equal(examples.length, 20);
+test('all cached stories have reports and matching numbered citation sources', () => {
+  assert.ok(examples.length >= 32);
+  assert.equal(
+    new Set(examples.map((example) => example.id)).size,
+    examples.length,
+  );
   for (const example of examples) {
     const markdown = readFileSync(
       new URL(`../public${example.reportPath}`, import.meta.url),
@@ -68,5 +72,32 @@ test('all twenty cached stories have reports and matching numbered citation sour
         `${example.id} citation ${match[1]} matches its source`,
       );
     }
+  }
+});
+
+test('expanded research covers the original sectors with dated, sourced locations', () => {
+  const additions = [
+    'exubera',
+    'torcetrapib',
+    'verubecestat',
+    'bapineuzumab',
+    'aduhelm',
+    'loon',
+    'argo-ai',
+    'fisker-ocean',
+    'dyson-ev',
+    'apple-airpower',
+    'keystone-xl',
+    'texcoco-airport',
+  ];
+  for (const id of additions) {
+    const example = examples.find((entry) => entry.id === id);
+    assert.ok(example, `${id} is available`);
+    assert.match(example.statusDate || '', /^\d{4}-\d{2}-\d{2}$/);
+    assert.ok(example.locationRole);
+    assert.ok(example.confidence);
+    assert.ok(example.sources.length >= 3);
+    assert.ok(example.deepresearchId);
+    assert.equal(example.deepresearchMode, 'fast');
   }
 });

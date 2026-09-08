@@ -291,6 +291,16 @@ export function ReportPanel({
                       <dt>Location role</dt>
                       <dd>{example.locationRole}</dd>
                     </div>
+                    {example.statusDate && (
+                      <div>
+                        <dt>Status date</dt>
+                        <dd>
+                          <time dateTime={example.statusDate}>
+                            {example.statusDate}
+                          </time>
+                        </dd>
+                      </div>
+                    )}
                     <div>
                       <dt>Confidence</dt>
                       <dd className="dossier-confidence">
@@ -305,7 +315,7 @@ export function ReportPanel({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>Powered by</span>
+                  <span>Research by</span>
                   <Image src="/valyu.svg" alt="Valyu" width={61} height={20} />
                 </a>
               </div>
@@ -360,6 +370,16 @@ export function ReportPanel({
                       <dt>Location role</dt>
                       <dd>{example.locationRole}</dd>
                     </div>
+                    {example.statusDate && (
+                      <div>
+                        <dt>Status date</dt>
+                        <dd>
+                          <time dateTime={example.statusDate}>
+                            {example.statusDate}
+                          </time>
+                        </dd>
+                      </div>
+                    )}
                     <div>
                       <dt>Confidence</dt>
                       <dd className="dossier-confidence">

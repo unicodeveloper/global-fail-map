@@ -21,6 +21,7 @@ export interface FailExample {
   lng: number;
   category: Exclude<Category, 'all'>;
   status: string;
+  statusDate?: string;
   period: string;
   year: number;
   summary: string;

@@ -3,8 +3,10 @@
 import { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { Compass, Globe2, Minus, Plus } from 'lucide-react';
+import { ChevronRight, Compass, Globe2, Minus, Plus, X } from 'lucide-react';
 import { type FailExample, type Investigation, type Location } from './types';
+import { createMapSymbol } from './map-symbols';
+import { groupMapExamples } from './map-groups';
 
 interface AtlasGlobeProps {
   variant?: 'atlas' | 'report';
@@ -26,6 +28,24 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
   const [ready, setReady] = useState(false);
   const [error, setError] = useState('');
   const [hovered, setHovered] = useState<FailExample | null>(null);
+  const [nearby, setNearby] = useState<FailExample[]>([]);
+  const nearbyRef = useRef(nearby);
+  nearbyRef.current = nearby;
+  const [viewRevision, setViewRevision] = useState(0);
+  const nearbyPanel = useRef<HTMLDivElement>(null);
+  const nearbyTrigger = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    setNearby([]);
+  }, [props.examples]);
+
+  useEffect(() => {
+    if (nearby.length) {
+      nearbyPanel.current
+        ?.querySelector<HTMLButtonElement>('[data-story]')
+        ?.focus({ preventScroll: true });
+    }
+  }, [nearby]);
 
   useEffect(() => {
     if (!container.current) return;
@@ -52,6 +72,9 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
         renderWorldCopies: false,
       });
       map.current = instance;
+      instance.on('movestart', () => setNearby([]));
+      instance.on('moveend', () => setViewRevision((revision) => revision + 1));
+      instance.on('resize', () => setViewRevision((revision) => revision + 1));
       instance.addControl(
         new mapboxgl.AttributionControl({ compact: true }),
         'bottom-right',
@@ -88,6 +111,10 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
       });
       instance.on('click', async (event) => {
         if (callbacks.current.paused) return;
+        if (nearbyRef.current.length) {
+          setNearby([]);
+          return;
+        }
         geocoding?.abort();
         const request = new AbortController();
         geocoding = request;
@@ -131,23 +158,43 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
     if (!ready || !map.current) return;
     const instance = map.current;
     const markers: mapboxgl.Marker[] = [];
-    for (const example of props.examples) {
+    const groups = props.paused
+      ? props.examples.map((example) => [example])
+      : groupMapExamples(props.examples, (example) =>
+          instance.project([example.lng, example.lat]),
+        );
+    for (const group of groups) {
+      const example = group[0];
+      const grouped = group.length > 1;
       const button = document.createElement(props.paused ? 'div' : 'button');
       if (!props.paused) button.setAttribute('type', 'button');
       button.className = `atlas-pin${props.selectedId === example.id ? ' is-selected' : ''}`;
       button.setAttribute(
         'aria-label',
-        `${example.title}, ${example.location}${props.paused ? '' : '. Read the report'}`,
+        grouped
+          ? `${group.length} nearby stories: ${group.map((entry) => entry.title).join(', ')}`
+          : `${example.title}, ${example.location}${props.paused ? '' : '. Read the report'}`,
       );
       const dot = document.createElement('span');
       dot.className = 'atlas-pin-dot';
+      if (grouped) {
+        dot.textContent = String(group.length);
+        dot.classList.add('atlas-pin-count');
+      } else dot.appendChild(createMapSymbol(example.id, example.category));
       button.appendChild(dot);
       button.addEventListener('click', (event) => {
         event.stopPropagation();
         if (callbacks.current.paused) return;
+        if (grouped) {
+          nearbyTrigger.current = button;
+          setHovered(null);
+          setNearby(group);
+          return;
+        }
+        setNearby([]);
         callbacks.current.onExample(example);
       });
-      if (!props.paused) {
+      if (!props.paused && !grouped) {
         button.addEventListener('mouseenter', () => setHovered(example));
         button.addEventListener('mouseleave', () => setHovered(null));
         button.addEventListener('focus', () => setHovered(example));
@@ -172,6 +219,7 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
       );
       const dot = document.createElement('span');
       dot.className = 'atlas-pin-dot';
+      dot.appendChild(createMapSymbol('', investigation.category));
       button.appendChild(dot);
       button.addEventListener('click', (event) => {
         event.stopPropagation();
@@ -199,6 +247,7 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
     props.selectedId,
     props.paused,
     ready,
+    viewRevision,
   ]);
 
   useEffect(() => {
@@ -228,7 +277,11 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
         ref={container}
         className="map-canvas"
         role="region"
-        aria-label="Interactive world map. Drag to explore or select a report marker."
+        aria-label={
+          props.paused
+            ? 'Report location map. Drag to explore the surrounding area.'
+            : 'Interactive world map. Drag to explore or select a report marker.'
+        }
       />
       {!ready && !error && (
         <div className="map-state">
@@ -264,7 +317,60 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
           <Compass size={19} />
         </button>
       </div>
-      {hovered && (
+      {!!nearby.length && (
+        <div
+          className="map-nearby"
+          ref={nearbyPanel}
+          role="region"
+          aria-label="Nearby stories"
+          onBlur={(event) => {
+            if (
+              event.relatedTarget &&
+              !event.currentTarget.contains(event.relatedTarget)
+            ) {
+              setNearby([]);
+            }
+          }}
+          onKeyDown={(event) => {
+            if (event.key === 'Escape') {
+              setNearby([]);
+              nearbyTrigger.current?.focus({ preventScroll: true });
+            }
+          }}
+        >
+          <div className="map-nearby-heading">
+            <strong>{nearby.length} nearby stories</strong>
+            <button
+              aria-label="Close nearby stories"
+              onClick={() => {
+                setNearby([]);
+                nearbyTrigger.current?.focus({ preventScroll: true });
+              }}
+            >
+              <X size={16} />
+            </button>
+          </div>
+          <div className="map-nearby-list">
+            {nearby.map((example) => (
+              <button
+                key={example.id}
+                data-story
+                onClick={() => {
+                  setNearby([]);
+                  props.onExample(example);
+                }}
+              >
+                <span>
+                  <strong>{example.title}</strong>
+                  <small>{example.location}</small>
+                </span>
+                <ChevronRight size={14} />
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+      {hovered && !nearby.length && (
         <div className="map-hover-card">
           <span className="eyebrow">
             {hovered.location} · {hovered.period}
