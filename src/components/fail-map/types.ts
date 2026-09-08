@@ -1,10 +1,10 @@
 export const categories = [
-  { id: 'all', label: 'Everything', color: '#f18a57' },
-  { id: 'companies', label: 'Companies', color: '#f18a57' },
-  { id: 'infrastructure', label: 'Megaprojects', color: '#d4be79' },
-  { id: 'science', label: 'Science', color: '#a8cba1' },
-  { id: 'technology', label: 'Technology', color: '#90b8d5' },
-  { id: 'visions', label: 'Visions', color: '#bf9ed3' },
+  { id: 'all', label: 'Everything' },
+  { id: 'companies', label: 'Companies' },
+  { id: 'infrastructure', label: 'Megaprojects' },
+  { id: 'science', label: 'Science' },
+  { id: 'technology', label: 'Technology' },
+  { id: 'visions', label: 'Visions' },
 ] as const;
 
 export type Category = (typeof categories)[number]['id'];
@@ -30,8 +30,6 @@ export interface FailExample {
   reportPath: string;
   sources: Source[];
 }
-
-export const categoryInfo = (category: string) => categories.find((item) => item.id === category) || categories[0];
 
 export function formatCoordinates(latitude: number, longitude: number) {
   return `${Math.abs(latitude).toFixed(2)}° ${latitude < 0 ? 'S' : 'N'}  /  ${Math.abs(longitude).toFixed(2)}° ${longitude < 0 ? 'W' : 'E'}`;

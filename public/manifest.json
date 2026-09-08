@@ -1,10 +1,17 @@
 {
   "name": "Global Fail Map",
   "short_name": "Fail Map",
-  "description": "The world is built on attempts. Explore the ideas that did not go to plan.",
+  "description": "Explore failed companies, cancelled projects and abandoned experiments.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#101311",
-  "theme_color": "#101311",
-  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+  "background_color": "#22211f",
+  "theme_color": "#22211f",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
 }

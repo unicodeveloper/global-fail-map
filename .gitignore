@@ -50,7 +50,7 @@ docs/
 # local development database
 .local-data/
 
-# claude code
+# local tooling
 .claude/
 *.key
 credentials.*
