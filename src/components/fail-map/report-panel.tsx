@@ -26,7 +26,16 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { SourceFavicon } from './source-favicon';
-import { reportMarkdown, sourceHostname, sourceTitle } from './report-utils';
+import { ResearchProgress, type ResearchConnection } from './research-progress';
+import { ProjectPhotoGallery } from './project-photo-gallery';
+import { projectPhotoSubjects } from '@/lib/project-images';
+import seededPhotos from '@/data/project-photos.json';
+import {
+  prepareReport,
+  reportMarkdown,
+  sourceHostname,
+  sourceTitle,
+} from './report-utils';
 import {
   formatCoordinates,
   type FailExample,
@@ -42,6 +51,8 @@ interface ReportPanelProps {
   onResearch: () => void;
   onRetry: () => void;
   map?: ReactNode;
+  researchConnection?: ResearchConnection;
+  publicReport?: boolean;
 }
 
 function SourceRow({ source, index }: { source: Source; index: number }) {
@@ -72,6 +83,8 @@ export function ReportPanel({
   onResearch,
   onRetry,
   map,
+  researchConnection,
+  publicReport = false,
 }: ReportPanelProps) {
   const [markdown, setMarkdown] = useState('');
   const [loadError, setLoadError] = useState('');
@@ -81,14 +94,29 @@ export function ReportPanel({
   );
   const [shareError, setShareError] = useState('');
   const [sharedUrl, setSharedUrl] = useState('');
+  const [sharingOpen, setSharingOpen] = useState(false);
+  const [isPublic, setIsPublic] = useState(false);
   const [mobileMapOpen, setMobileMapOpen] = useState(false);
   const [desktopMapOpen, setDesktopMapOpen] = useState(true);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const shareRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!sharingOpen) return;
+    const dismiss = (event: PointerEvent) => {
+      if (!shareRef.current?.contains(event.target as Node))
+        setSharingOpen(false);
+    };
+    document.addEventListener('pointerdown', dismiss);
+    return () => document.removeEventListener('pointerdown', dismiss);
+  }, [sharingOpen]);
 
   useEffect(() => {
     setShareState('idle');
     setShareError('');
     setSharedUrl('');
+    setSharingOpen(false);
+    setIsPublic(investigation?.isPublic === true);
     setMarkdown('');
     setLoadError('');
     setLoading(false);
@@ -113,14 +141,16 @@ export function ReportPanel({
         if (!controller.signal.aborted) setLoading(false);
       });
     return () => controller.abort();
-  }, [example, investigation?.id]);
+  }, [example, investigation?.id, investigation?.isPublic]);
 
   if (!example && !investigation) return null;
 
   const title = example?.title || investigation?.location.name || 'Research';
   const content = example ? markdown : investigation?.report || '';
-  const body = content.replace(/^# [^\n]+\n\s*/, '');
-  const sources = example?.sources || investigation?.sources || [];
+  const { body, sources } = prepareReport(
+    content,
+    example?.sources || investigation?.sources || [],
+  );
   const sourceByUrl = new Map(sources.map((source) => [source.url, source]));
   const running =
     investigation &&
@@ -157,10 +187,17 @@ export function ReportPanel({
     : 0;
 
   async function share() {
-    if (!example) return;
+    if (!example && !publicReport) {
+      setSharingOpen((open) => !open);
+      if (isPublic && investigation)
+        setSharedUrl(
+          `${window.location.origin}/?share=${encodeURIComponent(investigation.id)}`,
+        );
+      return;
+    }
     setShareState('loading');
     setShareError('');
-    const url = `${window.location.origin}/?case=${encodeURIComponent(example.id)}`;
+    const url = `${window.location.origin}/?${example ? `case=${encodeURIComponent(example.id)}` : `share=${encodeURIComponent(investigation!.id)}`}`;
     try {
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(url);
@@ -172,6 +209,58 @@ export function ReportPanel({
     } catch {
       setSharedUrl(url);
       setShareError('Copy the story link below.');
+      setShareState('idle');
+    }
+  }
+
+  async function copyPublicLink() {
+    if (!investigation) return;
+    const url = `${window.location.origin}/?share=${encodeURIComponent(investigation.id)}`;
+    setSharedUrl(url);
+    try {
+      await navigator.clipboard.writeText(url);
+      setShareState('copied');
+    } catch {
+      setShareError('Copy the public link above.');
+    }
+  }
+
+  async function setVisibility(makePublic: boolean) {
+    if (!investigation) return;
+    setShareState('loading');
+    setShareError('');
+    try {
+      const response = await fetch(
+        `/api/investigations/${encodeURIComponent(investigation.id)}/share`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ public: makePublic }),
+        },
+      );
+      const data = await response.json();
+      if (!response.ok)
+        throw new Error(
+          data.message || 'Could not update sharing. Please try again.',
+        );
+      setIsPublic(makePublic);
+      const url = makePublic
+        ? `${window.location.origin}/?share=${encodeURIComponent(investigation.id)}`
+        : '';
+      setSharedUrl(url);
+      setShareState('idle');
+      if (url && navigator.clipboard && window.isSecureContext) {
+        try {
+          await navigator.clipboard.writeText(url);
+          setShareState('copied');
+        } catch {
+          /* The visible link remains available to copy. */
+        }
+      }
+    } catch (error) {
+      setShareError(
+        error instanceof Error ? error.message : 'Could not update sharing.',
+      );
       setShareState('idle');
     }
   }
@@ -198,6 +287,12 @@ export function ReportPanel({
       }}
     >
       <DialogContent
+        onEscapeKeyDown={(event) => {
+          if (sharingOpen) {
+            event.preventDefault();
+            setSharingOpen(false);
+          }
+        }}
         className={`dossier-dialog${mobileMapOpen ? ' is-map-open' : ''}${desktopMapOpen ? '' : ' is-map-collapsed'}${map ? '' : ' without-map'}`}
         showCloseButton={false}
       >
@@ -229,24 +324,87 @@ export function ReportPanel({
                 <span>{mobileMapOpen ? 'Hide map' : 'Map'}</span>
               </button>
             )}
-            {example && (
-              <button
-                className="dossier-tool"
-                onClick={share}
-                disabled={shareState === 'loading'}
-                aria-label={
-                  shareState === 'copied'
-                    ? 'Story link copied'
-                    : 'Copy story link'
-                }
+            {(example || investigation?.status === 'completed') && (
+              <div
+                className="dossier-share-control"
+                ref={shareRef}
+                onKeyDown={(event) => {
+                  if (event.key === 'Escape' && sharingOpen) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    setSharingOpen(false);
+                  }
+                }}
               >
-                {shareState === 'copied' ? (
-                  <Check size={17} />
-                ) : (
-                  <Link2 size={17} />
+                <button
+                  className="dossier-tool"
+                  onClick={share}
+                  disabled={shareState === 'loading'}
+                  aria-label={
+                    shareState === 'copied' ? 'Link copied' : 'Share report'
+                  }
+                  aria-expanded={
+                    example || publicReport ? undefined : sharingOpen
+                  }
+                  aria-controls={sharingOpen ? 'report-sharing' : undefined}
+                >
+                  {shareState === 'copied' ? (
+                    <Check size={17} />
+                  ) : (
+                    <Link2 size={17} />
+                  )}
+                  <span>{shareState === 'copied' ? 'Copied' : 'Share'}</span>
+                </button>
+                {sharingOpen && !publicReport && (
+                  <div
+                    className="dossier-sharing"
+                    id="report-sharing"
+                    role="region"
+                    aria-label="Report sharing"
+                  >
+                    <strong>{isPublic ? 'Public link' : 'Share report'}</strong>
+                    <p>
+                      {isPublic
+                        ? 'Anyone with the link can read this report.'
+                        : 'Make the report and research query visible to anyone with the link.'}
+                    </p>
+                    {isPublic && (
+                      <input
+                        aria-label="Public report link"
+                        readOnly
+                        value={sharedUrl}
+                        onFocus={(event) => event.target.select()}
+                      />
+                    )}
+                    <button
+                      className="dossier-share-primary"
+                      disabled={shareState === 'loading'}
+                      onClick={() =>
+                        void (isPublic ? copyPublicLink() : setVisibility(true))
+                      }
+                    >
+                      <Link2 size={14} />
+                      {shareState === 'loading'
+                        ? 'Creating link...'
+                        : shareState === 'copied'
+                          ? 'Copied'
+                          : isPublic
+                            ? 'Copy link'
+                            : 'Create public link'}
+                    </button>
+                    {isPublic && (
+                      <button
+                        className="dossier-share-revoke"
+                        disabled={shareState === 'loading'}
+                        onClick={() => void setVisibility(false)}
+                      >
+                        Turn sharing off
+                      </button>
+                    )}
+                    {shareError && <p role="alert">{shareError}</p>}
+                  </div>
                 )}
-                <span>{shareState === 'copied' ? 'Copied' : 'Share'}</span>
-              </button>
+              </div>
             )}
             <button
               className="dossier-tool"
@@ -388,7 +546,7 @@ export function ReportPanel({
                     </div>
                   </dl>
                 )}
-                {sharedUrl && (
+                {sharedUrl && (example || publicReport) && (
                   <div className="dossier-share-link">
                     <label htmlFor="report-share-url">
                       {shareError || 'Public story link'}
@@ -417,26 +575,24 @@ export function ReportPanel({
                 </p>
               )}
               {running && (
-                <div
-                  className="dossier-progress"
-                  role="status"
-                  aria-live="polite"
-                >
-                  <h3>
-                    {investigation.status === 'queued'
-                      ? 'Research queued'
-                      : 'Researching...'}
-                  </h3>
-                  <p>This report will be saved in My research.</p>
-                  <div className="dossier-progress-track">
-                    <span
-                      style={{
-                        width: `${Math.max(8, Math.min(95, investigation.progress || 18))}%`,
-                      }}
-                    />
-                  </div>
-                </div>
+                <ResearchProgress
+                  investigation={investigation}
+                  connection={researchConnection}
+                />
               )}
+              <ProjectPhotoGallery
+                projectName={title}
+                locationName={example ? location : undefined}
+                subjects={
+                  example ? undefined : projectPhotoSubjects(content, title)
+                }
+                initialImages={
+                  example
+                    ? seededPhotos[example.id as keyof typeof seededPhotos]
+                    : undefined
+                }
+                autoLoad={!publicReport}
+              />
               {failed && (
                 <div className="dossier-progress">
                   <h3>The research could not finish.</h3>

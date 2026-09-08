@@ -8,6 +8,11 @@ import { type FailExample, type Investigation, type Location } from './types';
 import { createMapSymbol } from './map-symbols';
 import { groupMapExamples } from './map-groups';
 import { mapGeocodingTypes, resolveMapLocation } from './map-location';
+import {
+  getMapCameraTarget,
+  sameMapCameraTarget,
+  type MapCameraTarget,
+} from './map-camera';
 
 interface AtlasGlobeProps {
   variant?: 'atlas' | 'report';
@@ -24,6 +29,7 @@ interface AtlasGlobeProps {
 export function AtlasGlobe(props: AtlasGlobeProps) {
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
+  const appliedCamera = useRef<MapCameraTarget | null>(null);
   const callbacks = useRef(props);
   callbacks.current = props;
   const [ready, setReady] = useState(false);
@@ -60,19 +66,24 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
     let disposed = false;
     let geocoding: AbortController | undefined;
     try {
+      const camera = getMapCameraTarget(
+        callbacks.current.focus,
+        callbacks.current.variant,
+        container.current.clientWidth,
+      );
       const instance = new mapboxgl.Map({
         container: container.current,
         accessToken: token,
         style: 'mapbox://styles/mapbox/satellite-streets-v12',
         projection: 'globe',
-        center: [10, 22],
-        zoom: container.current.clientWidth < 640 ? 0.8 : 1.6,
+        ...camera,
         minZoom: 0,
         maxZoom: 14,
         attributionControl: false,
         renderWorldCopies: false,
       });
       map.current = instance;
+      appliedCamera.current = camera;
       instance.on('movestart', () => setNearby([]));
       instance.on('moveend', () => setViewRevision((revision) => revision + 1));
       instance.on('resize', () => setViewRevision((revision) => revision + 1));
@@ -154,6 +165,7 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
         map.current?.remove();
       } catch {}
       map.current = null;
+      appliedCamera.current = null;
     };
   }, []);
 
@@ -256,24 +268,31 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
     viewRevision,
   ]);
 
+  const focusLatitude = props.focus?.latitude;
+  const focusLongitude = props.focus?.longitude;
+  const focusScope = props.focus?.scope;
+
   useEffect(() => {
-    if (!ready) return;
-    const location = props.focus?.scope === 'worldwide' ? null : props.focus;
-    map.current?.flyTo({
-      center: location ? [location.longitude, location.latitude] : [10, 22],
-      zoom: location
-        ? props.variant === 'report'
-          ? 3.3
-          : 2.5
-        : (container.current?.clientWidth || 0) < 640
-          ? 0.8
-          : 1.6,
+    if (!ready || !map.current) return;
+    const camera = getMapCameraTarget(
+      callbacks.current.focus,
+      props.variant,
+      container.current?.clientWidth || 0,
+    );
+    if (sameMapCameraTarget(appliedCamera.current, camera)) return;
+    appliedCamera.current = camera;
+    if (props.variant === 'report') {
+      map.current.jumpTo(camera);
+      return;
+    }
+    map.current.flyTo({
+      ...camera,
       duration: window.matchMedia('(prefers-reduced-motion: reduce)').matches
         ? 0
         : 1400,
       essential: false,
     });
-  }, [props.focus, props.variant, ready]);
+  }, [focusLatitude, focusLongitude, focusScope, props.variant, ready]);
 
   return (
     <div
@@ -309,14 +328,26 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
           <Minus size={18} />
         </button>
         <button
-          aria-label="Reset globe view"
+          aria-label={
+            props.variant === 'report' &&
+            props.focus &&
+            props.focus.scope !== 'worldwide'
+              ? 'Recenter on research area'
+              : 'Reset globe view'
+          }
           onClick={() =>
             map.current?.flyTo({
-              center: [10, 22],
-              zoom: (container.current?.clientWidth || 0) < 640 ? 0.8 : 1.6,
+              ...getMapCameraTarget(
+                props.variant === 'report' ? props.focus : null,
+                props.variant,
+                container.current?.clientWidth || 0,
+              ),
               bearing: 0,
               pitch: 0,
-              duration: 1000,
+              duration: window.matchMedia('(prefers-reduced-motion: reduce)')
+                .matches
+                ? 0
+                : 1000,
             })
           }
         >

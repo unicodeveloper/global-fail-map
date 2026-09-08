@@ -48,6 +48,7 @@ test('all cached stories have reports and matching numbered citation sources', (
     examples.length,
   );
   for (const example of examples) {
+    assert.equal(example.deepresearchMode, 'standard');
     const markdown = readFileSync(
       new URL(`../public${example.reportPath}`, import.meta.url),
       'utf8',
@@ -98,6 +99,6 @@ test('expanded research covers the original sectors with dated, sourced location
     assert.ok(example.confidence);
     assert.ok(example.sources.length >= 3);
     assert.ok(example.deepresearchId);
-    assert.equal(example.deepresearchMode, 'fast');
+    assert.equal(example.deepresearchMode, 'standard');
   }
 });

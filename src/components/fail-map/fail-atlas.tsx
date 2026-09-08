@@ -25,6 +25,7 @@ import {
 } from '@/components/ui/dialog';
 import { useAuthStore } from '@/lib/stores/use-auth-store';
 import { ReportPanel } from './report-panel';
+import { ResearchOptions } from './research-options';
 import { AtlasDock } from './atlas-dock';
 import {
   categories,
@@ -47,7 +48,13 @@ interface PlaceResult {
   center: [number, number];
 }
 
-export function FailAtlas({ examples }: { examples: FailExample[] }) {
+export function FailAtlas({
+  examples,
+  selfHostedNotifications = false,
+}: {
+  examples: FailExample[];
+  selfHostedNotifications?: boolean;
+}) {
   const {
     user,
     signInWithValyu,
@@ -57,6 +64,12 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
   const signedIn = !!user;
   const searchInput = useRef<HTMLInputElement>(null);
   const focusSearchOnOpen = useRef(false);
+  const reportRequest = useRef<AbortController | null>(null);
+  const reportUrl = useRef('');
+  const updateReportUrl = useCallback((url: string) => {
+    window.history.replaceState({}, '', url);
+    reportUrl.current = window.location.pathname + window.location.search;
+  }, []);
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState<Category>('all');
   const [places, setPlaces] = useState<PlaceResult[]>([]);
@@ -68,10 +81,25 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
   const [activeInvestigation, setActiveInvestigation] =
     useState<Investigation | null>(null);
   const [showInvestigation, setShowInvestigation] = useState(false);
+  const [publicReport, setPublicReport] = useState(false);
+  const [reportLinkState, setReportLinkState] = useState<
+    'idle' | 'loading' | 'signin' | 'error'
+  >('idle');
+  const [reportLinkError, setReportLinkError] = useState('');
+  const [researchConnection, setResearchConnection] = useState<
+    'connecting' | 'live' | 'reconnecting'
+  >('connecting');
   const [focus, setFocus] = useState<Location | null>(null);
   const [pendingLocation, setPendingLocation] = useState<Location | null>(null);
   const [instructions, setInstructions] = useState('');
   const [researchCategory, setResearchCategory] = useState<Category>('all');
+  const [researchMode, setResearchMode] = useState<
+    'fast' | 'standard' | 'heavy'
+  >('fast');
+  const [notifyOnCompletion, setNotifyOnCompletion] = useState(true);
+  const notificationAvailable = isSelfHosted
+    ? selfHostedNotifications
+    : Boolean(user?.email);
   const [submitting, setSubmitting] = useState(false);
   const [composerError, setComposerError] = useState('');
   const [activeTab, setActiveTab] = useState<'atlas' | 'history'>('atlas');
@@ -153,8 +181,72 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
   }, [notice]);
 
   useEffect(() => {
-    const handleUrl = () => {
+    const handleUrl = async () => {
+      reportUrl.current = window.location.pathname + window.location.search;
+      reportRequest.current?.abort();
+      const controller = new AbortController();
+      reportRequest.current = controller;
       const params = new URLSearchParams(window.location.search);
+      try {
+        const resume = sessionStorage.getItem('global-fail-map-resume');
+        if (
+          resume &&
+          !params.has('research') &&
+          !params.has('case') &&
+          !params.has('share')
+        ) {
+          params.set('research', resume);
+          updateReportUrl(`/?${params.toString()}`);
+        }
+        sessionStorage.removeItem('global-fail-map-resume');
+      } catch {
+        /* The original report link remains usable without storage. */
+      }
+      const researchId = params.get('research');
+      const shareId = params.get('share');
+      setReportLinkState('idle');
+      if (researchId || shareId) {
+        setPublicReport(Boolean(shareId));
+        setSelectedExample(null);
+        setShowInvestigation(false);
+        if (!shareId && authLoading && !isSelfHosted) return;
+        if (!shareId && !signedIn && !isSelfHosted) {
+          setReportLinkState('signin');
+          return;
+        }
+        setReportLinkState('loading');
+        try {
+          const response = await fetch(
+            shareId
+              ? `/api/investigations/public/${encodeURIComponent(shareId)}`
+              : `/api/investigations/${encodeURIComponent(researchId!)}`,
+            { signal: controller.signal },
+          );
+          const data = await response.json();
+          if (!response.ok)
+            throw new Error(
+              data.message || 'This report is unavailable or no longer shared.',
+            );
+          if (controller.signal.aborted) return;
+          setActiveInvestigation(data.investigation);
+          setPublicReport(!!shareId);
+          setShowInvestigation(true);
+          setFocus(data.investigation.location);
+          setExplorerOpen(false);
+          setReportLinkState('idle');
+        } catch (error) {
+          if (controller.signal.aborted) return;
+          setReportLinkError(
+            error instanceof Error
+              ? error.message
+              : 'Could not open this report.',
+          );
+          setReportLinkState('error');
+        }
+        return;
+      }
+      setShowInvestigation(false);
+      setPublicReport(false);
       const caseId = params.get('case');
       const example = examples.find((item) => item.id === caseId);
       if (example) {
@@ -166,6 +258,7 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
         });
       } else {
         setSelectedExample(null);
+        setFocus(null);
       }
       if (params.has('auth_error'))
         setNotice(
@@ -174,7 +267,21 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
         );
     };
     handleUrl();
-    window.addEventListener('popstate', handleUrl);
+    const handleNavigation = () => {
+      if (
+        reportUrl.current !==
+        window.location.pathname + window.location.search
+      )
+        void handleUrl();
+    };
+    window.addEventListener('popstate', handleNavigation);
+    return () => {
+      reportRequest.current?.abort();
+      window.removeEventListener('popstate', handleNavigation);
+    };
+  }, [examples, signedIn, authLoading, updateReportUrl]);
+
+  useEffect(() => {
     try {
       const saved = sessionStorage.getItem(draftKey);
       if (saved) {
@@ -189,6 +296,10 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
           setInstructions(
             typeof draft.instructions === 'string' ? draft.instructions : '',
           );
+          if (['fast', 'standard', 'heavy'].includes(draft.mode))
+            setResearchMode(draft.mode);
+          if (typeof draft.notifyOnCompletion === 'boolean')
+            setNotifyOnCompletion(draft.notifyOnCompletion);
           setResearchCategory(
             categories.some((item) => item.id === draft.category)
               ? draft.category
@@ -200,8 +311,7 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
     } catch {
       /* A fresh draft works when session storage is unavailable. */
     }
-    return () => window.removeEventListener('popstate', handleUrl);
-  }, [examples]);
+  }, []);
 
   useEffect(() => {
     const search = query.trim();
@@ -243,12 +353,14 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
     if (
       !activeInvestigationId ||
       !activeInvestigationStatus ||
+      publicReport ||
       ['completed', 'failed', 'cancelled'].includes(activeInvestigationStatus)
     )
       return;
     let disposed = false;
     let timeout: ReturnType<typeof setTimeout>;
     let consecutiveErrors = 0;
+    setResearchConnection('connecting');
     const poll = async () => {
       try {
         const response = await fetch(
@@ -259,6 +371,7 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
           throw new Error(data.message || 'Could not check research progress.');
         if (disposed) return;
         consecutiveErrors = 0;
+        setResearchConnection('live');
         setActiveInvestigation(data.investigation);
         setInvestigations((current) => [
           data.investigation,
@@ -276,6 +389,8 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
           return;
         }
       } catch {
+        if (disposed) return;
+        setResearchConnection('reconnecting');
         consecutiveErrors += 1;
         if (consecutiveErrors === 3)
           setNotice(
@@ -293,44 +408,51 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
       disposed = true;
       clearTimeout(timeout);
     };
-  }, [activeInvestigationId, activeInvestigationStatus]);
+  }, [activeInvestigationId, activeInvestigationStatus, publicReport]);
 
-  const chooseExample = useCallback((example: FailExample) => {
-    setSelectedExample(example);
-    setShowInvestigation(false);
-    setFocus({
-      name: example.location,
-      latitude: example.lat,
-      longitude: example.lng,
-    });
-    setExplorerOpen(false);
-    window.history.replaceState(
-      {},
-      '',
-      `/?case=${encodeURIComponent(example.id)}`,
-    );
-  }, []);
+  const chooseExample = useCallback(
+    (example: FailExample) => {
+      reportRequest.current?.abort();
+      setReportLinkState('idle');
+      setSelectedExample(example);
+      setShowInvestigation(false);
+      setFocus({
+        name: example.location,
+        latitude: example.lat,
+        longitude: example.lng,
+      });
+      setExplorerOpen(false);
+      updateReportUrl(`/?case=${encodeURIComponent(example.id)}`);
+    },
+    [updateReportUrl],
+  );
 
-  const chooseInvestigation = useCallback((investigation: Investigation) => {
-    setActiveInvestigation(investigation);
-    setShowInvestigation(true);
-    setSelectedExample(null);
-    setFocus(investigation.location);
-    setExplorerOpen(false);
-    window.history.replaceState({}, '', '/');
-    if (investigation.status === 'completed' && !investigation.report) {
-      fetch(`/api/investigations/${encodeURIComponent(investigation.id)}`)
-        .then(async (response) => {
-          const data = await response.json();
-          if (!response.ok)
-            throw new Error(data.message || 'Could not open this report.');
-          setActiveInvestigation((current) =>
-            current?.id === investigation.id ? data.investigation : current,
-          );
-        })
-        .catch((error: Error) => setNotice(error.message));
-    }
-  }, []);
+  const chooseInvestigation = useCallback(
+    (investigation: Investigation) => {
+      reportRequest.current?.abort();
+      setReportLinkState('idle');
+      setPublicReport(false);
+      setActiveInvestigation(investigation);
+      setShowInvestigation(true);
+      setSelectedExample(null);
+      setFocus(investigation.location);
+      setExplorerOpen(false);
+      updateReportUrl(`/?research=${encodeURIComponent(investigation.id)}`);
+      if (investigation.status === 'completed' && !investigation.report) {
+        fetch(`/api/investigations/${encodeURIComponent(investigation.id)}`)
+          .then(async (response) => {
+            const data = await response.json();
+            if (!response.ok)
+              throw new Error(data.message || 'Could not open this report.');
+            setActiveInvestigation((current) =>
+              current?.id === investigation.id ? data.investigation : current,
+            );
+          })
+          .catch((error: Error) => setNotice(error.message));
+      }
+    },
+    [updateReportUrl],
+  );
 
   const chooseLocation = useCallback(
     (location: Location) => {
@@ -346,10 +468,12 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
   );
 
   function closeReport() {
+    reportRequest.current?.abort();
+    setReportLinkState('idle');
     setSelectedExample(null);
     setShowInvestigation(false);
     setFocus(null);
-    window.history.replaceState({}, '', '/');
+    updateReportUrl('/');
   }
 
   function surprise() {
@@ -366,6 +490,11 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
     setSubmitting(true);
     setComposerError('');
     try {
+      const researchId = new URLSearchParams(window.location.search).get(
+        'research',
+      );
+      if (researchId)
+        sessionStorage.setItem('global-fail-map-resume', researchId);
       if (pendingLocation)
         sessionStorage.setItem(
           draftKey,
@@ -373,6 +502,8 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
             location: pendingLocation,
             category: researchCategory,
             instructions,
+            mode: researchMode,
+            notifyOnCompletion,
           }),
         );
       const result = await signInWithValyu();
@@ -401,6 +532,8 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
         location: pendingLocation,
         category: researchCategory === 'all' ? 'general' : researchCategory,
         instructions: instructions.trim() || undefined,
+        mode: researchMode,
+        notifyOnCompletion: notificationAvailable && notifyOnCompletion,
       };
       const response = await fetch('/api/investigations', {
         method: 'POST',
@@ -413,6 +546,8 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
           data.message || 'The research could not start. Please try again.',
         );
       setActiveInvestigation(data.investigation);
+      setPublicReport(false);
+      setFocus(data.investigation.location);
       setInvestigations((current) => [
         data.investigation,
         ...current.filter((item) => item.id !== data.investigation.id),
@@ -422,7 +557,9 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
       setPendingLocation(null);
       setInstructions('');
       setActiveTab('history');
-      window.history.replaceState({}, '', '/');
+      updateReportUrl(
+        `/?research=${encodeURIComponent(data.investigation.id)}`,
+      );
     } catch (error) {
       setComposerError(
         error instanceof Error
@@ -782,6 +919,8 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
         onClose={closeReport}
         onResearch={researchFromReport}
         onRetry={researchFromReport}
+        researchConnection={researchConnection}
+        publicReport={publicReport}
         map={
           reportOpen ? (
             <AtlasGlobe
@@ -802,6 +941,42 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
           ) : undefined
         }
       />
+
+      <Dialog
+        open={reportLinkState !== 'idle'}
+        onOpenChange={(open) => {
+          if (!open) closeReport();
+        }}
+      >
+        <DialogContent className="research-dialog">
+          <DialogTitle>
+            {reportLinkState === 'loading'
+              ? 'Opening your report'
+              : reportLinkState === 'signin'
+                ? 'Your research is saved'
+                : 'Report unavailable'}
+          </DialogTitle>
+          <DialogDescription>
+            {reportLinkState === 'loading'
+              ? 'Loading the latest research and its sources.'
+              : reportLinkState === 'signin'
+                ? 'Connect the Valyu account that created this report to open it. Private reports are only visible to their owner.'
+                : reportLinkError}
+          </DialogDescription>
+          {reportLinkState === 'loading' && (
+            <Loader2 className="spin" size={24} />
+          )}
+          {reportLinkState === 'signin' && (
+            <button
+              className="primary-button"
+              onClick={() => void connect()}
+              disabled={submitting}
+            >
+              Connect with Valyu <ArrowUpRight size={16} />
+            </button>
+          )}
+        </DialogContent>
+      </Dialog>
 
       <Dialog
         open={!!pendingLocation}
@@ -864,6 +1039,15 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
                     : 'Connect Valyu to continue. No credits are used until you start the research.'}
               </p>
             </div>
+            <ResearchOptions
+              mode={researchMode}
+              onModeChange={setResearchMode}
+              notifyOnCompletion={notifyOnCompletion}
+              onNotifyOnCompletionChange={setNotifyOnCompletion}
+              notificationEmail={isSelfHosted ? undefined : user?.email}
+              notificationAvailable={notificationAvailable}
+              disabled={submitting}
+            />
             {composerError && (
               <p className="inline-error" role="alert">
                 {composerError}
