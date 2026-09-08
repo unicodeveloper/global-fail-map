@@ -148,7 +148,12 @@ test('public reads send no credentials and expose only explicitly public safe fi
           'Research target: London\nResearch coordinates: 51.5, -0.12\nResearch category: infrastructure',
         output: '# A public report',
         sources: [{ title: 'Archive', url: 'https://example.com/archive' }],
-        messages: [{ role: 'assistant', content: 'Private execution trace' }],
+        messages: [
+          {
+            role: 'assistant',
+            content: [{ type: 'reasoning', text: 'Private execution trace' }],
+          },
+        ],
         created_at: '2026-09-08T12:00:00.000Z',
       },
     });
@@ -164,6 +169,8 @@ test('public reads send no credentials and expose only explicitly public safe fi
   assert.equal(body.investigation.id, id);
   assert.equal(body.investigation.report, '# A public report');
   assert.equal('messages' in body.investigation, false);
+  assert.equal('activity' in body.investigation, false);
+  assert.equal(JSON.stringify(body).includes('Private execution trace'), false);
 });
 
 test('public reads reject private provider responses', async () => {

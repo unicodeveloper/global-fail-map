@@ -1,7 +1,7 @@
 'use client';
 
-import { ChevronDown, Mail } from 'lucide-react';
-import { useId } from 'react';
+import { ChevronDown, Flame, Mail } from 'lucide-react';
+import { useId, useState, type CSSProperties } from 'react';
 import type { InvestigationInput } from '@/lib/fail-map-types';
 import './research-options.css';
 
@@ -25,7 +25,16 @@ export function ResearchOptions({
   disabled = false,
 }: ResearchOptionsProps) {
   const id = useId();
-  const selected = researchModes.find((option) => option.value === mode)!;
+  const [ignition, setIgnition] = useState(0);
+  const level = researchModes.findIndex((option) => option.value === mode);
+  const selected = researchModes[level];
+  function selectLevel(index: number) {
+    const next = researchModes[index];
+    if (!next) return;
+    if (next.value === 'heavy' && mode !== 'heavy')
+      setIgnition((value) => value + 1);
+    onModeChange(next.value);
+  }
   return (
     <div className="research-settings">
       <details className="research-advanced">
@@ -38,28 +47,77 @@ export function ResearchOptions({
         </summary>
         <fieldset disabled={disabled} aria-describedby={`${id}-estimate`}>
           <legend>Research effort</legend>
-          <div className="research-effort-options">
-            {researchModes.map((option, index) => (
-              <label key={option.value}>
-                <input
-                  className="sr-only"
-                  type="radio"
-                  name={`${id}-mode`}
-                  value={option.value}
-                  checked={mode === option.value}
-                  onChange={() => onModeChange(option.value)}
-                />
-                <span className="research-effort-option" data-level={index + 1}>
-                  <span className="effort-bars" aria-hidden="true">
+          <div className="research-effort-slider" data-heavy={mode === 'heavy'}>
+            <div className="research-effort-heading">
+              <span className="research-effort-choice">
+                {mode === 'heavy' ? (
+                  <Flame size={19} aria-hidden="true" />
+                ) : (
+                  <span
+                    className="effort-bars"
+                    data-level={level + 1}
+                    aria-hidden="true"
+                  >
                     <i />
                     <i />
                     <i />
                   </span>
-                  <span>{option.label}</span>
-                  <small>{option.estimate}</small>
-                </span>
-              </label>
-            ))}
+                )}
+                {selected.label}
+              </span>
+              <span>{selected.estimate}</span>
+            </div>
+            <div className="research-effort-track">
+              <div
+                className="research-effort-rail"
+                aria-hidden="true"
+                style={{ '--effort-fill': `${level * 50}%` } as CSSProperties}
+              >
+                <span />
+              </div>
+              <div className="research-effort-stops" aria-hidden="true">
+                <i />
+                <i />
+                <i />
+              </div>
+              <input
+                type="range"
+                min={0}
+                max={2}
+                step={1}
+                value={level}
+                onChange={(event) => selectLevel(Number(event.target.value))}
+                aria-label="Research effort"
+                aria-valuetext={`${selected.label} effort, ${selected.estimate}`}
+              />
+              {ignition > 0 && mode === 'heavy' && (
+                <div
+                  className="research-effort-ignition"
+                  key={ignition}
+                  aria-hidden="true"
+                >
+                  <Flame size={44} />
+                  <i />
+                  <i />
+                  <i />
+                  <i />
+                  <i />
+                  <i />
+                </div>
+              )}
+            </div>
+            <div className="research-effort-labels">
+              {researchModes.map((option, index) => (
+                <button
+                  key={option.value}
+                  type="button"
+                  onClick={() => selectLevel(index)}
+                  aria-pressed={mode === option.value}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
           </div>
           <p id={`${id}-estimate`}>
             Estimated times. Complex topics can take longer.
