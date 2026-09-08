@@ -44,6 +44,16 @@ VALYU_API_KEY=valyu_your_api_key
 
 Self-hosted mode calls Valyu directly with your server-side API key. It does not require a database. Research history comes from `GET /v1/deepresearch/list` for that key.
 
+Optionally set `DEEPRESEARCH_ALERT_EMAIL` to an email belonging to your Valyu organisation to enable completion notifications. Set `NEXT_PUBLIC_APP_URL` to the reachable app URL so the email returns to the correct report.
+
+## Research and sharing
+
+- Fast is the default. Standard and Heavy offer deeper research and use more time and account credits.
+- Each task has a `/?research=<id>` link that reopens its latest progress or completed report with the owner's account.
+- Completion emails are enabled by default when a verified account email is available, with an option to turn them off before starting.
+- Share a completed report explicitly to create a public `/?share=<id>` link. Publishing exposes its report and research query through Valyu. Turn public sharing off to revoke access.
+- Project photos load automatically from Valyu search results with links to their original sources. Location reports search for the named projects they uncover. Bundled stories include cached photos, available without signing in. New photo searches use the viewer's configured account credits.
+
 ## Hosted mode
 
 The hosted app uses Sign in with Valyu. OAuth tokens stay in encrypted, HTTP-only cookies and research requests pass through the Valyu OAuth proxy. The OAuth client secret and session secret are server-only environment variables.
@@ -71,7 +81,7 @@ To refresh them from their existing DeepResearch tasks:
 pnpm sync:examples
 ```
 
-This command requires a configured Valyu CLI session. It fails if any task is incomplete instead of publishing partial output.
+This command requires a configured Valyu CLI session. It fails if any task is incomplete instead of publishing partial output. Cached reports may contain narrow, source-backed factual corrections. Resyncing replaces those edits with provider output, so review the diff before publishing.
 
 ## Checks
 

@@ -2541,40 +2541,112 @@
     "subtitle": "An approved inhaled insulin for diabetes reached the market, then Pfizer withdrew it after disappointing sales.",
     "confidence": "high",
     "reportPath": "/reports/exubera.md",
-    "deepresearchMode": "fast",
-    "deepresearchId": "65ccf0a0-f476-40db-9531-3ad24d34dd9f",
+    "deepresearchMode": "standard",
+    "deepresearchId": "d4029aca-ed40-4b00-a95a-1222018c03a7",
     "sources": [
       {
-        "title": "Pfizer Receives FDA Approval for Exubera, the First Inhaleable Form of Insulin for Controlling Type 1 and Type 2 Diabetes in Adults | Nektar Therapeutics",
-        "url": "https://ir.nektar.com/news-releases/news-release-details/pfizer-receives-fda-approval-exubera-first-inhaleable-form"
+        "title": "Weak Sales Prompt Pfizer to Cancel Diabetes Drug (Published 2007)",
+        "url": "https://www.nytimes.com/2007/10/19/business/19pfizer.html"
       },
       {
-        "title": "Pfizer announces Exubera discontinuation: SEC-filed announcement, 18 October 2007",
-        "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752307009976/0001157523-07-009976.txt"
-      },
-      {
-        "title": "Nektar Terminates All Negotiations With Potential Partners for Inhaled Insulin; Increased Number of Lung Cancer Cases Observed in Ongoing Clinical Studies of Inhaled Insulin Patients | Nektar Therapeutics",
-        "url": "https://ir.nektar.com/news-releases/news-release-details/nektar-terminates-all-negotiations-potential-partners-inhaled"
-      },
-      {
-        "title": "Pfizer Statement on Exubera Labeling Update in the United States | Pfizer",
-        "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_statement_on_exubera_labeling_update_in_the_united_states"
-      },
-      {
-        "title": "Nektar Reports Pfizer to Acquire the Sanofi-Aventis Worldwide Rights to Exubera® (Inhaled Human Insulin) | Nektar Therapeutics",
-        "url": "https://ir.nektar.com/news-releases/news-release-details/nektar-reports-pfizer-acquire-sanofi-aventis-worldwide-rights"
+        "title": "Exubera - Inhaled Insulin - Clinical Trials Arena",
+        "url": "https://www.clinicaltrialsarena.com/projects/exubera/"
       },
       {
         "title": "Nektar Reports That Pfizer to Introduce Exubera in U.S. With a Comprehensive Education Program | Nektar Therapeutics",
         "url": "https://ir.nektar.com/news-releases/news-release-details/nektar-reports-pfizer-introduce-exubera-us-comprehensive"
       },
       {
-        "title": "Commentary: Why Was Inhaled Insulin a Failure in the Market? | Diabetes Spectrum | American Diabetes Association",
-        "url": "https://diabetesjournals.org/spectrum/article/29/3/180/32800/Commentary-Why-Was-Inhaled-Insulin-a-Failure-in"
+        "title": "Inhalable insulin - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Inhalable_insulin"
+      },
+      {
+        "title": "Pfizer Receives FDA Approval for Exubera, the First Inhaleable Form of Insulin for Controlling Type 1 and Type 2 Diabetes in Adults | Nektar Therapeutics",
+        "url": "https://ir.nektar.com/news-releases/news-release-details/pfizer-receives-fda-approval-exubera-first-inhaleable-form"
+      },
+      {
+        "title": "Nektar Reports Pfizer Announcement That New Studies Show More Than Half of Patients at Risk for or Suffering from Complications of Type 2 Diabetes Delay Insulin Injections -- Some More Than Four Years | Nektar Therapeutics",
+        "url": "https://ir.nektar.com/news-releases/news-release-details/nektar-reports-pfizer-announcement-new-studies-show-more-half"
+      },
+      {
+        "title": "Nektar Reports Pfizer to Acquire the Sanofi-Aventis Worldwide Rights to Exubera® (Inhaled Human Insulin) | Nektar Therapeutics",
+        "url": "https://ir.nektar.com/news-releases/news-release-details/nektar-reports-pfizer-acquire-sanofi-aventis-worldwide-rights"
+      },
+      {
+        "title": "No Sugarcoating For Insulin Failures",
+        "url": "https://cen.acs.org/articles/86/i19/Sugarcoating-Insulin-Failures.html"
+      },
+      {
+        "title": "Special Packaging Delivers Inhaled Insulin | Pharmaceutical Technology",
+        "url": "https://www.pharmtech.com/view/special-packaging-delivers-inhaled-insulin"
+      },
+      {
+        "title": "Exubera",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2006/021868lbl.pdf"
       },
       {
         "title": "Exubera | European Medicines Agency (EMA)",
         "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/exubera"
+      },
+      {
+        "title": "Exubera; INN-Insulin human",
+        "url": "https://www.ema.europa.eu/en/documents/scientific-discussion/exubera-epar-scientific-discussion_en.pdf"
+      },
+      {
+        "title": "Inhaled Insulin Associated with Excess of Lung Cancer Cases | MedPage Today",
+        "url": "https://www.medpagetoday.com/productalert/prescriptions/9078"
+      },
+      {
+        "title": "EU seeks lung cancer caution on Pfizer's Exubera | Reuters",
+        "url": "https://www.reuters.com/article/pfizer-exubera/eu-seeks-lung-cancer-caution-on-pfizers-exubera-idUKL1730409320080617/"
+      },
+      {
+        "title": "Inhaled insulin: An Elusive Revolution in Diabetes Management. – Clinical Correlations",
+        "url": "https://www.clinicalcorrelations.org/2014/06/19/inhaled-insulin-an-elusive-revolution-in-diabetes-management/"
+      },
+      {
+        "title": "Nektar Terminates All Negotiations With Potential Partners for Inhaled Insulin; Increased Number of Lung Cancer Cases Observed in Ongoing Clinical Studies of Inhaled Insulin Patients | Nektar Therapeutics",
+        "url": "https://ir.nektar.com/news-releases/news-release-details/nektar-terminates-all-negotiations-potential-partners-inhaled"
+      },
+      {
+        "title": "Nektar Reports that Pfizer Announced New Analyses Showing that Exubera Is Effective in Diabetes Patients Who Have Respiratory Infections or Who are Exposed to Passive Cigarette Smoke | Nektar Therapeutics",
+        "url": "https://ir.nektar.com/news-releases/news-release-details/nektar-reports-pfizer-announced-new-analyses-showing-exubera"
+      },
+      {
+        "title": "PFIZER INC (PFE) 8-K - 2007-10-18 Item legacy_8k",
+        "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752307009976/0001157523-07-009976.txt"
+      },
+      {
+        "title": "Pfizer reports third-quarter 2007 results",
+        "url": "https://www.biospace.com/pfizer-inc-reports-third-quarter-2007-results-reconfirms-2007-and-2008-revenue-and-adjusted-diluted-eps-1-guidance"
+      },
+      {
+        "title": "Pfizer reports sharp decline in earnings",
+        "url": "https://www.nbcnews.com/id/wbna21358096"
+      },
+      {
+        "title": "Pfizer and Nektar Reach Agreement on Exubera(R) | Pfizer",
+        "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_and_nektar_reach_agreement_on_exubera_r"
+      },
+      {
+        "title": "Afrezza, a New Inhaled Insulin, Is Approved by the F.D.A. (Published 2014)",
+        "url": "https://www.nytimes.com/2014/06/28/business/afrezza-a-new-inhaled-insulin-is-approved-by-fda.html"
+      },
+      {
+        "title": "Afrezza FDA prescribing information: human insulin, carrier chemistry and pulmonary safety",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/022472s023lbl.pdf"
+      },
+      {
+        "title": "Sanofi wins right to market MannKind's inhaled insulin drug Afrezza - Los Angeles Times",
+        "url": "https://www.latimes.com/business/la-fi-0812-mannkind-partner-20140812-story.html"
+      },
+      {
+        "title": "Method for preparing water-soluble polymer derivatives bearing a terminal carboxylic acid",
+        "url": "https://patents.google.com/patent/US7569214"
+      },
+      {
+        "title": "John Patton • BioTech Pharma Summit",
+        "url": "https://www.biotechpharmasummit.com/index.php/inhalation-respiratory-drug-delivery-2019-speakers/john-patton/"
       }
     ]
   },
@@ -2596,28 +2668,136 @@
     "subtitle": "A cholesterol drug improved a key biomarker but increased deaths and cardiovascular events in a major trial.",
     "confidence": "high",
     "reportPath": "/reports/torcetrapib.md",
-    "deepresearchMode": "fast",
-    "deepresearchId": "69ded90b-ba9b-4d8d-b76a-3f562ff9ef2f",
+    "deepresearchMode": "standard",
+    "deepresearchId": "005c6874-d508-4b7a-aec3-891e6441e752",
     "sources": [
+      {
+        "title": "Phase 3 Multi Center, Double Blind, Randomized, Parallel Group Evaluation Of The Fixed Combination Torcetrapib/Atorvastatin, Administered Orally, Once Daily (Qd), Compared With Atorvastatin Alone, On The Occurrence Of Major Cardiovascular Events In Subjects With Coronary Heart Disease Or Risk Equivalents",
+        "url": "https://clinicaltrials.gov/study/NCT00134264"
+      },
+      {
+        "title": "Pfizer Ends Clinical Trials for the CETP,Torcetrapib (Illuminate) Due to Safety Concerns | Pharma Manufacturing",
+        "url": "https://www.pharmamanufacturing.com/blogs/onpharma/pfizer-ends-clinical-trials-for-the-cetptorcetrapib-illuminate-due-to-safety-concerns/"
+      },
+      {
+        "title": "Hope After Failure of New Cholesterol Drug (Published 2007)",
+        "url": "https://www.nytimes.com/2007/11/06/health/06drug.html"
+      },
+      {
+        "title": "Cholesterol: the good, the bad, and the stopped trials - The Lancet",
+        "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(06)69815-2/fulltext"
+      },
+      {
+        "title": "Cholesteryl ester transfer protein inhibitors: from high-density lipoprotein cholesterol to low-density lipoprotein cholesterol lowering agents? | Cardiovascular Research | Oxford Academic",
+        "url": "https://academic.oup.com/cardiovascres/article/118/14/2919/6443119"
+      },
+      {
+        "title": "The withdrawal of torcetrapib from drug development: Implications for the future of drugs that alter HDL metabolism | Request PDF",
+        "url": "https://www.researchgate.net/publication/5921690_The_withdrawal_of_torcetrapib_from_drug_development_Implications_for_the_future_of_drugs_that_alter_HDL_metabolism"
+      },
+      {
+        "title": "Effect of Torcetrapib on the Progression of Coronary Atherosclerosis",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa070635"
+      },
+      {
+        "title": "Torcetrapib Fails to Halt Atherosclerosis | MDedge",
+        "url": "https://www.mdedge.com/content/torcetrapib-fails-halt-atherosclerosis"
+      },
+      {
+        "title": "New dangers seen with abandoned Pfizer heart drug | Reuters",
+        "url": "https://www.reuters.com/article/us-heart-pfizer-torcetrapib-idUSN2634580020070326/"
+      },
+      {
+        "title": "Phase 3 Multi-Center, Double-Blind, Randomized, Parallel Group, Carotid B-mode Ultrasound Evaluation of the Anti-Atherosclerotic Efficacy, Safety, and Tolerability of Fixed Combination CP-529,414/Atorvastatin, Administered Orally, Once Daily (QD) for 24 Months, Compared With Atorvastatin Alone, in Subjects With Mixed Hyperlipidemia",
+        "url": "https://clinicaltrials.gov/study/NCT00134238"
+      },
+      {
+        "title": "Torcetrapib and carotid intima-media thickness in mixed dyslipidaemia (RADIANCE 2 study): a randomised, double-blind trial - The Lancet",
+        "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(07)61088-5/abstract"
+      },
       {
         "title": "Effects of Torcetrapib in Patients at High Risk for Coronary Events | New England Journal of Medicine",
         "url": "https://www.nejm.org/doi/full/10.1056/nejmoa0706628"
       },
       {
-        "title": "Pfizer stops all torcetrapib clinical trials: 2 December 2006 announcement",
+        "title": "Investigation of Lipid Level Management to Understand its Impact in Atherosclerotic Events - American College of Cardiology",
+        "url": "https://www.acc.org/latest-in-cardiology/clinical-trials/2010/02/23/19/09/illuminate--presented-at-aha-2007"
+      },
+      {
+        "title": "The Failure of Torcetrapib -- The Search for the Reason Why - Page 2",
+        "url": "https://www.medscape.com/viewarticle/569609_2"
+      },
+      {
+        "title": "Torcetrapib Induces Aldosterone and Cortisol Production by an Intracellular Calcium-Mediated Mechanism Independently of Cholesteryl Ester Transfer Protein Inhibition | Endocrinology | Oxford Academic",
+        "url": "https://academic.oup.com/endo/article-abstract/150/5/2211/2455889?redirectedFrom=fulltext"
+      },
+      {
+        "title": "Anacetrapib Finds (Modest) Success Where All Other CETP Inhibitors Failed | tctmd.com",
+        "url": "https://www.tctmd.com/news/anacetrapib-finds-modest-success-where-all-other-cetp-inhibitors-failed"
+      },
+      {
+        "title": "Pfizer Ends Studies on Drug for Heart Disease (Published 2006)",
+        "url": "https://www.nytimes.com/2006/12/03/health/03pfizer.html"
+      },
+      {
+        "title": "What Went Wrong at Pfizer? - CounterPunch.org",
+        "url": "https://www.counterpunch.org/2006/12/08/what-went-wrong-at-pfizer/"
+      },
+      {
+        "title": "Pfizer Inc. Press release",
         "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800306000334/ex991202.htm"
       },
       {
-        "title": "ILLUMINATE: torcetrapib and atorvastatin cardiovascular outcomes trial (NCT00134264)",
-        "url": "https://clinicaltrials.gov/study/NCT00134264"
+        "title": "Pfizer markets first insulin inhaler for diabetes sufferers - Business - International Herald Tribune - The New York Times",
+        "url": "https://www.nytimes.com/2006/07/24/business/worldbusiness/24iht-insulin.2277184.html"
       },
       {
-        "title": "CETP Inhibitors to Increase HDL Cholesterol Levels | NEJM",
-        "url": "https://www.nejm.org/doi/full/10.1056/nejme078029"
+        "title": "Pfizer’s Ex-Chief to Get Full Retirement Package - The New York Times",
+        "url": "https://www.nytimes.com/2006/12/22/business/22pfizer.html"
       },
       {
-        "title": "Merck announces its investigational CETP-Inhibitor, MK-0859, produced positive effects on lipids with no observed blood pressure changes | Reuters",
-        "url": "https://www.reuters.com/article/world/merck-announces-its-investigational-cetp-inhibitor-mk-0859-produced-positive-e-idUSIN20071004163052MRK/"
+        "title": "Pfizer puts hold on HDL drugs like torcetrapib | Reuters",
+        "url": "https://www.reuters.com/article/business/healthcare-pharmaceuticals/pfizer-puts-hold-on-hdl-drugs-like-torcetrapib-idUSN20329570/"
+      },
+      {
+        "title": "Ex-Pfizer CEO to leave $180 million richer",
+        "url": "https://www.nbcnews.com/id/wbna16318385"
+      },
+      {
+        "title": "Effects of dalcetrapib in patients with a recent acute coronary syndrome",
+        "url": "https://research.monash.edu/en/publications/effects-of-dalcetrapib-in-patients-with-a-recent-acute-coronary-s/"
+      },
+      {
+        "title": "Success for Merck’s anacetrapib",
+        "url": "https://cen.acs.org/articles/95/i27/Success-Mercks-anacetrapib.html"
+      },
+      {
+        "title": "NewAmsterdam Pharma second-quarter 2026 corporate update",
+        "url": "https://ir.newamsterdampharma.com/news-releases/news-release-details/newamsterdam-pharma-provides-corporate-update-and-reports-7"
+      },
+      {
+        "title": "Therapeutics Initiative | [65] Clinical implications of recent key therapeutic trials",
+        "url": "https://www.ti.ubc.ca/2007/08/31/clinical-implications-of-recent-key-therapeutic-trials/"
+      },
+      {
+        "title": "Opinion | The Lost Promise of a Heart Drug (Published 2006)",
+        "url": "https://www.nytimes.com/2006/12/11/opinion/the-lost-promise-of-a-heart-drug-825166.html"
+      },
+      {
+        "title": "CETP Inhibitors (Cetrapibs)",
+        "url": "https://www.alzdiscovery.org/uploads/cognitive_vitality_media/CETP_Inhibitors_(drug_in_development).pdf"
+      },
+      {
+        "title": "Use of Data Monitoring Committees in Clinical Trials",
+        "url": "https://www.fda.gov/media/176107/download"
+      },
+      {
+        "title": "Independent Oversight of Clinical Trials through Data and Safety Monitoring Boards | NEJM Evidence",
+        "url": "https://evidence.nejm.org/doi/full/10.1056/EVIDctw2100005"
+      },
+      {
+        "title": "Pfizer takes its medicine after cholesterol disaster | The Independent | The Independent",
+        "url": "https://www.the-independent.com/news/business/analysis-and-features/pfizer-takes-its-medicine-after-cholesterol-disaster-427170.html"
       }
     ]
   },
@@ -2639,40 +2819,220 @@
     "subtitle": "An Alzheimer's drug lowered amyloid production but did not slow cognitive or functional decline in EPOCH.",
     "confidence": "high",
     "reportPath": "/reports/verubecestat.md",
-    "deepresearchMode": "fast",
-    "deepresearchId": "a605d751-9de7-4884-b665-d7565db91c07",
+    "deepresearchMode": "standard",
+    "deepresearchId": "d40e901a-2398-43ca-85dd-cda77dd5f3f4",
     "sources": [
       {
-        "title": "Merck Scientists Publish New Research Detailing the Early Development of Verubecestat, an Investigational BACE1 Inhibitor in Science Translational Medicine - Merck.com",
-        "url": "https://www.merck.com/news/merck-scientists-publish-new-research-detailing-the-early-development-of-verubecestat-an-investigational-bace1-inhibitor-in-science-translational-medicine/"
-      },
-      {
-        "title": "Merck Announces EPOCH Study of Verubecestat for Treatment of People with Mild-to-Moderate Alzheimer's Disease to Stop for Lack of Efficacy",
+        "title": "Merck Announces EPOCH Study of Verubecestat for the Treatment of People with Mild to Moderate Alzheimer’s Disease to Stop for Lack of Efficacy - Merck.com",
         "url": "https://www.merck.com/news/merck-announces-epoch-study-of-verubecestat-for-the-treatment-of-people-with-mild-to-moderate-alzheimers-disease-to-stop-for-lack-of-efficacy/"
       },
       {
-        "title": "EPOCH: verubecestat for mild-to-moderate Alzheimer's disease (NCT01739348)",
-        "url": "https://clinicaltrials.gov/study/NCT01739348"
+        "title": "Further analyses of the safety of verubecestat in the phase 3 EPOCH trial of mild-to-moderate Alzheimer’s disease - PMC",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6685277/"
       },
       {
         "title": "Randomized Trial of Verubecestat for Mild-to-Moderate Alzheimer’s Disease | New England Journal of Medicine",
         "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1706441"
       },
       {
+        "title": "Paper Alert: Verubecestat EPOCH Findings Published | ALZFORUM",
+        "url": "https://www.alzforum.org/news/research-news/paper-alert-verubecestat-epoch-findings-published"
+      },
+      {
+        "title": "Another Drug Bites the Dust: Merck & Co. Stops Late-Stage Alzheimer’s Study - BioSpace",
+        "url": "https://www.biospace.com/another-drug-bites-the-dust-merck-and-co-stops-late-stage-alzheimer-s-study"
+      },
+      {
+        "title": "The amyloid cascade hypothesis: are we poised for success or failure? - Karran - 2016 - Journal of Neurochemistry - Wiley Online Library",
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/jnc.13632"
+      },
+      {
+        "title": "Merck Initiates Phase II/III Study of Investigational BACE Inhibitor, MK-8931, for Treatment of Alzheimer's Disease - Merck.com",
+        "url": "https://www.merck.com/news/merck-initiates-phase-ii-iii-study-of-investigational-bace-inhibitor-mk-8931-for-treatment-of-alzheimers-disease/"
+      },
+      {
+        "title": "Verubecestat | ALZFORUM",
+        "url": "https://www.alzforum.org/therapeutics/verubecestat"
+      },
+      {
+        "title": "Discovery of BACE1 Inhibitors for the Treatment of Alzheimer’s Disease | IntechOpen",
+        "url": "https://www.intechopen.com/chapters/55221"
+      },
+      {
+        "title": "Alzheimer's Disease and Amyloid: Time to Move On?",
+        "url": "https://www.medscape.com/viewarticle/874658"
+      },
+      {
+        "title": "Discovery of the 3-Imino-1,2,4-thiadiazinane 1,1-Dioxide Derivative Verubecestat (MK-8931)–A β-Site Amyloid Precursor Protein Cleaving Enzyme 1 Inhibitor for the Treatment of Alzheimer’s Disease | Journal of Medicinal Chemistry",
+        "url": "https://pubs.acs.org/doi/10.1021/acs.jmedchem.6b00307"
+      },
+      {
         "title": "The BACE1 inhibitor verubecestat (MK-8931) reduces CNS β-amyloid in animal models and in Alzheimer’s disease patients | Science Translational Medicine",
         "url": "https://www.science.org/doi/10.1126/scitranslmed.aad9704"
       },
       {
-        "title": "APECS: verubecestat for prodromal Alzheimer's disease (NCT01953601)",
+        "title": "Merck Scientists Publish New Research Detailing the Early Development of Verubecestat, an Investigational BACE1 Inhibitor in Science Translational Medicine - Merck.com",
+        "url": "https://www.merck.com/news/merck-scientists-publish-new-research-detailing-the-early-development-of-verubecestat-an-investigational-bace1-inhibitor-in-science-translational-medicine/"
+      },
+      {
+        "title": "Merck Presents Findings from Phase 1b Study of Investigational BACE Inhibitor, MK-8931, in Patients with Alzheimer’s Disease - Merck.com",
+        "url": "https://www.merck.com/news/merck-presents-findings-from-phase-1b-study-of-investigational-bace-inhibitor-mk-8931-in-patients-with-alzheimers-disease/"
+      },
+      {
+        "title": "Merck & Co., Inc., GE Healthcare Collaborate on Alzheimer's Drug Development - BioSpace",
+        "url": "https://www.biospace.com/merck-and-co-inc-ge-healthcare-collaborate-on-alzheimer-s-drug-development"
+      },
+      {
+        "title": "ClinicalTrials.gov",
+        "url": "https://clinicaltrials.gov/ct2/show/NCT01739348"
+      },
+      {
+        "title": "Verubecestat Negative Trial Data: What Does it Mean for BACE Inhibition? | ALZFORUM",
+        "url": "https://www.alzforum.org/news/conference-coverage/verubecestat-negative-trial-data-what-does-it-mean-bace-inhibition"
+      },
+      {
+        "title": "Merck Announces Discontinuation of APECS Study Evaluating Verubecestat (MK-8931) for the Treatment of People with Prodromal Alzheimer’s Disease - Merck.com",
+        "url": "https://www.merck.com/news/merck-announces-discontinuation-of-apecs-study-evaluating-verubecestat-mk-8931-for-the-treatment-of-people-with-prodromal-alzheimers-disease/"
+      },
+      {
+        "title": "Merck Advances Development Program for Investigational Alzheimer’s Disease Therapy, MK-8931 - Merck.com",
+        "url": "https://www.merck.com/news/merck-advances-development-program-for-investigational-alzheimers-disease-therapy-mk-8931/"
+      },
+      {
+        "title": "ClinicalTrials.gov: APECS (NCT01953601)",
         "url": "https://clinicaltrials.gov/study/NCT01953601"
       },
       {
-        "title": "Randomized Trial of Verubecestat for Prodromal Alzheimer’s Disease | New England Journal of Medicine",
-        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1812840"
+        "title": "Results from Verubecestat APECS Trial Published | ALZFORUM",
+        "url": "https://www.alzforum.org/news/research-news/results-verubecestat-apecs-trial-published"
       },
       {
-        "title": "Merck SEC filing index: company address, 12 May 2017",
-        "url": "https://www.sec.gov/Archives/edgar/data/310158/000122520817009615/0001225208-17-009615-index.htm"
+        "title": "Merck ends verubecestat trial, ‘virtually no chance’ of clinical benefit - Penn Memory Center",
+        "url": "https://pennmemorycenter.org/merck-ends-verubecestat-trial-virtually-no-chance-clinical-benefit/"
+      },
+      {
+        "title": "Randomized Trial of Verubecestat for Prodromal Alzheimer’s Disease | New England Journal of Medicine",
+        "url": "https://www.nejm.org/doi/10.1056/NEJMoa1812840"
+      },
+      {
+        "title": "BRIEF-Merck announces Epoch study of Verubecestat | Reuters",
+        "url": "https://www.reuters.com/article/idINFWN1FZ1A5"
+      },
+      {
+        "title": "Another Alzheimer's drug flops in pivotal clinical trial | Science | AAAS",
+        "url": "https://www.science.org/content/article/another-alzheimers-drug-flops-pivotal-clinical-trial"
+      },
+      {
+        "title": "Merck Pulls Plug on Phase 2/3 BACE Inhibitor Trial | ALZFORUM",
+        "url": "https://www.alzforum.org/news/research-news/merck-pulls-plug-phase-23-bace-inhibitor-trial"
+      },
+      {
+        "title": "New treatments in Alzheimer’s disease",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/PMC6132654"
+      },
+      {
+        "title": "COMPOUNDS AND THEIR USE AS BACE1 INHIBITORS",
+        "url": "https://patents.google.com/patent/EP16783796NWB1"
+      },
+      {
+        "title": "Statement on discontinuation of BACE 1 inhibitor CNP520 in the Alzheimer's Prevention Initiative Generation Study 1 | National Institute on Aging",
+        "url": "https://www.nia.nih.gov/news/statement-discontinuation-bace-1-inhibitor-cnp520-alzheimers-prevention-initiative-generation"
+      },
+      {
+        "title": "Novartis, Amgen and Banner Alzheimer's Institute discontinue clinical program with BACE inhibitor CNP520 for Alzheimer's prevention | Novartis",
+        "url": "https://www.novartis.com/news/media-releases/novartis-amgen-and-banner-alzheimers-institute-discontinue-clinical-program-bace-inhibitor-cnp520-alzheimers-prevention"
+      },
+      {
+        "title": "End of the BACE Inhibitors? Elenbecestat Trials Halted Amid Safety Concerns | ALZFORUM",
+        "url": "https://www.alzforum.org/news/research-news/end-bace-inhibitors-elenbecestat-trials-halted-amid-safety-concerns"
+      },
+      {
+        "title": "Can brain impermeable BACE1 inhibitors serve as anti-CAA medicine?",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/PMC5574137"
+      },
+      {
+        "title": "Amyloid Hypothesis For Alzheimer's In Doubt After Lilly's Drug Failure : Shots - Health News : NPR",
+        "url": "https://www.npr.org/sections/health-shots/2016/12/29/506592761/where-does-alzheimer-s-treatment-go-from-here"
+      },
+      {
+        "title": "Midlife interventions are critical in prevention, delay, or improvement of Alzheimer’s disease and vascular cognitive impairment and dementia [version 1; referees: 2 approved]",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/PMC5399952"
+      },
+      {
+        "title": "Processes for the preparation of a BACE inhibitor",
+        "url": "https://patents.google.com/patent/US10618892"
+      },
+      {
+        "title": "Phenylcarboxamide beta-secretase inhibitors for the treatment of Alzheimer's disease",
+        "url": "https://patents.google.com/patent/US7348356"
+      },
+      {
+        "title": "2-amino 3,5,5-trifluoro-3,4,5,6-tetrahydropyridines as BACE1 inhibitors for treatment of Alzheimer's disease",
+        "url": "https://patents.google.com/patent/US9353084"
+      },
+      {
+        "title": "Alzheimer’s disease: where next for anti-amyloid therapies? | Brain | Oxford Academic",
+        "url": "https://academic.oup.com/brain/article/140/4/853/3090930"
+      },
+      {
+        "title": "Revisiting the Amyloid Cascade Hypothesis: From Anti-Aβ Therapeutics to Auspicious New Ways for Alzheimer’s Disease",
+        "url": "https://doi.org/10.3390/ijms21165858"
+      },
+      {
+        "title": "5 trends shaping Alzheimer's drug development | BioPharma Dive",
+        "url": "https://www.biopharmadive.com/news/alzheimers-disease-trends-drug-development-amyloid-biomarkers/447068/"
+      },
+      {
+        "title": "Latest Alzheimer's Flop Raises Doubts About 'Amyloid Hypothesis'",
+        "url": "https://www.forbes.com/sites/arleneweintraub/2018/01/24/latest-alzheimers-flop-raises-doubts-about-amyloid-hypothesis/"
+      },
+      {
+        "title": "Frontiers | Reconsideration of Amyloid Hypothesis and Tau Hypothesis in Alzheimer's Disease",
+        "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2018.00025/full"
+      },
+      {
+        "title": "Biogen Walks Away From Aducanumab to Prioritize Lecanemab and Alzheimer Disease Pipeline | NeurologyLive - Clinical Neurology News and Neurology Expert Insights",
+        "url": "https://www.neurologylive.com/view/biogen-walks-away-from-aducanumab-prioritize-lecanemab-alzheimer-disease-pipeline"
+      },
+      {
+        "title": "Biogen to Realign Resources for Alzheimer's Disease Franchise",
+        "url": "https://investors.biogen.com/news-releases/news-release-details/biogen-realign-resources-alzheimers-disease-franchise"
+      },
+      {
+        "title": "What's in It for Me? Contextualizing the Potential Clinical Impacts of Lecanemab, Donanemab, and Other Anti-β-amyloid Monoclonal Antibodies in Early Alzheimer's Disease | eNeuro",
+        "url": "https://www.eneuro.org/content/11/9/ENEURO.0088-24.2024"
+      },
+      {
+        "title": "Clinical Trials on Alzheimer's Disease 2019 | ALZFORUM",
+        "url": "https://www.alzforum.org/print-series/1280941"
+      },
+      {
+        "title": "Lecanemab and Donanemab as Therapies for Alzheimer's Disease: An Illustrated Perspective on the Data | eNeuro",
+        "url": "https://www.eneuro.org/content/11/7/ENEURO.0319-23.2024"
+      },
+      {
+        "title": "Alzheimer's Disease Drug Development: Aducanumab, Lecanemab & Donanemab | Biopharma PEG",
+        "url": "https://www.biochempeg.com/article/366.html"
+      },
+      {
+        "title": "ClinicalTrials.gov: TRAILBLAZER-ALZ 2 (NCT04437511)",
+        "url": "https://clinicaltrials.gov/study/NCT04437511"
+      },
+      {
+        "title": "Merck & Co. assembles an Alzheimer’s comeback with a next-gen precision focus | PharmaVoice",
+        "url": "https://www.pharmavoice.com/news/merck-alzheimers-disease-tau-comeback-precision-medicine/756517/"
+      },
+      {
+        "title": "Merck Advances Neuroscience Pipeline With Novel Therapies in Phase 2 Studies for Treatment of Alzheimer’s Disease",
+        "url": "https://drug-dev.com/merck-advances-neuroscience-pipeline-with-novel-therapies-in-phase-2-studies-for-treatment-of-alzheimers-disease/"
+      },
+      {
+        "title": "Merck Showcases Data for Alzheimer's Disease Candidates MK-2214 and MK-1167 at CTAD 2025 - Merck.com",
+        "url": "https://www.merck.com/news/merck-showcases-data-for-alzheimers-disease-candidates-mk-2214-and-mk-1167-at-ctad-2025/"
+      },
+      {
+        "title": "Trial of Solanezumab in Preclinical Alzheimer's Disease",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2305032"
       }
     ]
   },
@@ -2694,28 +3054,132 @@
     "subtitle": "Two late-stage Alzheimer's studies missed their clinical goals, ending development of the intravenous antibody.",
     "confidence": "high",
     "reportPath": "/reports/bapineuzumab.md",
-    "deepresearchMode": "fast",
-    "deepresearchId": "d60faa1d-65a5-4696-a6e2-74dc3004d47e",
+    "deepresearchMode": "standard",
+    "deepresearchId": "46032e30-1404-41bd-9615-42f16bbce0f2",
     "sources": [
+      {
+        "title": "Washington: Recap of Drug Discovery for Neurodegeneration Meeting, Part 1 | ALZFORUM",
+        "url": "https://www.alzforum.org/news/conference-coverage/washington-recap-drug-discovery-neurodegeneration-meeting-part-1"
+      },
+      {
+        "title": "Wyeth, Elan Amend Phase 3 Protocols for Bapineuzumab in Alzheimer's",
+        "url": "https://www.medscape.com/viewarticle/590592"
+      },
+      {
+        "title": "ClinicalTrials.gov",
+        "url": "https://clinicaltrials.gov/study/NCT00575055"
+      },
+      {
+        "title": "Dale Schenk, 59, Pioneer of Alzheimer’s Immunotherapy | ALZFORUM",
+        "url": "https://www.alzforum.org/news/community-news/dale-schenk-59-pioneer-alzheimers-immunotherapy"
+      },
+      {
+        "title": "Perspectives on future Alzheimer therapies: amyloid-beta protofibrils",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4054967/"
+      },
+      {
+        "title": "EP2165714A1 - Humanized antibodies recognizing the beta-amyloid peptide - Google Patents",
+        "url": "https://patents.google.com/patent/EP2165714A1/en"
+      },
+      {
+        "title": "Dementia: Five priorities - BBC News",
+        "url": "https://www.bbc.co.uk/news/health-25263341"
+      },
+      {
+        "title": "Bapineuzumab - wikidoc",
+        "url": "https://www.wikidoc.org/index.php/Bapineuzumab"
+      },
+      {
+        "title": "Bapineuzumab - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bapineuzumab"
+      },
+      {
+        "title": "Effects of Aβ immunization (AN1792) on MRI measures of cerebral volume in Alzheimer disease | Neurology",
+        "url": "https://www.neurology.org/doi/10.1212/01.WNL.0000159743.08996.99"
+      },
+      {
+        "title": "Bapineuzumab Alters Aβ Composition: Implications for the Amyloid Cascade Hypothesis and Anti-Amyloid Immunotherapy | PLOS One",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0059735"
+      },
+      {
+        "title": "\"Neuropathology and amyloid-β spectrum in a bapineuzumab immunotherapy \" by Alex E. Roher, Chera L. Maarouf et al.",
+        "url": "https://scholar.barrowneuro.org/neurology/957/"
+      },
+      {
+        "title": "Elan Announces Johnson & Johnson Release of Discontinuation of Phase 3 Development of Bapineuzumab Intravenous (IV) In Mild to Moderate Alzheimer's Disease | Fierce Biotech",
+        "url": "https://www.fiercebiotech.com/biotech/elan-announces-johnson-johnson-release-of-discontinuation-of-phase-3-development-of"
+      },
+      {
+        "title": "Pfizer, J&J scrap Alzheimer's studies as drug fails | Reuters",
+        "url": "https://www.reuters.com/article/business/healthcare-pharmaceuticals/pfizer-jj-scrap-alzheimers-studies-as-drug-fails-idUSBRE8751F2/"
+      },
+      {
+        "title": "Bapineuzumab: Alzheimer's Studies Scrapped As Drug Fails | HuffPost Life",
+        "url": "https://www.huffpost.com/entry/bapineuzumab-alzheimers-studies_n_1749507"
+      },
+      {
+        "title": "After the FDA’s approval, what to know about the new Alzheimer’s drug | Brown University",
+        "url": "https://www.brown.edu/news/2021-06-11/aducanumab"
+      },
+      {
+        "title": "JCI - Aducanumab for Alzheimer disease: the amyloid hypothesis moves from bench to bedside",
+        "url": "https://www.jci.org/articles/view/154889"
+      },
+      {
+        "title": "Implications of the Approval of Lecanemab for Alzheimer Disease Patient Care | Neurology",
+        "url": "https://www.neurology.org/doi/10.1212/WNL.0000000000207438"
+      },
+      {
+        "title": "Bapineuzumab Phase 3: Target Engagement, But No Benefit | ALZFORUM",
+        "url": "https://www.alzforum.org/news/conference-coverage/bapineuzumab-phase-3-target-engagement-no-benefit"
+      },
+      {
+        "title": "A Phase 3, Multicenter, Randomized, Double-Blind, Placebo-Controlled, Parallel-Group, Efficacy and Safety Trial of Bapineuzumab (AAB-001, ELN115727) In Patients With Mild to Moderate Alzheimer's Disease Who Are Apolipoprotein E4 Non- Carriers.",
+        "url": "https://clinicaltrials.gov/study/NCT00574132"
+      },
+      {
+        "title": "Report: Elan to shutter South San Francisco complex in public spinoff; Teva pays $26M for Huntington drug program; | Fierce Biotech",
+        "url": "https://www.fiercebiotech.com/biotech/report-elan-to-shutter-south-san-francisco-complex-public-spinoff-teva-pays-26m-for"
+      },
+      {
+        "title": "Two phase 3 trials of bapineuzumab in mild-to-moderate Alzheimer's disease.",
+        "url": "https://www.ukdri.ac.uk/publications/two-phase-3-trials-bapineuzumab-mild-moderate-alzheimers-disease"
+      },
+      {
+        "title": "Two phase 3 trials of bapineuzumab ... | Article | H1 Connect",
+        "url": "https://archive.connect.h1.co/article/718248468/"
+      },
       {
         "title": "Pfizer Announces Co-Primary Clinical Endpoints Not Met In Second Phase 3 Bapineuzumab Study In Mild-To-Moderate Alzheimer’s Disease Patients Who Do Not Carry The Apoe4 Genotype | Pfizer",
         "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_announces_co_primary_clinical_endpoints_not_met_in_second_phase_3_bapineuzumab_study_in_mild_to_moderate_alzheimer_s_disease_patients_who_do_not_carry_the_apoe4_genotype"
       },
       {
-        "title": "Pfizer Announces Topline Results Of First Of Four Studies In Bapineuzumab Phase 3 Program | Pfizer",
-        "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_announces_topline_results_of_first_of_four_studies_in_bapineuzumab_phase_3_program"
+        "title": "AAB-003 | ALZFORUM",
+        "url": "https://www.alzforum.org/therapeutics/aab-003"
       },
       {
-        "title": "Bapineuzumab phase 3 trial in APOE4 carriers (NCT00575055)",
-        "url": "https://clinicaltrials.gov/study/NCT00575055"
+        "title": "FDA accelerated approval letter for Aduhelm",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/761178Orig1s000ltr.pdf"
       },
       {
-        "title": "Bapineuzumab phase 3 trial in APOE4 non-carriers (NCT00574132)",
-        "url": "https://clinicaltrials.gov/study/NCT00574132"
+        "title": "New Phase 3 Data Suggest Benefits of Early Lecanemab Initiation on Alzheimer Disease Progression, Support Long-Term Safety",
+        "url": "https://www.patientcareonline.com/view/new-phase-3-data-suggest-benefits-of-early-lecanemab-initiation-on-alzheimer-disease-progression-support-long-term-safety"
       },
       {
-        "title": "Alzheimer's drug bapineuzumab fails late-stage trial, research dropped - San Francisco Business Times",
-        "url": "https://www.bizjournals.com/sanfrancisco/blog/biotech/2012/08/pfizer-janssen-bapineuzumab-alzheimers.html"
+        "title": "A Phase 3, Open-Label, Parallel-Group, 2-Arm Study to Investigate Amyloid Plaque Clearance With Donanemab Compared With Aducanumab-avwa in Participants With Early Symptomatic Alzheimer's Disease",
+        "url": "https://clinicaltrials.gov/study/NCT05108922"
+      },
+      {
+        "title": "And Then There Were Three: Donanemab Phase 3 Trial Positive | ALZFORUM",
+        "url": "https://www.alzforum.org/news/research-news/and-then-there-were-three-donanemab-phase-3-trial-positive"
+      },
+      {
+        "title": "Bayesian meta‐analysis of phase 3 results of aducanumab, lecanemab, donanemab, and high‐dose gantenerumab in prodromal and mild Alzheimer&apos;s disease - Teipel - 2024 - Alzheimer's & Dementia: Translational Research & Clinical Interventions - Wiley Online Library",
+        "url": "https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/trc2.12454"
+      },
+      {
+        "title": "Bapineuzumab | ALZFORUM",
+        "url": "https://www.alzforum.org/therapeutics/bapineuzumab"
       }
     ]
   },
@@ -2737,36 +3201,236 @@
     "subtitle": "Biogen ended Aduhelm commercialisation and its confirmatory study, redirecting resources to other Alzheimer's treatments.",
     "confidence": "high",
     "reportPath": "/reports/aduhelm.md",
-    "deepresearchMode": "fast",
-    "deepresearchId": "d78c0b90-e4f0-4219-9874-f15e796aeb5f",
+    "deepresearchMode": "standard",
+    "deepresearchId": "ac14daa1-3456-446d-b44c-23dc2f2295fe",
     "sources": [
       {
         "title": "Biogen to Realign Resources for Alzheimer's Disease Franchise | Biogen",
         "url": "https://investors.biogen.com/news-releases/news-release-details/biogen-realign-resources-alzheimers-disease-franchise"
       },
       {
-        "title": "FDA accelerated approval letter for Aduhelm, 7 June 2021",
-        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/761178Orig1s000ltr.pdf"
+        "title": "About us",
+        "url": "https://neurimmune.com/company/about-us"
       },
       {
-        "title": "Investigating partially discordant results in phase 3 studies of aducanumab",
-        "url": "https://www.jpreventionalzheimer.com/6775-investigating-partially-discordant-results-in-phase-3-studies-of-aducanumab.html"
+        "title": "About us",
+        "url": "https://www.neurimmune.com/about-us/board-of-directors"
       },
       {
-        "title": "Emerge and Engage topline results: Phase 3 studies of aducanumab in early Alzheimer’s disease - Haeberlein - 2020 - Alzheimer's & Dementia - Wiley Online Library",
-        "url": "https://alz-journals.onlinelibrary.wiley.com/doi/abs/10.1002/alz.047259"
+        "title": "UZH - Innovation",
+        "url": "https://web.archive.org/web/20211117041052/https:/www.media.uzh.ch/en/Press-Releases/2021/Approval.html"
       },
       {
-        "title": "Update on the Phase 4 ENVISION Confirmatory Study of ADUHELM® | Biogen",
-        "url": "https://investors.biogen.com/news-releases/news-release-details/update-phase-4-envision-confirmatory-study-aduhelmr"
+        "title": "Innovation | | UZH",
+        "url": "https://www.news.uzh.ch/en/articles/2021/Approval.html"
       },
       {
-        "title": "ENVISION: confirmatory study of aducanumab in Alzheimer's disease (NCT05310071)",
+        "title": "Biogen Idec Presents Positive Interim Results from Phase 1B Study of Investigational Alzheimer’s Disease Treatment Aducanumab (BIIB037) at 2015 AD/PD™ Conference | Biogen",
+        "url": "https://investors.biogen.com/news-releases/news-release-details/biogen-idec-presents-positive-interim-results-phase-1b-study"
+      },
+      {
+        "title": "Questions concerning the role of amyloid-β in the definition, aetiology and diagnosis of Alzheimer’s disease",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/PMC6208728"
+      },
+      {
+        "title": "amyloid cascade hypothesis: an updated critical review | Brain | Oxford Academic",
+        "url": "https://academic.oup.com/brain/article/146/10/3969/7162122"
+      },
+      {
+        "title": "Neurimmune to regain global rights to brain amyloid",
+        "url": "https://www.globenewswire.com/news-release/2024/01/31/2821023/0/en/Neurimmune-to-regain-global-rights-to-brain-amyloid-depleter-for-the-treatment-of-Alzheimer-s-disease.html"
+      },
+      {
+        "title": "Biogen and Eisai amend collaboration agreements on Alzheimer’s disease treatments | Biogen",
+        "url": "https://investors.biogen.com/news-releases/news-release-details/biogen-and-eisai-amend-collaboration-agreements-alzheimers"
+      },
+      {
+        "title": "Paper Alert: Aducanumab Phase 1b Study Published | ALZFORUM",
+        "url": "https://www.alzforum.org/news/research-news/paper-alert-aducanumab-phase-1b-study-published"
+      },
+      {
+        "title": "Biogen Presents New Data from Phase 1B Study of Investigational Alzheimer’s Disease Treatment Aducanumab (BIIB037) at Alzheimer’s Association International Conference® 2015 | Biogen",
+        "url": "https://investors.biogen.com/news-releases/news-release-details/biogen-presents-new-data-phase-1b-study-investigational"
+      },
+      {
+        "title": "Experimental Alzheimer’s Drug, Aducanumab, Slows Cognitive Decline in Early Trials - Fisher Center for Alzheimer's Research Foundation",
+        "url": "https://www.alzinfo.org/articles/diagnosis/experimental-alzheimers-drug-aducanumab-slows-cognitive-decline-in-early-trials/"
+      },
+      {
+        "title": "Biogen says Nature publishes results from phase 1B study of Aducanumab | Reuters",
+        "url": "https://www.reuters.com/article/idUSFWN1BC0GM/"
+      },
+      {
+        "title": "A Phase 3 Multicenter, Randomized, Double-Blind, Placebo-Controlled, Parallel-Group Study to Evaluate the Efficacy and Safety of Aducanumab (BIIB037) in Subjects With Early Alzheimer's Disease",
+        "url": "https://clinicaltrials.gov/study/NCT02484547"
+      },
+      {
+        "title": "A Phase 3 Multicenter, Randomized, Double-Blind, Placebo-Controlled, Parallel-Group Study to Evaluate the Efficacy and Safety of Aducanumab (BIIB037) in Subjects With Early Alzheimer's Disease",
+        "url": "https://clinicaltrials.gov/study/NCT02477800"
+      },
+      {
+        "title": "What is the clinical evidence supporting, and controversy surrounding, the use of aducanumab (Aduhelm TM) for Alzheimer disease? | Drug Information Group | University of Illinois Chicago",
+        "url": "https://dig.pharmacy.uic.edu/faqs/2021-2/october-2021-faqs/what-is-the-clinical-evidence-supporting-and-controversy-surrounding-the-use-of-aducanumab-aduhelm-tm-for-alzheimer-disease/"
+      },
+      {
+        "title": "Update on FDA Advisory Committee’s Meeting on Aducanumab in",
+        "url": "https://www.globenewswire.com/news-release/2020/11/07/2122252/0/en/Update-on-FDA-Advisory-Committee-s-Meeting-on-Aducanumab-in-Alzheimer-s-Disease.html"
+      },
+      {
+        "title": "FDA advisory panel not convinced of new Alzheimer’s disease drug’s effectiveness | CNN",
+        "url": "https://edition.cnn.com/2020/11/06/health/aducanumab-alzheimers-disease-fda-advisory-vote-bn/index.html"
+      },
+      {
+        "title": "FDA Advisory Committee does not recommend approval of Aducanumab | Alzheimer Europe",
+        "url": "https://www.alzheimer-europe.org/news/fda-advisory-committee-does-not-recommend-approval-aducanumab?language_content_entity=en"
+      },
+      {
+        "title": "expert reaction to US FDA advisory committee, the Peripheral and Central Nervous System Drugs Advisory Committee, discussion and voting yesterday on aducanumab for Alzheimer’s disease | Science Media Centre",
+        "url": "https://www.sciencemediacentre.org/expert-reaction-to-us-fda-advisory-committee-the-peripheral-and-central-nervous-system-drugs-advisory-committee-discussion-and-voting-yesterday-on-aducanumab-for-alzheimers-disease/"
+      },
+      {
+        "title": "FDA advisers vote against Biogen's Alzheimer's drug, leaving its future in doubt | BioPharma Dive",
+        "url": "https://www.biopharmadive.com/news/fda-advisory-panel-vote-biogen-alzheimers-aducanumab/588580/"
+      },
+      {
+        "title": "FDA grants accelerated approval for ADUHELM™ as the first and only Alzheimer’s disease treatment to address a defining pathology of the disease | Biogen",
+        "url": "https://investors.biogen.com/news-releases/news-release-details/fda-grants-accelerated-approval-aduhelmtm-first-and-only"
+      },
+      {
+        "title": "Aduhelm (aducanumab-avwa) FDA Approval History - Drugs.com",
+        "url": "https://www.drugs.com/history/aduhelm.html"
+      },
+      {
+        "title": "FDA Awards Accelerated Approval to Aducanumab for Alzheimer Disease | Patient Care Online",
+        "url": "https://www.patientcareonline.com/view/fda-awards-accelerated-approval-to-aducanumab-for-alzheimer-disease"
+      },
+      {
+        "title": "Aducanumab Approved to Treat Alzheimer’s Disease | ALZFORUM",
+        "url": "https://www.alzforum.org/news/research-news/aducanumab-approved-treat-alzheimers-disease"
+      },
+      {
+        "title": "Three F.D.A. Advisers Resign Over Approval of Alzheimer's Drug - The New York Times",
+        "url": "https://www.nytimes.com/2021/06/10/health/aduhelm-fda-resign-alzheimers.html"
+      },
+      {
+        "title": "3 Experts Quit An FDA Panel Over Alzheimer's Drug Approval : NPR",
+        "url": "https://www.npr.org/2021/06/11/1005567149/3-experts-have-resigned-from-an-fda-committee-over-alzheimers-drug-approval"
+      },
+      {
+        "title": "And then there were three: another FDA adcomm member quits over Aduhelm | pharmaphorum",
+        "url": "https://pharmaphorum.com/news/and-then-there-were-three-another-fda-adcomm-member-quits-over-aduhelm/"
+      },
+      {
+        "title": "After quitting FDA adcomm in protest of Aduhelm decision, Harvard's Aaron Kesselheim finds agency has an approval bias",
+        "url": "https://www.fiercepharma.com/pharma/fda-has-approval-bias-advisory-committee-study-shows"
+      },
+      {
+        "title": "FDA approval of Alzheimer's drug Aduhelm 'rife with irregularities,' House report says | Fox Business",
+        "url": "https://www.foxbusiness.com/lifestyle/fda-approval-alzheimers-drug-aduhelm-rife-irregularities-house-report-says"
+      },
+      {
+        "title": "EMA Says It Adopted A Negative Opinion Refusing A Marketing Authorisation For Aduhelm | Reuters",
+        "url": "https://www.reuters.com/article/business/healthcare-pharmaceuticals/ema-says-it-adopted-a-negative-opinion-refusing-a-marketing-authorisation-for-ad-idUSFWN2T20K2/"
+      },
+      {
+        "title": "Aducanumab for Alzheimer's Gets Thumbs Down in Europe",
+        "url": "https://www.medscape.com/viewarticle/965062"
+      },
+      {
+        "title": "Alzheimer's drug aducanumab not approved for use in EU",
+        "url": "https://www.bbc.com/news/health-59699907"
+      },
+      {
+        "title": "European Medicines Agency rejects marketing authorisation application for aducanumab | Alzheimer Europe",
+        "url": "https://www.alzheimer-europe.org/news/european-medicines-agency-rejects-marketing-authorisation-application-aducanumab"
+      },
+      {
+        "title": "EMA rejects Alzheimer's drug aducanumab – DW – 12/22/2021",
+        "url": "https://www.dw.com/en/ema-rejects-alzheimers-drug-aducanumab/a-57752904"
+      },
+      {
+        "title": "Update on Regulatory Submission for Aducanumab in the European Union | Biogen",
+        "url": "https://investors.biogen.com/news-releases/news-release-details/update-regulatory-submission-aducanumab-european-union"
+      },
+      {
+        "title": "Biogen's Abandonment of AD Drug No Surprise, Experts Say",
+        "url": "https://www.medscape.com/viewarticle/biogens-abandonment-controversial-alzheimers-drug-no-2024a10002aq"
+      },
+      {
+        "title": "Was CED the Right Choice? A Decision-Theoretic Evaluation of CMS’s ‘Cover with Evidence Development’ Policy for Aducanumab",
+        "url": "https://www.medrxiv.org/content/10.1101/2024.02.13.24302771"
+      },
+      {
+        "title": "Biogen Announces Plan to Discontinue Alzheimer’s Drug Aduhelm",
+        "url": "https://www.psychiatrist.com/news/biogen-announces-plan-to-discontinue-alzheimers-drug-aduhelm/"
+      },
+      {
+        "title": "Biogen and Eisai revise agreements on Alzheimer’s disease therapies",
+        "url": "https://www.pharmaceutical-technology.com/news/biogen-eisai-revise-agreements/"
+      },
+      {
+        "title": "Biogen and Eisai amend collaboration agreements on Alzheimer’s disease treatments",
+        "url": "https://www.indianpharmapost.com/news/biogen-and-eisai-amend-collaboration-agreements-on-alzheimers-disease-treatments-11621"
+      },
+      {
+        "title": "Biogen and its partner rework terms of Aduhelm deal amid slow sales | BioPharma Dive",
+        "url": "https://www.biopharmadive.com/news/biogen-eisai-aduhelm-deal-amendment-alzheimers/620409/"
+      },
+      {
+        "title": "Following FDA’s full approval of Leqembi, here’s what else is in the Alzheimer’s pipeline | PharmaVoice",
+        "url": "https://www.pharmavoice.com/news/alzheimers-disease-lecanemab-leqembi-fda-aduhelm-pipeline/685284/"
+      },
+      {
+        "title": "House Report 117-699 - ACTIVITIES of the COMMITTEE ON OVERSIGHT AND REFORM ONE HUNDRED SEVENTEENTH CONGRESS DECEMBER 31, 2022 Pursuant to House rule XI, I(d)(1))",
+        "url": "https://www.govinfo.gov/content/pkg/CRPT-117hrpt699/html/CRPT-117hrpt699.htm"
+      },
+      {
+        "title": "A Phase 3b/4 Multicenter, Randomized, Double-Blind, Placebo-Controlled, Parallel-Group Study to Verify the Clinical Benefit of Aducanumab (BIIB037) in Participants With Alzheimer's Disease",
         "url": "https://clinicaltrials.gov/study/NCT05310071"
       },
       {
-        "title": "Maloney and Pallone Release Staff Report on Review, Approval, and Pricing of Biogen’s Alzheimer’s Drug Aduhelm | The U.S. House Committee on Oversight",
-        "url": "https://oversightdemocrats.house.gov/news/press-releases/maloney-and-pallone-release-staff-report-on-review-approval-and-pricing-of"
+        "title": "Biogen Abandons Its Controversial Alzheimer’s Drug Aduhelm (Published 2024)",
+        "url": "https://www.nytimes.com/2024/01/31/business/biogen-alzheimers-aduhelm.html"
+      },
+      {
+        "title": "Biogen drops Alzheimer's drug Aduhelm, ending a 17-year chapter | Reuters",
+        "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/biogen-discontinue-development-older-alzheimers-drug-aduhelm-2024-01-31/"
+      },
+      {
+        "title": "Biogen Abandons Aducanumab, Pivots Focus to Lecanemab for Alzheimer Disease | AJMC",
+        "url": "https://www.ajmc.com/view/biogen-abandons-aducanumab-pivots-focus-to-lecanemab-for-alzheimer-disease"
+      },
+      {
+        "title": "Adieu to Aduhelm: Biogen Stops Marketing Antibody | ALZFORUM",
+        "url": "https://www.alzforum.org/news/community-news/adieu-aduhelm-biogen-stops-marketing-antibody"
+      },
+      {
+        "title": "Biogen’s Aduhelm controversy as a case study for accelerated approval biomarkers in Alzheimer’s and related diseases",
+        "url": "https://sciencepolicyreview.pubpub.org/pub/bt3c7x0w/release/3"
+      },
+      {
+        "title": "Anti-Amyloid Therapies in Early Alzheimer’s Disease: A Comparison of Lecanemab and Donanemab",
+        "url": "https://mindthegulf.com/article.php?id=111"
+      },
+      {
+        "title": "What's in It for Me? Contextualizing the Potential Clinical Impacts of Lecanemab, Donanemab, and Other Anti-β-amyloid Monoclonal Antibodies in Early Alzheimer's Disease",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/PMC11439562"
+      },
+      {
+        "title": "What evidence supports the efficacy and safety of donanemab for Alzheimer disease? | Drug Information Group | University of Illinois Chicago",
+        "url": "https://dig.pharmacy.uic.edu/faqs/2024-2/sep-2024-faqs/what-evidence-supports-the-efficacy-and-safety-of-donanemab-for-alzheimer-disease/"
+      },
+      {
+        "title": "Biogen’s Decision to Discontinue Alzheimer’s Drug",
+        "url": "https://www.alz.org/news/2024/alzheimers-drug-aducanumab-aduhelm-discontinued"
+      },
+      {
+        "title": "Amyloid Hypothesis in the Hot Seat After Aduhelm Approved for Alzheimer’s | Being Patient",
+        "url": "https://beingpatient.com/aduhelm-drug-amyloid/"
+      },
+      {
+        "title": "Aduhelm: Great Expectations Fizzle | Managed Healthcare Executive",
+        "url": "https://www.managedhealthcareexecutive.com/view/aduhelm-great-expectations-fizzle"
       }
     ]
   },
@@ -2788,40 +3452,288 @@
     "subtitle": "Internet balloons reached commercial service in Kenya, but Loon could not build a sustainable business.",
     "confidence": "high",
     "reportPath": "/reports/loon.md",
-    "deepresearchMode": "fast",
-    "deepresearchId": "a0de8490-8482-48f5-8e42-04a537ea9789",
+    "deepresearchMode": "standard",
+    "deepresearchId": "63b7c6c0-8848-407a-93b9-78e6877d5ff2",
     "sources": [
       {
-        "title": "Telkom and Loon announce progressive deployment of LOON technology to customers from July – Telkom",
-        "url": "https://telkom.co.ke/press-release/telkom-and-loon-announce-progressive-deployment-of-loon-technology-to-customers-from-july/"
+        "title": "The Untold Story of Google's Quest to Bring the Internet Everywhere-By Balloon | WIRED",
+        "url": "https://www.wired.com/2013/08/googlex-project-loon/"
       },
       {
-        "title": "Alphabet is shutting down Loon, its internet balloon company | The Verge",
-        "url": "https://www.theverge.com/2021/1/21/22243484/alphabet-google-shutting-down-loon-internet-balloon-company-x"
+        "title": "Loon - A Google X Moonshot",
+        "url": "https://x.company/projects/loon/"
       },
       {
-        "title": "The Loon Collection - Shared resources from the internet balloon project",
-        "url": "https://x.company/collection/loon/"
+        "title": "Loon LLC - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Loon_LLC"
       },
       {
-        "title": "Take Me to Kenya - Loon flight operations",
-        "url": "https://x.company/blog/posts/take-me-to-kenya/"
+        "title": "Loon inter-balloon network, CTO's account",
+        "url": "https://x.company/blog/posts/1-connection-7-balloons-1-000-kilometers/"
+      },
+      {
+        "title": "How Project Loon Built the Navigation System That Kept Its Balloons Over Puerto Rico - IEEE Spectrum",
+        "url": "https://spectrum.ieee.org/how-project-loon-built-the-navigation-system-that-kept-its-balloons-over-puerto-rico"
+      },
+      {
+        "title": "Alastair Westgarth - Truckee, California, United States | Professional Profile | LinkedIn",
+        "url": "https://www.linkedin.com/in/alastair-westgarth/"
+      },
+      {
+        "title": "Nokia - A warm thank you to Loon's CEO, Alastair...",
+        "url": "https://www.facebook.com/nokia/posts/a-warm-thank-you-to-loons-ceo-alastair-westgarth-for-recognizing-nokias-commitme/10156269092552397/"
+      },
+      {
+        "title": "Alastair Westgarth, former CEO of Alphabet’s Loon, joins Starship Technologies - Retail Technology Innovation Hub",
+        "url": "https://retailtechinnovationhub.com/home/2021/6/2/alastair-westgarth-former-ceo-of-alphabets-loon-joins-starship-technologies"
+      },
+      {
+        "title": "Astro Teller - Hertz Foundation",
+        "url": "https://www.hertzfoundation.org/people/astro-teller/"
+      },
+      {
+        "title": "Alphabet's Loon Failed to Bring Internet to the World. What Went Wrong? - IEEE Spectrum",
+        "url": "https://spectrum.ieee.org/why-did-alphabets-loon-fail-to-bring-internet-to-the-world"
+      },
+      {
+        "title": "Alphabet Just Shut Down Internet Balloon Startup Loon - Business Insider",
+        "url": "https://www.businessinsider.com/alphabet-google-internet-balloon-startup-loon-2021-1?op=1&amp=&scrolla=5eb6d68b7fedc32c19ef33b4"
+      },
+      {
+        "title": "Alphabet projects Wing and Loon spin out into separate companies",
+        "url": "https://www.cnbc.com/2018/07/11/alphabet-projects-wing-and-loon-spin-out-into-separate-companies.html"
+      },
+      {
+        "title": "Project Loon and Project Wing graduate from X | TechCrunch",
+        "url": "https://techcrunch.com/2018/07/12/project-loon-and-project-wing-graduate-from-google-x/"
+      },
+      {
+        "title": "Inside X, the Moonshot Factory Racing to Build the Next Google | WIRED",
+        "url": "https://www.wired.com/story/alphabet-google-x-innovation-loon-wing-graduation/"
+      },
+      {
+        "title": "Internet connectivity projects unite as Alphabet spinout Loon grabs $125M from SoftBank's HAPSMobile | TechCrunch",
+        "url": "https://techcrunch.com/2019/04/24/alphabet-spinout-loon-grabs-125m-from-softbank/"
+      },
+      {
+        "title": "Alphabet’s Loon and SoftBank’s HAPSMobile Form Strategic Relationship to Advance High Altitude Network Connectivity",
+        "url": "https://apnews.com/Business%20Wire/ff5aa6773eaa4169a6a5abad6e24068b"
+      },
+      {
+        "title": "Alphabet’s Loon Raises $125 Million From SoftBank, Making It The Second Unit To Take Outside Funding This Year",
+        "url": "https://www.forbes.com/sites/jilliandonfro/2019/04/25/alphabet-unit-loon-raises-money-from-softbank-subsidiary/"
+      },
+      {
+        "title": "Loon and SoftBank's HAPSMobile team with Airbus, China Telecom and more on stratospheric cell networks | TechCrunch",
+        "url": "https://techcrunch.com/2020/02/21/loon-and-softbanks-hapsmobile-team-with-airbus-china-telecom-and-more-on-stratospheric-cell-networks/"
+      },
+      {
+        "title": "Expansion For HAPS Alliance For High Altitude Connectivity | Silicon UK Tech News",
+        "url": "https://www.silicon.co.uk/mobility/5g/expansion-for-haps-alliance-331911"
+      },
+      {
+        "title": "Airbus, Intelsat Join Tech Companies to Form HAPS Alliance - Aviation Tech Today",
+        "url": "https://www.aviationtoday.com/2020/02/27/airbus-intelsat-join-tech-companies-form-haps-alliance/"
+      },
+      {
+        "title": "Alphabet's Loon, telecoms unite to boost high-altitude internet",
+        "url": "https://www.engadget.com/2020-02-22-alphabet-loon-haps-alliance.html"
+      },
+      {
+        "title": "HAPSMobile and Loon First in the World to Deliver LTE Connectivity from a Fixed-Wing Autonomous Aircraft in the Stratosphere | 2020 | Press Release | News | HAPS MOBILE",
+        "url": "https://www.hapsmobile.com/en/news/press/2020/20201008_02/"
+      },
+      {
+        "title": "CIMSS: Hurricane Maria landfall, September 20, 2017",
+        "url": "https://cimss.ssec.wisc.edu/satellite-blog/archives/25338"
+      },
+      {
+        "title": "Puerto Rico to get hurricane aid from Project Loon balloons",
+        "url": "https://www.cnet.com/tech/mobile/hurricane-puerto-rico-balloons-project-loon-google-alphabet/"
+      },
+      {
+        "title": "Alphabet’s Project Loon deploys LTE balloons in Puerto Rico | The Verge",
+        "url": "https://www.theverge.com/2017/10/20/16512178/alphabet-project-loon-puerto-rico-lte-balloons-disaster-relief-connectivity"
+      },
+      {
+        "title": "Project Loon restores web in hurricane-hit Puerto Rico",
+        "url": "https://www.bbc.com/news/technology-41721360"
+      },
+      {
+        "title": "Project Loon has delivered internet services to 100,000 people in Hurricane Maria-hit Puerto Rico",
+        "url": "https://www.firstpost.com/tech/news-analysis/project-loon-has-delivered-internet-services-to-100000-people-in-hurricane-maria-hit-puerto-rico-4202845.html"
+      },
+      {
+        "title": "Loon deployment in Puerto Rico, October 2017",
+        "url": "https://x.company/blog/posts/turning-on-project-loon-in-puerto-rico/"
+      },
+      {
+        "title": "Loon deploys balloons to Peru 48 hours after 8.0 earthquake - 9to5Google",
+        "url": "https://9to5google.com/2019/05/29/loon-balloon-peru-earthquake/"
+      },
+      {
+        "title": "Alphabet’s Loon Balloons Were Beaming LTE in Peru, Within 48 Hours of The Earthquake | Tech News - News18",
+        "url": "https://www.news18.com/news/tech/alphabets-loon-balloons-were-beaming-lte-in-peru-within-48-hours-of-the-earthquake-2164765.html"
+      },
+      {
+        "title": "Alphabet's balloons broadcast LTE two days after Peruvian quake",
+        "url": "https://www.engadget.com/2019-05-29-alphabet-loon-internet-balloons-peru-earthquake.html"
+      },
+      {
+        "title": "How These Balloons Brought Emergency Cell Service to Peru After an 8.0 Magnitude Earthquake",
+        "url": "https://www.popularmechanics.com/technology/infrastructure/a27699512/balloon-emergency-lte-peru-earthquake/"
+      },
+      {
+        "title": "Alphabet's Loon Providing Internet Access to Peru's Earthquake Victims | Technology News",
+        "url": "https://www.gadgets360.com/internet/news/alphabet-google-loon-internet-access-to-peru-earthquake-victims-2046331"
+      },
+      {
+        "title": "Alphabet's Loon is providing internet access to Peru's earthquake victims - CNET",
+        "url": "https://www.cnet.com/news/alphabets-loon-is-providing-internet-access-to-peru-earthquake-victims/"
+      },
+      {
+        "title": "CenturyLink Collaborates with Alphabet’s Loon to Provide Internet Access",
+        "url": "https://www.multivu.com/players/English/8524353-centurylink-and-loon-collaborate-to-provide-internet-access-in-peru/"
+      },
+      {
+        "title": "CenturyLink Collaborates with Alphabet's Loon to Provide Internet Access in Earthquake-Affected Areas in Peru",
+        "url": "https://www.prnewswire.com/news-releases/centurylink-collaborates-with-alphabets-loon-to-provide-internet-access-in-earthquake-affected-areas-in-peru-300884129.html"
+      },
+      {
+        "title": "Alphabet's Loon launches its balloon-powered Kenyan internet service | TechCrunch",
+        "url": "https://techcrunch.com/2020/07/07/alphabets-loon-launches-its-balloon-powered-kenyan-internet-service/"
+      },
+      {
+        "title": "Alphabet's Loon deploys internet connectivity balloons to Kenya for first commercial service launch | TechCrunch",
+        "url": "https://techcrunch.com/2020/04/21/alphabets-loon-deploys-internet-connectivity-balloons-to-kenya-for-first-commercial-service-launch/"
+      },
+      {
+        "title": "Loon launches its first commercial balloon-based internet service in Kenya",
+        "url": "https://www.techexplorist.com/alphabet-loon-commercial-balloon-based-internet-service-kenya/33592/"
+      },
+      {
+        "title": "Alphabet’s Loon prepares for commercial launch in Kenya with internet balloon tests | The Verge",
+        "url": "https://www.theverge.com/2020/4/22/21231205/alphabet-loon-internet-balloons-commercial-launch-kenya"
+      },
+      {
+        "title": "Alphabet’s Loon Launches Commercial Service in Kenya",
+        "url": "https://www.emergingtechbrew.com/stories/2020/07/08/alphabets-loon-launches-commercial-service-kenya"
+      },
+      {
+        "title": "Loon launch in Kenya, CEO's account",
+        "url": "https://x.company/blog/posts/loon-is-live-in-kenya/"
+      },
+      {
+        "title": "Alphabet fait atterrir ses ballons Internet du Kenya, suite à l’arrêt du projet Loon",
+        "url": "https://www.agenceecofin.com/internet/0803-85936-alphabet-fait-atterrir-ses-ballons-internet-du-kenya-suite-a-l-arret-du-projet-loon"
+      },
+      {
+        "title": "ITU Facts and Figures 2021: Internet use",
+        "url": "https://www.itu.int/itu-d/reports/statistics/2021/11/15/internet-use/"
+      },
+      {
+        "title": "Alphabet Is Grounding Loon-but Won't Call It a Failure | WIRED",
+        "url": "https://www.wired.com/story/plaintext-alphabet-pops-loons-balloons/"
+      },
+      {
+        "title": "Alphabet moonshot Loon suffers layoffs but tech titan rehires workers",
+        "url": "https://www.mercurynews.com/2021/05/28/alphabet-moonshot-loon-jolted-layoff-employee-job-tech-google-edd/"
+      },
+      {
+        "title": "Alphabet moonshot Loon is jolted by layoffs – but employees are finding jobs with tech titan – Silicon Valley",
+        "url": "https://www.siliconvalley.com/2021/05/28/alphabet-moonshot-loon-jolted-layoff-employee-job-tech-google-edd/"
+      },
+      {
+        "title": "Loon | LinkedIn",
+        "url": "https://www.linkedin.com/company/loonforall"
+      },
+      {
+        "title": "Loon - Company Profile & Staff Directory | ContactOut",
+        "url": "https://contactout.com/company/loon-7875146"
+      },
+      {
+        "title": "Loon Corporate Headquarters, Office Locations and Addresses | Craft.co",
+        "url": "https://craft.co/loon/locations"
+      },
+      {
+        "title": "Loon LLC · 1600 Amphitheatre Parkway, Mountain View, CA 94043, US",
+        "url": "https://opengovus.com/colorado-business/20181559175"
+      },
+      {
+        "title": "Loon Company Profile - Office Locations, Competitors, Financials, Employees, Key People, News | Craft.co",
+        "url": "https://craft.co/loon"
+      },
+      {
+        "title": "Google X spin-out Taara and Digicomm International partner to offer high speed wireless communications – IEEE ComSoc Technology Blog",
+        "url": "https://techblog.comsoc.org/2025/05/06/google-x-spin-out-taara-and-digicomm-international-partner-to-offer-high-speed-wireless-communications/"
+      },
+      {
+        "title": "From Project Loon to laser internet: Alphabet spin-off Taara eyes deeper India telco partnerships",
+        "url": "https://www.moneycontrol.com/news/telecom/from-project-loon-to-laser-internet-alphabet-spin-off-taara-eyes-deeper-india-telco-partnerships-13851617.html"
+      },
+      {
+        "title": "Laser Internet by Taara: A New Hope for Rural Connectivity",
+        "url": "https://thegeekinsights.com/laser-internet-by-taara/"
+      },
+      {
+        "title": "Google’s Taara Hopes to Usher in a New Era of Internet Powered by Light | WIRED",
+        "url": "https://www.wired.com/story/plaintext-google-taara-chip-internet-by-light/"
+      },
+      {
+        "title": "Lasers beam high-speed internet between cities through open air",
+        "url": "https://newatlas.com/telecommunications/project-taara-internet-laser/"
+      },
+      {
+        "title": "Alphabet’s Project Taara laser tech beamed 700TB of data across nearly 5km | The Verge",
+        "url": "https://www.theverge.com/2021/9/16/22677015/project-taara-fsoc-wireless-internet-kinshasa-congo-fiber"
+      },
+      {
+        "title": "Alphabet's Taara: Internet based on laser technology arrives in India",
+        "url": "https://www.newsbytesapp.com/news/science/alphabet-airtel-to-use-laser-technology-for-internet/story"
+      },
+      {
+        "title": "Optical phased array with grating structure",
+        "url": "https://patents.google.com/patent/US12541099"
+      },
+      {
+        "title": "Feedforward motion compensation for FSOC terminals",
+        "url": "https://patents.google.com/patent/US12519542"
+      },
+      {
+        "title": "Feedforward motion compensation for FSOC terminals",
+        "url": "https://patents.google.com/patent/US12470292"
+      },
+      {
+        "title": "Optical/radio local access network",
+        "url": "https://patents.google.com/patent/US10122446"
+      },
+      {
+        "title": "Taara independence announcement, March 17, 2025",
+        "url": "https://x.company/blog/posts/taara-graduation/"
+      },
+      {
+        "title": "HAPS: A Satellite Operator’s Big Investment in the Stratosphere - Via Satellite",
+        "url": "https://interactive.satellitetoday.com/haps-a-satellite-operators-big-investment-in-the-stratosphere/"
+      },
+      {
+        "title": "Google X Lab · 100 Mayfield Ave, Mountain View, CA 94043, USA",
+        "url": "https://opencorpdata.com/place/ChIJZ7g2daCwj4AR3DHDzmE0omI"
+      },
+      {
+        "title": "Google's Parent Company Quietly Made Project Loon a Corporation - Business Insider",
+        "url": "https://www.businessinsider.com/googles-parent-company-quietly-made-project-loon-a-corporation-2017-10"
+      },
+      {
+        "title": "Loon’s bubble bursts-Alphabet shuts down Internet balloon company - Ars Technica",
+        "url": "https://arstechnica.com/gadgets/2021/01/loons-bubble-bursts-alphabet-shuts-down-internet-balloon-company/"
       },
       {
         "title": "Alphabet cancels Loon, project to beam internet to earth from balloons",
         "url": "https://www.cnbc.com/2021/01/21/alphabet-cancels-loon-project-to-beam-internet-to-earth-from-balloons.html"
       },
       {
-        "title": "Taara - A Google X Moonshot",
-        "url": "https://x.company/projects/taara/"
-      },
-      {
-        "title": "Loon - X project archive",
-        "url": "https://x.company/projects/loon/"
-      },
-      {
-        "title": "Factbox: Inside Loon's internet balloon venture | Reuters",
-        "url": "https://www.reuters.com/article/us-alphabet-loon-factbox/factbox-inside-loons-internet-balloon-venture-idUSKCN1TW1H0/"
+        "title": "Alphabet is shutting down Loon, its internet balloon company | The Verge",
+        "url": "https://www.theverge.com/2021/1/21/22243484/alphabet-google-shutting-down-loon-internet-balloon-company-x"
       }
     ]
   },
@@ -2843,36 +3755,264 @@
     "subtitle": "Ford and Volkswagen wound down their autonomous-driving venture as deployment economics and timelines changed.",
     "confidence": "high",
     "reportPath": "/reports/argo-ai.md",
-    "deepresearchMode": "fast",
-    "deepresearchId": "aabbc7d4-29d6-4574-a7bf-cddd25eb63bf",
+    "deepresearchMode": "standard",
+    "deepresearchId": "65e05a8d-49e9-471e-9d62-395a682dcd02",
     "sources": [
+      {
+        "title": "Argo AI - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Argo_AI"
+      },
+      {
+        "title": "Argo AI - Grokipedia",
+        "url": "https://grokipedia.com/page/Argo_AI"
+      },
+      {
+        "title": "CMU News",
+        "url": "https://www.andrew.cmu.edu/user/smoussaw/"
+      },
+      {
+        "title": "An inside look at Ford’s $1 billion bet on Argo AI | The Verge",
+        "url": "https://www.theverge.com/2017/8/16/16155254/argo-ai-ford-self-driving-car-autonomous"
+      },
+      {
+        "title": "INTERVIEW: Brett Browning, CTO, Argo AI | ADAS & Autonomous Vehicle International",
+        "url": "https://www.autonomousvehicleinternational.com/features/interview-brett-browning-cto-argo-ai.html"
+      },
+      {
+        "title": "Text: 0000037996-17-000016.txt",
+        "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799617000016/0000037996-17-000016.txt"
+      },
+      {
+        "title": "Ford to Invest $1 Billion in Artificial Intelligence Start-Up (Published 2017)",
+        "url": "https://www.nytimes.com/2017/02/10/technology/ford-invests-billion-artificial-intelligence.html"
+      },
+      {
+        "title": "Ford to invest $1 billion in autonomous vehicle tech firm Argo AI | Reuters",
+        "url": "https://www.reuters.com/article/technology/ford-to-invest-1-billion-in-autonomous-vehicle-tech-firm-argo-ai-idUSKBN15P2I7/"
+      },
+      {
+        "title": "Ford invests $1B into Argo AI for virtual driver system",
+        "url": "https://www.detroitnews.com/story/business/autos/ford/2017/02/10/ford-make-announcement-emerging-opportunities/97745838/"
+      },
+      {
+        "title": "Ford Invests in Argo AI, a New Artificial Intelligence Company, in Drive for Autonomous Vehicle Leadership | Middle East | Ford Media Center",
+        "url": "https://media.ford.com/content/fordmedia/img/me/en/news/2017/02/12/ford-invests-in-argo-ai--a-new-artificial-intelligence-company--.html"
+      },
+      {
+        "title": "The Mind of Argo AI - Mobility Engineering Technology",
+        "url": "https://www.mobilityengineeringtech.com/component/content/article/48854-the-mind-of-argo-ai"
+      },
+      {
+        "title": "Pittsburgh-based Argo AI buys Princeton Lightwave, New Jersey LiDAR company",
+        "url": "https://archive.triblive.com/business/technology/pittsburgh-based-argo-ai-buys-princeton-lightwave-new-jersey-lidar-company/"
+      },
+      {
+        "title": "Ford's Argo AI acquires lidar startup Princeton Lightwave",
+        "url": "https://www.cnet.com/roadshow/news/fords-argo-ai-acquires-lidar-startup-princeton-lightwave/"
+      },
+      {
+        "title": "Argo AI says acquired Princeton Lightwave | Reuters",
+        "url": "https://www.reuters.com/article/business/argo-ai-says-acquired-princeton-lightwave-idUSB8N1K800H/"
+      },
+      {
+        "title": "Self-driving technology company Argo AI makes lidar breakthrough",
+        "url": "https://www.motorauthority.com/news/1132154_self-driving-technology-company-argo-ai-makes-lidar-breakthrough"
+      },
+      {
+        "title": "Argo AI Has Developed A Super Lidar. Does It Matter? - CleanTechnica",
+        "url": "https://cleantechnica.com/2021/05/05/argo-ai-has-developed-a-super-lidar-does-it-matter/"
+      },
+      {
+        "title": "Argoverse: 3D Tracking and Forecasting with Rich Maps",
+        "url": "https://arxiv.org/abs/1911.02620"
+      },
+      {
+        "title": "Self-driving car startup Argo AI is giving researchers free access to its HD maps | TechCrunch",
+        "url": "https://techcrunch.com/2019/06/19/self-driving-car-startup-argo-ai-is-giving-researchers-free-access-to-its-hd-maps/"
+      },
+      {
+        "title": "Argoverse datasets",
+        "url": "https://www.argoverse.org/"
+      },
+      {
+        "title": "Argo AI's self-driving car prototypes go fully driverless in 2 US cities",
+        "url": "https://www.motorauthority.com/news/1136020_argo-ai-s-self-driving-car-prototypes-go-fully-driverless-in-2-us-cities"
+      },
+      {
+        "title": "Argo AI founders launch autonomous trucking startup Stack AV - The Robot Report",
+        "url": "https://www.therobotreport.com/argo-ai-founders-launch-autonomous-trucking-startup-stack-av/"
+      },
+      {
+        "title": "CMU, Argo Al form center for autonomous vehicle research in Pittsburgh - WTAE",
+        "url": "https://www.wtae.com/article/cmu-argo-ai-form-center-for-autonomous-vehicle-research-in-pittsburgh/28173166"
+      },
+      {
+        "title": "Destination unknown? Pittsburgh’s autonomous vehicle industry seeks a new course after a disastrous season.",
+        "url": "https://www.publicsource.org/pittsburgh-autonomous-driverless-vehicles-robot-cars-argo-aurora-locomation/"
+      },
       {
         "title": "Argo AI, driverless startup backed by Ford and VW, is shutting down | The Verge",
         "url": "https://www.theverge.com/2022/10/26/23423998/argo-ai-shut-down-ford-vw-av-self-driving"
+      },
+      {
+        "title": "AV developer Argo AI to shut down as Ford, Volkswagen halt investments | Smart Cities Dive",
+        "url": "https://www.smartcitiesdive.com/news/av-autonomous-vehicle-argo-ai-shutdown-ford-volkswagen-halt-investment/635089/"
+      },
+      {
+        "title": "Ford, Volkswagen-backed Argo AI to shut down- TechCrunch | Euronews",
+        "url": "https://www.euronews.com/next/2022/10/26/argo-ai-closure"
+      },
+      {
+        "title": "Self-driving vehicle startup Argo AI to close - Pittsburgh Union Progress",
+        "url": "https://www.unionprogress.com/2022/10/26/self-driving-vehicle-startup-argo-ai-to-close/"
+      },
+      {
+        "title": "VW closes $2.6 billion investment in self-driving start-up Argo AI",
+        "url": "https://www.cnbc.com/2020/06/02/vw-closes-2point6-billion-investment-in-self-driving-startup-argo-ai.html"
+      },
+      {
+        "title": "VW invests $2.6 billion in self-driving startup Argo AI as part of Ford alliance | TechCrunch",
+        "url": "https://techcrunch.com/2019/07/12/vw-invests-2-6-billion-in-self-driving-startup-argo-ai-as-part-of-ford-alliance/"
+      },
+      {
+        "title": "Self-driving vehicle startup Argo AI completes $2.6B deal with Volkswagen, expands to Europe | TechCrunch",
+        "url": "https://techcrunch.com/2020/06/01/self-driving-vehicle-startup-argo-ai-completes-2-6b-deal-with-volkswagen-expands-to-europe/"
+      },
+      {
+        "title": "The race for self-driving cars heats up as Volkswagen closes $2.6 billion investment in Argo AI | Fortune",
+        "url": "https://fortune.com/2020/06/03/autonomous-cars-volkswagen-ford-argo-ai/"
+      },
+      {
+        "title": "Ford and Volkswagen expand their global collaboration",
+        "url": "https://www.volkswagen-group.com/en/press-releases/ford-volkswagen-expand-their-global-collaboration-to-advance-autonomous-driving-electrification-and-better-serve-customers-16636"
+      },
+      {
+        "title": "Self-driving startup Argo AI hits $7.5 billion valuation | TechCrunch",
+        "url": "https://techcrunch.com/2020/07/30/self-driving-startup-argo-ai-hits-7-5-billion-valuation/"
+      },
+      {
+        "title": "Ford’s self-driving cars will be available on Lyft’s platform in Miami and Austin | The Verge",
+        "url": "https://www.theverge.com/2021/7/21/22585764/ford-argo-lyft-autonomous-vehicles-robotaxi-miami-austin"
+      },
+      {
+        "title": "Ford, Lyft and Argo team up to deploy robotaxis - Los Angeles Times",
+        "url": "https://www.latimes.com/business/technology/story/2021-07-21/ford-lyft-and-argo-team-up-to-deploy-robotaxis"
+      },
+      {
+        "title": "Argo, Ford to launch self-driving vehicles on Lyft's ride-hailing app | TechCrunch",
+        "url": "https://techcrunch.com/2021/07/21/argo-ford-to-launch-self-driving-vehicles-on-lyfts-ride-hailing-app/"
+      },
+      {
+        "title": "Lyft takes $135.7 million hit on Argo AI shutdown | TechCrunch",
+        "url": "https://techcrunch.com/2022/11/07/lyft-takes-135-7-million-hit-on-argo-ai-shutdown/"
+      },
+      {
+        "title": "VW and Argo AI Will Begin Testing Level 4 Autonomous Ev Vans This Summer",
+        "url": "https://www.autoweek.com/news/technology/a36408629/vw-and-argo-ai-will-begin-testing-level-4-autonomous-ev-vans-this-summer/"
+      },
+      {
+        "title": "Argo AI begins driverless operations in Miami and Austin",
+        "url": "https://www.prnewswire.com/news-releases/argo-ai-begins-driverless-vehicle-operations-in-miami--austin-301549309.html"
+      },
+      {
+        "title": "Argo AI's 4th-gen self-driving car prototypes fitted with “product intent” hardware",
+        "url": "https://www.motorauthority.com/news/1123610_argo-ai-s-4th-gen-self-driving-car-prototypes-fitted-with-product-intent-hardware"
+      },
+      {
+        "title": "Autonomous Lyft rides now available in Austin",
+        "url": "https://www.lyft.com/blog/posts/autonomous-lyft-rides-now-available-in-austin-texas"
+      },
+      {
+        "title": "CPUC issues first driverless passenger deployment permit",
+        "url": "https://www.cpuc.ca.gov/news-and-updates/all-news/cpuc-issues-first-driverless-autonomous-vehicle-passenger-service-deployment-permit"
+      },
+      {
+        "title": "Argo AI shuts down after Ford, VW end further investment",
+        "url": "https://www.motorauthority.com/news/1137629_argo-ai-shuts-down-after-ford-vw-end-further-investment"
+      },
+      {
+        "title": "Ford, VW pull plug on robotaxis in blow to self-driving car industry | CNN Business",
+        "url": "https://www.cnn.com/2022/10/26/business/ford-argo-ai-vw-shut-down/index.html"
+      },
+      {
+        "title": "Argo AI, Ford’s Self-Driving Venture With Volkswagen, Is Shutting Down",
+        "url": "https://www.forbes.com/sites/alanohnsman/2022/10/26/argo-ai-fords-self-driving-venture-with-volkswagen-is-shutting-down/"
+      },
+      {
+        "title": "Ford and Volkswagen pull plug on Argo AI in major setback to self-driving plans | Fortune",
+        "url": "https://fortune.com/2022/10/27/ford-volkswagen-pull-plug-robocar-unit-argo-ai-major-setback-self-driving-plans/"
+      },
+      {
+        "title": "Winners, Losers in the Fall of Argo AI | The Ojo-Yoshida Report",
+        "url": "https://ojoyoshidareport.com/winners-losers-in-the-fall-of-argo-ai/"
       },
       {
         "title": "Volkswagen focuses development for autonomous driving | Volkswagen Group",
         "url": "https://www.volkswagen-group.com/en/press-releases/volkswagen-focuses-development-for-autonomous-driving-16777"
       },
       {
-        "title": "Ford Establishes Latitude AI to Develop Future Automated Driving Technology",
+        "title": "Here’s Why Argo AI Is Shutting Down",
+        "url": "https://www.autoweek.com/news/technology/a41789388/argo-ai-autonomous-developer-shutdown/"
+      },
+      {
+        "title": "Ford and Volkswagen Shut Down Self-Driving Startup Argo AI Due To Costs",
+        "url": "https://carbuzz.com/news/ford-and-volkswagen-shut-down-self-driving-startup-argo-ai-due-to-costs/"
+      },
+      {
+        "title": "History of self-driving cars - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/History_of_self-driving_cars"
+      },
+      {
+        "title": "Argo AI Is Shutting Down. What’s Next for Autonomous Vehicles?",
+        "url": "https://news.crunchbase.com/transportation/autonomous-vehicles-argo-ai-ford/"
+      },
+      {
+        "title": "Lyft, Ford and Argo launch Miami rides",
+        "url": "https://www.lyft.com/blog/posts/lyft-ford-and-argo-chart-a-path-to-a-self-driving-future-in-miami"
+      },
+      {
+        "title": "Ford establishes Latitude AI",
         "url": "https://www.fromtheroad.ford.com/us/en/articles/2023/ford-establishes-latitude-ai-to-develop-future-automated-driving-technology"
       },
       {
-        "title": "Ford – Volkswagen expand their global collaboration to advance autonomous driving, electrification and better serve customers | Volkswagen Group",
-        "url": "https://www.volkswagen-group.com/en/press-releases/ford-volkswagen-expand-their-global-collaboration-to-advance-autonomous-driving-electrification-and-better-serve-customers-16636"
+        "title": "Ford is creating a new division to lead its partial autonomy and hands-free driving tech | The Verge",
+        "url": "https://www.theverge.com/2023/3/2/23622058/ford-latitude-ai-level-3-hands-free-driving-automated-argo"
       },
       {
-        "title": "Argoverse 2 - Argoverse User Guide",
-        "url": "https://argoverse.github.io/user-guide/"
+        "title": "SoftBank Group backs former Argo AI founders on new self-driving trucks startup Stack AV | TechCrunch",
+        "url": "https://techcrunch.com/2023/09/07/softbank-group-backs-former-argo-ai-founders-on-new-self-driving-trucks-startup/"
       },
       {
-        "title": "Argoverse 2",
-        "url": "https://www.argoverse.org/av2.html"
+        "title": "Former Argo AI leaders launch Stack AV autonomous trucking business - Inside Autonomous Vehicles",
+        "url": "https://insideautonomousvehicles.com/former-argo-ai-leaders-launch-stack-av-autonomous-trucking-business/"
       },
       {
-        "title": "Self-driving car company Argo AI expands Strip District headquarters",
-        "url": "https://archive.triblive.com/local/self-driving-car-company-argo-ai-expands-strip-district-headquarters/"
+        "title": "Q&A with Stack AV autonomous trucking founder Bryan Salesky - FreightWaves",
+        "url": "https://www.freightwaves.com/news/qa-with-stack-av-autonomous-trucking-founder-bryan-salesky"
+      },
+      {
+        "title": "Former Argo AI leaders launch new autonomous trucking company | Trucking Dive",
+        "url": "https://www.truckingdive.com/news/stack-av-launches-autonomous-trucking-business-pittsburgh/693196/"
+      },
+      {
+        "title": "Stack autonomous trucking systems",
+        "url": "https://www.stackav.com/"
+      },
+      {
+        "title": "Argo AI founders turn to autonomous trucking with Stack AV - Truck News",
+        "url": "https://www.trucknews.com/technology/argo-ai-founders-turn-to-autonomous-trucking-with-stack-av/1003177927/"
+      },
+      {
+        "title": "IDTechEx: Autonomous Vehicle Trends and Milestones From 2022 and What to Expect in 2023",
+        "url": "https://www.prnewswire.com/news-releases/idtechex-autonomous-vehicle-trends-and-milestones-from-2022-and-what-to-expect-in-2023-301702128.html"
+      },
+      {
+        "title": "Autonomous vehicles: Trends and milestones",
+        "url": "https://www.transportxtra.com/publications/parking-review/news/72678/autonomous-vehicles-trends-and-milestones/"
+      },
+      {
+        "title": "Autonomous vehicle trends and milestones from 2022 and what to expect in 2023 | ADAS & Autonomous Vehicle International",
+        "url": "https://www.autonomousvehicleinternational.com/news/robotaxis/autonomous-vehicle-trends-and-milestones-from-2022-and-what-to-expect-in-2023.html"
       }
     ]
   },
@@ -2894,36 +4034,272 @@
     "subtitle": "Ocean production stopped as Fisker ran out of cash; the company entered bankruptcy and a liquidation process.",
     "confidence": "high",
     "reportPath": "/reports/fisker-ocean.md",
-    "deepresearchMode": "fast",
-    "deepresearchId": "d59f00e3-ddbf-450b-8cee-095c613a7ad4",
+    "deepresearchMode": "standard",
+    "deepresearchId": "c634b3ab-b2b1-4d5c-96a5-dbc0865b82a8",
     "sources": [
       {
-        "title": "Fisker Form 8-K: bankruptcy proceedings, filed 24 June 2024",
-        "url": "https://www.sec.gov/Archives/edgar/data/1720990/000119312524167032/0001193125-24-167032.txt"
+        "title": "A123 Systems SEC Form 8-K, December 11, 2012",
+        "url": "https://www.sec.gov/Archives/edgar/data/1167178/000110465912084379/a12-29412_18k.htm"
+      },
+      {
+        "title": "Fisker Automotive - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Fisker_Automotive"
+      },
+      {
+        "title": "Henrik Fisker - Nordic EV Summit",
+        "url": "https://nordicevs.no/speaker/henrik-fisker/"
+      },
+      {
+        "title": "Fisker officially unveils Ocean SUV in three price tiers and lots of unique features | Electrek",
+        "url": "https://electrek.co/2021/11/17/fisker-officially-unveils-ocean-suv-in-three-price-tiers-and-lots-of-unique-features/"
+      },
+      {
+        "title": "Fisker production-intent Ocean reveal, November 17, 2021",
+        "url": "https://www.automotiveworld.com/news-releases/fisker-inc-reveals-production-intent-version-of-fisker-ocean/"
+      },
+      {
+        "title": "Henrik Fisker explains how he plans to make a ‘sustainable’ electric SUV | The Verge",
+        "url": "https://www.theverge.com/2020/3/4/21161568/henrik-fisker-interview-ocean-ev-sustainability-geneva-motor-show"
+      },
+      {
+        "title": "Fisker Ocean production on track; deliveries to begin shortly [Update]",
+        "url": "https://topelectricsuv.com/news/fisker/fisker-ocean-latest/"
+      },
+      {
+        "title": "Henrik Fisker - E-Mobility Engineering",
+        "url": "https://www.emobility-engineering.com/henrik-fisker/"
+      },
+      {
+        "title": "Fisker releases first quarter 2023 financial results, Reports significant cash holdings - Electrikez",
+        "url": "https://www.electrikez.com/fisker-releases-first-quarter-2023-financial-results-reports-significant-cash-holdings/"
+      },
+      {
+        "title": "E.V. Maker Fisker Files for Bankruptcy as Cash Runs Short (Published 2024)",
+        "url": "https://www.nytimes.com/2024/06/18/business/fisker-ev-bankruptcy.html"
+      },
+      {
+        "title": "Fisker Ocean: production date and more information",
+        "url": "https://www.highmotor.com/en/fisker-ocean-production-date-manufactured-by-magna.html"
+      },
+      {
+        "title": "Fisker Ocean Production Starts, but Not All at Once",
+        "url": "https://www.autoweek.com/news/green-cars/a42004418/2023-fisker-ocean-ev-suv-production-starts/"
+      },
+      {
+        "title": "CATL: Fisker long-term battery agreement",
+        "url": "https://www.catl.com/en/news/801.html"
+      },
+      {
+        "title": "Fisker Pear - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Fisker_Pear"
+      },
+      {
+        "title": "Fisker confirms Foxconn will build its $29,900 Pear EV, but questions remain | TechCrunch",
+        "url": "https://techcrunch.com/2023/08/31/fisker-confirms-foxconn-will-build-its-29900-pear-ev-but-questions-remain/"
+      },
+      {
+        "title": "Fisker and Foxconn Agree to Co-Develop Project PEAR Electric Vehicle | PCMag",
+        "url": "https://www.pcmag.com/news/fisker-and-foxconn-agree-to-co-develop-project-pear-electric-vehicle"
+      },
+      {
+        "title": "Foxconn wastes no time announcing Fisker PEAR will be built at newly acquired Lordstown plant | Electrek",
+        "url": "https://electrek.co/2022/05/12/foxconn-wastes-no-time-announcing-fisker-pear-will-be-built-at-newly-acquired-lordstown-plant/"
+      },
+      {
+        "title": "Electric car maker Fisker to go public with $2.9B valuation | Fox Business",
+        "url": "https://www.foxbusiness.com/markets/electric-car-maker-fisker-to-go-public-with-2-9-billion-valuation"
+      },
+      {
+        "title": "Fisker Inc. To List On NYSE Through Merger With Apollo Affiliated Spartan Energy Acquisition Corp.",
+        "url": "https://www.prnewswire.com/news-releases/fisker-inc-to-list-on-nyse-through-merger-with-apollo-affiliated-spartan-energy-acquisition-corp-301092045.html"
+      },
+      {
+        "title": "Electric car maker Fisker to go public through SPAC deal at $2.9 billion valuation | Reuters",
+        "url": "https://www.reuters.com/article/us-spartan-energey-m-a-fisker/electric-car-maker-fisker-to-go-public-through-spac-deal-at-2-9-billion-valuation-idUSKCN24E1FB/"
+      },
+      {
+        "title": "Fisker Inc founder Henrik Fisker: pedigree carmaker going electric | Electric, hybrid and low-emission cars | The Guardian",
+        "url": "https://www.theguardian.com/environment/2022/oct/29/fisker-inc-founder-henrik-fisker-pedigree-carmaker-going-electric"
+      },
+      {
+        "title": "Fisker (FSR) earnings Q1 2023",
+        "url": "https://www.cnbc.com/2023/05/09/fisker-fsr-earnings-q1-2023.html"
+      },
+      {
+        "title": "Fisker - Fisker Inc. Announces Third Quarter 2023 Financial Results*",
+        "url": "https://investors.fiskerinc.com/news/news-details/2023/Fisker-Inc.-Announces-Third-Quarter-2023-Financial-Results/default.aspx"
+      },
+      {
+        "title": "Fisker Q3 2023 financial results, company release",
+        "url": "https://www.nasdaq.com/press-release/fisker-inc.-announces-third-quarter-2023-financial-results-2023-11-13"
+      },
+      {
+        "title": "Fisker December 2023 business update",
+        "url": "https://assets.ctfassets.net/cghen8gr8e1n/2dxIc6sljGsnX4GCM1FIrY/f67364f61ade128ee18de9c36b2db316/Fisker_Dec_2023_Business_Update_Release_FINAL_FOR_PUBLICATION_.pdf"
+      },
+      {
+        "title": "Fisker Ocean owners flagged sudden power loss and brake problems for months, internal documents show | TechCrunch",
+        "url": "https://techcrunch.com/2024/02/09/fisker-ocean-braking-power-loss-problems-investigation/"
+      },
+      {
+        "title": "NHTSA recall 24V-499: cabin electric water pump",
+        "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V499-8570.PDF"
+      },
+      {
+        "title": "Fisker recalls thousands of Ocean EVs for safety and compliance issues",
+        "url": "https://www.cnbc.com/2024/06/12/fisker-recalls-thousands-of-ocean-evs-for-safety-and-compliance-issues.html"
+      },
+      {
+        "title": "Fisker Recalls All 2023 Ocean Models Produced Over Software Issue - autoevolution",
+        "url": "https://www.autoevolution.com/news/fisker-recalls-all-2023-ocean-models-produced-over-software-issue-235512.html"
+      },
+      {
+        "title": "Fisker issues recall over more Ocean SUV software problems - Los Angeles Times",
+        "url": "https://www.latimes.com/business/story/2024-06-12/fisker-issues-recall-over-more-ocean-suv-software-problems"
+      },
+      {
+        "title": "The Fisker Ocean Has Been Recalled Again | AutoGuide.com",
+        "url": "https://www.autoguide.com/auto/manufacturers/fisker/the-fisker-ocean-has-been-recalled-44612812"
+      },
+      {
+        "title": "Fisker Ocean recalled for roll away issue",
+        "url": "https://www.greencarreports.com/news/1145124_fisker-ocean-recalled-for-roll-away-issue"
+      },
+      {
+        "title": "2023 Fisker Ocean Extreme Yearlong Review: Everything That’s Gone Wrong",
+        "url": "https://www.motortrend.com/reviews/2023-fisker-ocean-extreme-yearlong-review-update-4-everything-that-went-wrong"
+      },
+      {
+        "title": "Fisker recalls thousands of Ocean EVs for safety and compliance issues – NBC Bay Area",
+        "url": "https://www.nbcbayarea.com/news/business/money-report/fisker-recalls-thousands-of-ocean-evs-for-safety-and-compliance-issues/3564541/"
+      },
+      {
+        "title": "Fisker hits snag in deal to use Volkswagen’s EV platform | The Verge",
+        "url": "https://www.theverge.com/2020/7/31/21349464/fisker-volkswagen-vw-ev-platform-deal-spaq-spac-spartan"
+      },
+      {
+        "title": "The fall of EV startup Fisker: A comprehensive timeline | TechCrunch",
+        "url": "https://techcrunch.com/2025/08/30/the-fall-of-ev-startup-fisker-a-comprehensive-timeline/"
+      },
+      {
+        "title": "Henrik Fisker: No 'final conclusion' yet in Foxconn deal | TechCrunch",
+        "url": "https://techcrunch.com/2023/08/04/henrik-fisker-no-final-conclusion-yet-in-foxconn-deal/"
+      },
+      {
+        "title": "Fisker Halts Plans to Make Pear EV at Foxconn",
+        "url": "https://businessjournaldaily.com/fisker-halts-plans-to-make-pear-ev-at-foxconn/"
+      },
+      {
+        "title": "Fisker shares down after Q3 reveals financial 'weaknesses'",
+        "url": "https://www.cnbc.com/2023/11/14/fisker-shares-down-q3-earnings-material-weakness.html"
+      },
+      {
+        "title": "Inside the Downfall of Henrik Fisker's EV Startup - Business Insider",
+        "url": "https://www.businessinsider.com/what-happened-henrik-fisker-automotive-startup-ocean-electric-vehicle-2024-6"
+      },
+      {
+        "title": "EV startup Fisker is fighting for survival",
+        "url": "https://www.cnbc.com/2024/03/08/ev-startup-fisker-is-fighting-for-survival.html"
+      },
+      {
+        "title": "Fisker is out of cash, not making cars, and filing for bankruptcy - Ars Technica",
+        "url": "https://arstechnica.com/cars/2024/06/ev-firm-fisker-files-for-bankruptcy-months-after-it-stopped-making-the-ocean/"
+      },
+      {
+        "title": "Fisker Inc. files for bankruptcy protection after heavy losses - Los Angeles Times",
+        "url": "https://www.latimes.com/business/story/2024-06-18/fisker-inc-files-for-bankruptcy"
       },
       {
         "title": "Fisker confirms and consummates chapter 11 plan | Davis Polk",
         "url": "https://www.davispolk.com/experience/fisker-confirms-and-consummates-chapter-11-plan"
       },
       {
-        "title": "Fisker - Fisker Ocean to Ramp up Production to an Expected 300 Units Per Day in Q4 and Accelerate U.S. Deliveries in September: 3,123 Customer Vehicles Built",
-        "url": "https://investors.fiskerinc.com/news/news-details/2023/Fisker-Ocean-to-Ramp-up-Production-to-an-Expected-300-Units-Per-Day-in-Q4-and-Accelerate-U.S.-Deliveries-in-September-3123-Customer-Vehicles-Built/default.aspx"
+        "title": "Judge approves Fisker bankruptcy plan favored by car owners - AOL",
+        "url": "https://www.aol.com/news/judge-approves-fisker-bankruptcy-plan-235926310.html"
       },
       {
-        "title": "Fisker Suspends Its EV Production | WIRED",
-        "url": "https://www.wired.com/story/fisker-suspends-electric-vehicle-production/"
+        "title": "Fisker owners get help with recall repairs as court approves liquidation plan | TechCrunch",
+        "url": "https://techcrunch.com/2024/10/16/fisker-owners-get-help-with-recall-repairs-as-court-approves-liquidation-plan/"
       },
       {
-        "title": "Fisker pauses production with just $121M in the bank | TechCrunch",
-        "url": "https://techcrunch.com/2024/03/18/fisker-production-pause-going-concern-cash-raise/"
+        "title": "Fisker’s Chapter 11 liquidation plan approved after last minute negotiations - Global Restructuring Review",
+        "url": "https://globalrestructuringreview.com/article/fiskers-chapter-11-liquidation-plan-approved-after-last-minute-negotiations"
       },
       {
-        "title": "Fisker Form 8-K: financing and strategic negotiations, 25 March 2024",
-        "url": "https://www.sec.gov/Archives/edgar/data/1720990/000172099024000029/0001720990-24-000029.txt"
+        "title": "Fisker Selling Remaining Ocean SUVs For $2500-$16,500 in Bulk",
+        "url": "https://www.caranddriver.com/news/a61498073/fisker-selling-remaining-ocean-suvs-in-bulk/"
       },
       {
-        "title": "NHTSA recall 24V-865: Fisker Ocean unintended vehicle movement",
-        "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V865-6551.PDF"
+        "title": "Fisker Bankruptcy Plan Approved: Warranty Repairs & OTA Updates Continue Operation of Vehicles | auto connected car news",
+        "url": "https://www.autoconnectedcar.com/2024/10/fisker-bankruptcy-plan-approved-warranty-repairs-ota-updates-continue-operation-of-vehicle/"
+      },
+      {
+        "title": "Fisker went bankrupt and owners built open source car company from the ashes | Electrek",
+        "url": "https://electrek.co/2026/05/16/fisker-ocean-open-source-ev-story-after-bankruptcy/"
+      },
+      {
+        "title": "Fisker Owners Form Open-Source Group to Keep Cars Running After Bankruptcy-Internet Info Agency",
+        "url": "https://english.news18a.com/news/english_256736.html"
+      },
+      {
+        "title": "Keeping Fisker Oceans Afloat and Surfing: Fisker Owners Association | auto connected car news",
+        "url": "https://www.autoconnectedcar.com/2025/09/keeping-fisker-oceans-afloat-and-surfing-fisker-owners-association/"
+      },
+      {
+        "title": "Fisker Owners Association - 4,000 strangers now are a car company.| Grassroots Motorsports forum |",
+        "url": "https://grassrootsmotorsports.com/forum/grm/fisker-owners-association-4000-strangers-now-are-a-car-company/286691/page1/"
+      },
+      {
+        "title": "Fisker EV owners reverse-engineer software after bankruptcy",
+        "url": "https://www.digitaltoday.co.kr/en/view/56499/fisker-ev-owners-reverse-engineer-software-after-bankruptcy"
+      },
+      {
+        "title": "Owners of EVs whose manufacturers went bankrupt independently analyzed the software and built an open-source tool. - GIGAZINE",
+        "url": "https://gigazine.net/gsc_news/en/20260518-fisker-ocean-open-source-ev"
+      },
+      {
+        "title": "Fisker Ocean Owners Built an Open-Source Rescue After Bankruptcy",
+        "url": "https://theelectricviking.com/how-fisker-ocean-owners-built-an-open-source-afterlife-for-their-suv/"
+      },
+      {
+        "title": "DraganSr: Fisker => open source car company",
+        "url": "https://blog.dragansr.com/2026/05/fisker-open-source-car-company.html"
+      },
+      {
+        "title": "Fisker went bankrupt and owners built open source car company from the ashes",
+        "url": "https://blog.adafruit.com/2026/05/18/fisker-went-bankrupt-and-owners-built-open-source-car-company-from-the-ashes/"
+      },
+      {
+        "title": "Fisker Ocean. Owners built open source car company from the ashes | Chevy Equinox EV Forum",
+        "url": "https://www.equinoxevforum.com/threads/fisker-ocean-owners-built-open-source-car-company-from-the-ashes.7564/"
+      },
+      {
+        "title": "Fisker Owners Association service status",
+        "url": "https://fiskeroa.com/status/"
+      },
+      {
+        "title": "Henrik Fisker quietly wound down his nonprofit after his EV startup went bankrupt | TechCrunch",
+        "url": "https://techcrunch.com/2025/08/29/henrik-fisker-quietly-wound-down-his-nonprofit-after-his-ev-startup-went-bankrupt/"
+      },
+      {
+        "title": "Henrik Fisker Dissolves Foundation After EV Startup Bankruptcy",
+        "url": "https://www.webpronews.com/henrik-fisker-dissolves-foundation-after-ev-startup-bankruptcy/"
+      },
+      {
+        "title": "Fisker bankruptcy being investigated by SEC",
+        "url": "https://www.motorauthority.com/news/1144650_fisker-bankruptcy-being-investigated-by-sec"
+      },
+      {
+        "title": "Judge approves Fisker bankruptcy plan favored by car owners - Los Angeles Times",
+        "url": "https://www.latimes.com/business/story/2024-10-11/sec-confirms-it-is-investigation-fisker"
+      },
+      {
+        "title": "Fisker Project Pear to be built in Ohio pending closing of Foxconn-Lordstown deal – 6PARK.NEWS/OHIO",
+        "url": "https://6park.news/ohio/fisker-project-pear-to-be-built-in-ohio-pending-closing-of-foxconn-lordstown-deal.html"
+      },
+      {
+        "title": "Judge approves Fisker bankruptcy plan favored by car owners | Business | gmtoday.com",
+        "url": "https://www.gmtoday.com/business/judge-approves-fisker-bankruptcy-plan-favored-by-car-owners/article_bd8781ec-8a9e-11ef-9eeb-7f1c2d1d3dbd.html"
       }
     ]
   },
@@ -2945,44 +4321,124 @@
     "subtitle": "Dyson built a working electric-car prototype and filed vehicle patents, then cancelled the programme as commercially unviable.",
     "confidence": "high",
     "reportPath": "/reports/dyson-ev.md",
-    "deepresearchMode": "fast",
-    "deepresearchId": "6e847baa-7777-4909-a92d-46cf6958118c",
+    "deepresearchMode": "standard",
+    "deepresearchId": "dee156b2-f3ef-4d7e-8f47-0c3f7ae76d5f",
     "sources": [
       {
-        "title": "Dyson scraps its electric car plans",
-        "url": "https://www.cnbc.com/2019/10/10/dyson-scraps-its-electric-car-plans.html"
+        "title": "Dyson has scrapped its electric car project",
+        "url": "https://www.bbc.com/news/business-50004184"
+      },
+      {
+        "title": "Dyson claims to have sunk £500m of own fortune into cancelled EV project | E&ampT Magazine",
+        "url": "https://eandt.theiet.org/content/articles/2020/05/sir-james-dyson-claims-to-have-sunk-500m-of-own-fortune-into-cancelled-ev-project/"
+      },
+      {
+        "title": "James Dyson: The Dyson Battery Electric Vehicle",
+        "url": "https://www.dyson.com/newsroom/news/corporate/dyson-battery-electric-vehicle"
       },
       {
         "title": "Inside the collapse of Dyson's electric car dream | WIRED",
         "url": "https://www.wired.com/story/dyson-electric-car-cancelled-inside-story/"
       },
       {
-        "title": "The Car - Invention: A Life, James Dyson",
-        "url": "https://www.dyson.com/james-dyson/invention-a-life/09"
+        "title": "Dyson Buys Solid-State Battery Startup Sakti3 For $90 Million",
+        "url": "https://www.greencarreports.com/news/1100554_dyson-buys-solid-state-battery-startup-sakti3-for-90-million"
       },
       {
-        "title": "The Dyson Battery Electric Vehicle - James Dyson",
-        "url": "https://www.dyson.com/newsroom/news/corporate/dyson-battery-electric-vehicle"
+        "title": "Dyson acquires solid-state battery startup Sakti3, plans $1 billion investment in a battery factory | Electrek",
+        "url": "https://electrek.co/2015/10/20/dyson-acquires-solid-state-battery-startup-sakti3-plans-1-billion-investment-in-a-battery-factory/"
       },
       {
-        "title": "Dyson to end electric car project, EDB says disruption to firm's Singapore workforce is minimal | The Straits Times",
-        "url": "https://www.straitstimes.com/singapore/dyson-to-close-automotive-division"
+        "title": "Dyson reveals canceled EV promising 600-mile range, 536 horsepower",
+        "url": "https://www.motorauthority.com/news/1103087_dyson-reveals-canceled-ev-promising-600-mile-range-536-horsepower"
       },
       {
-        "title": "Vacuum-maker Dyson releases patents for new EV line to debut in 2021",
+        "title": "Dyson car revealed in full as time called on electric SUV project | Auto Express",
+        "url": "https://www.autoexpress.co.uk/news/95371/dyson-car-revealed-full-time-called-electric-suv-project"
+      },
+      {
+        "title": "Dyson releases electric vehicle patents, May 2019",
         "url": "https://www.cnbc.com/2019/05/10/vacuum-maker-dyson-releases-patents-for-new-ev-line-to-debut-in-2021.html"
       },
       {
-        "title": "Dyson EV patents reveal possible large wheels, third row seats | Electrek",
-        "url": "https://electrek.co/2019/05/09/dyson-ev-patent-reveal/"
+        "title": "Dyson gears up for electric car testing - BBC News",
+        "url": "https://www.bbc.co.uk/news/business-45345778"
       },
       {
-        "title": "Dyson acquires Sakti3 for $90M to help commercialize 'breakthrough' solid-state battery tech | VentureBeat",
-        "url": "https://venturebeat.com/business/dyson-acquires-sakti3-for-90m-to-help-commercialize-breakthrough-solid-state-battery-tech"
+        "title": "What Happened to the Dyson Electric Car? | Electrifying",
+        "url": "https://www.electrifying.com/blog/knowledge-hub/what-happened-to-the-dyson-electric-car"
       },
       {
-        "title": "US9065080B2: electric vehicle propulsion using solid-state rechargeable cells",
-        "url": "https://patents.google.com/patent/US9065080"
+        "title": "Dyson hires ex-Infiniti president Roland Krüger - electrive.com",
+        "url": "https://www.electrive.com/2019/01/23/dyson-hires-ex-infiniti-president-roland-kruger/"
+      },
+      {
+        "title": "Roland Krueger - CEO at Dyson | The Org",
+        "url": "https://theorg.com/org/dyson/org-chart/roland-krueger"
+      },
+      {
+        "title": "BCW 25: Dyson - Business Case Weekly - Substack",
+        "url": "https://businesscaseweekly.substack.com/p/bcw-25-dyson"
+      },
+      {
+        "title": "Dyson has been secretly building robots",
+        "url": "https://techcrunch.com/2022/05/24/dyson-has-been-secretly-building-robots/"
+      },
+      {
+        "title": "Dyson electric car: specs, features and why it won’t go on sale | Carwow",
+        "url": "https://www.carwow.co.uk/news/4143/dyson-car-price-specs-release"
+      },
+      {
+        "title": "Dyson confirms battery-research grant funding, October 2019",
+        "url": "https://www.newscientist.com/article/2219673-cancelled-dyson-electric-car-project-received-5m-from-uk-government/"
+      },
+      {
+        "title": "High energy density multilayer battery cell with thermally processed components and method for making same",
+        "url": "https://patents.google.com/patent/US10707477"
+      },
+      {
+        "title": "Laser ablation for manufacture of battery cells",
+        "url": "https://patents.google.com/patent/US10586974"
+      },
+      {
+        "title": "Vehicle cabin filter assembly",
+        "url": "https://patents.google.com/patent/US12257883"
+      },
+      {
+        "title": "University of Michigan: Sakti3 acquired by Dyson for $90 million",
+        "url": "https://record.umich.edu/articles/u-m-battery-pioneer-startup-sakti3-acquired-dyson/"
+      },
+      {
+        "title": "Dyson walks away from (three) Sakti3 solid-state battery patents: updated",
+        "url": "https://www.greencarreports.com/news/1109784_dyson-walks-away-from-sakti3-solid-state-battery-patents"
+      },
+      {
+        "title": "Sakti3 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Sakti3"
+      },
+      {
+        "title": "Dyson electric car: first pictures of cancelled project emerge | DrivingElectric",
+        "url": "https://www.drivingelectric.com/news/830/dyson-electric-car-first-pictures-cancelled-project-emerge"
+      },
+      {
+        "title": "Dyson announces Singapore battery plant and research investments, May 2023",
+        "url": "https://www.channelnewsasia.com/singapore/dyson-new-battery-plant-tuas-us-3-4-billion-artificial-intelligence-software-3458751"
+      },
+      {
+        "title": "Dyson reveals its big bet … robots | Dyson Ltd | The Guardian",
+        "url": "https://www.theguardian.com/technology/2022/may/25/dyson-reveals-its-big-bet-robots"
+      },
+      {
+        "title": "Learn about Robotics at Dyson | Dyson Careers",
+        "url": "https://careers.dyson.com/en-gb/what-you-can-do/engineer/robotics/"
+      },
+      {
+        "title": "Dyson to spend $3.67bn on new technologies",
+        "url": "https://www.bbc.com/news/business-55096998"
+      },
+      {
+        "title": "Dyson launches the most powerful cordless vacuums¹ – capturing viruses particles as small as 0.1 microns | Discover Dyson",
+        "url": "https://www.dyson.co.uk/discover/news/latest/gen5detect-gen5outsize-launch"
       }
     ]
   },
@@ -3004,28 +4460,132 @@
     "subtitle": "Apple announced a mat to charge three devices together, then cancelled it before any units shipped.",
     "confidence": "high",
     "reportPath": "/reports/apple-airpower.md",
-    "deepresearchMode": "fast",
-    "deepresearchId": "561b09d6-5974-4eb8-8b75-606852da25fb",
+    "deepresearchMode": "standard",
+    "deepresearchId": "2cc58306-7e0a-4afd-acde-98ff8c688e0c",
     "sources": [
       {
-        "title": "The future is here: iPhone X - Apple",
+        "title": "Apple introduces iPhone X and previews AirPower, September 2017",
         "url": "https://www.apple.com/newsroom/2017/09/the-future-is-here-iphone-x/"
+      },
+      {
+        "title": "What happened to AirPower? | iMore",
+        "url": "https://www.imore.com/airpower-history"
       },
       {
         "title": "Apple cancels AirPower product, citing inability to meet its high standards for hardware | TechCrunch",
         "url": "https://techcrunch.com/2019/03/29/apple-cancels-airpower-product-citing-inability-to-meet-its-high-standards-for-hardware/"
       },
       {
-        "title": "US10491017B2: wireless charging systems with multiple power-receiving devices",
-        "url": "https://patents.google.com/patent/US10491017"
+        "title": "Apple cancels AirPower after more than a year of delays",
+        "url": "https://www.engadget.com/2019-03-29-apple-cancels-airpower-charing-mat.html"
       },
       {
-        "title": "US10840007B2: shielding for multi-coil wireless power transfer systems",
-        "url": "https://patents.google.com/patent/US10840007"
+        "title": "US10491017B2: Wireless charging system with multiple power receiving devices",
+        "url": "https://patents.google.com/patent/US10491017B2/en"
       },
       {
-        "title": "US10897148B2: wireless charging mats with multi-layer transmitter coils",
+        "title": "It’s past time for the Apple Watch to add Qi wireless charging | The Verge",
+        "url": "https://www.theverge.com/2020/9/29/21441290/apple-watch-qi-wireless-charging-standard-environment-cable-proprietary-standard"
+      },
+      {
+        "title": "US10897148B2: Multi-layer coil",
         "url": "https://patents.google.com/patent/US10897148B2/en"
+      },
+      {
+        "title": "The Challenges of Designing a Free-Position, Multi-Device System",
+        "url": "https://www.freepower.io/blog/the-challenges-of-designing-a-free-position-multi-device-system"
+      },
+      {
+        "title": "Gurman: Apple Aims to Release AirPower By September - MacRumors",
+        "url": "https://www.macrumors.com/2018/06/21/gurman-airpower-by-september/"
+      },
+      {
+        "title": "Apple's AirPower wireless charger could be delayed",
+        "url": "https://www.cnbc.com/2018/09/15/apple-airpower-wireless-charger-could-be-delayed.html"
+      },
+      {
+        "title": "Report says AirPower mat faced overheating and coil interference problems, AirPower name may be used for significantly different product - 9to5Mac",
+        "url": "https://9to5mac.com/2018/09/17/airpower-overheating-coil-problems/"
+      },
+      {
+        "title": "Report Claims AirPower 'Doomed to Failure' Unless Apple Can Resolve Multiple Ongoing Engineering Issues - MacRumors",
+        "url": "https://www.macrumors.com/2018/09/17/airpower-doomed-to-failure-engineering-issues/"
+      },
+      {
+        "title": "AirPower: Is Apple's Work on Multi-Device Wireless Charging Solutions Continuing? - MacRumors",
+        "url": "https://www.macrumors.com/guide/airpower/"
+      },
+      {
+        "title": "iPhone XS Max packaging & iOS 12.1 code both suggest Apple AirPower still in development",
+        "url": "https://www.idownloadblog.com/2018/09/21/airpower-wireless-charger-development/"
+      },
+      {
+        "title": "iPhone XS packaging mentions AirPower charging mat | TechRadar",
+        "url": "https://www.techradar.com/news/iphone-xs-packaging-mentions-airpower-charging-mat"
+      },
+      {
+        "title": "Hidden AirPower image with iPhone XS and new AirPods discovered on Apple site [update: pulled] - 9to5Mac",
+        "url": "https://9to5mac.com/2019/03/21/airpower-mat-image-australia/"
+      },
+      {
+        "title": "AirPower makes another appearance, this time on AirPods Wireless Charging Case packaging - 9to5Mac",
+        "url": "https://9to5mac.com/2019/03/25/airpower-airpods-2-packaging/"
+      },
+      {
+        "title": "AirPower Pictured on Retail Box for AirPods Wireless Charging Case - MacRumors",
+        "url": "https://www.macrumors.com/2019/03/25/airpower-referenced-on-airpods-packaging/"
+      },
+      {
+        "title": "US10840007B2: Shielding for multi-coil wireless power transfer systems",
+        "url": "https://patents.google.com/patent/US10840007B2/en"
+      },
+      {
+        "title": "Shop Liberty Wireless Charger | Dual Wireless Charger | Zens",
+        "url": "https://zens.tech/blog/zens-liberty-16-coils-wireless-charger/"
+      },
+      {
+        "title": "Jony Ive to form independent design company with Apple as client - Apple",
+        "url": "https://www.apple.com/newsroom/2019/06/jony-ive-to-form-independent-design-company-with-apple-as-client/"
+      },
+      {
+        "title": "Apple introduces iPhone 12 and MagSafe, October 2020",
+        "url": "https://www.apple.com/newsroom/2020/10/apple-announces-iphone-12-and-iphone-12-mini-a-new-era-for-iphone-with-5g/"
+      },
+      {
+        "title": "Qi Wireless charging | Wireless Power Consortium",
+        "url": "https://www.wirelesspowerconsortium.com/standards/qi-wireless-charging/"
+      },
+      {
+        "title": "MagSafe (wireless charger) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/MagSafe_(wireless_charger)"
+      },
+      {
+        "title": "Apple Still Working on AirPower-Like Charger, Also Long-Range Wireless Charging and Reverse Charging - MacRumors",
+        "url": "https://www.macrumors.com/2021/11/29/apple-airpower-long-range-reverse-wireless/"
+      },
+      {
+        "title": "Next iPad Pro to Feature Both Wireless Charging and Reverse Wireless Charging Capabilities - MacRumors",
+        "url": "https://www.macrumors.com/2021/06/04/ipad-pro-2022-wireless-charging-capabilities/"
+      },
+      {
+        "title": "Apple's MagSafe Battery Pack Unlocks Long Rumored Reverse Charging Feature - MacRumors",
+        "url": "https://www.macrumors.com/2021/07/13/apple-magsafe-battery-pack-reverse-charging/"
+      },
+      {
+        "title": "Review: Zens Liberty succeeds in many of the ways AirPower failed | AppleInsider",
+        "url": "https://appleinsider.com/articles/20/01/03/review-zens-liberty-succeeds-in-many-of-the-ways-airpower-failed"
+      },
+      {
+        "title": "Hands-on with a great AirPower alternative from Belkin",
+        "url": "https://9to5mac.com/2018/12/19/belkin-airpower-alternative-wireless-charging-dock/"
+      },
+      {
+        "title": "Apple will soon carry AirPower alternatives from Mophie - 9to5Mac",
+        "url": "https://9to5mac.com/2019/08/08/mophie-airpower-alternatives-apple/"
+      },
+      {
+        "title": "This Mophie wireless charger is probably the closest thing to AirPower that Apple will ever sell | The Verge",
+        "url": "https://www.theverge.com/2019/8/9/20798422/apple-mophie-dual-3-in-1-wireless-charging-pad-airpower"
       }
     ]
   },
@@ -3047,28 +4607,236 @@
     "subtitle": "A planned cross-border oil pipeline was terminated after its US presidential permit was revoked.",
     "confidence": "high",
     "reportPath": "/reports/keystone-xl.md",
-    "deepresearchMode": "fast",
-    "deepresearchId": "36ddf93f-d26f-45de-9b12-84882f36ecce",
+    "deepresearchMode": "standard",
+    "deepresearchId": "30b6214f-5621-41d8-b426-50b1b692d9aa",
     "sources": [
+      {
+        "title": "Keystone XL: a timeline - Macleans.ca",
+        "url": "https://macleans.ca/economy/economicanalysis/keystone-xl-a-timeline/"
+      },
+      {
+        "title": "Keystone XL Pipeline | The Canadian Encyclopedia",
+        "url": "https://www.thecanadianencyclopedia.ca/en/article/keystone-xl-pipeline"
+      },
+      {
+        "title": "Pipeline Profile",
+        "url": "https://apps.cer-rec.gc.ca/PPS/en/pipeline-profiles/keystone"
+      },
+      {
+        "title": "CONOCOPHILLIPS (COP) 10-K - 2009-02-25 Part 2 - Item 7",
+        "url": "https://www.sec.gov/Archives/edgar/data/1163165/000136231009002769/0001362310-09-002769.txt"
+      },
+      {
+        "title": "Resurrected Keystone pipeline would be great news for Alberta and all of Canada | Fraser Institute",
+        "url": "https://www.fraserinstitute.org/commentary/resurrected-keystone-pipeline-would-be-great-news-alberta-and-all-canada"
+      },
+      {
+        "title": "Keystone pipeline canceled after Biden revokes key permit",
+        "url": "https://www.cnbc.com/2021/06/09/tc-energy-terminates-keystone-xl-pipeline-project.html"
+      },
+      {
+        "title": "Keystone XL Pipeline: Overview and Recent Developments - EveryCRSReport.com",
+        "url": "https://www.everycrsreport.com/reports/R43787.html"
+      },
+      {
+        "title": "TC Energy announces Keystone XL construction and funding plan, March 31, 2020",
+        "url": "https://www.tcenergy.com/announcements/2020/2020-03-31tc-energy-to-build-keystone-xl-pipeline/"
+      },
+      {
+        "title": "State Department releases Keystone XL final environmental impact statement - The Washington Post",
+        "url": "https://www.washingtonpost.com/business/economy/state-to-release-keystones-final-environmental-impact-statement-friday/2014/01/31/3a9bb25c-8a83-11e3-a5bd-844629433ba3_story.html"
+      },
+      {
+        "title": "State Department Report Acknowledges Climate Change Impacts of Keystone XL | Center for Effective Government",
+        "url": "https://foreffectivegov.org/state-department-report-acknowledges-climate-change-impacts-keystone-xl"
+      },
+      {
+        "title": "3.5 Ogallala Aquifer & Nebraskan SandHills Potentially Threatened by the Keystone XL Pipeline – Environmental ScienceBites",
+        "url": "https://ohiostate.pressbooks.pub/sciencebites/chapter/ogallala-aquifer-nebraskan-sandhills-potentially-threatened-by-the-keystone-xl-pipeline/"
+      },
+      {
+        "title": "Nebraska Water Scientists Warn of Oil Pipeline's Risk, Call for More Study - Inside Climate News",
+        "url": "https://insideclimatenews.org/news/15062011/nebraska-scientists-keystone-xl-pipeline-risk-sandhills-water-supply-ogallala-transcanada-hillary-epa/"
+      },
+      {
+        "title": "New Keystone XL Route: Out of the Sandhills, but Still in the Aquifer | Reuters",
+        "url": "https://www.reuters.com/article/idUS339164205320120426/"
+      },
+      {
+        "title": "UNL scientists cites Keystone pipeline risks as minimal, manageable | Nebraska Today",
+        "url": "https://news.unl.edu/newsrooms/unltoday/article/unl-scientists-cites-keystone-pipeline-risks-minimal-manageable"
+      },
+      {
+        "title": "NWF Says New Keystone XL Map Revisits Old Problems - The National Wildlife Federation Blog",
+        "url": "https://blog.nwf.org/2012/09/nwf-says-new-keystone-xl-map-revisits-old-problems/"
+      },
+      {
+        "title": "Keystone XL Pipeline – Environmental and Energy Law Program",
+        "url": "https://eelp.law.harvard.edu/tracker/keystone-xl-pipeline/"
+      },
+      {
+        "title": "TC Energy CEO Russ Girling retiring with Keystone XL pipeline still unfinished | Globalnews.ca",
+        "url": "https://globalnews.ca/news/7348070/tc-energy-russ-girling-retires/"
+      },
+      {
+        "title": "Russ Girling, who led TC Energy through 'unprecedented growth,' to retire with Keystone XL pipeline unfinished | CBC News",
+        "url": "https://www.cbc.ca/news/canada/calgary/girling-russ-retire-tc-energy-calgary-ceo-transcanada-1.5732270"
+      },
+      {
+        "title": "TC Energy’s Russ Girling retires with Keystone unfinished – can his successor make it happen? - The Globe and Mail",
+        "url": "https://www.theglobeandmail.com/business/article-tc-energys-russ-girling-retires-with-keystone-unfinished-can-his/"
+      },
+      {
+        "title": "Keystone XL to proceed with $7B provincial commitment | Calgary Herald",
+        "url": "https://calgaryherald.com/business/varcoe-keystone-xl-to-proceed-with-7b-provincial-commitment"
+      },
+      {
+        "title": "Not Just Keystone XL: The Indigenous Fight for Environmental Justice - Chicago-Kent Journal of Environmental and Energy Law",
+        "url": "https://studentorgs.kentlaw.iit.edu/ckjeel/2021/09/30/not-just-keystone-xl-the-indigenous-fight-for-environmental-justice/"
+      },
+      {
+        "title": "Keystone XL Pipeline Developer Cancels Project, Ending Decade-Long Battle : NPR",
+        "url": "https://www.npr.org/2021/06/10/1005019784/keystone-xl-pipeline-developer-cancels-project-ending-decade-long-battle"
+      },
+      {
+        "title": "Rosebud Sioux and Fort Belknap file suit against Keystone XL - Native American Rights Fund",
+        "url": "https://narf.org/cases/keystone/"
+      },
+      {
+        "title": "CER – TransCanada Keystone Pipeline GP Ltd. – Keystone XL Pipeline – Project Background",
+        "url": "https://www.cer-rec.gc.ca/en/applications-hearings/view-applications-projects/keystone-xl/project-background.html?wbdisable=true"
+      },
+      {
+        "title": "Canada Energy Regulator - REGDOCS - 10-04-27 NEB - TransCanada Keystone Pipeline GP Ltd. - Certificate OC-56 - OH-1-2009 (A25039)",
+        "url": "https://apps.cer-rec.gc.ca/REGDOCS/Item/View/614188"
+      },
+      {
+        "title": "DOE/EIS-0433: Keystone XL Pipeline | Department of Energy",
+        "url": "https://www.energy.gov/nepa/doeeis-0433-keystone-xl-pipeline"
+      },
+      {
+        "title": "Keystone XL: Greenhouse Gas Emissions Assessments in the Final Environmental Impact Statement - EveryCRSReport.com",
+        "url": "https://www.everycrsreport.com/reports/R43415.html"
+      },
+      {
+        "title": "State Dept. Delivers Unwelcome News For Keystone Opponents : NPR",
+        "url": "https://www.npr.org/2014/01/31/269529696/state-dept-delivers-unwelcome-news-for-keystone-opponents"
+      },
+      {
+        "title": "Greenhouse Gas Emissions Implications of the Keystone XL Pipeline",
+        "url": "https://mediamanager.sei.org/documents/Publications/Climate/SEI-WP-2013-11-KeystoneXL-price-effects.pdf"
+      },
+      {
+        "title": "Keystone XL Would Increase Greenhouse Gas Pollution | Scientific American",
+        "url": "https://www.scientificamerican.com/article/keystone-xl-would-increase-greenhouse-gas-pollution/"
+      },
+      {
+        "title": "A chronological history of controversial Keystone XL pipeline project | CBC News",
+        "url": "https://www.cbc.ca/news/politics/keystone-xl-pipeline-timeline-1.3950156"
+      },
+      {
+        "title": "Keystone XL Faces New Legal Challenge Over Faulty Federal Review - Center for Biological Diversity",
+        "url": "https://biologicaldiversity.org/w/news/press-releases/keystone-xl-faces-new-legal-challenge-over-faulty-federal-review-2020-07-14/"
+      },
+      {
+        "title": "Supreme Court order in Army Corps v. Northern Plains, July 6, 2020",
+        "url": "https://www.supremecourt.gov/orders/courtorders/070620zr_2d83.pdf"
+      },
+      {
+        "title": "Biden will issue executive order to rescind Keystone XL pipeline permit on first day in office",
+        "url": "https://www.axios.com/biden-keystone-pipeline-9ffcedfb-42c1-4778-8183-27d858f0c966.html"
+      },
       {
         "title": "TC Energy confirms termination of Keystone XL Pipeline Project",
         "url": "https://www.tcenergy.com/announcements/2021/2021-06-09-tc-energy-confirms-termination-of-keystone-xl-pipeline-project/"
       },
       {
-        "title": "TC Energy to Build Keystone XL Pipeline",
-        "url": "https://www.tcenergy.com/announcements/2020/2020-03-31tc-energy-to-build-keystone-xl-pipeline/"
+        "title": "Keystone XL Pipeline Revival: Bridger Pipeline and South Bow Partner on New U.S.-Canada Route",
+        "url": "https://constructionreviewonline.com/michels-canada-selected-to-construct-260km-of-keystone-xl-pipeline-project-in-canada/"
       },
       {
-        "title": "Canada Energy Regulator: Keystone pipeline profile",
-        "url": "https://apps.cer-rec.gc.ca/PPS/en/pipeline-profiles/keystone"
+        "title": "Keystone XL is dead, and Albertans are on the hook for $1.3B | CBC News",
+        "url": "https://www.cbc.ca/news/canada/calgary/keystone-xl-termination-1.6059683"
       },
       {
-        "title": "CER – TransCanada Keystone Pipeline GP Ltd. – Keystone XL Pipeline – Project Background",
-        "url": "https://www.cer-rec.gc.ca/en/applications-hearings/view-applications-projects/keystone-xl/project-background.html"
+        "title": "Alberta finance minister says final bill on defunct Keystone XL pipeline not ‘materially’ above $1.3B | Globalnews.ca",
+        "url": "https://globalnews.ca/news/7686121/alberta-keystone-xl-investment-cost-to-taxpayers/"
       },
       {
-        "title": "Pipeline Project – Keystone XL | Alberta.ca",
-        "url": "https://www.alberta.ca/keystone-xl-pipeline-project"
+        "title": "Alberta finance minister defends $1.3B loss on Keystone XL pipeline as ‘calculated decision’ | Globalnews.ca",
+        "url": "https://globalnews.ca/news/7939964/alberta-finance-minister-keystone-xl-loss/"
+      },
+      {
+        "title": "Keystone oil pipeline leaks far more than expected, reveal documents | The Independent | The Independent",
+        "url": "https://www.the-independent.com/news/world/americas/keystone-leaks-oil-pipeline-documents-canada-alberta-hardisty-texas-south-dakota-a8079661.html"
+      },
+      {
+        "title": "One year after one of the nation's largest oil pipeline leaks happened near SD-ND border, some questions remain - Grand Forks Herald | Grand Forks, East Grand Forks news, weather & sports",
+        "url": "https://duluthnewstribune.com/4530417-one-year-after-one-nations-largest-oil-pipeline-leaks-happened"
+      },
+      {
+        "title": "Keystone oil pipeline leaks 383,000 gallons in North Dakota | PBS News",
+        "url": "https://www.pbs.org/newshour/nation/keystone-oil-pipeline-leaks-383000-gallons-in-north-dakota"
+      },
+      {
+        "title": "Keystone Pipeline Leak Spilled 9,000 Barrels of Oil in North Dakota - Business Insider",
+        "url": "https://www.businessinsider.com/keystone-pipeline-leak-spilled-9000-barrels-oil-north-dakota-wetlands-2019-11"
+      },
+      {
+        "title": "Canada's Alberta province files trade challenge over scrapped Keystone XL pipeline | Reuters",
+        "url": "https://www.reuters.com/business/energy/canadas-alberta-province-files-trade-challenge-over-scrapped-keystone-xl-2022-02-09/"
+      },
+      {
+        "title": "TC Energy says its $15 bln claim for Keystone XL project thrown out by US tribunal | Reuters",
+        "url": "https://www.reuters.com/business/energy/tc-energy-says-its-15-bln-claim-keystone-xl-project-thrown-out-by-us-tribunal-2024-07-16/"
+      },
+      {
+        "title": "Jon Johnson – TC Energy Loses its Keystone XL Claim Against US – C.D. Howe Institute",
+        "url": "https://cdhowe.org/publication/jon-johnson-tc-energy-loses-its-keystone-xl-claim-against-us-2/"
+      },
+      {
+        "title": "TC Energy disappointed in Tribunal's ruling that NAFTA claim cannot proceed",
+        "url": "https://www.tcenergy.com/newsroom/statements/2024-07-16-tcenergy-disappointed-in-tribunals-ruling-that-nafta-claim-cannot-proceed/"
+      },
+      {
+        "title": "Alberta government seeking $1.3B from U.S. over cancelled Keystone XL pipeline | Globalnews.ca",
+        "url": "https://globalnews.ca/news/8606716/alberta-government-compensation-cancelled-keystone-xl-pipeline/"
+      },
+      {
+        "title": "HOW KEYSTONE CAME BACK FROM THE DEAD - A Renewed Keystone XL Pipeline Could Deepen Canada's Dependence on the U.S. Market - Canadian Energy News, Top Headlines, Commentaries, Features & Events - EnergyNow",
+        "url": "https://energynow.ca/2026/05/how-keystone-came-back-from-the-dead/"
+      },
+      {
+        "title": "Prairie Connector project fact sheet, June 2026",
+        "url": "https://www.southbow.com/wp-content/uploads/2026/06/FactSheet_Prairie-Connector_June-2026.pdf"
+      },
+      {
+        "title": "South Bow announces successful open season, May 29, 2026",
+        "url": "https://www.southbow.com/wp-content/uploads/2026/05/South-Bow-Announces-Successful-Open-Season.pdf"
+      },
+      {
+        "title": "Keystone XL Revival Clears Key Hurdle as South Bow Eyes 2027 Decision",
+        "url": "https://pgjonline.com/news/2026/may/keystone-xl-revival-clears-key-hurdle-as-south-bow-eyes-2027-decision"
+      },
+      {
+        "title": "South Bow Secures Shipper Commitments for Proposed Keystone XL Revival & Eyes 2027 Decision | Pipeline Technology Journal",
+        "url": "https://www.pipeline-journal.net/news/south-bow-secures-shipper-commitments-proposed-keystone-xl-revival-eyes-2027-decision"
+      },
+      {
+        "title": "South Bow targets 2027 decision on Keystone XL partial revival | CBC News",
+        "url": "https://www.cbc.ca/news/canada/calgary/south-bow-calgary-keystone-xl-pipeline-contracts-signed-9.7216750"
+      },
+      {
+        "title": "Key dates in Keystone XL pipeline as Trump claims contentious project being revived | CBC News",
+        "url": "https://www.cbc.ca/news/canada/keystone-xl-expansion-timeline-9.7312229"
+      },
+      {
+        "title": "Frankenpipelines: Inside Trump's bid to resurrect Keystone XL and stretch Dakota Access north | Fortune",
+        "url": "https://fortune.com/2026/05/13/frankenpipelines-inside-trumps-bid-resurrect-keystone-xl-stretch-dakota-access-north/"
+      },
+      {
+        "title": "South Bow Shares Rally After Trump Talks Keystone XL Revival - Energy News Beat",
+        "url": "https://energynewsbeat.co/crude-oil/south-bow-shares-rally-after-trump-talks-keystone-xl-revival/"
       }
     ]
   },
@@ -3090,40 +4858,336 @@
     "subtitle": "Construction of a new Mexico City airport was abandoned after a change in government and a public consultation.",
     "confidence": "high",
     "reportPath": "/reports/texcoco-airport.md",
-    "deepresearchMode": "fast",
-    "deepresearchId": "067feae4-779a-4393-8e62-8e9867a83fb7",
+    "deepresearchMode": "standard",
+    "deepresearchId": "39469245-d400-4f81-86ac-fb16aa6b9e81",
     "sources": [
       {
-        "title": "Mexico president-elect halts partly built airport",
-        "url": "https://www.bbc.com/news/world-latin-america-46026860"
+        "title": "Mexico referendum rejects part-built $14bn airport project | Andres Manuel Lopez Obrador News | Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2018/10/29/mexico-referendum-rejects-part-built-14bn-airport-project"
+      },
+      {
+        "title": "Mexican president-elect pulls plug on new airport; markets sink | Reuters",
+        "url": "https://www.reuters.com/article/us-mexico-airport-idUSKCN1N30EE/"
+      },
+      {
+        "title": "Lake Texcoco - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Lake_Texcoco"
+      },
+      {
+        "title": "​Tenochtitlan to Mexico City: Aztec Engineering and the History of Lake Texcoco | Swallow's Notes",
+        "url": "https://www.swallowsnotes.com/blog/mexico-city-and-tenochtitlan-an-ancient-island-city-in-lake-texcoco-revealing-extraordinary-aztec-engineering"
+      },
+      {
+        "title": "Where was Lake Texcoco? – WillyLogan.com",
+        "url": "https://www.willylogan.com/?p=2074"
+      },
+      {
+        "title": "Draining of Lake Texcoco | History | Research Starters | EBSCOhost",
+        "url": "https://www.ebsco.com/research-starters/history/draining-lake-texcoco"
+      },
+      {
+        "title": "Mexico Drops Planned Airport After Protests From Peasants (Published 2002)",
+        "url": "https://www.nytimes.com/2002/08/03/world/mexico-drops-planned-airport-after-protests-from-peasants.html"
+      },
+      {
+        "title": "En México ya se canceló un aeropuerto en la zona de Texcoco, esta es la historia – Nacion321",
+        "url": "https://www.nacion321.com/gobierno/en-mexico-ya-se-cancelo-un-aeropuerto-en-la-zona-de-texcoco-esta-es-la-historia/"
+      },
+      {
+        "title": "Caso Atenco: El fracaso de las maniobras políticas | Proceso",
+        "url": "https://www.proceso.com.mx/nacional/2002/8/2/caso-atenco-el-fracaso-de-las-maniobras-politicas-68214.html"
+      },
+      {
+        "title": "La lección de la tierra: las mujeres de San Salvador Atenco | Proceso",
+        "url": "https://www.proceso.com.mx/nacional/2002/7/25/la-leccion-de-la-tierra-las-mujeres-de-san-salvador-atenco-5087.html"
+      },
+      {
+        "title": "Los campesinos sublevados en México toman cinco nuevos rehenes | Internacional | EL PAÍS",
+        "url": "https://elpais.com/internacional/2002/07/14/actualidad/1026597603_850215.html"
+      },
+      {
+        "title": "Cancela el gobierno su proyecto de construir en Texcoco ...",
+        "url": "https://www.jornada.com.mx/2002/08/02/016n1pol.php?origen=index.html"
+      },
+      {
+        "title": "Mexico City Texcoco Airport - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mexico_City_Texcoco_Airport"
+      },
+      {
+        "title": "Building (and Canceling) an Airport for Mexico City - Harvard Political Review",
+        "url": "https://harvardpolitics.com/mexico-city-airports/"
+      },
+      {
+        "title": "Mexico City \"bursting at the seams\" amid capacity constraints :: Routesonline",
+        "url": "https://www.routesonline.com/news/29/breaking-news/278076/mexico-city-bursting-at-the-seams-amid-capacity-constraints-/"
+      },
+      {
+        "title": "Mexico: ambitious airport plans hang on a knife edge",
+        "url": "https://airport-technology.com/analysis/mexico-ambitious-airport-plans-hang-on-a-knife-edge"
+      },
+      {
+        "title": "Update: The Battle over Mexico City's New Airport | AS/COA",
+        "url": "https://www.as-coa.org/articles/update-battle-over-mexico-citys-new-airport"
+      },
+      {
+        "title": "British architect Lord Norman Foster designs Mexico City’s new airport | TUREFORMA",
+        "url": "https://www.tureforma.org/british-architect-lord-norman-foster-designs-mexico-citys-new-airport/"
+      },
+      {
+        "title": "Unveiled> Norman Foster & Fernando Romero team up to design Mexico City's new $9.2 billion airport",
+        "url": "https://www.archpaper.com/2014/09/unveiled-norman-foster-fernando-romero-team-up-to-design-mexico-citys-new-9-2-billion-airport/"
+      },
+      {
+        "title": "New Details Released of Norman Foster and Fernando Romero's Designs for Mexico City's New Airport | ArchDaily",
+        "url": "https://www.archdaily.com/544659/new-details-released-of-norman-foster-and-fernando-romero-s-designs-for-mexico-city-s-new-airport"
+      },
+      {
+        "title": "Foster + Romero Alliance Wins Competition to Design the Mexico City Airport Expansion | ArchDaily",
+        "url": "https://www.archdaily.com/544296/foster-romero-alliance-wins-competition-to-design-the-mexico-city-airport-expansion"
+      },
+      {
+        "title": "Foster's $13 billion Mexico City airport scrapped after public vote",
+        "url": "https://www.dezeen.com/2018/10/30/foster-partners-fernando-romero-mexico-city-airport-nixed-public-vote/"
+      },
+      {
+        "title": "Fate of Foster's Mexico City airport left to public vote",
+        "url": "https://www.dezeen.com/2018/08/22/foster-partners-fernando-romero-mexico-city-new-airport-referendum/"
+      },
+      {
+        "title": "Mexico City Texcoco Airport - Grokipedia",
+        "url": "https://grokipedia.com/page/Mexico_City_Texcoco_Airport"
+      },
+      {
+        "title": "Mexico Referendum Cancels Partly Built $13 Billion Airport",
+        "url": "https://www.voanews.com/a/mexico-referendum-cancels-partly-built-13-billion-airport/4634726.html"
+      },
+      {
+        "title": "Mexico Referendum Nixes Partly Built $13 Billion Airport - Business Insider",
+        "url": "https://www.businessinsider.com/ap-mexico-referendum-nixes-partly-built-13-billion-airport-2018-10"
       },
       {
         "title": "What is next for Mexico City airport after mega project axed? | Reuters",
         "url": "https://www.reuters.com/article/us-mexico-airport/what-is-next-for-mexico-city-airport-after-mega-project-axed-idUSKCN1N51BQ/"
       },
       {
-        "title": "Felipe Ángeles International Airport – Mexico City",
-        "url": "https://mexicocity.cdmx.gob.mx/venues/felipe-angeles-airport/?lang=en"
+        "title": "The Mexican Airport Conflict That’s AMLO’s First Test - The Washington Post",
+        "url": "https://www.washingtonpost.com/business/the-mexican-airport-conflict-thats-amlos-first-test/2018/10/26/7bd2caca-d8d6-11e8-8384-bcc5492fef49_story.html"
       },
       {
-        "title": "Characterization of soil permeability in the former Lake Texcoco, Mexico",
-        "url": "https://www.degruyterbrill.com/document/doi/10.1515/geo-2019-0010/html"
+        "title": "The billionaire and the airport: could his last act in Mexico City ruin Carlos Slim? | Cities | The Guardian",
+        "url": "https://www.theguardian.com/cities/2017/jun/28/billionaire-airport-last-act-mexico-city-ruin-carlos-slim"
       },
       {
-        "title": "Scotiabank economic report: Mexico airport consultation, 26 October 2018",
-        "url": "https://cdn.aglty.io/scotia-bank-mexico/pdf/emp-gob/guia-economica/2018/naim261018.pdf"
+        "title": "Parsons and CH2M Hill join Mexico City airport project",
+        "url": "https://www.theconstructionindex.co.uk/news/view/parsons-and-ch2m-hill-join-mexico-city-airport-project"
       },
       {
-        "title": "Mexico referendum rejects part-built $14bn airport project | Andres Manuel Lopez Obrador News | Al Jazeera",
-        "url": "https://www.aljazeera.com/news/2018/10/29/mexico-referendum-rejects-part-built-14bn-airport-project"
+        "title": "Parsons & CH2M HILL JV on airport project - Expat Network",
+        "url": "https://expatnetwork.com/parsons-ch2m-hill-airport-project/"
       },
       {
-        "title": "IMCO: Nuevo Aeropuerto Internacional de México, un proyecto indispensable - riesgos y oportunidades",
-        "url": "https://imco.org.mx/wp-content/uploads/2019/11/Bolet%C3%ADn_NAIM-Indispensable.pdf"
+        "title": "Parsons, CH2M Hill win role on Mexico's massive new airport - Global Construction Review",
+        "url": "https://www.globalconstructionreview.com/parsons-ch2m-hill-win-role-mexicos-massive-new-air/"
       },
       {
-        "title": "Presidente AMLO inaugura Parque Ecológico Lago de Texcoco",
-        "url": "https://www.gob.mx/presidencia/prensa/presidente-amlo-inaugura-parque-ecologico-lago-de-texcoco-14-mil-hectareas-recuperadas-en-beneficio-del-valle-de-mexico?idiom=es"
+        "title": "New International Airport in Mexico CIty - Foster + Partners Fernando Romero | Arquitectura Viva",
+        "url": "https://arquitecturaviva.com/works/new-international-airport-in-mexico-city"
+      },
+      {
+        "title": "Attractive airport infrastructure deals in Latin America. Part 2 - Mexico City Airport at Texcoco | CAPA",
+        "url": "https://centreforaviation.com/analysis/reports/attractive-airport-infrastructure-deals-in-latin-america-part-2---mexico-city-airport-at-texcoco-211109"
+      },
+      {
+        "title": "New Mexico City Airport: some challenges of building on virgin Lake Texcoco clays - The British Geotechnical Association (BGA)",
+        "url": "https://www.britishgeotech.org/event/new-mexico-city-airport-some-challenges-of-building-on-virgin-lake-texcoco-clays/"
+      },
+      {
+        "title": "Mexico City’s surprising crisis: the city is sinking",
+        "url": "https://vulcanhammer.net/2021/05/29/mexico-citys-surprising-crisis-the-city-is-sinking/"
+      },
+      {
+        "title": "Over a Century of Sinking in Mexico City: No Hope for Significant Elevation and Storage Capacity Recovery - Chaussard - 2021 - Journal of Geophysical Research: Solid Earth - Wiley Online Library",
+        "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020JB020648"
+      },
+      {
+        "title": "Mexico City Is Sinking. A Powerful NASA Satellite Just Revealed How Fast | WIRED",
+        "url": "https://www.wired.com/story/mexico-city-is-sinking-a-powerful-nasa-satellite-just-exposed-how-fast/"
+      },
+      {
+        "title": "US-Indian Spacecraft Captures Mexico City Subsidence - NASA Science",
+        "url": "https://science.nasa.gov/photojournal/us-indian-spacecraft-captures-mexico-city-subsidence/"
+      },
+      {
+        "title": "2921 Soil Fracturing Induced by Land Subsidence in Mexico City",
+        "url": "https://www.cfms-sols.org/sites/default/files/Actes/2921-2924.pdf"
+      },
+      {
+        "title": "Mexico vote cancels partly built $13 billion airport | Fox News",
+        "url": "https://www.foxnews.com/travel/mexico-cancels-partially-built-13-billion-airport-after-referendum"
+      },
+      {
+        "title": "$13B Mexico City Airport Project Apparently Axed by President-Elect | 2018-11-07 | Engineering News-Record",
+        "url": "https://www.enr.com/articles/45812-13b-mexico-city-airport-project-apparently-axed-by-president-elect"
+      },
+      {
+        "title": "Resurge Frente de Pueblos en Defensa de la Tierra de Atenco; exige a AMLO cancelar aeropuerto en Texcoco – Plana Mayor",
+        "url": "https://planamayor.com.mx/resurge-frente-de-pueblos-en-defensa-de-la-tierra-de-atenco-exige-a-amlo-cancelar-aeropuerto-en-texcoco/"
+      },
+      {
+        "title": "Agreden a ejidatarios de Atenco que se oponen al Aeropuerto; hay 15 lesionados – Plana Mayor",
+        "url": "https://planamayor.com.mx/agreden-a-ejidatarios-de-atenco-que-se-oponen-al-aeropuerto-hay-15-lesionados/"
+      },
+      {
+        "title": "Frente de Pueblos en Defensa de la Tierra (FPDT) – AMLO",
+        "url": "https://lopezobrador.org.mx/temas/frente-de-pueblos-en-defensa-de-la-tierra-fpdt/"
+      },
+      {
+        "title": "Atenco lanza campaña: “Yo prefiero el lago” | Somoselmedio",
+        "url": "https://www.somoselmedio.com/atenco-lanza-campana-yo-prefiero-el-lago/"
+      },
+      {
+        "title": "#YoPrefieroElLago, la campaña que busca frenar el aeropuerto en Texcoco • Actualidad • Forbes México",
+        "url": "https://forbes.com.mx/yoprefieroellago-la-campana-que-busca-frenar-el-aeropuerto-en-texcoco/"
+      },
+      {
+        "title": "Lanzan campaña contra construcción de Nuevo Aeropuerto: “Yo prefiero el lago”",
+        "url": "https://www.eluniversal.com.mx/metropoli/edomex/lanzan-campana-contra-construccion-de-nuevo-aeropuerto-yo-prefiero-el-lago/"
+      },
+      {
+        "title": "Andres Manuel Lopez Obrador wins Mexico's presidential election in a massive landslide - Los Angeles Times",
+        "url": "https://www.latimes.com/world/mexico-americas/la-fg-mexico-election-20180630-story.html"
+      },
+      {
+        "title": "Mexico president-elect halts partly built airport",
+        "url": "https://www.bbc.com/news/world-latin-america-46026860"
+      },
+      {
+        "title": "In blow to business, Mexicans spurn new Mexico City airport | Reuters",
+        "url": "https://www.reuters.com/article/mexico-airport-idUSL2N1X906E/"
+      },
+      {
+        "title": "Airport Status: Canceled - Pulling the plug in Mexico City | PaxEx.Aero",
+        "url": "https://paxex.aero/2018/10/mexico-city-new-airport-canceled/"
+      },
+      {
+        "title": "Mexico referendum cancels partly built $13 billion airport | Fox Business",
+        "url": "https://www.foxbusiness.com/markets/mexico-referendum-cancels-partly-built-13-billion-airport"
+      },
+      {
+        "title": "Aeromexico takes to court MEX’s claimed saturation |",
+        "url": "https://airinsight.com/aeromexico-takes-to-court-mexs-claimed-saturation/"
+      },
+      {
+        "title": "Former Mexico President Enrique Peña Nieto directed corruption, says ex-official",
+        "url": "https://www.nbcnews.com/news/latino/former-mexico-president-enrique-pe-nieto-directed-corruption-says-ex-n1237443"
+      },
+      {
+        "title": "Mexico: Ex-President Enrique Peña Nieto accused of corruption and bribery",
+        "url": "https://www.bbc.com/news/world-latin-america-53746715"
+      },
+      {
+        "title": "Former Mexican president investigated over allegedly taking bribes from spyware industry | The Record from Recorded Future News",
+        "url": "https://therecord.media/former-mexican-president-investigated-spyware-bribes"
+      },
+      {
+        "title": "Mexican president says new airport construction to start next week | Reuters",
+        "url": "https://www.reuters.com/article/us-mexico-airport/mexican-president-says-new-airport-construction-to-start-next-week-idUSKCN1S02FT/"
+      },
+      {
+        "title": "Mexican president opens new airport three years after ditching alternative | Reuters",
+        "url": "https://www.reuters.com/world/americas/mexican-president-open-new-airport-three-years-after-scrapping-alternative-2022-03-21/"
+      },
+      {
+        "title": "Mexico breaks ground on new airport project outside capital | AP News",
+        "url": "https://apnews.com/1e79d7df5efe436ca2ff5c7df3de6c72"
+      },
+      {
+        "title": "AIFA: Mexico’s new international airport gets ready for takeoff | International | EL PAÍS English",
+        "url": "https://english.elpais.com/international/2022-02-15/mexicos-new-international-airport-gets-ready-for-takeoff.html"
+      },
+      {
+        "title": "AIFA first anniversary | Blog NLARENAS.COM",
+        "url": "https://www.nlarenas.com/en/2023/03/primer-aniversario-aifa/"
+      },
+      {
+        "title": "AIFA Has Fewer Passengers Than Government Expected",
+        "url": "https://mexicobusiness.news/aerospace/news/aifa-has-fewer-passengers-government-expected"
+      },
+      {
+        "title": "AIFA Transported 1.05 Million Passengers Since Opening",
+        "url": "https://mexicobusiness.news/aerospace/news/aifa-transported-105-million-passengers-opening"
+      },
+      {
+        "title": "AIFA Aims to Serve 3 Million Passengers in 2023",
+        "url": "https://mexicobusiness.news/aerospace/news/aifa-aims-serve-3-million-passengers-2023"
+      },
+      {
+        "title": "AEROMEXICO INCREASES OPERATIONS AT AIFA BY UP TO 40%; IT WILL INCREASE TO MORE THAN 1,000 FLIGHTS PER MONTH",
+        "url": "https://finance.yahoo.com/news/aeromexico-increases-operations-aifa-40-002500151.html"
+      },
+      {
+        "title": "Mexico City’s Aeropuerto Internacional Felipe Ángeles Opened One Year Ago - British Aviation Group",
+        "url": "https://www.britishaviationgroup.co.uk/knowledge/mexico-city-s-aeropuerto-internacional-felipe-ngeles-opened-one-year-ago/"
+      },
+      {
+        "title": "AEROMEXICO WILL OPERATE THE FIRST ROUTE BETWEEN THE AIFA AND THE UNITED STATES - Aero Crew News",
+        "url": "https://aerocrewnews.com/2023/02/03/aeromexico-will-operate-the-first-route-between-the-aifa-and-the-united-states/"
+      },
+      {
+        "title": "Government report highlights operation of Felipe Angeles Airport - MEXICONOW",
+        "url": "https://mexico-now.com/government-report-highlights-operation-of-felipe-angeles-airport/"
+      },
+      {
+        "title": "Felipe Ángeles International Airport - The Business Year",
+        "url": "https://thebusinessyear.com/article/felipe-angeles-international-airpxort/"
+      },
+      {
+        "title": "Mexico City’s New Felipe Ángeles Airport To Open Without Fixed Ground Transportation Services | AirlineGeeks.com",
+        "url": "https://airlinegeeks.com/2022/03/09/mexico-city-s-new-felipe-angeles-airport-to-open-without-fixed-ground-transportation-services/"
+      },
+      {
+        "title": "Mexico’s New AIFA Airport Continues With Challenges - Pulse News Mexico",
+        "url": "https://pulsenewsmexico.com/2022/06/02/mexicos-new-aifa-airport-continues-with-challenges/"
+      },
+      {
+        "title": "FAA returns Mexico to Category 1, September 14, 2023",
+        "url": "https://www.faa.gov/newsroom/federal-aviation-administration-returns-mexico-highest-aviation-safety-status"
+      },
+      {
+        "title": "Mexico City: Safety concerns – International Ops 2026 – OPSGROUP",
+        "url": "https://ops.group/blog/mexico-city-safety-concerns/"
+      },
+      {
+        "title": "Mexico City's Old Texcoco Airport Will Be Turned Into A National Park",
+        "url": "https://simpleflying.com/mexico-city-texcoco-airport-national-park/"
+      },
+      {
+        "title": "One Good Thing Came Out Of Mexico City's Abandoned $13.3 Billion Texcoco Airport Project",
+        "url": "https://simpleflying.com/one-good-thing-mexico-city-abandoned-13-billion-texcoco-airport-project/"
+      },
+      {
+        "title": "Challenges and progress at Texcoco Lake park - Casa de Chiles",
+        "url": "https://www.casadechiles.com/texcoco-lake-park-challenges-progress/"
+      },
+      {
+        "title": "Restoring an ancient lake from the rubble of an unfinished airport in Mexico City | MIT Technology Review",
+        "url": "https://www.technologyreview.com/2023/02/13/1067854/lake-texcoco-ancient-lake-unfinished-airport-mexico-city/"
+      },
+      {
+        "title": "Lake Texcoco Ecological Park - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Lake_Texcoco_Ecological_Park"
+      },
+      {
+        "title": "Rainfall Buries a Mega-Airport in Mexico | WIRED",
+        "url": "https://www.wired.com/story/rainfall-buries-a-mega-airport-in-mexico/"
+      },
+      {
+        "title": "Mexico City is slowly sinking into the lake it tried to erase - the ancient bed of Lake Texcoco, where Tenochtitlan once stood and where the modern capital now collapses centimetre by centimetre",
+        "url": "https://spacedaily.com/d-mexico-city-is-slowly-sinking-into-the-lake-it-tried-to-erase-the-ancient-bed-of-lake-texcoco-where-tenochtitlan-once-stood-and-where-the-modern-capital-now-collapses-centimetre-by-centimet/"
+      },
+      {
+        "title": "Scrapped Mexico airport project awarded international prize - Construction Briefing",
+        "url": "https://www.constructionbriefing.com/news/scrapped-mexico-airport-project-awarded-international-prize/8013274.article"
       }
     ]
   }
