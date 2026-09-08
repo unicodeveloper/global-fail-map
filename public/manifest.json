@@ -1,0 +1,23 @@
+{
+  "name": "Global Fail Map",
+  "short_name": "Fail Map",
+  "description": "A graveyard of failed companies, cancelled projects and abandoned ideas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#22211f",
+  "theme_color": "#22211f",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

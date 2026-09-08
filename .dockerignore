@@ -1,0 +1,12 @@
+.env*
+.git
+.next
+.vercel
+node_modules
+.local-data
+infra
+work
+*.pem
+*.key
+credentials.*
+secrets.*

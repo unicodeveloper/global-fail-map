@@ -1,0 +1,7 @@
+.next
+node_modules
+pnpm-lock.yaml
+package-lock.json
+infra/.terraform
+public/reports
+src/data/examples.json
