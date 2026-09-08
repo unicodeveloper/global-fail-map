@@ -22,7 +22,7 @@ export const investigationInputSchema = z
       .default('general'),
     instructions: z.string().trim().max(2000).default(''),
     mode: z.enum(['fast', 'standard', 'heavy']).default('fast'),
-    notifyOnCompletion: z.boolean().default(false),
+    notifyOnCompletion: z.boolean().optional(),
   })
   .strict();
 

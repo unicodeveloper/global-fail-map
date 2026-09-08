@@ -48,9 +48,9 @@ Optionally set `DEEPRESEARCH_ALERT_EMAIL` to an email belonging to your Valyu or
 
 ## Research and sharing
 
-- Fast is the default. Standard and Heavy offer deeper research and use more time and account credits.
+- Research effort lives in the collapsed Advanced settings. Low (the default), Medium and High map to Fast, Standard and Heavy, with approximate completion times.
 - Each task has a `/?research=<id>` link that reopens its latest progress or completed report with the owner's account.
-- Completion emails are enabled by default when a verified account email is available, with an option to turn them off before starting.
+- Completion emails are automatic when a verified account email is available and link back to the report in this app.
 - Share a completed report explicitly to create a public `/?share=<id>` link. Publishing exposes its report and research query through Valyu. Turn public sharing off to revoke access.
 - Project photos load automatically from Valyu search results with links to their original sources. Location reports search for the named projects they uncover. Bundled stories include cached photos, available without signing in. New photo searches use the viewer's configured account credits.
 

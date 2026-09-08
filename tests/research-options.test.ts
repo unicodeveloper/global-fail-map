@@ -29,10 +29,10 @@ function post(body: unknown) {
   });
 }
 
-test('research defaults to fast without silently enabling email alerts', () => {
+test('research defaults to fast without requiring an email preference', () => {
   const input = investigationInputSchema.parse({ location });
   assert.equal(input.mode, 'fast');
-  assert.equal(input.notifyOnCompletion, false);
+  assert.equal(input.notifyOnCompletion, undefined);
 });
 
 test('research accepts the three selectable API modes and rejects arbitrary recipients', () => {
@@ -63,7 +63,6 @@ test('research accepts the three selectable API modes and rejects arbitrary reci
 test('completion notification uses the literal API placeholder and the app report URL', () => {
   assert.deepEqual(
     buildResearchNotification({
-      enabled: true,
       email: ' researcher@example.com ',
       appUrl: 'https://failmap.example/api/investigations?unrelated=1#section',
     }),
@@ -74,16 +73,11 @@ test('completion notification uses the literal API placeholder and the app repor
   );
 });
 
-test('notification is omitted when opted out or no valid recipient is configured', () => {
+test('notification is omitted only when no valid recipient or app URL is configured', () => {
   const options = {
-    enabled: true,
     email: 'researcher@example.com',
     appUrl: 'https://failmap.example',
   };
-  assert.equal(
-    buildResearchNotification({ ...options, enabled: false }),
-    undefined,
-  );
   assert.equal(
     buildResearchNotification({ ...options, email: undefined }),
     undefined,
@@ -125,24 +119,22 @@ test('creation sends selected modes and notification fields using the verified A
     });
   }) as typeof fetch;
   for (const mode of ['fast', 'standard', 'heavy']) {
-    const response = await POST(
-      post({ location, mode, notifyOnCompletion: true }),
-    );
+    const response = await POST(post({ location, mode }));
     assert.equal(response.status, 201);
     assert.equal((await response.json()).notified, true);
   }
   assert.equal(requestCount, 3);
 });
 
-test('creation does not send an email when the user opts out', async () => {
+test('completion email is automatic even for a stale client with a false legacy preference', async () => {
   globalThis.fetch = (async (_resource, options) => {
     const body = JSON.parse(String(options?.body));
-    assert.equal('alert_email' in body, false);
+    assert.equal(body.alert_email.email, 'researcher@example.com');
     return Response.json({ deepresearch_id: randomUUID(), status: 'running' });
   }) as typeof fetch;
   const response = await POST(post({ location, notifyOnCompletion: false }));
   assert.equal(response.status, 201);
-  assert.equal((await response.json()).notified, false);
+  assert.equal((await response.json()).notified, true);
 });
 
 test('creation cannot be used to send alerts to a client-selected address', async () => {
