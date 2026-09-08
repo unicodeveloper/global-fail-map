@@ -1,0 +1,10 @@
+{
+  "name": "Global Fail Map",
+  "short_name": "Fail Map",
+  "description": "The world is built on attempts. Explore the ideas that did not go to plan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101311",
+  "theme_color": "#101311",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
