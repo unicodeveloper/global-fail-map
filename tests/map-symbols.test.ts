@@ -35,6 +35,7 @@ test('every seeded story has a map symbol and personal research has a fallback',
     );
   }
   assert.ok(mapSymbolPaths('', 'general').length > 0);
+  assert.match(mapSymbolPaths('hvtn702', 'science')[0], /Z$/);
   assert.notDeepEqual(
     mapSymbolPaths('concorde', 'technology'),
     mapSymbolPaths('babbage', 'technology'),

@@ -39,7 +39,7 @@ const categoryFocus: Record<InvestigationInput['category'], string> = {
 export function buildInvestigationPrompt(input: InvestigationInput): string {
   const context = input.location.scope === 'worldwide'
     ? `related to the topic "${input.location.name}" anywhere in the world. This is a worldwide topic search, so establish the real location of each case from evidence`
-    : `in or meaningfully connected to ${input.location.name}, at latitude ${input.location.latitude}, longitude ${input.location.longitude}`;
+    : `in or meaningfully connected to the named area "${input.location.name}". Research the full named area, not only the locality around the clicked point. The coordinates (${input.location.latitude}, ${input.location.longitude}) are a navigation anchor, not a restriction on the research boundary`;
   return `Research target: ${input.location.name}
 Research coordinates: ${input.location.latitude}, ${input.location.longitude}
 Research category: ${input.category}

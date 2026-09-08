@@ -6,7 +6,7 @@ const symbols = {
     'M5 19a5 5 0 0 1 0-7l7-7a5 5 0 0 1 7 7l-7 7a5 5 0 0 1-7 0Z',
     'm8 9 7 7',
   ],
-  trial: ['M9 3h6', 'M10 3v7l-5 8q-1 3 2 3h10q3 0 2-3l-5-8V3', 'M8 15h8'],
+  trial: ['M10 3v7l-5 8q-1 3 2 3h10q3 0 2-3l-5-8V3Z', 'M9 3h6', 'M8 15h8'],
   car: [
     'M4 15V9l3-5h10l3 5v6H4Z',
     'M4 10h16',
@@ -93,19 +93,67 @@ export function mapSymbolPaths(id: string, category: Category | 'general') {
   return symbols[caseSymbols[id] || categorySymbols[category]];
 }
 
+let symbolSequence = 0;
+
 export function createMapSymbol(id: string, category: Category | 'general') {
-  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  svg.setAttribute('viewBox', '0 0 24 24');
-  svg.setAttribute('fill', 'none');
-  svg.setAttribute('stroke', 'currentColor');
-  svg.setAttribute('stroke-width', '1.8');
-  svg.setAttribute('stroke-linecap', 'round');
-  svg.setAttribute('stroke-linejoin', 'round');
-  svg.setAttribute('aria-hidden', 'true');
-  for (const d of mapSymbolPaths(id, category)) {
-    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    path.setAttribute('d', d);
-    svg.appendChild(path);
+  const name = caseSymbols[id] || categorySymbols[category];
+  const paths = symbols[name];
+  const solid = !['atom', 'bridge', 'search'].includes(name);
+  const gradientId = `map-symbol-${++symbolSequence}`;
+  const element = (tag: string, attributes: Record<string, string>) => {
+    const node = document.createElementNS('http://www.w3.org/2000/svg', tag);
+    for (const [key, value] of Object.entries(attributes)) {
+      node.setAttribute(key, value);
+    }
+    return node;
+  };
+  const svg = element('svg', {
+    viewBox: '-2 -2 29 29',
+    fill: 'none',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round',
+    'aria-hidden': 'true',
+  });
+  const defs = element('defs', {});
+  const gradient = element('linearGradient', {
+    id: gradientId,
+    x1: '0%',
+    y1: '0%',
+    x2: '70%',
+    y2: '100%',
+  });
+  for (const [offset, color] of [
+    ['0%', 'var(--pin-highlight)'],
+    ['45%', 'var(--pin-face)'],
+    ['100%', 'var(--pin-shade)'],
+  ]) {
+    gradient.appendChild(element('stop', { offset, 'stop-color': color }));
   }
+  defs.appendChild(gradient);
+  svg.appendChild(defs);
+  const silhouette = solid ? paths.slice(0, 1) : paths;
+  const side = element('g', { transform: 'translate(0.8 1.6)' });
+  for (const d of silhouette) {
+    side.appendChild(
+      element('path', {
+        d,
+        fill: solid ? 'var(--pin-side)' : 'none',
+        stroke: 'var(--pin-side)',
+        'stroke-width': '2.5',
+      }),
+    );
+  }
+  svg.appendChild(side);
+  paths.forEach((d, index) => {
+    const detail = solid && index > 0;
+    svg.appendChild(
+      element('path', {
+        d,
+        fill: solid && !detail ? `url(#${gradientId})` : 'none',
+        stroke: detail ? 'var(--pin-detail)' : `url(#${gradientId})`,
+        'stroke-width': detail ? '1.3' : '1.8',
+      }),
+    );
+  });
   return svg;
 }

@@ -9,7 +9,7 @@ const mono = Geist_Mono({ variable: '--font-mono', subsets: ['latin'] });
 const baseUrl =
   process.env.NEXT_PUBLIC_APP_URL || 'https://global-fail-map.vercel.app';
 const description =
-  'Explore a world map of abandoned projects, failed companies and discontinued experiments. Search a place or an idea to discover what happened, why it ended and the evidence behind the story.';
+  'A graveyard of failed companies, cancelled projects and abandoned ideas. Search the world map to discover what happened, why it ended and the evidence behind the story.';
 
 export const viewport: Viewport = {
   width: 'device-width',

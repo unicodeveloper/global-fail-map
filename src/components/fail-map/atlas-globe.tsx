@@ -7,6 +7,7 @@ import { ChevronRight, Compass, Globe2, Minus, Plus, X } from 'lucide-react';
 import { type FailExample, type Investigation, type Location } from './types';
 import { createMapSymbol } from './map-symbols';
 import { groupMapExamples } from './map-groups';
+import { mapGeocodingTypes, resolveMapLocation } from './map-location';
 
 interface AtlasGlobeProps {
   variant?: 'atlas' | 'report';
@@ -118,23 +119,25 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
         geocoding?.abort();
         const request = new AbortController();
         geocoding = request;
-        const latitude = event.lngLat.lat;
-        const longitude = event.lngLat.lng;
-        let name = `${latitude.toFixed(3)}, ${longitude.toFixed(3)}`;
+        const point = {
+          latitude: event.lngLat.lat,
+          longitude: event.lngLat.lng,
+          zoom: instance.getZoom(),
+        };
+        let location = resolveMapLocation(null, point);
         try {
           const response = await fetch(
-            `https://api.mapbox.com/geocoding/v5/mapbox.places/${longitude},${latitude}.json?types=country,region,place,locality&access_token=${token}`,
+            `https://api.mapbox.com/geocoding/v5/mapbox.places/${point.longitude},${point.latitude}.json?types=${mapGeocodingTypes}&access_token=${token}`,
             { signal: request.signal },
           );
           if (response.ok) {
-            const result = await response.json();
-            name = result.features?.[0]?.place_name || name;
+            location = resolveMapLocation(await response.json(), point);
           }
         } catch {
           /* Coordinates remain a valid research location. */
         }
         if (!disposed && !request.signal.aborted)
-          callbacks.current.onLocation({ name, latitude, longitude });
+          callbacks.current.onLocation(location);
       });
     } catch {
       setError(
@@ -177,10 +180,13 @@ export function AtlasGlobe(props: AtlasGlobeProps) {
       );
       const dot = document.createElement('span');
       dot.className = 'atlas-pin-dot';
+      dot.appendChild(createMapSymbol(example.id, example.category));
       if (grouped) {
-        dot.textContent = String(group.length);
-        dot.classList.add('atlas-pin-count');
-      } else dot.appendChild(createMapSymbol(example.id, example.category));
+        const count = document.createElement('span');
+        count.className = 'atlas-pin-count';
+        count.textContent = String(group.length);
+        dot.appendChild(count);
+      }
       button.appendChild(dot);
       button.addEventListener('click', (event) => {
         event.stopPropagation();

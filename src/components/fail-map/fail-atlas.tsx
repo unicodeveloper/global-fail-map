@@ -480,8 +480,8 @@ export function FailAtlas({ examples }: { examples: FailExample[] }) {
       <header className="atlas-heading">
         <h1>Global Fail Map</h1>
         <p>
-          Explore failed companies, cancelled projects and abandoned
-          experiments.
+          A graveyard of failed companies, cancelled projects and abandoned
+          ideas.
         </p>
       </header>
       <button className="random-story" onClick={surprise}>

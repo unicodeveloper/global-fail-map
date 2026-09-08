@@ -1,7 +1,7 @@
 {
   "name": "Global Fail Map",
   "short_name": "Fail Map",
-  "description": "Explore failed companies, cancelled projects and abandoned experiments.",
+  "description": "A graveyard of failed companies, cancelled projects and abandoned ideas.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#22211f",
