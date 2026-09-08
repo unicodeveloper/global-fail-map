@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import type { Investigation } from './types';
 import { SourceFavicon } from './source-favicon';
+import { ResearchActivity } from './research-activity';
 import './research-progress.css';
 
 export type ResearchConnection = 'connecting' | 'live' | 'reconnecting';
@@ -151,6 +152,10 @@ export function ResearchProgress({
           <span>{investigation.sources.length} sources found</span>
         </a>
       )}
+      <ResearchActivity
+        activity={investigation.activity || []}
+        live={active && !queued}
+      />
       <div className="research-progress-footer">
         {paused ? (
           <a

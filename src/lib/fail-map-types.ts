@@ -22,7 +22,7 @@ export const investigationInputSchema = z
       .default('general'),
     instructions: z.string().trim().max(2000).default(''),
     mode: z.enum(['fast', 'standard', 'heavy']).default('fast'),
-    notifyOnCompletion: z.boolean().default(false),
+    notifyOnCompletion: z.boolean().optional(),
   })
   .strict();
 
@@ -35,6 +35,15 @@ export type InvestigationStatus =
   | 'completed'
   | 'failed'
   | 'cancelled';
+
+export interface InvestigationActivity {
+  id: string;
+  type: 'thought' | 'search' | 'read' | 'write' | 'tool';
+  title: string;
+  detail?: string;
+  status: 'running' | 'completed';
+  sources?: { title: string; url: string }[];
+}
 
 export interface Investigation {
   id: string;
@@ -51,6 +60,7 @@ export interface Investigation {
   currentStep?: number;
   totalSteps?: number;
   message?: string;
+  activity?: InvestigationActivity[];
 }
 
 const categoryFocus: Record<InvestigationInput['category'], string> = {
@@ -133,9 +143,154 @@ function safeSources(value: unknown): Investigation['sources'] {
   });
 }
 
+function activityRecord(value: unknown): Record<string, unknown> {
+  return value && typeof value === 'object' && !Array.isArray(value)
+    ? (value as Record<string, unknown>)
+    : {};
+}
+
+function activityText(value: unknown, limit = 4000): string {
+  if (typeof value !== 'string') return '';
+  return value
+    .replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g, '')
+    .trim()
+    .slice(0, limit);
+}
+
+function activityUrl(value: unknown): string {
+  if (typeof value !== 'string' || value.length > 2048) return '';
+  try {
+    const url = new URL(value);
+    return ['http:', 'https:'].includes(url.protocol) &&
+      !url.username &&
+      !url.password
+      ? url.href
+      : '';
+  } catch {
+    return '';
+  }
+}
+
+function activitySources(value: unknown): Investigation['sources'] {
+  if (!Array.isArray(value)) return [];
+  const seen = new Set<string>();
+  return value.slice(0, 20).flatMap((source) => {
+    const item = activityRecord(source);
+    const url = activityUrl(item.url);
+    if (!url || seen.has(url)) return [];
+    seen.add(url);
+    return [
+      { title: activityText(item.title, 180) || new URL(url).hostname, url },
+    ];
+  });
+}
+
+function toolActivityType(name: string): InvestigationActivity['type'] {
+  if (/search/i.test(name)) return 'search';
+  if (/fetch|read|contents?|browse/i.test(name)) return 'read';
+  if (/write|report|synthesi[sz]|finali[sz]/i.test(name)) return 'write';
+  return 'tool';
+}
+
+function toolActivityDetail(value: unknown): string {
+  const input = activityRecord(value);
+  const queries = [
+    input.objective,
+    input.query,
+    ...(Array.isArray(input.queries) ? input.queries.slice(0, 10) : []),
+  ]
+    .map((query) => activityText(query))
+    .filter(Boolean);
+  if (queries.length) return activityText([...new Set(queries)].join('\n'));
+  const urls = [
+    input.url,
+    ...(Array.isArray(input.urls) ? input.urls.slice(0, 10) : []),
+  ]
+    .map(activityUrl)
+    .filter(Boolean);
+  return activityText([...new Set(urls)].join('\n'));
+}
+
+function activityFromMessages(value: unknown): InvestigationActivity[] {
+  if (!Array.isArray(value)) return [];
+  const messages = value.slice(0, 1000).map(activityRecord);
+  const parts = (message: Record<string, unknown>) =>
+    Array.isArray(message.content)
+      ? message.content.slice(0, 40).map(activityRecord)
+      : [];
+  const results = new Map<string, Record<string, unknown>>();
+  for (const message of messages) {
+    if (message.role !== 'tool') continue;
+    for (const part of parts(message)) {
+      const id = activityText(part.toolCallId, 200);
+      if (part.type === 'tool-result' && id) results.set(id, part);
+    }
+  }
+
+  const activity: InvestigationActivity[] = [];
+  const seenTexts = new Set<string>();
+  const seenCalls = new Set<string>();
+  for (const [messageIndex, message] of messages.entries()) {
+    if (!['assistant', 'tool'].includes(String(message.role))) continue;
+    for (const [partIndex, part] of parts(message).entries()) {
+      if (activity.length >= 200) return activity;
+      const id = `step-${messageIndex}-${partIndex}`;
+      if (
+        message.role === 'assistant' &&
+        (part.type === 'text' || part.type === 'reasoning')
+      ) {
+        const detail = activityText(part.text);
+        const key = `${part.type}:${detail}`;
+        if (!detail || seenTexts.has(key)) continue;
+        seenTexts.add(key);
+        activity.push({
+          id,
+          type: part.type === 'reasoning' ? 'thought' : 'write',
+          title:
+            part.type === 'reasoning' ? 'Research plan' : 'Research update',
+          detail,
+          status: 'completed',
+        });
+        continue;
+      }
+      const isCall = message.role === 'assistant' && part.type === 'tool-call';
+      const isResult = message.role === 'tool' && part.type === 'tool-result';
+      const callId = activityText(part.toolCallId, 200);
+      if ((!isCall && !isResult) || !callId || seenCalls.has(callId)) continue;
+      seenCalls.add(callId);
+      const result = isResult ? part : results.get(callId);
+      const output = activityRecord(result?.output);
+      const wrappedOutput = activityRecord(output.value);
+      const sources = activitySources(wrappedOutput.sources ?? output.sources);
+      const name = activityText(part.toolName || result?.toolName, 80);
+      const type = toolActivityType(name);
+      const detail = isCall ? toolActivityDetail(part.input) : '';
+      const titles = {
+        thought: 'Research plan',
+        search: 'Searching sources',
+        read: 'Reading sources',
+        write: 'Writing the report',
+        tool:
+          name.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/[_-]+/g, ' ') ||
+          'Research step',
+      };
+      activity.push({
+        id,
+        type,
+        title: titles[type],
+        ...(detail ? { detail } : {}),
+        status: result ? 'completed' : 'running',
+        ...(sources.length ? { sources } : {}),
+      });
+    }
+  }
+  return activity;
+}
+
 export function investigationFromTask(
   task: Record<string, unknown>,
   input?: InvestigationInput,
+  options: { includeActivity?: boolean } = {},
 ): Investigation {
   const query = typeof task.query === 'string' ? task.query : '';
   const metadata =
@@ -196,6 +351,10 @@ export function investigationFromTask(
     typeof task.created_at === 'string'
       ? task.created_at
       : new Date().toISOString();
+  const activity =
+    options.includeActivity === false
+      ? []
+      : activityFromMessages(task.messages);
 
   return {
     id: typeof task.deepresearch_id === 'string' ? task.deepresearch_id : '',
@@ -225,6 +384,7 @@ export function investigationFromTask(
       ? { report: task.output }
       : {}),
     sources: safeSources(task.sources),
+    ...(activity.length ? { activity } : {}),
     ...(totalSteps > 0 && currentStep !== undefined
       ? { currentStep, totalSteps }
       : {}),

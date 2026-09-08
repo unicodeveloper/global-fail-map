@@ -70,7 +70,6 @@ export async function POST(request: Request) {
       );
     const input = parsed.data;
     const alertEmail = buildResearchNotification({
-      enabled: input.notifyOnCompletion,
       email: account.email,
       appUrl: appOrigin(request),
     });

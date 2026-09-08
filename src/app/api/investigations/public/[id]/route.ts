@@ -37,7 +37,12 @@ export async function GET(
         'NOT_FOUND',
       );
     }
-    return json({ investigation: investigationFromTask(result), shared: true });
+    return json({
+      investigation: investigationFromTask(result, undefined, {
+        includeActivity: false,
+      }),
+      shared: true,
+    });
   } catch (error) {
     return errorResponse(error);
   }

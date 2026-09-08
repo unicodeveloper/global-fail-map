@@ -96,7 +96,6 @@ export function FailAtlas({
   const [researchMode, setResearchMode] = useState<
     'fast' | 'standard' | 'heavy'
   >('fast');
-  const [notifyOnCompletion, setNotifyOnCompletion] = useState(true);
   const notificationAvailable = isSelfHosted
     ? selfHostedNotifications
     : Boolean(user?.email);
@@ -298,8 +297,6 @@ export function FailAtlas({
           );
           if (['fast', 'standard', 'heavy'].includes(draft.mode))
             setResearchMode(draft.mode);
-          if (typeof draft.notifyOnCompletion === 'boolean')
-            setNotifyOnCompletion(draft.notifyOnCompletion);
           setResearchCategory(
             categories.some((item) => item.id === draft.category)
               ? draft.category
@@ -503,7 +500,6 @@ export function FailAtlas({
             category: researchCategory,
             instructions,
             mode: researchMode,
-            notifyOnCompletion,
           }),
         );
       const result = await signInWithValyu();
@@ -533,7 +529,6 @@ export function FailAtlas({
         category: researchCategory === 'all' ? 'general' : researchCategory,
         instructions: instructions.trim() || undefined,
         mode: researchMode,
-        notifyOnCompletion: notificationAvailable && notifyOnCompletion,
       };
       const response = await fetch('/api/investigations', {
         method: 'POST',
@@ -1035,16 +1030,13 @@ export function FailAtlas({
                 {isSelfHosted
                   ? 'Uses your configured Valyu API key.'
                   : signedIn
-                    ? 'Uses your Valyu account credits.'
-                    : 'Connect Valyu to continue. No credits are used until you start the research.'}
+                    ? 'Research with your Valyu account.'
+                    : 'Connect Valyu to start your research.'}
               </p>
             </div>
             <ResearchOptions
               mode={researchMode}
               onModeChange={setResearchMode}
-              notifyOnCompletion={notifyOnCompletion}
-              onNotifyOnCompletionChange={setNotifyOnCompletion}
-              notificationEmail={isSelfHosted ? undefined : user?.email}
               notificationAvailable={notificationAvailable}
               disabled={submitting}
             />
@@ -1075,7 +1067,7 @@ export function FailAtlas({
               target="_blank"
               rel="noopener noreferrer"
             >
-              Your Valyu account & credits <ArrowUpRight size={12} />
+              Your Valyu account <ArrowUpRight size={12} />
             </a>
           </form>
         </DialogContent>
