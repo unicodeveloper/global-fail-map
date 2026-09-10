@@ -1,0 +1,29 @@
+# The Aérotrain
+
+## What Was Attempted
+
+Jean Bertin, a French aeronautical engineer who graduated from École Polytechnique and worked at SNECMA on aircraft propulsion, founded Bertin & Cie in 1956 to advance research beyond aviation [[17]](https://grokipedia.com/page/A%C3%A9rotrain). By the mid-1960s, Bertin had conceived a radical alternative to conventional rail: the Aérotrain, a hovertrain suspended on a magnetic field above a concrete guideway, powered by linear motors. The concept promised speeds exceeding 400 kilometers per hour, near-silent operation, and freedom from the friction and wear that constrained traditional rail systems.
+
+The vehicle was developed across two test sites in the Île-de-France region. The primary facility was established at Gometz-le-Châtel in Essonne, approximately 25 kilometers southwest of Paris, where prototypes were built and early trials conducted. A second test circuit was constructed at Orléans—specifically at Saran and Ruan—allowing for extended duration runs and speed validation [[18]](https://fabricofparis.com/2020/02/18/transport-that-never-was-aerotrain.html) [[20]](https://www.lemonde.fr/en/politics/article/2026/06/18/the-french-villages-left-behind-by-the-long-abandoned-hovertrain-project_6754618_5.html).
+
+On March 4, 1974, the Aérotrain achieved a speed record of 430.4 kilometers per hour, demonstrating that the concept was mechanically viable [[21]](https://www.atlasobscura.com/places/aerotrain-d-orleans-test-track). The French government, under President Valéry Giscard d'Estaing, had approved the project for a full operational trial in July 1974 [[19]](https://en.wikipedia.org/wiki/A%C3%A9rotrain). The announcement indicated government willingness to fund a production system that would connect Paris to the regions—potentially serving La Défense and Cergy as part of a broader transportation modernization.
+
+## Geographic Connection and Project Scope
+
+The Aérotrain was not merely a Paris novelty; it was integrated into regional planning for Île-de-France. The test infrastructure at Gometz and the Orléans circuit represented a 18-kilometer working model of what could become a metropolitan network [[20]](https://www.lemonde.fr/en/politics/article/2026/06/18/the-french-villages-left-behind-by-the-long-abandoned-hovertrain-project_6754618_5.html). The project had the backing of France's national railway operator, SNCF, which had taken shares in the enterprise, suggesting institutional confidence in the technology's future [[16]](https://www.vice.com/fr/article/aerotrain-francais-ruines-orleans/).
+
+## What Ended and Why
+
+Approval in July 1974 was followed almost immediately by political disruption. President Pompidou had died on April 2, 1974, and Giscard d'Estaing's administration was still consolidating power. More consequential was the October 1973 oil embargo, which triggered a global energy crisis and fundamentally shifted political priorities toward fuel conservation. High-speed transport powered by electric motors suddenly seemed less urgent than energy independence.
+
+The project was formally cancelled on July 17, 1977 [[21]](https://www.atlasobscura.com/places/aerotrain-d-orleans-test-track). The precise decision-making process is not fully documented in accessible sources, but the convergence of factors is clear: oil crisis anxieties, the death of Jean Bertin (which removed the project's principal advocate), and the adoption of the TGV (Train à Grande Vitesse) by the French government as the official high-speed rail technology. The TGV was an evolution of conventional steel-wheel technology—proven, scalable, and politically safer [[19]](https://en.wikipedia.org/wiki/A%C3%A9rotrain) [[21]](https://www.atlasobscura.com/places/aerotrain-d-orleans-test-track).
+
+The Aérotrain's concrete guideway and vehicles were left in place at Gometz and Orléans. The infrastructure decayed over decades. In 1991 and 1992, fires destroyed much of the remaining prototype stock, eliminating physical evidence of the concept [[18]](https://fabricofparis.com/2020/02/18/transport-that-never-was-aerotrain.html). By the 2020s, the Orléans test track had become a derelict monument in the Petite Beauce region, an 18-kilometer stretch of crumbling concrete monorail running through farmland, attracting nostalgia tourism and inspiring scholarly analysis of failed industrial ambition [[20]](https://www.lemonde.fr/en/politics/article/2026/06/18/the-french-villages-left-behind-by-the-long-abandoned-hovertrain-project_6754618_5.html).
+
+Allegations have been raised, though not conclusively documented in the sources examined here, that SNCF may have actively discouraged the Aérotrain to protect its monopoly on rail transport, and that industrial interests tied to the Schneider family (traditional competitors in French infrastructure) may have influenced the government's decision [[16]](https://www.vice.com/fr/article/aerotrain-francais-ruines-orleans/) [[26]](https://www.machinocene.com/p/can-you-feel-the-giscardpunk). These claims appear in historical accounts but do not rest on verified archival evidence and should be treated as reported allegations rather than established fact.
+
+## What Survived
+
+The Aérotrain itself is gone, but the concept of automated, contactless transportation did not die with it. TGV technology—conventional steel-wheel, high-speed rail—became France's official answer to the speed challenge, and the TGV program has defined French rail for fifty years. More directly, the automation and linear motor concepts that Bertin pioneered were adapted by other researchers. The experience with magnetic suspension and guidance systems contributed to subsequent developments in automated metros. The legacy is indirect but measurable: the Aérotrain's engineering principles informed the later development of automated metros across France and Europe, even as the vehicle itself disappeared.
+
+---

@@ -60,3 +60,12 @@ secrets.*
 *.tfplan
 terraform.tfvars
 work/
+
+# Batch research artefacts
+scripts/outputs/
+scripts/*.log
+scripts/claims-to-verify.md
+scripts/cases/
+scripts/case-verdicts.json
+scripts/verify-schema.json
+scripts/case-places.json

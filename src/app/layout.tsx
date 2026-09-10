@@ -9,13 +9,13 @@ const mono = Geist_Mono({ variable: '--font-mono', subsets: ['latin'] });
 const baseUrl =
   process.env.NEXT_PUBLIC_APP_URL || 'https://global-fail-map.vercel.app';
 const description =
-  'A graveyard of failed companies, cancelled projects and abandoned ideas. Search the world map to discover what happened, why it ended and the evidence behind the story.';
+  'A graveyard of failed companies, cancelled megaprojects, dead science and abandoned futures. Search the world map to discover what happened, why it ended and the evidence behind the story.';
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   viewportFit: 'cover',
-  themeColor: '#22211f',
+  themeColor: '#000000',
 };
 
 export const metadata: Metadata = {

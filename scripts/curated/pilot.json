@@ -1,0 +1,63 @@
+[
+  {
+    "caseId": "nadi-port--korolevu-beach-hotel-the-collapse-of-fiji",
+    "id": "korolevu-beach-hotel",
+    "title": "Korolevu Beach Hotel",
+    "subtitle": "The resort that invented Fijian tourism and did not survive one cyclone.",
+    "location": "Korolevu, Coral Coast",
+    "summary": "Fiji's first international resort opened in 1948 and ran for 35 years, establishing the thatched bure as the template every later Fijian resort copied. Cyclone Oscar destroyed the regional power supply in 1983 and the owners, facing retirement and a full rebuild, closed it permanently.",
+    "lesson": "An industry can outlive the business that started it; design for succession, not just for the founder's horizon.",
+    "locationRole": "Resort site on the Coral Coast",
+    "category": "companies"
+  },
+  {
+    "caseId": "la-polar--ladeco-linea-aerea-del-cobre-from-regional",
+    "id": "ladeco",
+    "title": "LADECO",
+    "subtitle": "Chile's copper airline flew to 63% of the domestic market, then into its rival.",
+    "location": "Santiago",
+    "summary": "Founded in 1958 and named for the export that paid for it, LADECO took roughly 63% of Chile's domestic market by 1980 and flew some 20 aircraft. Insolvency in the 1980s put it under state management; LAN-Chile bought control in 1995 and folded it into LAN Express in 2001.",
+    "lesson": "Market share bought with capacity is not the same as a balance sheet that survives a credit crisis.",
+    "locationRole": "Headquarters and main hub",
+    "category": "companies"
+  },
+  {
+    "caseId": "manila-bay--the-burnham-plan-of-manila-1905-the",
+    "id": "burnham-plan-manila",
+    "title": "The Burnham Plan of Manila",
+    "subtitle": "A public waterfront from Luneta to Cavite, drawn in 1905 and never joined up.",
+    "location": "Manila Bay",
+    "summary": "Daniel Burnham's 1905 masterplan committed Manila's reclaimed bayfront to public use, with a continuous parkway, a civic centre and a restored estero network. Roxas Boulevard, Rizal Park and three government buildings were built, but the unified scheme ended when the capital moved to Quezon City in 1939, and the 1945 battle destroyed much of what stood.",
+    "lesson": "A plan that depends on one seat of government outliving it will be abandoned when the government moves.",
+    "locationRole": "Planned bayfront parkway",
+    "category": "visions",
+    "lat": 14.5794,
+    "lng": 120.9772
+  },
+  {
+    "caseId": "hwang-woo-suk--the-hwang-woo-suk-stem-cell-fraud",
+    "id": "hwang-stem-cell",
+    "title": "The Hwang stem cell papers",
+    "subtitle": "Eleven patient-matched cell lines announced to the world. None of them existed.",
+    "location": "Seoul National University",
+    "summary": "Between 2004 and 2005 Hwang Woo-suk published claims in Science and Nature of a cloned human embryonic stem cell line and then eleven patient-specific lines, positioning Seoul as the centre of regenerative medicine. Investigation established the lines had never existed and both papers were retracted in 2006.",
+    "lesson": "Verify the material, not the paper; a field that cannot replicate a result quickly will carry the fraud for years.",
+    "locationRole": "Laboratory where the work was claimed",
+    "category": "science",
+    "lat": 37.4599,
+    "lng": 126.952,
+    "period": "2004-2006"
+  },
+  {
+    "caseId": "simputer--the-semiconductor-dream-bel-transistor-and-integrated",
+    "id": "bel-semiconductors",
+    "title": "BEL's semiconductor line",
+    "subtitle": "India made 20 million transistors a year, then let the fab go.",
+    "location": "Bangalore",
+    "summary": "Bharat Electronics licensed germanium and silicon transistor technology from Philips and RCA from the late 1950s, reaching roughly 20 million transistors a year and giving India a domestic semiconductor industry while Japan and South Korea were still climbing. The fab could not hold pace with global process standards and was eventually shut.",
+    "lesson": "A licensed process is a starting position, not a capability; without continuous reinvestment the gap compounds every node.",
+    "locationRole": "Transistor fabrication plant",
+    "category": "technology",
+    "period": "1959-1980s"
+  }
+]

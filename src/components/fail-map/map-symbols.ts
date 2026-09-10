@@ -40,6 +40,12 @@ const symbols = {
   bridge: ['M3 20V4m18 16V4M3 9q9 11 18 0M3 18h18', 'M7 13v5m5-3v3m5-5v5'],
   power: ['M13 2 4 14h7l-1 8 10-13h-7l1-7Z'],
   search: ['M10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z', 'm15 15 6 6'],
+  /* Reads as "several things", so a cluster stops impersonating its first member. */
+  cluster: [
+    'M12 2 22 7.5 12 13 2 7.5 12 2Z',
+    'm2 12 10 5.5L22 12',
+    'm2 16.5 10 5.5 10-5.5',
+  ],
 } as const;
 
 type SymbolName = keyof typeof symbols;
@@ -93,10 +99,25 @@ export function mapSymbolPaths(id: string, category: Category | 'general') {
   return symbols[caseSymbols[id] || categorySymbols[category]];
 }
 
+export function resolveSymbolName(id: string, category: Category | 'general') {
+  return caseSymbols[id] || categorySymbols[category];
+}
+
+/**
+ * The glyph a grouped marker wears. Drawing the first member's symbol made a
+ * cluster of seven look like one science pin, so groups get their own mark.
+ */
+export function createClusterSymbol() {
+  return buildMapSymbol('cluster');
+}
+
 let symbolSequence = 0;
 
 export function createMapSymbol(id: string, category: Category | 'general') {
-  const name = caseSymbols[id] || categorySymbols[category];
+  return buildMapSymbol(caseSymbols[id] || categorySymbols[category]);
+}
+
+function buildMapSymbol(name: SymbolName) {
   const paths = symbols[name];
   const solid = !['atom', 'bridge', 'search'].includes(name);
   const gradientId = `map-symbol-${++symbolSequence}`;

@@ -1,10 +1,17 @@
 import assert from 'node:assert/strict';
 import { randomUUID } from 'node:crypto';
 import { after, test } from 'node:test';
-import { buildInvestigationPrompt, investigationFromTask, investigationInputSchema } from '../src/lib/fail-map-types';
+import {
+  buildInvestigationPrompt,
+  investigationFromTask,
+  investigationInputSchema,
+} from '../src/lib/fail-map-types';
 import { assertSameOrigin, RequestError } from '../src/lib/server/http';
 import { seal, unseal } from '../src/lib/server/valyu-session';
-import { POST as createInvestigation, GET as listInvestigations } from '../src/app/api/investigations/route';
+import {
+  POST as createInvestigation,
+  GET as listInvestigations,
+} from '../src/app/api/investigations/route';
 import { GET as pollInvestigation } from '../src/app/api/investigations/[id]/route';
 
 const previousEnvironment = { ...process.env };
@@ -22,25 +29,55 @@ after(() => {
 function post(body: unknown): Request {
   return new Request('http://localhost:3100/api/investigations', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Origin: 'http://localhost:3100' },
+    headers: {
+      'Content-Type': 'application/json',
+      Origin: 'http://localhost:3100',
+    },
     body: JSON.stringify(body),
   });
 }
 
 test('input validation rejects unbounded coordinates and unsupported categories', () => {
-  assert.equal(investigationInputSchema.safeParse({ location: { name: 'London', latitude: 91, longitude: 0 } }).success, false);
-  assert.equal(investigationInputSchema.safeParse({ location: { name: 'London', latitude: 51, longitude: 0 }, category: 'medical-advice' }).success, false);
-  assert.equal(investigationInputSchema.safeParse({ location: { name: 'London', latitude: 51, longitude: 0 }, instructions: 'x'.repeat(2001) }).success, false);
+  assert.equal(
+    investigationInputSchema.safeParse({
+      location: { name: 'London', latitude: 91, longitude: 0 },
+    }).success,
+    false,
+  );
+  assert.equal(
+    investigationInputSchema.safeParse({
+      location: { name: 'London', latitude: 51, longitude: 0 },
+      category: 'medical-advice',
+    }).success,
+    false,
+  );
+  assert.equal(
+    investigationInputSchema.safeParse({
+      location: { name: 'London', latitude: 51, longitude: 0 },
+      instructions: 'x'.repeat(2001),
+    }).success,
+    false,
+  );
 });
 
 test('cross-site requests cannot spend research credits', () => {
-  assert.throws(() => assertSameOrigin(new Request('http://localhost:3100/api/investigations', {
-    method: 'POST', headers: { Origin: 'https://unrelated.example' },
-  })), (error: unknown) => error instanceof RequestError && error.status === 403);
+  assert.throws(
+    () =>
+      assertSameOrigin(
+        new Request('http://localhost:3100/api/investigations', {
+          method: 'POST',
+          headers: { Origin: 'https://unrelated.example' },
+        }),
+      ),
+    (error: unknown) => error instanceof RequestError && error.status === 403,
+  );
 });
 
 test('session encryption rejects tampering and does not reveal bearer credentials', () => {
-  const payload = { accessToken: 'private-bearer-value', expiresAt: Date.now() + 3600000 };
+  const payload = {
+    accessToken: 'private-bearer-value',
+    expiresAt: Date.now() + 3600000,
+  };
   const cookie = seal(payload);
   assert.equal(cookie.includes(payload.accessToken), false);
   assert.deepEqual(unseal(cookie), payload);
@@ -51,19 +88,54 @@ test('session encryption rejects tampering and does not reveal bearer credential
 });
 
 test('research prompt preserves evidence and geographic precision', () => {
-  const prompt = buildInvestigationPrompt({ location: { name: 'Basel', latitude: 47.56, longitude: 7.59 }, category: 'science', instructions: '' });
+  const prompt = buildInvestigationPrompt({
+    location: { name: 'Basel', latitude: 47.56, longitude: 7.59 },
+    category: 'science',
+    instructions: '',
+  });
   assert.match(prompt, /^Research target: Basel/m);
   assert.match(prompt, /^Research coordinates: 47.56, 7.59/m);
-  assert.match(prompt, /A terminated trial does not establish lack of efficacy/);
+  assert.match(
+    prompt,
+    /A terminated trial does not establish lack of efficacy/,
+  );
   assert.match(prompt, /project site, headquarters, laboratory, trial site/);
   assert.match(prompt, /primary sources/);
 });
 
 test('worldwide idea research has no invented geographic anchor', () => {
-  const prompt = buildInvestigationPrompt({ location: { name: 'Flying cars', latitude: 0, longitude: 0, scope: 'worldwide' }, category: 'technology', instructions: '' });
+  const prompt = buildInvestigationPrompt({
+    location: {
+      name: 'Flying cars',
+      latitude: 0,
+      longitude: 0,
+      scope: 'worldwide',
+    },
+    category: 'technology',
+    instructions: '',
+  });
   assert.match(prompt, /worldwide topic search/);
   assert.match(prompt, /establish the real location of each case/);
   assert.doesNotMatch(prompt, /at latitude 0/);
+});
+
+test('Nigerian research prompts mention archivi.ng as a primary source', () => {
+  const prompt = buildInvestigationPrompt({
+    location: { name: 'Lagos', latitude: 6.52, longitude: 3.37 },
+    category: 'infrastructure',
+    instructions: '',
+  });
+  assert.match(prompt, /archivi\.ng/);
+  assert.match(prompt, /primary contemporary sources/);
+});
+
+test('non-Nigerian research prompts do not mention archivi.ng', () => {
+  const prompt = buildInvestigationPrompt({
+    location: { name: 'Basel', latitude: 47.56, longitude: 7.59 },
+    category: 'science',
+    instructions: '',
+  });
+  assert.doesNotMatch(prompt, /archivi\.ng/);
 });
 
 test('task responses expose only safe report fields and source URLs', () => {
@@ -71,10 +143,19 @@ test('task responses expose only safe report fields and source URLs', () => {
   const result = investigationFromTask({
     deepresearch_id: id,
     status: 'completed',
-    query: 'Research target: London\nResearch coordinates: 51.5, -0.12\nResearch category: infrastructure',
+    query:
+      'Research target: London\nResearch coordinates: 51.5, -0.12\nResearch category: infrastructure',
     output: '# A documented attempt',
-    sources: [{ title: 'Archive', url: 'https://example.com/archive' }, { title: 'Bad URL', url: 'javascript:alert(1)' }],
-    messages: [{ role: 'assistant', content: 'Internal trace that must never be served' }],
+    sources: [
+      { title: 'Archive', url: 'https://example.com/archive' },
+      { title: 'Bad URL', url: 'javascript:alert(1)' },
+    ],
+    messages: [
+      {
+        role: 'assistant',
+        content: 'Internal trace that must never be served',
+      },
+    ],
     created_at: '2026-09-08T12:00:00.000Z',
   });
   assert.equal(result.id, id);
@@ -87,7 +168,10 @@ test('task responses expose only safe report fields and source URLs', () => {
 
 test('create, list and poll use the DeepResearch API contract', async () => {
   const providerId = randomUUID();
-  globalThis.fetch = (async (resource: RequestInfo | URL, options?: RequestInit) => {
+  globalThis.fetch = (async (
+    resource: RequestInfo | URL,
+    options?: RequestInit,
+  ) => {
     const url = String(resource);
     if (options?.method === 'POST') {
       assert.equal(url, 'https://api.valyu.ai/v1/deepresearch/tasks');
@@ -96,16 +180,35 @@ test('create, list and poll use the DeepResearch API contract', async () => {
       assert.equal(body.model, undefined);
       assert.deepEqual(body.output_formats, ['markdown']);
       assert.match(body.query, /^Research target: London/m);
-      return Response.json({ deepresearch_id: providerId, status: 'running', created_at: '2026-09-08T12:00:00.000Z' }, { status: 202 });
+      return Response.json(
+        {
+          deepresearch_id: providerId,
+          status: 'running',
+          created_at: '2026-09-08T12:00:00.000Z',
+        },
+        { status: 202 },
+      );
     }
     if (url.endsWith('/v1/deepresearch/list?limit=50')) {
-      return Response.json([{ deepresearch_id: providerId, status: 'running', query: 'Research target: London\nResearch coordinates: 51.5, -0.12\nResearch category: infrastructure', created_at: '2026-09-08T12:00:00.000Z' }]);
+      return Response.json([
+        {
+          deepresearch_id: providerId,
+          status: 'running',
+          query:
+            'Research target: London\nResearch coordinates: 51.5, -0.12\nResearch category: infrastructure',
+          created_at: '2026-09-08T12:00:00.000Z',
+        },
+      ]);
     }
-    assert.equal(url, `https://api.valyu.ai/v1/deepresearch/tasks/${providerId}/status`);
+    assert.equal(
+      url,
+      `https://api.valyu.ai/v1/deepresearch/tasks/${providerId}/status`,
+    );
     return Response.json({
       deepresearch_id: providerId,
       status: 'completed',
-      query: 'Research target: London\nResearch coordinates: 51.5, -0.12\nResearch category: infrastructure',
+      query:
+        'Research target: London\nResearch coordinates: 51.5, -0.12\nResearch category: infrastructure',
       output: '# A documented attempt',
       sources: [{ title: 'Archive', url: 'https://example.com/archive' }],
       created_at: '2026-09-08T12:00:00.000Z',
@@ -113,7 +216,10 @@ test('create, list and poll use the DeepResearch API contract', async () => {
     });
   }) as typeof fetch;
 
-  const input = { location: { name: 'London', latitude: 51.5, longitude: -0.12 }, category: 'infrastructure' };
+  const input = {
+    location: { name: 'London', latitude: 51.5, longitude: -0.12 },
+    category: 'infrastructure',
+  };
   const created = await createInvestigation(post(input));
   assert.equal(created.status, 201);
   assert.equal((await created.json()).investigation.id, providerId);
@@ -122,19 +228,33 @@ test('create, list and poll use the DeepResearch API contract', async () => {
   assert.equal(listed.status, 200);
   assert.equal((await listed.json()).investigations[0].location.name, 'London');
 
-  const poll = await pollInvestigation(new Request(`http://localhost:3100/api/investigations/${providerId}`), { params: Promise.resolve({ id: providerId }) });
+  const poll = await pollInvestigation(
+    new Request(`http://localhost:3100/api/investigations/${providerId}`),
+    { params: Promise.resolve({ id: providerId }) },
+  );
   const completed = (await poll.json()).investigation;
   assert.equal(completed.status, 'completed');
   assert.match(completed.report, /documented attempt/);
 });
 
 test('bad input and provider failures return safe errors', async () => {
-  const invalid = await createInvestigation(post({ location: { name: '', latitude: 0, longitude: 0 } }));
+  const invalid = await createInvestigation(
+    post({ location: { name: '', latitude: 0, longitude: 0 } }),
+  );
   assert.equal(invalid.status, 400);
-  globalThis.fetch = (async () => Response.json({ error: 'private provider details and credentials' }, { status: 402 })) as typeof fetch;
-  const response = await createInvestigation(post({ location: { name: 'Rome', latitude: 41.9, longitude: 12.5 } }));
+  globalThis.fetch = (async () =>
+    Response.json(
+      { error: 'private provider details and credentials' },
+      { status: 402 },
+    )) as typeof fetch;
+  const response = await createInvestigation(
+    post({ location: { name: 'Rome', latitude: 41.9, longitude: 12.5 } }),
+  );
   assert.equal(response.status, 402);
   const error = await response.json();
   assert.equal(error.error, 'INSUFFICIENT_CREDITS');
-  assert.equal(JSON.stringify(error).includes('private provider details'), false);
+  assert.equal(
+    JSON.stringify(error).includes('private provider details'),
+    false,
+  );
 });

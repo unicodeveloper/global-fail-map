@@ -1,14 +1,14 @@
 'use client';
 
 import Image from 'next/image';
-import { BookOpen, History, Info, LogIn, LogOut, Search } from 'lucide-react';
+import { BookOpen, History, Info, LogIn, LogOut, Shuffle } from 'lucide-react';
 
 interface AtlasDockProps {
   onHome: () => void;
-  onSearch: () => void;
   onStories: () => void;
   onHistory: () => void;
   onAbout: () => void;
+  onRandom?: () => void;
   onConnect: () => void;
   onDisconnect: () => void;
   signedIn: boolean;
@@ -24,14 +24,6 @@ export function AtlasDock(props: AtlasDockProps) {
         <span className="dock-tooltip">Home</span>
       </button>
       <span className="dock-divider" />
-      <button
-        className="dock-item"
-        onClick={props.onSearch}
-        aria-label="Search a place or idea"
-      >
-        <Search size={21} />
-        <span className="dock-tooltip">Search</span>
-      </button>
       <button
         className="dock-item"
         onClick={props.onStories}
@@ -57,6 +49,16 @@ export function AtlasDock(props: AtlasDockProps) {
         <Info size={21} />
         <span className="dock-tooltip">About</span>
       </button>
+      {props.onRandom && (
+        <button
+          className="dock-item is-random"
+          onClick={props.onRandom}
+          aria-label="Open a random story"
+        >
+          <Shuffle size={21} />
+          <span className="dock-tooltip">Random story</span>
+        </button>
+      )}
       {!props.selfHosted && (
         <button
           className="dock-item"

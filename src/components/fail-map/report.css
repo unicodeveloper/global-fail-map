@@ -20,9 +20,29 @@
   color: var(--dossier-ink);
   transform: none;
   translate: none !important;
-  animation: none;
   color-scheme: light;
   font-family: var(--font-display), sans-serif;
+  /*
+   * Rises over the globe rather than cutting to it. The reader has just
+   * travelled to a point on a map, and a hard swap to a white page threw that
+   * away at the moment it should pay off.
+   */
+  animation: dossier-rise 260ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+@keyframes dossier-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+}
+.dossier-dialog[data-slot='dialog-content'][data-state='closed'] {
+  animation: dossier-settle 180ms ease-in;
+}
+@keyframes dossier-settle {
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 }
 
 .dossier-toolbar {
@@ -716,7 +736,7 @@
     flex: 0 0 250px;
     min-height: 250px;
     padding: 10px 12px;
-    border-right: 0;
+    border: 0;
     border-bottom: 1px solid var(--dossier-border);
   }
   .is-map-open .dossier-context {
@@ -851,4 +871,87 @@
   font-size: 12px;
   line-height: 1.7;
   margin: 8px 0 12px;
+}
+
+/**
+ * Closes the report on its hand-written takeaway. The rule carries the
+ * story's own marker colour, so the reader lands back on the map's language.
+ */
+.dossier-lesson {
+  margin: 34px 0 4px;
+  padding: 4px 0 4px 20px;
+  border-left: 3px solid var(--pin-color, var(--dossier-border));
+}
+.dossier-lesson-label {
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dossier-muted);
+}
+.dossier-lesson-text {
+  margin: 0;
+  max-width: 46ch;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: -0.2px;
+  text-wrap: pretty;
+  color: var(--dossier-ink);
+}
+@media (max-width: 900px) {
+  .dossier-lesson {
+    margin-top: 28px;
+    padding-left: 16px;
+  }
+  .dossier-lesson-text {
+    font-size: 17px;
+  }
+}
+
+.dossier-archive {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--dossier-border);
+}
+.dossier-archive-note {
+  margin: 0 0 14px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--dossier-muted);
+}
+.dossier-archive-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--dossier-border);
+  border-radius: 6px;
+  color: var(--dossier-ink);
+  text-decoration: none;
+}
+.dossier-archive-link:hover {
+  border-color: #a3a3a3;
+  background: #f5f5f5;
+}
+.dossier-archive-link > svg {
+  flex-shrink: 0;
+  color: var(--dossier-muted);
+}
+.dossier-archive-link > span {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.dossier-archive-link strong {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.dossier-archive-link span > span {
+  font-size: 10px;
+  color: var(--dossier-muted);
 }

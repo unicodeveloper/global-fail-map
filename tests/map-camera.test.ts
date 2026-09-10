@@ -1,8 +1,11 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import {
+  getGlobeSpinStep,
   getMapCameraTarget,
   sameMapCameraTarget,
+  spinDegreesPerSecond,
+  wrapLongitude,
 } from '../src/components/fail-map/map-camera';
 
 const denver = { name: 'Denver', latitude: 39.7392, longitude: -104.9903 };
@@ -55,8 +58,8 @@ test('worldwide research retains the globe instead of focusing placeholder coord
       384,
     ),
     {
-      center: [10, 22],
-      zoom: 0.8,
+      center: [-38, 26],
+      zoom: 0.9,
     },
   );
 });
@@ -86,8 +89,31 @@ test('valid locations on the equator or prime meridian still receive a focused c
   );
 });
 
-test('atlas camera preserves its existing world and selection zooms', () => {
-  assert.equal(getMapCameraTarget(null, undefined, 390).zoom, 0.8);
-  assert.equal(getMapCameraTarget(null, 'atlas', 1440).zoom, 1.6);
+test('atlas camera opens over the marker-dense Atlantic rim', () => {
+  assert.equal(getMapCameraTarget(null, undefined, 390).zoom, 0.9);
+  assert.equal(getMapCameraTarget(null, 'atlas', 1440).zoom, 1.7);
   assert.equal(getMapCameraTarget(denver, 'atlas', 1440).zoom, 2.5);
+  assert.deepEqual(getMapCameraTarget(null, 'atlas', 1440).center, [-38, 26]);
+});
+
+test('the idle drift turns at a steady pace while the globe is whole', () => {
+  assert.equal(getGlobeSpinStep(1.7, 1000), spinDegreesPerSecond * 0.1);
+  assert.equal(getGlobeSpinStep(0.9, 500), getGlobeSpinStep(2, 500));
+});
+
+test('the drift eases out as the reader zooms in and stops on the ground', () => {
+  assert.ok(getGlobeSpinStep(3, 100) < getGlobeSpinStep(2, 100));
+  assert.equal(getGlobeSpinStep(4, 100), 0);
+  assert.equal(getGlobeSpinStep(9, 100), 0);
+});
+
+test('a stalled frame does not lurch the globe forward', () => {
+  assert.equal(getGlobeSpinStep(1.7, 8000), getGlobeSpinStep(1.7, 100));
+  assert.equal(getGlobeSpinStep(1.7, -20), 0);
+});
+
+test('a globe left turning stays within normal longitudes', () => {
+  assert.equal(wrapLongitude(-190), 170);
+  assert.equal(wrapLongitude(-38), -38);
+  assert.equal(wrapLongitude(540), -180);
 });

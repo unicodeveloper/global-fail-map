@@ -46,7 +46,7 @@ html,
 body {
   margin: 0;
   min-height: 100%;
-  background: #22211f;
+  background: #000;
   color: var(--foreground);
 }
 body {
@@ -113,48 +113,116 @@ textarea:focus-visible {
   width: 100%;
   position: relative;
   overflow: clip;
-  background: #22211f;
+  background: #000;
 }
 .atlas-heading {
   position: absolute;
-  top: 48px;
-  left: 180px;
-  right: 180px;
-  text-align: center;
+  top: 28px;
+  left: 0;
+  right: 0;
+  /* How far the masthead sits from the edge once it has docked. */
+  --heading-inset: 24px;
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--heading-inset);
   pointer-events: none;
   color: #fafafa;
   z-index: 2;
+}
+.atlas-heading-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* The masthead opens over the whole globe and travels to the corner as one
+     object, wordmark and tagline together, once the camera commits to a
+     region. The percentage is of the masthead's own width, so the shift lands
+     its left edge exactly on the page inset at every frame, even while the
+     type is still shrinking. */
+  transition: transform 560ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Shrink-wrapped around the wordmark so the rule underlines the title rather
+   than the wider tagline below it. */
+.atlas-heading-mark {
+  display: flex;
+  flex-direction: column;
 }
 .atlas-heading h1 {
   font-size: 42px;
   font-weight: 450;
   letter-spacing: -1.8px;
   line-height: 1.15;
-  margin: 0 0 11px;
+  margin: 0;
+  white-space: nowrap;
+  transition:
+    font-size 560ms cubic-bezier(0.4, 0, 0.2, 1),
+    letter-spacing 560ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.atlas-heading-rule {
+  width: 100%;
+  height: 1px;
+  margin: 13px 0 12px;
+  background: linear-gradient(90deg, #ffffff00, #ffffff5c, #ffffff00);
+  transition: margin 560ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .atlas-heading p {
+  /* Both taglines share one cell so the long line can hand over to the short
+     one in place, without the block resizing under the swap. */
+  display: grid;
   margin: 0;
+  max-width: 640px;
   color: #c8c6c0;
   font-size: 13px;
-  line-height: 1.65;
+  line-height: 1.6;
+}
+.atlas-heading p span {
+  grid-area: 1 / 1;
+}
+.atlas-heading p [data-line='full'] {
+  transition: opacity 260ms ease-out 220ms;
+}
+.atlas-heading p [data-line='short'] {
+  opacity: 0;
+  transition: opacity 180ms ease-in;
+}
+/* Docked: the same three parts, shrunk to a corner wordmark. */
+.atlas-heading[data-dock='left'] .atlas-heading-inner {
+  transform: translateX(calc(var(--heading-inset) - 50vw + 50%));
+  align-items: flex-start;
+  text-align: left;
+}
+.atlas-heading[data-dock='left'] h1 {
+  font-size: 21px;
+  letter-spacing: -0.5px;
+}
+.atlas-heading[data-dock='left'] .atlas-heading-rule {
+  margin: 7px 0 6px;
+  background: linear-gradient(90deg, #ffffff5c, #ffffff00);
+}
+/* The long line leaves first, then the short one arrives in the gap it left. */
+.atlas-heading[data-dock='left'] p [data-line='full'] {
+  opacity: 0;
+  transition: opacity 180ms ease-in;
+}
+.atlas-heading[data-dock='left'] p [data-line='short'] {
+  opacity: 1;
+  transition: opacity 260ms ease-out 220ms;
 }
 .random-story {
-  position: absolute;
-  top: 30px;
-  right: 28px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   gap: 8px;
-  min-height: 43px;
+  height: 44px;
   padding: 0 17px;
-  border-radius: 24px;
-  background: #fffffff2;
+  border-radius: 13px;
+  background: #fffffff5;
   color: #262626;
-  border: 1px solid #ffffff60;
-  font-size: 12px;
+  border: 1px solid #ffffff80;
+  font-size: 13px;
   font-weight: 500;
-  z-index: 3;
-  box-shadow: 0 4px 24px #0001;
+  white-space: nowrap;
+  box-shadow: 0 8px 36px #0003;
 }
 .random-story:hover {
   background: white;
@@ -164,6 +232,7 @@ textarea:focus-visible {
   left: 24px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -174,7 +243,6 @@ textarea:focus-visible {
   backdrop-filter: blur(24px);
   border: 1px solid #ffffff70;
   box-shadow: 0 12px 40px #0003;
-  z-index: 4;
 }
 .dock-item {
   position: relative;
@@ -195,12 +263,37 @@ textarea:focus-visible {
   background: #e9e9e9;
   color: #171717;
 }
+.dock-flag {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--pin-color);
+  box-shadow: 0 0 0 2px #fff;
+}
+.dock-item[aria-expanded='true'] {
+  background: #e9e9e9;
+  color: #171717;
+}
+.dock-item[aria-expanded='true'] .dock-tooltip {
+  display: none;
+}
 .dock-divider {
   display: block;
   width: 28px;
   height: 1px;
   background: #d4d4d4;
   margin: 2px 0;
+}
+/*
+ * The random story lives in the discovery bar on desktop, where attention is
+ * already near the search field. On a phone it moves into the dock so the
+ * globe keeps every vertical pixel it can.
+ */
+.dock-item.is-random {
+  display: none;
 }
 .dock-tooltip {
   position: absolute;
@@ -223,19 +316,191 @@ textarea:focus-visible {
 .dock-item:focus-visible .dock-tooltip {
   opacity: 1;
 }
+.atlas-legend {
+  position: fixed;
+  right: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  translate: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 68px;
+  max-width: calc(100% - 124px);
+  padding: 5px;
+  border-radius: 14px;
+  border: 1px solid #ffffff25;
+  background: #0e0e10f5;
+  box-shadow: 0 16px 64px #0003;
+  animation: none;
+  z-index: 40;
+}
+.legend-topline {
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 6px 6px 4px 14px;
+}
+.legend-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.legend-topline .icon-button {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #a3a3a3;
+}
+.legend-topline .icon-button:hover {
+  background: #ffffff15;
+  color: #f5f3ee;
+}
+.marker-swatch {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #16161a;
+}
+.marker-swatch svg {
+  width: 19px;
+  height: 19px;
+  overflow: visible;
+  filter: drop-shadow(
+    0 0 3px color-mix(in oklab, var(--pin-color) 50%, transparent)
+  );
+}
+/*
+ * Compact icon-only grid. Hovering an icon surfaces the story title and its
+ * category, so the panel stays slim while still teaching the colour system.
+ */
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+}
+.legend-grid-item {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 7px;
+  background: #16161a;
+  box-shadow: inset 0 0 0 1px #ffffff10;
+  transition:
+    background 150ms ease-out,
+    transform 120ms ease-out;
+}
+.legend-grid-item .marker-swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+}
+.legend-grid-item .marker-swatch svg {
+  width: 15px;
+  height: 15px;
+}
+.legend-grid-item:hover,
+.legend-grid-item:focus-visible {
+  background: #1e1e23;
+  transform: translateY(-2px) scale(1.08);
+  z-index: 2;
+}
+.legend-grid-item[aria-pressed='true'] {
+  background: color-mix(in oklab, var(--pin-color) 25%, #16161a);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in oklab, var(--pin-color) 60%, transparent),
+    0 0 10px color-mix(in oklab, var(--pin-color) 40%, transparent);
+}
+.legend-grid-item.is-static {
+  cursor: default;
+}
+.legend-tooltip {
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: max-content;
+  max-width: 140px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid #ffffff20;
+  background: #101013f7;
+  box-shadow: 0 8px 28px #00000090;
+  color: #f5f3ee;
+  font-size: 11px;
+  font-weight: 500;
+  pointer-events: none;
+  z-index: 41;
+}
+/**
+ * The discovery bar. Search and Random story sit together where attention
+ * already is; Random story used to float alone in the opposite corner at the
+ * lowest visual weight on the page, which buried the best first click.
+ */
 .atlas-discovery {
   position: absolute;
   bottom: 26px;
   left: 50%;
   transform: translateX(-50%);
-  width: 296px;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: calc(100vw - 36px);
+}
+.atlas-discovery-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.atlas-invite {
+  margin: 0;
+  padding: 7px 15px;
+  border-radius: 20px;
+  background: #0e0e10cc;
+  backdrop-filter: blur(10px);
+  border: 1px solid #ffffff1f;
+  color: #d8d2c6;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  pointer-events: none;
+  transition:
+    opacity 260ms ease-out,
+    transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0s;
+}
+.atlas-invite[data-invite='hidden'] {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition:
+    opacity 160ms ease-in,
+    transform 260ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0s linear 260ms;
 }
 .search-trigger {
   display: flex;
   align-items: center;
   gap: 9px;
-  width: 100%;
+  width: 296px;
+  max-width: 100%;
   height: 44px;
   padding: 0 13px;
   background: #fffffff5;
@@ -311,7 +576,7 @@ textarea:focus-visible {
   top: max(20px, calc(50dvh - 280px));
   bottom: auto;
   left: 102px;
-  width: 304px;
+  width: 376px;
   max-width: calc(100% - 124px);
   height: auto;
   max-height: min(560px, calc(100dvh - 40px));
@@ -440,10 +705,10 @@ textarea:focus-visible {
 .case-row {
   display: flex;
   align-items: flex-start;
-  gap: 11px;
+  gap: 9px;
   width: 100%;
   text-align: left;
-  padding: 13px 10px;
+  padding: 9px 10px;
   background: transparent;
   border: 0;
   border-radius: 11px;
@@ -466,7 +731,7 @@ textarea:focus-visible {
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
 }
 .case-row strong {
   color: #262626;
@@ -476,8 +741,26 @@ textarea:focus-visible {
 }
 .case-row small {
   color: #737373;
-  font-size: 11px;
-  line-height: 1.55;
+  font-size: 11.5px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  /* Reserve one line so rows scan as a column without excess space. */
+  min-height: calc(1.5 * 11.5px);
+}
+/* The dateline: what the map already knows, kept quieter than the hook. */
+.case-row em {
+  color: #a3a3a3;
+  font-size: 10.5px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .place-results {
   padding: 16px 8px 12px;
@@ -528,8 +811,13 @@ textarea:focus-visible {
   inset: 0;
 }
 .atlas-globe {
-  background: #22211f;
+  background: #000;
   color: #f5f3ee;
+  /* Mounted last for tab order, so it needs to paint behind the chrome. */
+  z-index: 0;
+}
+.report-globe {
+  z-index: auto;
 }
 .map-controls {
   position: absolute;
@@ -539,7 +827,7 @@ textarea:focus-visible {
   flex-direction: column;
   border: 1px solid #ffffff25;
   border-radius: 12px;
-  background: #292824d9;
+  background: #101012d9;
   overflow: hidden;
 }
 .map-controls button {
@@ -557,6 +845,47 @@ textarea:focus-visible {
 }
 .map-controls button:hover {
   background: #ffffff15;
+}
+/*
+ * The marker key used to live in the left dock. On the right it sits with the
+ * map controls and opens the legend, so the key is exactly where the reader is
+ * already looking when they wonder what a symbol means. On desktop the legend
+ * is always visible, so this toggle only appears on phones.
+ */
+.map-key-toggle {
+  display: none;
+  position: absolute;
+  right: 26px;
+  bottom: 190px;
+  z-index: 5;
+  width: 39px;
+  height: 39px;
+  place-items: center;
+  border: 1px solid #ffffff25;
+  border-radius: 12px;
+  background: #101012d9;
+  color: #ded8ce;
+  backdrop-filter: blur(8px);
+  transition:
+    background 150ms ease-out,
+    color 150ms ease-out;
+}
+.map-key-toggle:hover,
+.map-key-toggle[data-active='true'] {
+  background: #ffffff15;
+}
+.map-key-toggle[data-active='true'] {
+  display: none;
+}
+.map-key-flag {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--pin-color);
+  box-shadow: 0 0 0 2px #101012;
 }
 .map-state {
   position: absolute;
@@ -585,12 +914,16 @@ textarea:focus-visible {
   right: 12px;
   bottom: 32px;
 }
+.atlas-pin,
+.marker-swatch {
+  --pin-highlight: color-mix(in oklab, var(--pin-color) 45%, #fff);
+  --pin-face: var(--pin-color);
+  --pin-shade: color-mix(in oklab, var(--pin-color) 84%, #000);
+  --pin-side: color-mix(in oklab, var(--pin-color) 30%, #000);
+  --pin-detail: color-mix(in oklab, var(--pin-color) 24%, #000);
+}
 .atlas-pin {
-  --pin-highlight: #fffaf0;
-  --pin-face: #e9dfcc;
-  --pin-shade: #b6a68c;
-  --pin-side: #75634c;
-  --pin-detail: #746753;
+  --pin-color: #94a3b8;
   width: 36px;
   height: 36px;
   border: none;
@@ -607,8 +940,35 @@ textarea:focus-visible {
   display: grid;
   place-items: center;
   background: transparent;
-  filter: drop-shadow(0 1px 1px #000d) drop-shadow(0 3px 3px #0009);
-  transition: transform 150ms ease-out;
+  filter: drop-shadow(
+      0 0 5px color-mix(in oklab, var(--pin-color) 55%, transparent)
+    )
+    drop-shadow(0 1px 1px #000d) drop-shadow(0 3px 3px #0009);
+  transition:
+    transform 150ms ease-out,
+    filter 150ms ease-out;
+}
+[data-map-category='companies'] {
+  --pin-color: #4c9dfa;
+}
+[data-map-category='infrastructure'] {
+  --pin-color: #f9812f;
+}
+[data-map-category='science'] {
+  --pin-color: #f2c33c;
+}
+[data-map-category='technology'] {
+  --pin-color: #2fd3c6;
+}
+[data-map-category='visions'] {
+  --pin-color: #b07cf5;
+}
+[data-map-category='personal'] {
+  --pin-color: #f2557a;
+}
+/* Groups read as "several things" rather than as one specific category. */
+[data-map-category='cluster'] {
+  --pin-color: #9aa4b2;
 }
 .atlas-pin-dot svg {
   width: 32px;
@@ -636,6 +996,7 @@ textarea:focus-visible {
   top: 92px;
   right: 24px;
   width: 268px;
+  max-height: min(320px, calc(100dvh - 220px));
   max-width: calc(100% - 28px);
   background: #fff;
   color: #262626;
@@ -683,10 +1044,26 @@ textarea:focus-visible {
 .map-nearby-heading button:hover {
   background: #f5f5f5;
 }
-.map-nearby-list span {
+.map-nearby-list span:not(.map-nearby-mark) {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+.map-nearby-mark {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+}
+.map-nearby-mark .marker-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+}
+.map-nearby-mark .marker-swatch svg {
+  width: 16px;
+  height: 16px;
 }
 .map-nearby-list strong {
   font-size: 12px;
@@ -695,6 +1072,102 @@ textarea:focus-visible {
 .map-nearby-list small {
   font-size: 10px;
   color: #737373;
+}
+/**
+ * The question a click on the globe asks. Anchored at the point itself, so
+ * cause and effect stay in the same place, and small enough that a stray
+ * click costs the reader a glance instead of a form.
+ */
+.map-place {
+  z-index: 6;
+  width: max-content;
+  max-width: min(260px, calc(100vw - 32px));
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 12px 11px 14px;
+  border-radius: 14px;
+  border: 1px solid #ffffff2b;
+  background: #101013f7;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 34px #000000a6;
+  animation: map-place-in 140ms ease-out;
+}
+.map-place::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 9px;
+  height: 9px;
+  translate: -50% 0;
+  rotate: 45deg;
+  background: #101013f7;
+  border-right: 1px solid #ffffff2b;
+  border-bottom: 1px solid #ffffff2b;
+}
+@keyframes map-place-in {
+  from {
+    opacity: 0;
+    scale: 0.94;
+  }
+}
+.map-place-name {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: #f5f3ee;
+}
+.map-place-name.is-empty {
+  color: #c7bfb1;
+  font-weight: 400;
+}
+.map-place-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.map-place-go {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 9px;
+  background: #f5f3ee;
+  color: #171717;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.map-place-go:hover {
+  background: #fff;
+}
+.map-place-hint {
+  flex: 1;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #918c82;
+}
+.map-place-dismiss {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: #c7bfb1;
+}
+.map-place-dismiss:hover {
+  background: #ffffff1a;
+  color: #f5f3ee;
 }
 .atlas-pin[role='button']:hover,
 .atlas-pin:focus-visible {
@@ -708,20 +1181,28 @@ textarea:focus-visible {
 .atlas-pin.is-selected .atlas-pin-dot {
   transform: translateY(-2px) scale(1.12);
 }
+.atlas-pin[role='button']:hover .atlas-pin-dot,
+.atlas-pin:focus-visible .atlas-pin-dot,
+.atlas-pin.is-selected .atlas-pin-dot {
+  filter: drop-shadow(0 0 7px var(--pin-color))
+    drop-shadow(0 0 18px color-mix(in oklab, var(--pin-color) 45%, transparent))
+    drop-shadow(0 3px 4px #000c);
+}
 .atlas-pin.is-selected {
-  --pin-highlight: #ffe3c9;
-  --pin-face: #efae80;
-  --pin-shade: #cb744d;
-  --pin-side: #824930;
-  --pin-detail: #80452e;
+  --pin-highlight: color-mix(in oklab, var(--pin-color) 20%, #fff);
+  --pin-face: color-mix(in oklab, var(--pin-color) 65%, #fff);
 }
-.personal-pin {
-  --pin-highlight: #f0fff2;
-  --pin-face: #d4e2ce;
-  --pin-shade: #9aae94;
-  --pin-side: #556b50;
-  --pin-detail: #52684b;
+/* Hovering a row in the explorer lifts its marker on the globe. */
+.atlas-pin.is-highlighted .atlas-pin-dot {
+  transform: translateY(-3px) scale(1.18);
+  filter: drop-shadow(0 0 8px var(--pin-color))
+    drop-shadow(0 0 22px color-mix(in oklab, var(--pin-color) 55%, transparent))
+    drop-shadow(0 3px 4px #000c);
 }
+.atlas-pin.is-highlighted {
+  z-index: 3;
+}
+
 .map-hover-card {
   position: absolute;
   right: 24px;
@@ -733,9 +1214,28 @@ textarea:focus-visible {
   gap: 5px;
   border: 1px solid #ffffff25;
   border-radius: 12px;
-  background: #292721f5;
+  background: #0e0e10f5;
   box-shadow: 0 6px 25px #0002;
   pointer-events: none;
+}
+.hover-category {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 7px;
+  padding-top: 9px;
+  border-top: 1px solid #ffffff1a;
+  font-size: 11px;
+  color: var(--pin-color);
+}
+.hover-category .marker-swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+}
+.hover-category .marker-swatch svg {
+  width: 16px;
+  height: 16px;
 }
 .map-hover-card .eyebrow {
   color: #bcb3a4;
@@ -746,7 +1246,7 @@ textarea:focus-visible {
   font-weight: 500;
   color: #f5f3ee;
 }
-.map-hover-card > span:last-child {
+.map-hover-card .hover-summary {
   color: #c7bfb1;
   font-size: 11px;
   line-height: 1.6;
@@ -906,6 +1406,25 @@ textarea:focus-visible {
   color: #737373;
   margin: 8px 0;
 }
+.research-archive {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 11px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #525252;
+  text-decoration: none;
+}
+.research-archive:hover {
+  border-color: #a3a3a3;
+  background: #fafafa;
+}
+.research-archive > span {
+  flex: 1;
+}
 .research-dialog .primary-button {
   width: 100%;
 }
@@ -939,40 +1458,57 @@ textarea:focus-visible {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1180px) {
   .atlas-heading {
-    left: 100px;
-    right: 100px;
-    top: 84px;
+    top: 22px;
   }
   .atlas-heading h1 {
-    font-size: 38px;
+    font-size: 34px;
+    letter-spacing: -1.4px;
+  }
+  .atlas-heading p {
+    max-width: 380px;
   }
 }
 @media (max-width: 640px) {
   .atlas-heading {
-    top: 38px;
-    left: 20px;
-    right: 20px;
+    top: 18px;
+    --heading-inset: 20px;
   }
   .atlas-heading h1 {
-    font-size: 32px;
+    font-size: 27px;
     letter-spacing: -1px;
-    margin-bottom: 9px;
+  }
+  .atlas-heading[data-dock='left'] h1 {
+    font-size: 19px;
+    letter-spacing: -0.4px;
+  }
+  .atlas-heading-rule {
+    margin: 10px 0 9px;
   }
   .atlas-heading p {
-    max-width: 310px;
-    margin: auto;
+    max-width: 330px;
     font-size: 12px;
-    line-height: 1.65;
+    line-height: 1.6;
   }
   .random-story {
-    top: auto;
-    bottom: calc(159px + env(safe-area-inset-bottom));
-    right: 18px;
-    padding: 0 12px;
-    min-height: 38px;
-    font-size: 11px;
+    display: none;
+  }
+  .dock-item.is-random {
+    display: grid;
+  }
+  .atlas-discovery-row {
+    width: 100%;
+    gap: 8px;
+  }
+  .search-trigger {
+    width: auto;
+    flex: 1;
+    min-width: 0;
+  }
+  .atlas-invite {
+    font-size: 11.5px;
+    padding: 6px 13px;
   }
   .atlas-dock {
     left: 50%;
@@ -1005,12 +1541,12 @@ textarea:focus-visible {
     display: none;
   }
   .atlas-discovery {
-    bottom: calc(108px + env(safe-area-inset-bottom));
+    bottom: calc(90px + env(safe-area-inset-bottom));
     width: calc(100% - 36px);
-    max-width: 296px;
+    max-width: 360px;
   }
   .search-trigger {
-    height: 44px;
+    height: 42px;
     border-radius: 13px;
   }
   .atlas-footer {
@@ -1021,13 +1557,26 @@ textarea:focus-visible {
     gap: 2px;
     font-size: 10px;
   }
+  /* Clears the discovery bar, which now sits at 90px plus its own height. */
   .map-controls {
     right: 18px;
-    bottom: calc(213px + env(safe-area-inset-bottom));
+    bottom: calc(172px + env(safe-area-inset-bottom));
   }
   .map-controls button {
     width: 32px;
     height: 34px;
+  }
+  .map-key-toggle {
+    display: grid;
+    right: 18px;
+    bottom: calc(220px + env(safe-area-inset-bottom));
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
+  }
+  .map-key-toggle svg {
+    width: 17px;
+    height: 17px;
   }
   .map-hover-card {
     top: 146px;
@@ -1047,6 +1596,18 @@ textarea:focus-visible {
   .explorer-topline {
     padding: 16px 18px 10px;
   }
+  .atlas-legend {
+    left: auto;
+    right: 18px;
+    top: auto;
+    bottom: calc(220px + env(safe-area-inset-bottom));
+    width: 68px;
+    max-width: none;
+    transform: none;
+  }
+  .legend-topline {
+    display: flex;
+  }
   .map-nearby {
     top: 142px;
     right: 14px;
@@ -1062,6 +1623,19 @@ textarea:focus-visible {
   .research-dialog,
   .about-dialog {
     padding: 22px;
+  }
+}
+/**
+ * Pinch already zooms, so the buttons only cost the globe screen. The reset
+ * control stays: nothing else recovers a lost view.
+ */
+@media (pointer: coarse) {
+  .map-controls button[aria-label='Zoom in'],
+  .map-controls button[aria-label='Zoom out'] {
+    display: none;
+  }
+  .map-controls {
+    border-radius: 11px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

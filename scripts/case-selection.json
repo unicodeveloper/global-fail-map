@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "amaravati--the-amaravati-capital-city-project-vision-finance",
+    "score": 65,
+    "country": "India",
+    "title": "The Amaravati Capital City Project: Vision, Finance, and Withdrawal (2014–2019)"
+  },
+  {
+    "id": "belene--the-belene-nuclear-power-plant-four-decades",
+    "score": 65,
+    "country": "Bulgaria",
+    "title": "The Belene Nuclear Power Plant: Four Decades of Suspended Ambition"
+  },
+  {
+    "id": "konza--the-konza-technopolis-project-delayed-realization-of",
+    "score": 65,
+    "country": "Kenya",
+    "title": "The Konza Technopolis Project — Delayed Realization of a Regional Technology Vision (2008–2026)"
+  },
+  {
+    "id": "messina-bridge--the-strait-of-messina-bridge-174-years",
+    "score": 65,
+    "country": "Italy",
+    "title": "The Strait of Messina Bridge: 174 Years of Proposed Connection and Repeated Cancellation"
+  },
+  {
+    "id": "naicm--naicm-the-modern-mega-airport-and-its",
+    "score": 65,
+    "country": "Mexico",
+    "title": "NAICM—The Modern Mega-Airport and Its Cancellation (2014–2018)"
+  },
+  {
+    "id": "uzbekistan-gtl--shurtan-gas-chemical-complex-expansion-suspended-relocated",
+    "score": 65,
+    "country": "Uzbekistan",
+    "title": "Shurtan Gas Chemical Complex Expansion: Suspended, Relocated, and Restructured (2017-2023)"
+  },
+  {
+    "id": "ciudad-real-airport--the-billion-euro-ghost-airport-infrastructure-on",
+    "score": 62.5,
+    "country": "Spain",
+    "title": "The Billion-Euro Ghost Airport: Infrastructure on an Epic Scale"
+  },
+  {
+    "id": "mambilla--the-mambilla-hydroelectric-power-project-a-55",
+    "score": 62.5,
+    "country": "Nigeria",
+    "title": "The Mambilla Hydroelectric Power Project — A 55-Year Stalled Development Cycle"
+  },
+  {
+    "id": "bioceanico--puerto-busch-twenty-two-years-of-indefinite",
+    "score": 62,
+    "country": "Bolivia",
+    "title": "Puerto Busch: Twenty-Two Years of Indefinite Delay (2004–2026)"
+  },
+  {
+    "id": "california-high-speed-rail--california-high-speed-rail-downtown-bakersfield-station",
+    "score": 62,
+    "country": "United States",
+    "title": "California High-Speed Rail Downtown Bakersfield Station: From Central Vision to Deferred Indefinitely (2008–June 2026)"
+  },
+  {
+    "id": "hyflux--tang-dynasty-city-theme-park-in-jurong",
+    "score": 62,
+    "country": "Singapore",
+    "title": "Tang Dynasty City—Theme Park in Jurong (1992–1999)"
+  },
+  {
+    "id": "luz-y-fuerza--nuevo-aeropuerto-internacional-de-mexico-naicm-the",
+    "score": 62,
+    "country": "Mexico",
+    "title": "Nuevo Aeropuerto Internacional de México (NAICM): The \\$13.3 Billion Referendum Against Ambition"
+  },
+  {
+    "id": "notre-dame-des-landes--the-aeroport-du-grand-ouest-a-half",
+    "score": 62,
+    "country": "France",
+    "title": "The Aéroport du Grand Ouest: A Half-Century Abandoned"
+  },
+  {
+    "id": "tren-de-guayana--part-2-the-four-primary-cases",
+    "score": 62,
+    "country": "Venezuela",
+    "title": "Part 2: The Four Primary Cases"
+  },
+  {
+    "id": "ssangyong--ssangyong-motor-company-two-bankruptcy-cycles-2009",
+    "score": 61,
+    "country": "South Korea",
+    "title": "SsangYong Motor Company—Two Bankruptcy Cycles (2009 and 2020–2022)"
+  },
+  {
+    "id": "silk-city--the-1983-2001-planning-cycle-three-decades",
+    "score": 60.1,
+    "country": "Kuwait",
+    "title": "The 1983–2001 Planning Cycle—Three Decades of Shelved Blueprints"
+  },
+  {
+    "id": "bogota-metro--chirajara-bridge-structural-collapse-reconstruction-and-operational",
+    "score": 59,
+    "country": "Colombia",
+    "title": "Chirajara Bridge—Structural Collapse, Reconstruction, and Operational Stasis"
+  },
+  {
+    "id": "bioceanico--jindal-steel-s-el-mutum-project-the",
+    "score": 59,
+    "country": "Bolivia",
+    "title": "Jindal Steel's El Mutum Project: The Withdrawn \\$2.1 Billion Investment (2007–2014)"
+  },
+  {
+    "id": "wework--lehman-brothers-holdings-inc-the-subprime-collapse",
+    "score": 58.8,
+    "country": "United States",
+    "title": "Lehman Brothers Holdings Inc.—The Subprime Collapse (2008)"
+  },
+  {
+    "id": "grand-faw--grand-faw-port-ongoing-construction-despite-delays",
+    "score": 58.6,
+    "country": "Iraq",
+    "title": "Grand Faw Port: Ongoing Construction Despite Delays and Contractual Disputes"
+  },
+  {
+    "id": "dawei-sez--the-dawei-special-economic-zone-complex-eighteen",
+    "score": 58.5,
+    "country": "Myanmar",
+    "title": "The Dawei Special Economic Zone Complex: Eighteen Years Suspended (2008–2026)"
+  },
+  {
+    "id": "buenos-aires-rosario--the-buenos-aires-rosario-cordoba-high-speed",
+    "score": 58.4,
+    "country": "Argentina",
+    "title": "The Buenos Aires-Rosario-Córdoba High-Speed Railway: A \\$4 Billion Ambition Halted by Global Finance"
+  },
+  {
+    "id": "evergrande--real-estate-collapses-evergrande-and-shimao",
+    "score": 58,
+    "country": "China",
+    "title": "Real Estate Collapses: Evergrande and Shimao"
+  },
+  {
+    "id": "hyflux--honestbee-grocery-delivery-startup-winding-up-2019",
+    "score": 58,
+    "country": "Singapore",
+    "title": "Honestbee—Grocery Delivery Startup Winding-Up (2019–2020)"
+  },
+  {
+    "id": "hyflux--zilingo-b2b-fashion-e-commerce-scandal-and",
+    "score": 58,
+    "country": "Singapore",
+    "title": "Zilingo—B2B Fashion E-Commerce Scandal and Restructuring (2015–2022)"
+  },
+  {
+    "id": "simputer--the-edtech-collapse-byju-s-2011-2024",
+    "score": 57.9,
+    "country": "India",
+    "title": "The EdTech Collapse: Byju's (2011–2024)"
+  },
+  {
+    "id": "juragua--the-juragua-nuclear-power-plant-90-percent",
+    "score": 57.5,
+    "country": "Cuba",
+    "title": "The Juraguá Nuclear Power Plant: 90 Percent of Nothing"
+  },
+  {
+    "id": "perth-freight-link--the-perth-convention-and-exhibition-centre-redevelopment",
+    "score": 57.5,
+    "country": "Australia",
+    "title": "The Perth Convention and Exhibition Centre Redevelopment: A \\$1.6 Billion Project Shelved in 2025"
+  },
+  {
+    "id": "kilamba-kiaxi--bay-of-luanda-redevelopment-public-opposition-and",
+    "score": 57.4,
+    "country": "Angola",
+    "title": "Bay of Luanda Redevelopment: Public Opposition and Restructuring (2003–2017)"
+  },
+  {
+    "id": "uzbekistan-gtl--sasol-petronas-uzbekneftegaz-gas-to-liquids-joint",
+    "score": 57.4,
+    "country": "Uzbekistan",
+    "title": "Sasol-Petronas-Uzbekneftegaz Gas-to-Liquids Joint Venture: The Disappeared Project (2009-2011)"
+  },
+  {
+    "id": "forest-city--the-contemporary-crisis-five-stalled-megaprojects-2016",
+    "score": 57,
+    "country": "Malaysia",
+    "title": "The Contemporary Crisis: Five Stalled Megaprojects (2016–Present)"
+  },
+  {
+    "id": "bogota-metro--bogota-metro-system-institutional-paralysis-spanning-eight",
+    "score": 57,
+    "country": "Colombia",
+    "title": "Bogotá Metro System—Institutional Paralysis Spanning Eight Decades"
+  },
+  {
+    "id": "nusantara--nusantara-capital-city-the-stalled-utopia-in",
+    "score": 56.4,
+    "country": "Indonesia",
+    "title": "Nusantara Capital City: The Stalled Utopia in East Borneo (2019–2026)"
+  },
+  {
+    "id": "rruga-kombit--the-lana-river-wastewater-treatment-project-institutional",
+    "score": 56,
+    "country": "Albania",
+    "title": "The Lana River Wastewater Treatment Project—Institutional Deadlock and Suspended Infrastructure (2008–2026)"
+  },
+  {
+    "id": "neom--the-line-scaling-a-geometric-impossibility",
+    "score": 55.1,
+    "country": "Saudi Arabia",
+    "title": "The Line: Scaling a Geometric Impossibility"
+  },
+  {
+    "id": "anaklia--the-anaklia-development-consortium-2016-2020-the",
+    "score": 55,
+    "country": "Georgia",
+    "title": "The Anaklia Development Consortium (2016–2020)–The Decade-Long Effort That Reached Arbitration"
+  },
+  {
+    "id": "diamer-bhasha--the-diamer-bhasha-dam-four-decades-of",
+    "score": 55,
+    "country": "Pakistan",
+    "title": "The Diamer-Bhasha Dam: Four Decades of Postponement and Persistent Pursuit"
+  },
+  {
+    "id": "wework--wework-overvaluation-pivots-and-chapter-11-2010",
+    "score": 55,
+    "country": "United States",
+    "title": "WeWork—Overvaluation, Pivots, and Chapter 11 (2010–2023)"
+  },
+  {
+    "id": "virgin-cola--industrial-heritage-and-manufacturing-decline",
+    "score": 54.5,
+    "country": "United Kingdom",
+    "title": "Industrial Heritage and Manufacturing Decline"
+  },
+  {
+    "id": "belene--the-svishtov-belene-nikopol-flood-dike-success",
+    "score": 54.5,
+    "country": "Bulgaria",
+    "title": "The Svishtov-Belene-Nikopol Flood Dike: Success, Obsolescence, and Deliberate Reversal"
+  },
+  {
+    "id": "baku-white-city--the-khazar-islands-and-azerbaijan-tower-2010",
+    "score": 54.3,
+    "country": "Azerbaijan",
+    "title": "The Khazar Islands and Azerbaijan Tower (2010–2017+)"
+  },
+  {
+    "id": "virgin-cola--modern-technology-sector-failure",
+    "score": 53.8,
+    "country": "United Kingdom",
+    "title": "Modern Technology Sector Failure"
+  },
+  {
+    "id": "garden-bridge--the-london-ringways-and-westway-the-motorway",
+    "score": 53.7,
+    "country": "United Kingdom",
+    "title": "The London Ringways and Westway: The Motorway Dream That Traffic Protest Destroyed (1965–1973)"
+  },
+  {
+    "id": "rejsekort--pharmaceutical-ambitions-unmet-modern-drug-programme-discontinuations",
+    "score": 53.5,
+    "country": "Denmark",
+    "title": "Pharmaceutical Ambitions Unmet: Modern Drug Programme Discontinuations (2007–2024)"
+  },
+  {
+    "id": "lisbon-airport--the-porto-lisbon-high-speed-rail-line",
+    "score": 53.1,
+    "country": "Portugal",
+    "title": "The Porto–Lisbon High-Speed Rail Line: Tender Reset and Continuous Delay (2024–2026)"
+  },
+  {
+    "id": "kajaki-dam--the-kandahar-diesel-generator-stop-gap-collapse",
+    "score": 53,
+    "country": "Afghanistan",
+    "title": "The Kandahar Diesel Generator Stop-Gap Collapse (2011–2015): Structural Incompleteness and Failed Transition"
+  },
+  {
+    "id": "garden-bridge--the-thames-gateway-bridge-2004-2008-final",
+    "score": 52.8,
+    "country": "United Kingdom",
+    "title": "The Thames Gateway Bridge (2004–2008, Final Cancellation 2025): Environmental Law Enforces What Politics Abandoned"
+  },
+  {
+    "id": "auckland-light-rail--modern-transport-crisis-the-collapsed-light-rail",
+    "score": 52.6,
+    "country": "New Zealand",
+    "title": "Modern Transport Crisis: The Collapsed Light Rail Vision (2017–2024)"
+  },
+  {
+    "id": "nadi-port--nadi-river-diversion-project-infrastructure-approved-but",
+    "score": 52.6,
+    "country": "Fiji",
+    "title": "Nadi River Diversion Project: Infrastructure Approved but Never Funded"
+  },
+  {
+    "id": "bumbuna--african-minerals-limited-tonkolili-iron-ore-mining",
+    "score": 52.5,
+    "country": "Sierra Leone",
+    "title": "African Minerals Limited Tonkolili Iron Ore Mining – Company Failure, Asset Transfer, and Resumed Operations (2005–2015; Transfer 2020–Present)"
+  },
+  {
+    "id": "buenos-aires-rosario--the-modern-metropolitan-tramway-network-fifteen-years",
+    "score": 52.5,
+    "country": "Argentina",
+    "title": "The Modern Metropolitan Tramway Network: Fifteen Years of Paralysis Across Multiple Cycles"
+  },
+  {
+    "id": "mongstad--the-full-scale-carbon-capture-and-storage",
+    "score": 52.4,
+    "country": "Norway",
+    "title": "The Full-Scale Carbon Capture and Storage Project—Cancelled"
+  },
+  {
+    "id": "red-dead-canal--the-red-sea-dead-sea-water-conveyance",
+    "score": 52.3,
+    "country": "Jordan",
+    "title": "The Red Sea–Dead Sea Water Conveyance: A \\$10 Billion Aspiration Abandoned"
+  },
+  {
+    "id": "bioceanico--tipnis-highway-the-cancelled-project-that-became",
+    "score": 52.2,
+    "country": "Bolivia",
+    "title": "TIPNIS Highway: The Cancelled Project That Became a Political Crisis (2008–2011)"
+  },
+  {
+    "id": "childrens-hospital-dublin--glass-bottle-site-the-412-million-acquisition",
+    "score": 52.1,
+    "country": "Ireland",
+    "title": "Glass Bottle Site: The €412 Million Acquisition That Became a Ruin (2006–2016)"
+  },
+  {
+    "id": "la-polar--dafiti-chile-fashion-e-commerce-collapse-under",
+    "score": 52.1,
+    "country": "Chile",
+    "title": "DAFITI CHILE — Fashion E-Commerce Collapse Under Competitive Pressure (2011–2025)"
+  },
+  {
+    "id": "david-railway--the-panama-city-david-high-speed-railway",
+    "score": 52,
+    "country": "Panama",
+    "title": "The Panama City–David High-Speed Railway Project — A Resurrected but Indefinitely Stalled Vision"
+  },
+  {
+    "id": "la-polar--aes-andes-inna-project-megaproject-abandonment-in",
+    "score": 52,
+    "country": "Chile",
+    "title": "AES ANDES INNA PROJECT — Megaproject Abandonment in the Midst of Strategic Pivot (2024–2026)"
+  },
+  {
+    "id": "takata--part-3-twentieth-century-financial-crisis-and",
+    "score": 51.8,
+    "country": "Japan",
+    "title": "Part 3: Twentieth-Century Financial Crisis and Fraud"
+  },
+  {
+    "id": "toshka--new-valley-project-phase-2-formal-abandonment",
+    "score": 51.8,
+    "country": "Egypt",
+    "title": "New Valley Project Phase 2: Formal Abandonment (1997–2005)"
+  },
+  {
+    "id": "iei-oil-shale--intel-fab-38-the-frozen-expansion",
+    "score": 51.1,
+    "country": "Israel",
+    "title": "Intel Fab 38: The Frozen Expansion"
+  },
+  {
+    "id": "belo-monte--belo-sun-mining-volta-grande-gold-project",
+    "score": 51,
+    "country": "Brazil",
+    "title": "Belo Sun Mining—Volta Grande Gold Project: Forty Years of Suspension (1986–2026)"
+  },
+  {
+    "id": "gwanda-solar--the-gwanda-100-megawatt-solar-power-project",
+    "score": 51,
+    "country": "Zimbabwe",
+    "title": "The Gwanda 100 Megawatt Solar Power Project — Suspension and Legal Impasse (2015–Present)"
+  },
+  {
+    "id": "stx-housing--accra-skytrain-a-2-6-billion-concession",
+    "score": 51,
+    "country": "Ghana",
+    "title": "Accra SkyTrain — A \\$2.6 Billion Concession That Never Began Construction"
+  },
+  {
+    "id": "tehran-metro--shahestan-pahlavi-abbasabad-lands-imperial-vision-abandoned",
+    "score": 50.7,
+    "country": "Iran",
+    "title": "Shahestan Pahlavi / Abbasabad Lands: Imperial Vision Abandoned, Fragmented Into Islands (1969–1979, Ongoing)"
+  },
+  {
+    "id": "gelephu--the-yung-drung-charter-city-proposal-a",
+    "score": 50.5,
+    "country": "Bhutan",
+    "title": "The Yung Drung Charter City Proposal: A Silicon Valley Vision Rejected at the Border"
+  },
+  {
+    "id": "north-south-express--ifc-one-saigon-flagship-tower-frozen-at",
+    "score": 50.5,
+    "country": "Vietnam",
+    "title": "IFC One Saigon – Flagship Tower Frozen at 80 Percent Completion"
+  },
+  {
+    "id": "beirut-port--the-beirut-damascus-railway-147-kilometers-of",
+    "score": 50.3,
+    "country": "Lebanon",
+    "title": "The Beirut-Damascus Railway: 147 Kilometers of Abandoned Connectivity"
+  },
+  {
+    "id": "colbun--hidroaysen-the-patagonian-megaproject-2008-2017",
+    "score": 50.3,
+    "country": "Chile",
+    "title": "HidroAysén—The Patagonian Megaproject (2008–2017)"
+  },
+  {
+    "id": "quibi--douglas-aircraft-company-overwhelmed-by-success-1963",
+    "score": 50.3,
+    "country": "United States",
+    "title": "Douglas Aircraft Company—Overwhelmed by Success (1963–1967)"
+  },
+  {
+    "id": "rosia-montana--the-gabriel-resources-mining-project-prohibited-by",
+    "score": 50,
+    "country": "Romania",
+    "title": "The Gabriel Resources Mining Project: Prohibited by Political Will and UNESCO Designation"
+  },
+  {
+    "id": "naicm--the-2001-fox-era-airport-proposal-and",
+    "score": 50,
+    "country": "Mexico",
+    "title": "The 2001 Fox-Era Airport Proposal and Its Cancellation"
+  },
+  {
+    "id": "budapest-belgrade--budapest-metro-line-m4-partial-completion-and",
+    "score": 49.9,
+    "country": "Hungary",
+    "title": "Budapest Metro Line M4: Partial Completion and Abandoned Extension (1972–2014 and Beyond)"
+  },
+  {
+    "id": "silk-city--madinat-al-hareer-silk-city-the-2004",
+    "score": 49.7,
+    "country": "Kuwait",
+    "title": "Madinat Al-Hareer (Silk City)—The 2004–2017 Institutional Stall"
+  },
+  {
+    "id": "ber-brandenburg--tempelhof-airport-terminal-the-unfinished-nazi-spectacle",
+    "score": 49.5,
+    "country": "Germany",
+    "title": "Tempelhof Airport Terminal: The Unfinished Nazi Spectacle (1936–1941)"
+  },
+  {
+    "id": "kanal-istanbul--kanal-istanbul-turkey-s-unfinished-megaproject-2011",
+    "score": 49.5,
+    "country": "Turkey",
+    "title": "Kanal Istanbul: Turkey's Unfinished Megaproject (2011–Present)"
+  },
+  {
+    "id": "quito-metro--ferrocarriles-del-ecuador-systemic-liquidation-and-partial",
+    "score": 49.5,
+    "country": "Ecuador",
+    "title": "Ferrocarriles del Ecuador — Systemic Liquidation and Partial Recovery"
+  },
+  {
+    "id": "gwanda-solar--vubachikwe-gold-mine-operational-suspension-and-stalled",
+    "score": 49.5,
+    "country": "Zimbabwe",
+    "title": "Vubachikwe Gold Mine — Operational Suspension and Stalled Revival (November 2022–Present)"
+  },
+  {
+    "id": "auckland-light-rail--the-rapid-rail-scheme-an-underground-vision",
+    "score": 49.3,
+    "country": "New Zealand",
+    "title": "The Rapid Rail Scheme: An Underground Vision from the 1970s (1963–1976)"
+  },
+  {
+    "id": "wework--pan-american-world-airways-deregulation-vulnerability-and",
+    "score": 49.3,
+    "country": "United States",
+    "title": "Pan American World Airways—Deregulation, Vulnerability, and Liquidation (1927–1991)"
+  },
+  {
+    "id": "rruga-kombit--the-milot-rreshen-railway-branch-regional-connectivity",
+    "score": 49.1,
+    "country": "Albania",
+    "title": "The Milot–Rreshen Railway Branch—Regional Connectivity Abandoned (1989–1997)"
+  },
+  {
+    "id": "buran--the-buran-space-shuttle-programme-the-soviet",
+    "score": 49,
+    "country": "Kazakhstan",
+    "title": "The Buran Space Shuttle Programme — The Soviet Answer to American Reusability"
+  },
+  {
+    "id": "hd-dvd--elpida-memory-a-technically-advanced-dram-manufacturer",
+    "score": 48.7,
+    "country": "Japan",
+    "title": "Elpida Memory: A Technically Advanced DRAM Manufacturer Overwhelmed by Commodity Economics (1999–2013)"
+  },
+  {
+    "id": "highway-2000--national-water-commission-capital-programmes-serial-failure",
+    "score": 48.7,
+    "country": "Jamaica",
+    "title": "National Water Commission Capital Programmes—Serial Failure and Frozen Stalemate (2009–2026)"
+  },
+  {
+    "id": "karahnjukar--the-noral-project-partnership-2000-2002-a",
+    "score": 48.5,
+    "country": "Iceland",
+    "title": "The Noral Project Partnership (2000–2002) — A Corporate Withdrawal Disguised as a Planning Delay"
+  },
+  {
+    "id": "lisbon-airport--incomplete-and-delayed-metro-extensions-procurement-and",
+    "score": 48.5,
+    "country": "Portugal",
+    "title": "Incomplete and Delayed Metro Extensions: Procurement and Construction Challenges"
+  },
+  {
+    "id": "colbun--the-alto-maule-transmission-interconnection-2021-2026",
+    "score": 48.4,
+    "country": "Chile",
+    "title": "The Alto Maule Transmission Interconnection (2021–2026)"
+  },
+  {
+    "id": "second-avenue-subway--second-avenue-subway-partial-success-partial-abandonment",
+    "score": 48.1,
+    "country": "United States",
+    "title": "Second Avenue Subway: Partial Success, Partial Abandonment, Ongoing Suspension"
+  },
+  {
+    "id": "bagamoyo-port--the-megaport-suspended-tanzania-s-10-billion",
+    "score": 48,
+    "country": "Tanzania",
+    "title": "The Megaport Suspended: Tanzania's \\$10 Billion Bagamoyo Deep-Water Port, 2013–2019, Revived 2021–Present"
+  },
+  {
+    "id": "manila-metro--makati-pasay-taguig-mass-transit-system-and",
+    "score": 48,
+    "country": "Philippines",
+    "title": "Makati-Pasay-Taguig Mass Transit System and Metro Manila Subway (2013–2020+)"
+  },
+  {
+    "id": "n-gage--mikromikko-personal-computer-manufacturing-product-line-discontinuation",
+    "score": 47.9,
+    "country": "Finland",
+    "title": "MikroMikko Personal Computer Manufacturing—Product Line Discontinuation Following Corporate Ownership Changes (1981–2000)"
+  },
+  {
+    "id": "charleroi-metro--the-airport-rail-link-a-proposed-connection",
+    "score": 47.8,
+    "country": "Belgium",
+    "title": "The Airport Rail Link: A Proposed Connection Never Built"
+  },
+  {
+    "id": "thai-high-speed-rail--three-airport-high-speed-rail-stalled-after",
+    "score": 47.8,
+    "country": "Thailand",
+    "title": "Three-Airport High-Speed Rail: Stalled After Six Years (2019–2025+)"
+  },
+  {
+    "id": "belo-monte--the-trans-amazonian-highway-br-230-the",
+    "score": 47.7,
+    "country": "Brazil",
+    "title": "The Trans-Amazonian Highway (BR-230): The Flagship Project That Never Fully Opened"
+  },
+  {
+    "id": "silk-city--the-burj-mubarak-al-kabir-tower-the",
+    "score": 47.7,
+    "country": "Kuwait",
+    "title": "The Burj Mubarak Al Kabir Tower—The Indefinite Postponement"
+  },
+  {
+    "id": "ryugyong-hotel--the-taedong-river-metro-tunnel-collapse-1971",
+    "score": 47.5,
+    "country": "North Korea",
+    "title": "The Taedong River Metro Tunnel Collapse: 1971 and the Abandoned Eastern Expansion"
+  },
+  {
+    "id": "ryugyong-hotel--the-ryugyong-hotel-39-years-of-suspended",
+    "score": 47.4,
+    "country": "North Korea",
+    "title": "The Ryugyong Hotel: 39 Years of Suspended Construction"
+  },
+  {
+    "id": "koh-kong--cheay-areng-dam-when-community-blockade-stopped",
+    "score": 47.3,
+    "country": "Cambodia",
+    "title": "Cheay Areng Dam: When Community Blockade Stopped a Hydroelectric Dream"
+  },
+  {
+    "id": "childrens-hospital-dublin--dart-underground-and-the-interconnector-tunnel-1972",
+    "score": 47.2,
+    "country": "Ireland",
+    "title": "DART Underground and the Interconnector Tunnel (1972–Present)"
+  },
+  {
+    "id": "manila-metro--manila-bay-reclamation-projects-2023-2025",
+    "score": 47.2,
+    "country": "Philippines",
+    "title": "Manila Bay Reclamation Projects (2023–2025)"
+  },
+  {
+    "id": "ellinikon--metropolitan-park-proposals-1995-2017-shelved-cancelled",
+    "score": 47,
+    "country": "Greece",
+    "title": "Metropolitan Park Proposals (1995–2017) – Shelved, Cancelled, and Displaced by Privatization"
+  },
+  {
+    "id": "olivetti--the-personal-computer-era-failures-1982-1997",
+    "score": 47,
+    "country": "Italy",
+    "title": "The Personal Computer Era Failures (1982–1997)"
+  },
+  {
+    "id": "oyu-tolgoi--khanbogd-wind-farm-102-mw-shelved-project",
+    "score": 47,
+    "country": "Mongolia",
+    "title": "Khanbogd Wind Farm (102 MW) – Shelved Project"
+  },
+  {
+    "id": "perseverance-island--part-2-the-berjaya-mahe-beach-resort",
+    "score": 47,
+    "country": "Seychelles",
+    "title": "Part 2: The Berjaya Mahé Beach Resort—A Regional Case of Abandoned Tourism Infrastructure"
+  },
+  {
+    "id": "tripoli-metro--the-railway-network-three-decades-of-planning",
+    "score": 47,
+    "country": "Libya",
+    "title": "The Railway Network: Three Decades of Planning Without Rail"
+  },
+  {
+    "id": "moviepass--lehman-brothers-the-bankruptcy-that-changed-everything",
+    "score": 46.9,
+    "country": "United States",
+    "title": "Lehman Brothers: The Bankruptcy That Changed Everything (1850–2008)"
+  },
+  {
+    "id": "bogota-metro--transmilenio-expansion-strategic-abandonment-of-original-vision",
+    "score": 46.8,
+    "country": "Colombia",
+    "title": "TransMilenio Expansion—Strategic Abandonment of Original Vision"
+  },
+  {
+    "id": "nacala-corridor--karmol-nacala-floating-lng-to-power-facility",
+    "score": 46.7,
+    "country": "Mozambique",
+    "title": "KARMOL Nacala Floating LNG-to-Power Facility (2019–2024)"
+  },
+  {
+    "id": "grand-inga--acs-group-spanish-chinese-consortium-for-inga",
+    "score": 46.6,
+    "country": "DR Congo",
+    "title": "ACS Group Spanish-Chinese Consortium for Inga 3 Design Studies (2018–2020) — Partial Withdrawal and Reformation"
+  },
+  {
+    "id": "jakarta-monorail--the-flood-defense-cascade-three-linked-failures",
+    "score": 46.6,
+    "country": "Indonesia",
+    "title": "The Flood Defense Cascade: Three Linked Failures (2017–2019)"
+  },
+  {
+    "id": "big-dig--the-red-blue-connector-a-transit-promise",
+    "score": 46.5,
+    "country": "United States",
+    "title": "The Red-Blue Connector: A Transit Promise Indefinitely Deferred"
+  },
+  {
+    "id": "grand-faw--badush-dam-indefinitely-suspended-protective-infrastructure",
+    "score": 46.5,
+    "country": "Iraq",
+    "title": "Badush Dam: Indefinitely Suspended Protective Infrastructure"
+  },
+  {
+    "id": "highway-2000--jamaica-railway-passenger-and-freight-system-1845",
+    "score": 46.5,
+    "country": "Jamaica",
+    "title": "Jamaica Railway Passenger and Freight System (1845–1992, with Documented Revival Failures 2002–2025)"
+  },
+  {
+    "id": "nusantara--the-transmigration-program-four-decades-of-systematic",
+    "score": 46.5,
+    "country": "Indonesia",
+    "title": "The Transmigration Program: Four Decades of Systematic Failure (1950–2000)"
+  },
+  {
+    "id": "damascus-metro--the-hejaz-railway-ottoman-ambition-military-destruction",
+    "score": 46,
+    "country": "Syria",
+    "title": "The Hejaz Railway: Ottoman Ambition, Military Destruction, and Attempted Revival"
+  },
+  {
+    "id": "elbphilharmonie--nazi-germany-s-h-class-battleship-program",
+    "score": 46,
+    "country": "Germany",
+    "title": "Nazi Germany's H-Class Battleship Program at Blohm & Voss (1939–1941)"
+  },
+  {
+    "id": "enfidha-airport--enfidha-deep-water-port-2005-present",
+    "score": 46,
+    "country": "Tunisia",
+    "title": "Enfidha Deep-Water Port (2005–Present)"
+  },
+  {
+    "id": "kvanefjeld--kvanefjeld-rare-earth-elements-mining-project-2007",
+    "score": 46,
+    "country": "Greenland",
+    "title": "Kvanefjeld Rare Earth Elements Mining Project (2007–2026)"
+  },
+  {
+    "id": "notre-dame-des-landes--the-sivens-dam-a-comparable-failure-with",
+    "score": 45.9,
+    "country": "France",
+    "title": "The Sivens Dam: A Comparable Failure with Fatal Consequences"
+  },
+  {
+    "id": "hwang-woo-suk--the-hwang-woo-suk-stem-cell-fraud",
+    "score": 45.5,
+    "country": "South Korea",
+    "title": "The Hwang Woo-suk Stem Cell Fraud and the Collapse of Seoul's Stem Cell Leadership"
+  },
+  {
+    "id": "saab-automobile--nohab-industrial-bankruptcy-and-the-decline-of",
+    "score": 45.5,
+    "country": "Sweden",
+    "title": "NOHAB—Industrial Bankruptcy and the Decline of Diesel Motive Power"
+  },
+  {
+    "id": "east-west-highway--el-hamdania-deep-water-port-a-3",
+    "score": 45.4,
+    "country": "Algeria",
+    "title": "El-Hamdania Deep-Water Port: A \\$3.3 Billion Cancellation"
+  },
+  {
+    "id": "nusantara--central-kalimantan-peat-land-megaproject-rice-self",
+    "score": 45.3,
+    "country": "Indonesia",
+    "title": "Central Kalimantan Peat-Land Megaproject: Rice Self-Sufficiency and Ecological Catastrophe (1995–1999)"
+  },
+  {
+    "id": "kathmandu-terai--kathmandu-mass-rapid-transit-systemic-planning-failure",
+    "score": 45,
+    "country": "Nepal",
+    "title": "Kathmandu Mass Rapid Transit — Systemic Planning Failure (1971–2026)"
+  },
+  {
+    "id": "nicaragua-canal--the-hong-kong-nicaragua-development-group-canal",
+    "score": 44.9,
+    "country": "Nicaragua",
+    "title": "The Hong Kong Nicaragua Development Group Canal (2013–2024): Cancellation After a Decade of Inaction"
+  },
+  {
+    "id": "north-south-express--thu-thiem-new-urban-area-indefinite-delays",
+    "score": 44.9,
+    "country": "Vietnam",
+    "title": "Thu Thiem New Urban Area – Indefinite Delays and Resettlement Crisis"
+  },
+  {
+    "id": "perth-freight-link--the-3-oceans-scarborough-development-rejected-revised",
+    "score": 44.9,
+    "country": "Australia",
+    "title": "The 3 Oceans Scarborough Development: Rejected, Revised, and Left Vacant"
+  },
+  {
+    "id": "nizhny-novgorod-metro--the-gorky-nuclear-heating-plant-a-casualty",
+    "score": 44.8,
+    "country": "Russia",
+    "title": "The Gorky Nuclear Heating Plant: A Casualty of Chernobyl"
+  },
+  {
+    "id": "jakarta-monorail--the-jakarta-monorail-a-usd-3-55",
+    "score": 44.7,
+    "country": "Indonesia",
+    "title": "The Jakarta Monorail: A USD 3.55 Billion Abandonment"
+  },
+  {
+    "id": "nacala-corridor--sena-railway-blantyre-nhamayabue-section-civil-war",
+    "score": 44.6,
+    "country": "Mozambique",
+    "title": "Sena Railway Blantyre–Nhamayabué Section (Civil War Disruption, Flood Damage, Functional Abandonment, 1977–2026)"
+  },
+  {
+    "id": "rail-baltic-estonia--linnahall-the-concert-hall-that-closed-and",
+    "score": 44.4,
+    "country": "Estonia",
+    "title": "Linnahall—The Concert Hall That Closed and Never Reopened"
+  },
+  {
+    "id": "gelephu--education-city-the-1-billion-campus-that",
+    "score": 44.4,
+    "country": "Bhutan",
+    "title": "Education City: The \\$1 Billion Campus That Became a Cryptocurrency Mine"
+  },
+  {
+    "id": "morupule-b--the-modern-industrial-failure-fengyue-glass-manufacturing",
+    "score": 44.3,
+    "country": "Botswana",
+    "title": "The Modern Industrial Failure: Fengyue Glass Manufacturing Plant (2007–2014)"
+  },
+  {
+    "id": "konza--machakos-new-city-2013-governor-mutua-s",
+    "score": 44.1,
+    "country": "Kenya",
+    "title": "Machakos New City (2013) — Governor Mutua's Initiative and Partial Realization"
+  },
+  {
+    "id": "rail-baltic-latvia--the-riga-metro-system-how-soviet-urban",
+    "score": 44,
+    "country": "Latvia",
+    "title": "The Riga Metro System: How Soviet Urban Engineering Met Environmental Protest and Ethnic Nationalism"
+  },
+  {
+    "id": "anapolis-monorail--aeroporto-de-cargas-de-anapolis-environmental-failure",
+    "score": 43.9,
+    "country": "Brazil",
+    "title": "Aeroporto de Cargas de Anápolis – Environmental Failure and Stalled Remediation"
+  },
+  {
+    "id": "ofo--tsinghua-unigroup-s-chip-cloud-project-state",
+    "score": 43.9,
+    "country": "China",
+    "title": "Tsinghua Unigroup's Chip-Cloud Project—State Intervention in Failed Tech Ambition (2015–2022)"
+  },
+  {
+    "id": "santo-domingo-metro--estrella-del-mar-power-barges-2021-regulatory",
+    "score": 43.9,
+    "country": "Dominican Republic",
+    "title": "Estrella del Mar Power Barges (2021 Regulatory Withdrawal Order, Contested)"
+  },
+  {
+    "id": "yacyreta--paraguay-parana-hidrovia-project-1988-1998-multinational",
+    "score": 43.9,
+    "country": "Paraguay",
+    "title": "Paraguay-Paraná Hidrovia Project (1988–1998): Multinational Abandonment"
+  },
+  {
+    "id": "notre-dame-des-landes--regional-cascade-nantes-area-abandoned-projects-2018",
+    "score": 43.9,
+    "country": "France",
+    "title": "Regional Cascade: Nantes Area Abandoned Projects (2018–2024)"
+  },
+  {
+    "id": "nusantara--sabang-free-port-discontinuation-by-political-decree",
+    "score": 43.7,
+    "country": "Indonesia",
+    "title": "Sabang Free Port: Discontinuation by Political Decree and Modern Revival Stalled (1962–1985; 2016–Present)"
+  },
+  {
+    "id": "morupule-b--the-historical-abandonment-phalatswe-old-palapye-capital",
+    "score": 43.6,
+    "country": "Botswana",
+    "title": "The Historical Abandonment: Phalatswe (Old Palapye) Capital City and Settlement (1889–1902)"
+  },
+  {
+    "id": "second-avenue-subway--brooklyn-battery-bridge-a-proposal-rejected-by",
+    "score": 43.6,
+    "country": "United States",
+    "title": "Brooklyn Battery Bridge: A Proposal Rejected by the President"
+  },
+  {
+    "id": "north-south-express--ho-chi-minh-city-metro-line-consolidations",
+    "score": 43.5,
+    "country": "Vietnam",
+    "title": "Ho Chi Minh City Metro Line Consolidations (2013 Planning Revision)"
+  },
+  {
+    "id": "thai-high-speed-rail--the-hopewell-project-ambition-meets-financial-catastrophe",
+    "score": 43.5,
+    "country": "Thailand",
+    "title": "The Hopewell Project: Ambition Meets Financial Catastrophe (1990–1998)"
+  },
+  {
+    "id": "lisbon-airport--montijo-airport-the-airbase-conversion-that-did",
+    "score": 43.2,
+    "country": "Portugal",
+    "title": "Montijo Airport: The Airbase Conversion That Did Not Happen (2008–2024)"
+  },
+  {
+    "id": "swissair--credit-suisse-group-ag-1856-2024-collapse",
+    "score": 43,
+    "country": "Switzerland",
+    "title": "Credit Suisse Group AG (1856–2024): Collapse of a Global Systemically Important Bank"
+  },
+  {
+    "id": "garden-bridge--the-london-pneumatic-despatch-company-1859-1875",
+    "score": 43,
+    "country": "United Kingdom",
+    "title": "The London Pneumatic Despatch Company (1859–1875): Mechanical Feasibility Without Commercial Success"
+  },
+  {
+    "id": "mambilla--lake-chad-research-institute-wheat-trials-research",
+    "score": 43,
+    "country": "Nigeria",
+    "title": "Lake Chad Research Institute Wheat Trials — Research Disrupted and Resumed"
+  },
+  {
+    "id": "minitel--the-aerotrain-bertin-s-high-speed-dream",
+    "score": 42.8,
+    "country": "France",
+    "title": "The Aérotrain: Bertin's High-Speed Dream, Derailed by Politics and Oil"
+  },
+  {
+    "id": "hsl-zuid--feyenoord-city-stadium-masterplan-regulatory-suspension-and",
+    "score": 42.7,
+    "country": "Netherlands",
+    "title": "Feyenoord City Stadium Masterplan—Regulatory Suspension and Stakeholder Conflict (2016–2022)"
+  },
+  {
+    "id": "rail-baltic-estonia--the-soviet-metro-that-was-never-built",
+    "score": 42.7,
+    "country": "Estonia",
+    "title": "The Soviet Metro That Was Never Built"
+  },
+  {
+    "id": "baku-white-city--the-zira-island-master-plan-2009",
+    "score": 42.6,
+    "country": "Azerbaijan",
+    "title": "The Zira Island Master Plan (2009)"
+  },
+  {
+    "id": "budapest-belgrade--the-nagymaros-dam-environmental-justice-and-international",
+    "score": 42.6,
+    "country": "Hungary",
+    "title": "The Nagymaros Dam: Environmental Justice and International Stalemate (1977–1997 and Beyond)"
+  },
+  {
+    "id": "kathmandu-terai--kathmandu-valley-wastewater-treatment-plants-contract-termination",
+    "score": 42.6,
+    "country": "Nepal",
+    "title": "Kathmandu Valley Wastewater Treatment Plants — Contract Termination and Abandonment (2013–2022)"
+  },
+  {
+    "id": "medupi-kusile--thabametsi-power-station-a-630-mw-coal",
+    "score": 42.5,
+    "country": "South Africa",
+    "title": "Thabametsi Power Station: A 630 MW Coal-Fired IPP Defeated by Climate Litigation"
+  },
+  {
+    "id": "auckland-light-rail--the-east-west-link-a-motorway-that",
+    "score": 42.3,
+    "country": "New Zealand",
+    "title": "The East-West Link: A Motorway That Never Connected (2010–2017)"
+  },
+  {
+    "id": "koh-kong--dara-sakor-seashore-resort-fifteen-years-of",
+    "score": 42.3,
+    "country": "Cambodia",
+    "title": "Dara Sakor Seashore Resort: Fifteen Years of Incompletion"
+  },
+  {
+    "id": "tehran-metro--the-sofretu-metro-system-halted-by-revolution",
+    "score": 42.3,
+    "country": "Iran",
+    "title": "The SOFRETU Metro System: Halted by Revolution, Restarted by Necessity (1970–1982)"
+  },
+  {
+    "id": "new-administrative-capital--failed-capital-relocations-the-recurring-dream-of",
+    "score": 42.2,
+    "country": "Egypt",
+    "title": "Failed Capital Relocations: The Recurring Dream of Decentralization"
+  },
+  {
+    "id": "second-avenue-subway--westway-environmental-law-defeats-a-2-1",
+    "score": 42.2,
+    "country": "United States",
+    "title": "Westway: Environmental Law Defeats a \\$2.1 Billion Vision"
+  },
+  {
+    "id": "virgin-cola--clinical-research-catastrophe",
+    "score": 42.2,
+    "country": "United Kingdom",
+    "title": "Clinical Research Catastrophe"
+  },
+  {
+    "id": "muskrat-falls--gull-island-hydroelectric-project-indefinitely-deferred-1972",
+    "score": 42.1,
+    "country": "Canada",
+    "title": "Gull Island Hydroelectric Project: Indefinitely Deferred (1972–Present)"
+  },
+  {
+    "id": "childrens-hospital-dublin--transport-21-and-metro-north-the-post",
+    "score": 42.1,
+    "country": "Ireland",
+    "title": "Transport 21 and Metro North: The Post-Recession Collapse (2005–2011)"
+  },
+  {
+    "id": "mauritius-metro--port-louis-ring-road-phase-2-suspended",
+    "score": 42,
+    "country": "Mauritius",
+    "title": "Port Louis Ring Road Phase 2: Suspended Infrastructure Project (2013–2021+)"
+  },
+  {
+    "id": "sihanoukville--the-sihanoukville-casino-boom-and-the-abandoned",
+    "score": 42,
+    "country": "Cambodia",
+    "title": "The Sihanoukville Casino Boom and the Abandoned Building Crisis (2017–2024, Entering Recovery Phase)"
+  },
+  {
+    "id": "hyflux--hotel-new-world-lian-yak-building-structural",
+    "score": 42,
+    "country": "Singapore",
+    "title": "Hotel New World (Lian Yak Building)—Structural Collapse and Regulatory Reform (1986)"
+  },
+  {
+    "id": "auckland-light-rail--the-northern-pathway-a-cycling-bridge-abandoned",
+    "score": 41.9,
+    "country": "New Zealand",
+    "title": "The Northern Pathway: A Cycling Bridge Abandoned Before Completion (2021)"
+  },
+  {
+    "id": "nicaragua-canal--secondary-cases-and-excluded-projects",
+    "score": 41.9,
+    "country": "Nicaragua",
+    "title": "Secondary Cases and Excluded Projects"
+  },
+  {
+    "id": "virgin-cola--contemporary-pharmaceutical-research-retrenchment",
+    "score": 41.9,
+    "country": "United Kingdom",
+    "title": "Contemporary Pharmaceutical Research Retrenchment"
+  },
+  {
+    "id": "beirut-port--the-fouad-boutros-highway-civil-society-abandonment",
+    "score": 41.6,
+    "country": "Lebanon",
+    "title": "The Fouad Boutros Highway: Civil Society Abandonment of a 1950s Plan"
+  },
+  {
+    "id": "quito-metro--solucion-vial-guayasamin-the-cancelled-megaproject",
+    "score": 41.4,
+    "country": "Ecuador",
+    "title": "Solución Vial Guayasamín — The Cancelled Megaproject"
+  },
+  {
+    "id": "red-dead-canal--palestine-potash-company-and-the-kalya-facility",
+    "score": 41.4,
+    "country": "Jordan",
+    "title": "Palestine Potash Company and the Kalya Facility (1930–1948): War-Destroyed Infrastructure"
+  },
+  {
+    "id": "aerolineas-argentinas--the-airline-catastrophe-lineas-aereas-privadas-argentinas",
+    "score": 41.3,
+    "country": "Argentina",
+    "title": "The Airline Catastrophe — Líneas Aéreas Privadas Argentinas (LAPA), 1977–2003"
+  },
+  {
+    "id": "transasia--taiwan-s-hard-disk-drive-manufacturing-initiative",
+    "score": 41,
+    "country": "Taiwan",
+    "title": "Taiwan's Hard Disk Drive Manufacturing Initiative: Strategic Ambition and Systematic Failure"
+  },
+  {
+    "id": "limon-moin--the-atlantic-railroad-a-century-of-service",
+    "score": 40.9,
+    "country": "Costa Rica",
+    "title": "The Atlantic Railroad—A Century of Service Destroyed by Earthquake (1871–1991)"
+  },
+  {
+    "id": "uganda-sgr--kampala-road-projects-systematically-abandoned-due-to",
+    "score": 40.9,
+    "country": "Uganda",
+    "title": "Kampala Road Projects Systematically Abandoned Due to Payment Crisis (2025–2026)"
+  },
+  {
+    "id": "kilamba-kiaxi--post-2014-systemic-project-abandonment-and-stalling",
+    "score": 40.9,
+    "country": "Angola",
+    "title": "Post-2014 Systemic Project Abandonment and Stalling"
+  },
+  {
+    "id": "saab-automobile--vattenfall-s-vindelalven-hydroelectric-project-environmental-opposition",
+    "score": 40.9,
+    "country": "Sweden",
+    "title": "Vattenfall's Vindelälven Hydroelectric Project—Environmental Opposition and Strategic Pivot"
+  },
+  {
+    "id": "chisinau-airport--the-contemporary-failure-chisinau-international-airport-terminal",
+    "score": 40.8,
+    "country": "Moldova",
+    "title": "The Contemporary Failure: Chisinau International Airport Terminal Cancellation"
+  },
+  {
+    "id": "minitel--minitel-the-precursor-that-lasted-too-long",
+    "score": 40.8,
+    "country": "France",
+    "title": "Minitel: The Precursor That Lasted Too Long"
+  },
+  {
+    "id": "second-avenue-subway--the-lower-manhattan-expressway-a-decade-long",
+    "score": 40.8,
+    "country": "United States",
+    "title": "The Lower Manhattan Expressway: A Decade-Long Battle with Jane Jacobs"
+  },
+  {
+    "id": "olympic-stadium--the-olympic-stadium-retractable-roof-engineering-ambition",
+    "score": 40.7,
+    "country": "Canada",
+    "title": "The Olympic Stadium Retractable Roof: Engineering Ambition Exceeds Operational Reality"
+  },
+  {
+    "id": "cwg-village--part-3-the-monorail-question-an-infrastructure",
+    "score": 40.5,
+    "country": "India",
+    "title": "Part 3: The Monorail Question—An Infrastructure Mystery (2008–2013+)"
+  },
+  {
+    "id": "buran--the-spiral-spaceplane-soviet-air-launched-spaceflight",
+    "score": 40.5,
+    "country": "Kazakhstan",
+    "title": "The Spiral Spaceplane — Soviet Air-Launched Spaceflight (1960–1978)"
+  },
+  {
+    "id": "east-west-highway--the-algiers-metro-forty-years-from-conception",
+    "score": 40.5,
+    "country": "Algeria",
+    "title": "The Algiers Metro: Forty Years from Conception to Partial Operation"
+  },
+  {
+    "id": "la-polar--ladeco-linea-aerea-del-cobre-from-regional",
+    "score": 40.4,
+    "country": "Chile",
+    "title": "LADECO (Línea Aérea Del Cobre) — From Regional Powerhouse to Absorbed Competitor (1958–2001)"
+  },
+  {
+    "id": "stx-housing--marine-drive-waterfront-development-the-1-5",
+    "score": 40.3,
+    "country": "Ghana",
+    "title": "Marine Drive Waterfront Development — The \\$1.5 Billion Stalled Transformation"
+  },
+  {
+    "id": "vistula-spit--vi-the-siarzewo-dam-project-political-reversal",
+    "score": 40.2,
+    "country": "Poland",
+    "title": "VI. The Siarzewo Dam Project: Political Reversal and Environmental Cancellation (2016–2025)"
+  },
+  {
+    "id": "virtual-boy--kyocera-s-withdrawal-from-iridium-satellite-phone",
+    "score": 40.1,
+    "country": "Japan",
+    "title": "Kyocera's Withdrawal from Iridium Satellite Phone Project—Exit from a \\$5 Billion Telecommunications Venture"
+  },
+  {
+    "id": "tan-son-nhat-t3--ho-chi-minh-city-flood-risk-management",
+    "score": 40,
+    "country": "Vietnam",
+    "title": "Ho Chi Minh City Flood Risk Management Project: Infrastructure Trapped by Compensation Deadlocks"
+  },
+  {
+    "id": "hwang-woo-suk--astrogen-ast-001-spheragen-autism-spectrum-disorder",
+    "score": 40,
+    "country": "South Korea",
+    "title": "Astrogen AST-001 (Spheragen) Autism Spectrum Disorder Trial—A Recent Efficacy Failure"
+  },
+  {
+    "id": "simputer--the-semiconductor-dream-bel-transistor-and-integrated",
+    "score": 40,
+    "country": "India",
+    "title": "The Semiconductor Dream: BEL Transistor and Integrated Circuit Ventures (1959–1980s)"
+  },
+  {
+    "id": "beirut-port--the-bisri-dam-617-million-in-unmet",
+    "score": 39.9,
+    "country": "Lebanon",
+    "title": "The Bisri Dam: \\$617 Million in Unmet Preconditions"
+  },
+  {
+    "id": "yacyreta--yacyreta-reservoir-filling-delay-and-incomplete-resettlement",
+    "score": 39.9,
+    "country": "Paraguay",
+    "title": "Yacyretá Reservoir Filling Delay and Incomplete Resettlement (1994–2011)"
+  },
+  {
+    "id": "olivetti--the-collapse-of-the-human-city-model",
+    "score": 39.8,
+    "country": "Italy",
+    "title": "The Collapse of the \"Human City\" Model (1908–1990s)"
+  },
+  {
+    "id": "thai-high-speed-rail--nakhon-pathom-airport-a-third-airport-that",
+    "score": 39.8,
+    "country": "Thailand",
+    "title": "Nakhon Pathom Airport: A Third Airport That Never Opened (2019–2026)"
+  },
+  {
+    "id": "santo-domingo-metro--evidence-confidence-and-data-limitations",
+    "score": 39.6,
+    "country": "Dominican Republic",
+    "title": "Evidence Confidence and Data Limitations"
+  },
+  {
+    "id": "bumbuna--bumbuna-hydroelectric-project-phase-ii-expansion-planned",
+    "score": 39.4,
+    "country": "Sierra Leone",
+    "title": "Bumbuna Hydroelectric Project Phase II – Expansion Planned, Development Pursued, Abandoned (2011–2025)"
+  },
+  {
+    "id": "kajaki-dam--the-unfinished-spillway-and-height-increase-1951",
+    "score": 39.4,
+    "country": "Afghanistan",
+    "title": "The Unfinished Spillway and Height Increase (1951–1979): A Cold War Development Interrupted"
+  },
+  {
+    "id": "sinclair-c5--triumph-motorcycles-from-market-dominance-to-worker",
+    "score": 39.3,
+    "country": "United Kingdom",
+    "title": "Triumph Motorcycles: From Market Dominance to Worker Cooperation to Modern Revival (1889–1983; Revived 1983–Present)"
+  },
+  {
+    "id": "visaginas--visaginas-nuclear-power-plant-failed-replacement-project",
+    "score": 39.1,
+    "country": "Lithuania",
+    "title": "Visaginas Nuclear Power Plant — Failed Replacement Project, 2007–2016"
+  },
+  {
+    "id": "diovan-scandal--clinical-trials-terminated-or-withdrawn-comprehensive-documentation",
+    "score": 39,
+    "country": "Japan",
+    "title": "Clinical Trials Terminated or Withdrawn: Comprehensive Documentation"
+  },
+  {
+    "id": "ofo--renren-social-network-from-facebook-clone-to",
+    "score": 39,
+    "country": "China",
+    "title": "Renren Social Network—From Facebook Clone to Data Graveyard (2005–2024)"
+  },
+  {
+    "id": "simputer--it-hardware-ventures-infosys-and-wipro-s",
+    "score": 39,
+    "country": "India",
+    "title": "IT Hardware Ventures: Infosys and Wipro's Abandoned Electronics Business (1985–1995)"
+  },
+  {
+    "id": "khorgos--ii-the-international-center-for-boundary-cooperation",
+    "score": 38.9,
+    "country": "Kazakhstan",
+    "title": "II. The International Center for Boundary Cooperation (ICBC): Unrealized Ambition in a Duty-Free Zone"
+  },
+  {
+    "id": "laos-china-railway--the-vung-ang-railway-a-stalled-regional",
+    "score": 38.9,
+    "country": "Laos",
+    "title": "The Vung Ang Railway – A Stalled Regional Connectivity Dream"
+  },
+  {
+    "id": "elbphilharmonie--speicherstadt-privatization-and-redevelopment-proposal-1988",
+    "score": 38.9,
+    "country": "Germany",
+    "title": "Speicherstadt Privatization and Redevelopment Proposal (1988)"
+  },
+  {
+    "id": "silk-city--mubarak-al-kabeer-port-non-operation-and",
+    "score": 38.9,
+    "country": "Kuwait",
+    "title": "Mubarak Al-Kabeer Port—Non-Operation and Revival Under Chinese Partnership"
+  },
+  {
+    "id": "google-glass--google-glass-consumer-rejection-and-enterprise-discontinuation",
+    "score": 38.7,
+    "country": "United States",
+    "title": "Google Glass: Consumer Rejection and Enterprise Discontinuation (2012–2023)"
+  },
+  {
+    "id": "temelin--the-1990-cancellation-political-rupture-and-abandonment",
+    "score": 38.7,
+    "country": "Czech Republic",
+    "title": "The 1990 Cancellation: Political Rupture and Abandonment of the Original Four-Reactor Plan"
+  },
+  {
+    "id": "palm-jebel-ali--dubai-lagoon-19-year-suspension-and-official",
+    "score": 38.5,
+    "country": "United Arab Emirates",
+    "title": "Dubai Lagoon: 19-Year Suspension and Official Cancellation"
+  },
+  {
+    "id": "rio-hondo--regional-infrastructure-systems-railways-and-water-management",
+    "score": 38.4,
+    "country": "Guatemala",
+    "title": "Regional Infrastructure Systems: Railways and Water Management"
+  },
+  {
+    "id": "moviepass--eastman-kodak-digital-disruption-and-the-decline",
+    "score": 38.2,
+    "country": "United States",
+    "title": "Eastman Kodak: Digital Disruption and the Decline of a Manufacturing Icon (1880s–Present)"
+  },
+  {
+    "id": "thai-high-speed-rail--bangkok-chiang-mai-high-speed-shinkansen-indefinite",
+    "score": 38.1,
+    "country": "Thailand",
+    "title": "Bangkok-Chiang Mai High-Speed Shinkansen: Indefinite Postponement (2015–2026)"
+  },
+  {
+    "id": "lagos-calabar-railway--the-lagos-metropolitan-rail-project-1983-1985",
+    "score": 38,
+    "country": "Nigeria",
+    "title": "The Lagos Metropolitan Rail Project (1983–1985): Cancellation of a 28.5-Kilometre Vision"
+  },
+  {
+    "id": "buran--the-n-1-soviet-lunar-rocket-the",
+    "score": 38,
+    "country": "Kazakhstan",
+    "title": "The N-1 Soviet Lunar Rocket — The Mightiest Rocket That Never Flew"
+  },
+  {
+    "id": "elbphilharmonie--incomplete-u-boat-construction-at-blohm-and",
+    "score": 38,
+    "country": "Germany",
+    "title": "Incomplete U-Boat Construction at Blohm & Voss (1943–1945)"
+  },
+  {
+    "id": "rail-baltic-latvia--the-daugavpils-hydroelectric-power-station-when-environmental",
+    "score": 38,
+    "country": "Latvia",
+    "title": "The Daugavpils Hydroelectric Power Station: When Environmental Journalism Triggered a National Movement"
+  },
+  {
+    "id": "google-glass--danger-inc-and-the-t-mobile-sidekick",
+    "score": 37.9,
+    "country": "United States",
+    "title": "Danger Inc. and the T-Mobile Sidekick: Mobile Computing Platform (1999–2011)"
+  },
+  {
+    "id": "moviepass--f-w-woolworth-company-the-five-and",
+    "score": 37.8,
+    "country": "United States",
+    "title": "F. W. Woolworth Company: The Five-and-Dime Revolution and Voluntary Liquidation (1879–1997)"
+  },
+  {
+    "id": "north-south-express--sing-viet-urban-project-700-families-trapped",
+    "score": 37.8,
+    "country": "Vietnam",
+    "title": "Sing-Viet Urban Project – 700 Families Trapped in 30-Year Suspension"
+  },
+  {
+    "id": "koh-kong--royal-group-coal-power-plant-when-energy",
+    "score": 37.7,
+    "country": "Cambodia",
+    "title": "Royal Group Coal Power Plant: When Energy Policy Pivoted Away"
+  },
+  {
+    "id": "uganda-sgr--impact-on-kampala-s-urban-development-and",
+    "score": 37.7,
+    "country": "Uganda",
+    "title": "Impact on Kampala's Urban Development and Public Welfare"
+  },
+  {
+    "id": "amulsar--the-jermuk-airport-project-perpetual-planning-without",
+    "score": 37.5,
+    "country": "Armenia",
+    "title": "The Jermuk Airport Project — Perpetual Planning Without Construction"
+  },
+  {
+    "id": "htc--behavior-tech-computer-s-optical-disc-drive",
+    "score": 37.4,
+    "country": "Taiwan",
+    "title": "Behavior Tech Computer's Optical Disc Drive Manufacturing—Competitive Displacement"
+  },
+  {
+    "id": "manila-metro--the-manila-tranvia-system-1883-1945",
+    "score": 37.4,
+    "country": "Philippines",
+    "title": "The Manila Tranvía System (1883–1945)"
+  },
+  {
+    "id": "north-south-express--secondary-cases-shorter-duration-stalls-and-partial",
+    "score": 37.2,
+    "country": "Vietnam",
+    "title": "Secondary Cases: Shorter Duration Stalls and Partial Projects"
+  },
+  {
+    "id": "hwang-woo-suk--the-world-stem-cell-hub-an-international",
+    "score": 37.1,
+    "country": "South Korea",
+    "title": "The World Stem Cell Hub—An International Research Infrastructure That Collapsed in Weeks"
+  },
+  {
+    "id": "perth-freight-link--the-perth-freight-link-a-1-9",
+    "score": 37.1,
+    "country": "Australia",
+    "title": "The Perth Freight Link: A \\$1.9 Billion Road Project Derailed by Environmental and Political Opposition"
+  },
+  {
+    "id": "rejsekort--urban-planning-s-car-centric-fantasies-four",
+    "score": 37,
+    "country": "Denmark",
+    "title": "Urban Planning's Car-Centric Fantasies: Four Abandoned Infrastructure Projects (1958–1974)"
+  },
+  {
+    "id": "colbun--paposo-pumped-storage-hydroelectric-project-2024",
+    "score": 36.9,
+    "country": "Chile",
+    "title": "Paposo Pumped-Storage Hydroelectric Project (2024)"
+  },
+  {
+    "id": "belo-monte--the-planned-xingu-dam-cascade-indigenous-resistance",
+    "score": 36.8,
+    "country": "Brazil",
+    "title": "The Planned Xingu Dam Cascade: Indigenous Resistance and Policy Reversal (1979–1989)"
+  },
+  {
+    "id": "juragua--carolina-sugar-mill-regional-dissolution-of-the",
+    "score": 36.8,
+    "country": "Cuba",
+    "title": "Carolina Sugar Mill: Regional Dissolution of the Agroindustrial Complex"
+  },
+  {
+    "id": "moviepass--vine-the-six-second-looping-video-platform",
+    "score": 36.8,
+    "country": "United States",
+    "title": "Vine: The Six-Second Looping Video Platform's Rise and Rapid Obsolescence (2012–2017)"
+  },
+  {
+    "id": "nicaragua-canal--the-united-states-isthmian-canal-commission-surveys",
+    "score": 36.7,
+    "country": "Nicaragua",
+    "title": "The United States Isthmian Canal Commission Surveys and Works (1890–1903): Policy Abandonment in Favor of Panama"
+  },
+  {
+    "id": "palm-jebel-ali--hyperloop-projects-technology-ambition-versus-market-reality",
+    "score": 36.7,
+    "country": "United Arab Emirates",
+    "title": "Hyperloop Projects: Technology Ambition Versus Market Reality"
+  },
+  {
+    "id": "lagos-calabar-railway--the-old-federal-secretariat-ikoyi-a-deteriorating",
+    "score": 36.6,
+    "country": "Nigeria",
+    "title": "The Old Federal Secretariat, Ikoyi: A Deteriorating Icon of Abandoned Federal Responsibility"
+  },
+  {
+    "id": "quibi--california-national-bank-fdic-closure-1996-2009",
+    "score": 36.6,
+    "country": "United States",
+    "title": "California National Bank—FDIC Closure (1996–2009)"
+  },
+  {
+    "id": "elbphilharmonie--hamburg-kaltenkirchen-airport-the-never-built-mega",
+    "score": 36.5,
+    "country": "Germany",
+    "title": "Hamburg Kaltenkirchen Airport – The Never-Built Mega-Airport (1960–2013)"
+  },
+  {
+    "id": "grand-inga--world-bank-inga-3-basse-chute-technical",
+    "score": 36.5,
+    "country": "DR Congo",
+    "title": "World Bank Inga-3 Basse Chute Technical Assistance Project (2014–2016) — Suspended"
+  },
+  {
+    "id": "karahnjukar--the-icelink-atlantic-interconnector-submarine-hvdc-cable",
+    "score": 36.5,
+    "country": "Iceland",
+    "title": "The Icelink / Atlantic Interconnector Submarine HVDC Cable (2010–2026+) — A Perpetually Proposed, Never-Built Power Link"
+  },
+  {
+    "id": "new-administrative-capital--the-new-administrative-capital-the-ongoing-experiment",
+    "score": 36.5,
+    "country": "Egypt",
+    "title": "The New Administrative Capital: The Ongoing Experiment"
+  },
+  {
+    "id": "highway-2000--jamaica-development-infrastructure-programme-jdip-systematic-governance",
+    "score": 36.4,
+    "country": "Jamaica",
+    "title": "Jamaica Development Infrastructure Programme (JDIP)—Systematic Governance Failure (2010–2015+)"
+  },
+  {
+    "id": "palm-jebel-ali--the-world-islands-14-15-billion-in",
+    "score": 36.4,
+    "country": "United Arab Emirates",
+    "title": "The World Islands: \\$14–15 Billion in Suspended Reclamation"
+  },
+  {
+    "id": "neom--king-abdullah-economic-city-the-pre-vision",
+    "score": 36.3,
+    "country": "Saudi Arabia",
+    "title": "King Abdullah Economic City: The Pre-Vision 2030 Precedent"
+  },
+  {
+    "id": "muskrat-falls--the-lower-churchill-development-proposals-twenty-seven",
+    "score": 36.2,
+    "country": "Canada",
+    "title": "The Lower Churchill Development Proposals: Twenty-Seven Years Without Construction (1972–1998)"
+  },
+  {
+    "id": "xiongan--baiyangdian-ecological-restoration-as-a-survival",
+    "score": 36,
+    "country": "China",
+    "title": "Baiyangdian—Ecological Restoration as a Survival"
+  },
+  {
+    "id": "olivetti--the-interaction-design-institute-ivrea-a-brief",
+    "score": 36,
+    "country": "Italy",
+    "title": "The Interaction Design Institute Ivrea—A Brief Educational Experiment (2001–2006/2007)"
+  },
+  {
+    "id": "tren-de-guayana--part-3-broader-context-and-causation",
+    "score": 36,
+    "country": "Venezuela",
+    "title": "Part 3: Broader Context and Causation"
+  },
+  {
+    "id": "honduras-highways--trans-450-bus-rapid-transit-system-a",
+    "score": 35.9,
+    "country": "Honduras",
+    "title": "Trans 450 Bus Rapid Transit System — A \\$50+ Million Abandoned Project"
+  },
+  {
+    "id": "temelin--the-2005-2014-expansion-attempt-cancelled-units",
+    "score": 35.9,
+    "country": "Czech Republic",
+    "title": "The 2005-2014 Expansion Attempt: Cancelled Units 3 and 4 (Second Try) and Geopolitical Competition"
+  },
+  {
+    "id": "manila-bay--pasig-river-elevated-expressway-parex-stalled-and",
+    "score": 35.7,
+    "country": "Philippines",
+    "title": "Pasig River Elevated Expressway (PAREX): Stalled and Uncertain"
+  },
+  {
+    "id": "yacyreta--mil-viviendas-housing-complex-and-abandoned-shared",
+    "score": 35.4,
+    "country": "Paraguay",
+    "title": "Mil Viviendas Housing Complex and Abandoned Shared Facilities (1983–2024)"
+  },
+  {
+    "id": "odebrecht--vasp-viacao-aerea-sao-paulo-aviation-pioneer",
+    "score": 35.3,
+    "country": "Brazil",
+    "title": "VASP — Viação Aérea São Paulo, Aviation Pioneer's Collapse (1933–2008)"
+  },
+  {
+    "id": "palm-jebel-ali--nakheel-tower-the-kilometre-high-megastructure",
+    "score": 35.3,
+    "country": "United Arab Emirates",
+    "title": "Nakheel Tower: The Kilometre-High Megastructure"
+  },
+  {
+    "id": "ethiopian-sugar--omo-kuraz-sugar-project-component-vi-2011",
+    "score": 35.1,
+    "country": "Ethiopia",
+    "title": "Omo-Kuraz Sugar Project Component VI (2011–2022, Unfinished)"
+  },
+  {
+    "id": "limon-moin--the-2009-limon-renovation-plan-stalled-for",
+    "score": 35.1,
+    "country": "Costa Rica",
+    "title": "The 2009 Limón Renovation Plan—Stalled for Sixteen Years, Revived in 2026"
+  },
+  {
+    "id": "astravets--the-minsk-atets-a-cancelled-nuclear-cogeneration",
+    "score": 35,
+    "country": "Belarus",
+    "title": "The Minsk ATETS — A Cancelled Nuclear Cogeneration Dream (1980–1987)"
+  },
+  {
+    "id": "uganda-sgr--the-greater-kampala-light-rail-system-perpetually",
+    "score": 34.9,
+    "country": "Uganda",
+    "title": "The Greater Kampala Light Rail System – Perpetually Planned, Never Built (2008–2026)"
+  },
+  {
+    "id": "garden-bridge--the-thames-archway-driftway-1805-1809-engineering",
+    "score": 34.7,
+    "country": "United Kingdom",
+    "title": "The Thames Archway Driftway (1805–1809): Engineering Impossibility Before Innovation"
+  },
+  {
+    "id": "pacific-games--the-port-moresby-to-rona-railway-colonial",
+    "score": 34.6,
+    "country": "Papua New Guinea",
+    "title": "The Port Moresby to Rona Railway: Colonial Ambition Derailed by War (1914–Present)"
+  },
+  {
+    "id": "toshka--the-qattara-depression-project-a-parallel-abandonment",
+    "score": 34.5,
+    "country": "Egypt",
+    "title": "The Qattara Depression Project: A Parallel Abandonment in the Western Desert (1927–May 2026)"
+  },
+  {
+    "id": "debe-penal--the-oropouche-river-bridge-the-most-documented",
+    "score": 34.4,
+    "country": "Trinidad and Tobago",
+    "title": "The Oropouche River Bridge: The Most Documented Incomplete Project"
+  },
+  {
+    "id": "charleroi-metro--the-charleroi-metro-four-decades-of-ghost",
+    "score": 34.4,
+    "country": "Belgium",
+    "title": "The Charleroi Metro: Four Decades of Ghost Stations"
+  },
+  {
+    "id": "manila-metro--philippine-orthopedic-center-modernization-2013-2015",
+    "score": 34.4,
+    "country": "Philippines",
+    "title": "Philippine Orthopedic Center Modernization (2013–2015)"
+  },
+  {
+    "id": "kvanefjeld--ivittuut-cryolite-mining-town-1854-1987",
+    "score": 34.3,
+    "country": "Greenland",
+    "title": "Ivittuut Cryolite Mining Town (1854–1987)"
+  },
+  {
+    "id": "castellon-airport--the-rail-corridor-downscaled-teruel-sagunto-double",
+    "score": 34.1,
+    "country": "Spain",
+    "title": "The Rail Corridor Downscaled—Teruel-Sagunto Double-Track Plan Abandoned"
+  },
+  {
+    "id": "hong-kong-zhuhai-macau--the-giant-building-twenty-eight-years-of",
+    "score": 33.7,
+    "country": "China",
+    "title": "The Giant Building: Twenty-Eight Years of Deterioration and One Billionaire's Collapse"
+  },
+  {
+    "id": "vioxx--vioxx-rofecoxib-approve-trial-terminated-september-2004",
+    "score": 33.7,
+    "country": "United States",
+    "title": "VIOXX (Rofecoxib) APPROVe Trial — Terminated September 2004"
+  },
+  {
+    "id": "kingfisher-airlines--the-bank-of-bombay-colonial-finance-and",
+    "score": 33.1,
+    "country": "India",
+    "title": "The Bank of Bombay: Colonial Finance and Institutional Failure (1840–1921)"
+  },
+  {
+    "id": "toamasina--toamasina-s-actual-infrastructure-trajectory-success-and",
+    "score": 33,
+    "country": "Madagascar",
+    "title": "Toamasina's Actual Infrastructure Trajectory: Success and Recovery"
+  },
+  {
+    "id": "hambantota--weerawila-airport-expansion-environmental-cancellation-before-construction",
+    "score": 32,
+    "country": "Sri Lanka",
+    "title": "Weerawila Airport Expansion—Environmental Cancellation Before Construction"
+  },
+  {
+    "id": "mulungushi--the-broken-hill-man-kabwe-1-fifty",
+    "score": 31.8,
+    "country": "Zambia",
+    "title": "The Broken Hill Man (Kabwe 1): Fifty Years of Unresolved Repatriation"
+  },
+  {
+    "id": "brenner--the-alpine-wall-a-colossal-fortification-system",
+    "score": 30.5,
+    "country": "Austria",
+    "title": "The Alpine Wall: A Colossal Fortification System Built and Abandoned in Five Years"
+  },
+  {
+    "id": "pacific-train--the-la-union-tuna-port-the-primary",
+    "score": 30.1,
+    "country": "El Salvador",
+    "title": "The La Unión Tuna Port: The Primary Case of Operational Abandonment"
+  },
+  {
+    "id": "lima-metro--case-study-1-the-metrolima-comprehensive-metro",
+    "score": 28.8,
+    "country": "Peru",
+    "title": "Case Study 1: The Metrolima Comprehensive Metro System (1972–1974)"
+  },
+  {
+    "id": "dhaka-metro--the-hazaribagh-leather-tannery-relocation-project-2003",
+    "score": 28.2,
+    "country": "Bangladesh",
+    "title": "The Hazaribagh Leather Tannery Relocation Project (2003–2017)"
+  },
+  {
+    "id": "qatar-world-cup--lusail-entertainment-city-stalled-in-preclinical-phases",
+    "score": 26,
+    "country": "Qatar",
+    "title": "Lusail Entertainment City—Stalled in Preclinical Phases"
+  },
+  {
+    "id": "kyiv-metro--the-fourth-metro-line-perpetually-postponed-1985",
+    "score": 25.4,
+    "country": "Ukraine",
+    "title": "The Fourth Metro Line—Perpetually Postponed (1985–Present)"
+  }
+]

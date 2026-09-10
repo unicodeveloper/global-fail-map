@@ -1,0 +1,27 @@
+# The Old Federal Secretariat
+
+## Structure and Original Purpose
+
+The Federal Secretariat in Ikoyi is a 15-storey reinforced concrete office building constructed in 1976, occupying approximately 120,000 square metres of prime real estate in one of Lagos' most exclusive neighbourhoods. The building was engineered and built to serve as the central administrative hub for Nigeria's federal civil service, housing ministerial departments, executive agencies, and civil service headquarters during the period when Lagos remained the capital. [[11]](https://en.wikipedia.org/wiki/Federal_Secretariat) [[13]](https://africasacountry.com/2026/08/sovereign-rot) The structure represents significant architectural investment and occupies land valued at extraordinarily high market rates.
+
+## Abandonment Following Capital Relocation (1991)
+
+When Nigeria's federal capital relocated to Abuja in December 1991, the Secretariat lost its primary function overnight. The building transitioned from a fully operational administrative complex into an underutilized and increasingly neglected structure. By the early 2000s, the Federal Secretariat had become a symbol of Lagos' loss of political status following the capital shift—a once-vital government office rendered obsolete by federal policy. [[11]](https://en.wikipedia.org/wiki/Federal_Secretariat) [[13]](https://africasacountry.com/2026/08/sovereign-rot)
+
+The building deteriorated significantly over the next two decades. By 2026, contemporary sources described it as "a fifteen-story concrete ghost haunting the skyline," with visible signs of structural decay, water damage, roof leaks, and environmental weathering. [[13]](https://africasacountry.com/2026/08/sovereign-rot) The interior spaces remained largely vacant, unfurnished, and without functional utilities. Vegetation overgrowth and material deterioration accelerated the building's physical decline.
+
+## Redevelopment Attempts and Legal Disputes (2006–2026)
+
+In 2006, the Federal Government attempted to monetize the asset through a concession arrangement with Resort International Limited, purportedly aimed at redeveloping the structure into a mixed-use facility with middle-income residential units to house 480 families. However, the redevelopment plan encountered regulatory obstacles: the Lagos State Government refused to grant zoning approval for residential conversion, asserting that such use violated the Lagos Master Plan and would conflict with the property's location within an exclusive commercial and high-income residential zone. [[9]](https://tribuneonlineng.com/fresh-concerns-over-continuous-abandonment-of-federal-secretariat-complex/) [[10]](https://allafrica.com/stories/202602130437.html) [[11]](https://en.wikipedia.org/wiki/Federal_Secretariat) [[13]](https://africasacountry.com/2026/08/sovereign-rot)
+
+The concession arrangement thus stalled without implementation. The federal government retained nominal ownership while the concession remained unexercised. By 2024, the Federal Secretariat remained a derelict structure with unresolved ownership and use-rights disputes between the federal government, the concession holder, and Lagos State regulatory authorities.
+
+In December 2024 and February 2026, the Building Collapse Prevention Guild (BCPG)—a professional civil engineering advocacy organisation—issued public statements calling for urgent federal intervention to rehabilitate or adaptively reuse the structure, characterizing the building's continued abandonment as a "national embarrassment" and a waste of valuable federal real estate during a period of critical government housing shortages. [[9]](https://tribuneonlineng.com/fresh-concerns-over-continuous-abandonment-of-federal-secretariat-complex/) [[10]](https://allafrica.com/stories/202602130437.html) [[12]](https://guardian.ng/news/nigeria/metro/group-tasks-fg-on-rehabilitation-of-abandoned-federal-secretariat-buildings-in-lagos/) In response, a tripartite committee comprising federal government representatives, Lagos State authorities, and professional stakeholders was established in December 2024 to explore rehabilitation and adaptive reuse options. [[9]](https://tribuneonlineng.com/fresh-concerns-over-continuous-abandonment-of-federal-secretariat-complex/) [[10]](https://allafrica.com/stories/202602130437.html)
+
+As of September 2026, no final resolution had been publicly announced. The building remains standing but increasingly unsafe, with the BCPG estimating foregone government revenue from the abandoned property at approximately ₦93.5 billion under conservative rental yield assumptions. [[10]](https://allafrica.com/stories/202602130437.html)
+
+## Geographic and Economic Significance
+
+The Old Federal Secretariat occupies prime Ikoyi real estate alongside the Ikoyi Towers complex, with combined land value estimates at ₦12.608 trillion (approximately \$9.3 billion USD as of 2025). [[10]](https://allafrica.com/stories/202602130437.html) [[13]](https://africasacountry.com/2026/08/sovereign-rot) The site's location within exclusive Ikoyi places it among Lagos' most sought-after commercial and residential areas. The structure's continued abandonment represents significant opportunity cost: the same real estate could generate government revenue through commercial lease, residential conversion, or public-use redevelopment if regulatory and ownership disputes were resolved.
+
+---
