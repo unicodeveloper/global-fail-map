@@ -4,6 +4,14 @@ An interactive atlas of failed companies, cancelled megaprojects, abandoned inve
 
 ![](public/global-fail-map.png)
 
+Explore 200 curated stories about what was attempted, where it happened, and what survived after it ended.
+
+<p align="center">
+  <img src="public/report-kandahar.png" width="32%" alt="Kandahar Diesel Generators report" />
+  <img src="public/report-kalimantan.png" width="32%" alt="Central Kalimantan peatland project report" />
+  <img src="public/report-theranos.png" width="32%" alt="Theranos report" />
+</p>
+
 Global Fail Map is part graveyard, part research tool, and part strategy reference. It maps the evidence left behind by ambition: empty terminals, dissolved companies, shelved reactors, withdrawn drugs, ghost infrastructure, dead platforms, and plans that were too early, too expensive, too political, or simply wrong.
 
 ## Features
