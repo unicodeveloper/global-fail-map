@@ -1,0 +1,37 @@
+{
+  "amulsar": {
+    "expected": "Armenia",
+    "actual": "Colombia",
+    "locationName": "Amulsar",
+    "latitude": 4.535886,
+    "longitude": -75.67241
+  },
+  "buran": {
+    "expected": "Russia",
+    "actual": "United States",
+    "locationName": "Baikonur",
+    "latitude": 37.797626,
+    "longitude": -122.40863
+  },
+  "gelephu": {
+    "expected": "Bhutan",
+    "actual": "India",
+    "locationName": "Gelephu",
+    "latitude": 26.763456,
+    "longitude": 91.36773
+  },
+  "new-administrative-capital": {
+    "expected": "Egypt",
+    "actual": "United States",
+    "locationName": "New Administrative Capital",
+    "latitude": 41.93879,
+    "longitude": -72.457222
+  },
+  "toamasina": {
+    "expected": "Madagascar",
+    "actual": "Argentina",
+    "locationName": "Toamasina",
+    "latitude": -34.896512,
+    "longitude": -58.702797
+  }
+}

@@ -23,8 +23,11 @@ export const useAuthStore = create<AuthStore>((set, get) => ({
   },
   signOut: async () => {
     try {
-      const response = await fetch('/api/auth/valyu/session', { method: 'DELETE' });
-      if (!response.ok) throw new Error('Could not sign out. Please try again.');
+      const response = await fetch('/api/auth/valyu/session', {
+        method: 'DELETE',
+      });
+      if (!response.ok)
+        throw new Error('Could not sign out. Please try again.');
       set({ user: null });
       window.dispatchEvent(new Event('auth:signout'));
       return {};
@@ -43,8 +46,13 @@ export const useAuthStore = create<AuthStore>((set, get) => ({
     } catch {
       // Cookie sessions also work when browser storage is disabled.
     }
-    fetch('/api/auth/valyu/session', { cache: 'no-store', signal: AbortSignal.timeout(20000) })
-      .then(async (response) => response.ok ? response.json() : { user: null })
+    fetch('/api/auth/valyu/session', {
+      cache: 'no-store',
+      signal: AbortSignal.timeout(20000),
+    })
+      .then(async (response) =>
+        response.ok ? response.json() : { user: null },
+      )
       .then((data) => set({ user: data.user || null, loading: false }))
       .catch(() => set({ user: null, loading: false }));
   },

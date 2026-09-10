@@ -28,7 +28,9 @@ import {
 import { SourceFavicon } from './source-favicon';
 import { ResearchProgress, type ResearchConnection } from './research-progress';
 import { ProjectPhotoGallery } from './project-photo-gallery';
+import { ArchiveLink } from './archive-link';
 import { projectPhotoSubjects } from '@/lib/project-images';
+import { isNigerianLocation } from '@/lib/archiving';
 import seededPhotos from '@/data/project-photos.json';
 import {
   prepareReport,
@@ -185,6 +187,22 @@ export function ReportPanel({
   const readingMinutes = content
     ? Math.max(1, Math.ceil(content.split(/\s+/).length / 220))
     : 0;
+  /* The Nigerian newspaper archive only covers Nigeria, so it is offered there. */
+  const archive = example
+    ? example.country === 'Nigeria'
+      ? {
+          subject: example.title,
+          category: example.category,
+          period: example.period,
+          year: example.year,
+        }
+      : null
+    : investigation && isNigerianLocation(investigation.location)
+      ? {
+          subject: investigation.location.name,
+          category: investigation.category,
+        }
+      : null;
 
   async function share() {
     if (!example && !publicReport) {
@@ -495,7 +513,6 @@ export function ReportPanel({
               )}
             </button>
           )}
-
           <div className="dossier-scroll" ref={scrollRef}>
             <div className="dossier-reading-column">
               <div className="dossier-heading">
@@ -679,6 +696,16 @@ export function ReportPanel({
                 </article>
               )}
 
+              {example?.lesson && content && (
+                <aside
+                  className="dossier-lesson"
+                  data-map-category={example.category}
+                >
+                  <p className="dossier-lesson-label">What it teaches</p>
+                  <p className="dossier-lesson-text">{example.lesson}</p>
+                </aside>
+              )}
+
               {!!sources.length && (
                 <section className="dossier-sources" id="dossier-sources">
                   <div className="dossier-section-heading">
@@ -709,6 +736,8 @@ export function ReportPanel({
                   )}
                 </section>
               )}
+
+              {archive && content && <ArchiveLink {...archive} />}
             </div>
           </div>
         </div>

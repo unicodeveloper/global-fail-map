@@ -48,7 +48,17 @@ test('all cached stories have reports and matching numbered citation sources', (
     examples.length,
   );
   for (const example of examples) {
-    assert.equal(example.deepresearchMode, 'standard');
+    /* Stories reach the atlas two ways: one standard-mode run per story, or a
+       fast-mode regional dossier split into the attempts it documents. Depth is
+       held by the report and citation checks below, not by the mode it came in. */
+    assert.ok(
+      ['standard', 'fast', 'heavy'].includes(example.deepresearchMode),
+      `${example.id} records the research mode it came from`,
+    );
+    assert.ok(
+      example.lesson.trim().length > 20,
+      `${example.id} ships a takeaway for the report to close on`,
+    );
     const markdown = readFileSync(
       new URL(`../public${example.reportPath}`, import.meta.url),
       'utf8',

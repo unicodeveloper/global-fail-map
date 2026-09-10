@@ -4,7 +4,11 @@ import { test } from 'node:test';
 import { mapSymbolPaths } from '../src/components/fail-map/map-symbols';
 import { groupMapExamples } from '../src/components/fail-map/map-groups';
 import examples from '../src/data/examples.json';
-import type { Category, FailExample } from '../src/components/fail-map/types';
+import {
+  categories,
+  type Category,
+  type FailExample,
+} from '../src/components/fail-map/types';
 
 test('nearby overlapping symbols group without moving or losing stories', () => {
   const base = examples[0] as FailExample;
@@ -44,6 +48,27 @@ test('every seeded story has a map symbol and personal research has a fallback',
     mapSymbolPaths('aduhelm', 'science'),
     mapSymbolPaths('verubecestat', 'science'),
   );
+});
+
+test('every filterable category has a distinct marker colour and legend symbol', () => {
+  const css = readFileSync(
+    new URL('../src/app/globals.css', import.meta.url),
+    'utf8',
+  );
+  const colours = new Set<string>();
+  for (const { id } of categories) {
+    if (id === 'all') continue;
+    const rule = css.match(
+      new RegExp(
+        `\\[data-map-category='${id}'\\][^}]*--pin-color:\\s*([^;]+);`,
+      ),
+    );
+    assert.ok(rule, `${id} needs a marker colour`);
+    colours.add(rule[1].trim());
+    assert.ok(mapSymbolPaths('', id).length > 0, `${id} needs a legend symbol`);
+  }
+  assert.equal(colours.size, categories.length - 1);
+  assert.match(css, /\[data-map-category='personal'\]/);
 });
 
 test('favicon assets have the advertised raster dimensions', () => {

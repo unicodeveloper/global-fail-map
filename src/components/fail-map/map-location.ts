@@ -52,6 +52,22 @@ function place(
     : undefined;
 }
 
+/** The last-resort name for a point the geocoder could not place. */
+function coordinateName(latitude: number, longitude: number) {
+  return `${latitude.toFixed(3)}, ${longitude.toFixed(3)}`;
+}
+
+/**
+ * True when the geocoder actually named a place. Open water and unmapped
+ * ground fall back to coordinates, which make a poor research subject, so the
+ * globe offers those clicks nothing rather than a paid investigation of sea.
+ */
+export function isChartedLocation(location: Location) {
+  return (
+    location.name !== coordinateName(location.latitude, location.longitude)
+  );
+}
+
 export function resolveMapLocation(
   response: unknown,
   point: { latitude: number; longitude: number; zoom: number },
@@ -92,9 +108,7 @@ export function resolveMapLocation(
     context[0];
 
   return {
-    name:
-      selected?.name ||
-      `${point.latitude.toFixed(3)}, ${point.longitude.toFixed(3)}`,
+    name: selected?.name || coordinateName(point.latitude, point.longitude),
     latitude: point.latitude,
     longitude: point.longitude,
     scope: 'location',

@@ -1,0 +1,1595 @@
+{
+  "version": 3,
+  "targets": {
+    "google-glass": {
+      "status": "completed",
+      "attempts": 2,
+      "lat": 37.393816,
+      "lng": -122.078961,
+      "taskId": "7486ce40-99d8-456f-b42b-9b9619478c51",
+      "words": 3861,
+      "cost": 0.1
+    },
+    "quibi": {
+      "status": "completed",
+      "attempts": 2,
+      "lat": 34.048051,
+      "lng": -118.254187,
+      "taskId": "e9653ac1-3f6b-4d65-9bf7-c9620e3d1969",
+      "words": 4629,
+      "cost": 0.1
+    },
+    "moviepass": {
+      "status": "completed",
+      "attempts": 2,
+      "lat": 40.712749,
+      "lng": -74.005994,
+      "taskId": "961eff0d-b1fa-4c3e-b95f-0e6682af15db",
+      "words": 4718,
+      "cost": 0.1
+    },
+    "california-high-speed-rail": {
+      "status": "completed",
+      "attempts": 2,
+      "lat": 35.374337,
+      "lng": -119.018926,
+      "taskId": "65788276-55a9-46ff-bae2-05d837f7cd84",
+      "words": 3652,
+      "cost": 0.1
+    },
+    "vioxx": {
+      "status": "completed",
+      "attempts": 2,
+      "lat": 40.619256,
+      "lng": -74.764313,
+      "taskId": "b06ac982-5ed6-4852-b6e1-256a2ad21744",
+      "words": 4359,
+      "cost": 0.1
+    },
+    "evergrande": {
+      "status": "completed",
+      "attempts": 2,
+      "lat": 22.535383,
+      "lng": 114.05471,
+      "taskId": "130a7f83-06f7-472d-bd58-c7a6637fca78",
+      "words": 4323,
+      "cost": 0.1
+    },
+    "ofo": {
+      "status": "completed",
+      "attempts": 2,
+      "lat": 39.905714,
+      "lng": 116.391297,
+      "taskId": "8438137d-4fd5-41a5-a538-c42138c700f5",
+      "words": 4084,
+      "cost": 0.1
+    },
+    "virgin-cola": {
+      "status": "completed",
+      "attempts": 2,
+      "lat": 51.5073,
+      "lng": -0.127647,
+      "taskId": "ce1cc99f-3f6c-4c42-9b64-7287563789aa",
+      "words": 5130,
+      "cost": 0.1
+    },
+    "sinclair-c5": {
+      "status": "completed",
+      "attempts": 2,
+      "lat": 52.408181,
+      "lng": -1.510477,
+      "taskId": "b6812629-b9ec-471a-879b-09e408435ca3",
+      "words": 3668,
+      "cost": 0.1
+    },
+    "garden-bridge": {
+      "status": "completed",
+      "attempts": 2,
+      "lat": 51.5073,
+      "lng": -0.127647,
+      "taskId": "545f4b82-f02f-4aba-bdf0-6960ef8c62db",
+      "words": 4169,
+      "cost": 0.1
+    },
+    "nizhny-novgorod-metro": {
+      "status": "completed",
+      "attempts": 2,
+      "lat": 56.32411,
+      "lng": 44.005257,
+      "batchId": "batch_14a4eccf-2661-4e34-8961-3205000781f9",
+      "words": 3144,
+      "cost": 0.1,
+      "taskId": "08a1d139-1bdc-4e79-9c48-7cdde1adf193"
+    },
+    "buran": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 37.797626,
+      "lng": -122.40863,
+      "batchId": "batch_14a4eccf-2661-4e34-8961-3205000781f9",
+      "words": 6510,
+      "cost": 0.1,
+      "taskId": "2208ddf9-e0dc-4ee2-a38f-aae697e40c2c"
+    },
+    "amaravati": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 16.511702,
+      "lng": 80.51743,
+      "batchId": "batch_14a4eccf-2661-4e34-8961-3205000781f9",
+      "words": 5318,
+      "cost": 0.1,
+      "taskId": "9d21dd06-7a8d-42f3-a921-8ebe691b9354"
+    },
+    "cwg-village": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 28.548699,
+      "lng": 77.252673,
+      "batchId": "batch_14a4eccf-2661-4e34-8961-3205000781f9",
+      "words": 5313,
+      "cost": 0.1,
+      "taskId": "c3c7d710-6851-4eed-926f-cce712056137"
+    },
+    "diovan-scandal": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 35.68882,
+      "lng": 139.692526,
+      "batchId": "batch_14a4eccf-2661-4e34-8961-3205000781f9",
+      "words": 4763,
+      "cost": 0.1,
+      "taskId": "e04f2c58-5361-45eb-b37d-11564b464951"
+    },
+    "virtual-boy": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 35.006172,
+      "lng": 135.76918,
+      "batchId": "batch_14a4eccf-2661-4e34-8961-3205000781f9",
+      "words": 4855,
+      "cost": 0.1,
+      "taskId": "e87ae64b-dc4d-48b6-a5f5-7b97862d6539"
+    },
+    "anapolis-monorail": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -16.327261,
+      "lng": -48.955788,
+      "cost": 0.1,
+      "batchId": "batch_1eceebf0-373d-4b75-a3b1-585d4aea4c4a",
+      "words": 3821,
+      "taskId": "aa99b29d-0454-4258-8bf5-e8eef5876e02"
+    },
+    "medupi-kusile": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -23.681835,
+      "lng": 27.73267,
+      "batchId": "batch_14a4eccf-2661-4e34-8961-3205000781f9",
+      "words": 3680,
+      "cost": 0.1,
+      "taskId": "e46cc38a-b06e-4156-9cee-21e6a50c2fd1"
+    },
+    "lagos-calabar-railway": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 6.453928,
+      "lng": 3.38975,
+      "cost": 0.1,
+      "batchId": "batch_73d47c32-3528-4aa2-a9a2-a58351ed5075",
+      "words": 3619,
+      "taskId": "e0efb842-c277-43f6-b0bc-e298c683250a"
+    },
+    "toshka": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 25.452258,
+      "lng": 30.541601,
+      "batchId": "batch_14a4eccf-2661-4e34-8961-3205000781f9",
+      "words": 4354,
+      "cost": 0.1,
+      "taskId": "5ca384a1-9d68-4313-a721-f1b3312ff74e"
+    },
+    "new-administrative-capital": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 41.93879,
+      "lng": -72.457222,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 4401,
+      "cost": 0.1,
+      "taskId": "51e3aa36-7e3f-4491-8d23-fad2bfeeb283"
+    },
+    "mambilla": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 9.917513,
+      "lng": 8.89794,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 5280,
+      "cost": 0.1,
+      "taskId": "8a5fcd80-10a2-4f26-895e-915d12798338"
+    },
+    "konza": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -1.740315,
+      "lng": 37.133259,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 3743,
+      "cost": 0.1,
+      "taskId": "a081771e-c5c1-4643-9715-b9de354f4253"
+    },
+    "lapsset": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -2.26754,
+      "lng": 40.901066,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 3679,
+      "cost": 0.1,
+      "taskId": "a47077cd-ead7-4dde-9fa8-618a57ccb8aa"
+    },
+    "ethiopian-sugar": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 8.62622,
+      "lng": 39.616032,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 3813,
+      "cost": 0.1,
+      "taskId": "92c941fc-4f30-494b-9f53-9960b8adcf00"
+    },
+    "stx-housing": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 5.661083,
+      "lng": -0.202815,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 4154,
+      "cost": 0.1,
+      "taskId": "65204a76-6fa8-42cd-b2cb-bf1f1ea16f86"
+    },
+    "tripoli-metro": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 32.892,
+      "lng": 13.178,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 4062,
+      "cost": 0.1,
+      "taskId": "2c567825-99b7-4aaf-bb93-b71e999cc516"
+    },
+    "noor-solar": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 30.921404,
+      "lng": -6.914479,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 3436,
+      "cost": 0.1,
+      "taskId": "573ea75a-ed38-49ae-8277-5309698f6958"
+    },
+    "kilamba-kiaxi": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -8.908663,
+      "lng": 13.229048,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 4617,
+      "cost": 0.1,
+      "taskId": "b89d3b81-cc2d-42d0-87c3-92ba36c31a41"
+    },
+    "bagamoyo-port": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -9.249566,
+      "lng": 33.641937,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 4345,
+      "cost": 0.1,
+      "taskId": "bb4e3408-8f88-408a-9bf1-d815ce6051a7"
+    },
+    "mulungushi": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -14.443406,
+      "lng": 28.446517,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 3930,
+      "cost": 0.1,
+      "taskId": "64f29e28-0191-479b-8815-adc6686e04e3"
+    },
+    "bumbuna": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 8.560284,
+      "lng": -11.791922,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 3500,
+      "cost": 0.1,
+      "taskId": "b5fb2151-65c9-4276-9b0d-7a29cb07af59"
+    },
+    "enfidha-airport": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 36.133747,
+      "lng": 10.378151,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 3955,
+      "cost": 0.1,
+      "taskId": "6e5a0f82-7ffd-4346-805c-71368c5b1aad"
+    },
+    "east-west-highway": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 36.772933,
+      "lng": 3.058845,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 3409,
+      "cost": 0.1,
+      "taskId": "7cf847b9-46f9-489e-ae54-565bc9d82346"
+    },
+    "grand-inga": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -1.172919,
+      "lng": 23.166899,
+      "batchId": "batch_73d47c32-3528-4aa2-a9a2-a58351ed5075",
+      "words": 3191,
+      "cost": 0.1,
+      "taskId": "6ad46e00-da63-4b07-9aaf-a3db6e875f09"
+    },
+    "gwanda-solar": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -20.941429,
+      "lng": 29.003685,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 4843,
+      "cost": 0.1,
+      "taskId": "6951691a-1e68-4e51-b815-6e3e2f305c94"
+    },
+    "uganda-sgr": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 0.317714,
+      "lng": 32.581354,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 4753,
+      "cost": 0.1,
+      "taskId": "bf01bf13-5e28-4096-8ce8-b4ed5b20ef58"
+    },
+    "nacala-corridor": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -14.558273,
+      "lng": 40.68636,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 4188,
+      "cost": 0.1,
+      "taskId": "d7475e45-a97b-4cce-8711-574e5b1c4306"
+    },
+    "memveele-dam": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 4.806512,
+      "lng": 12.213754,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 3019,
+      "cost": 0.1,
+      "taskId": "7f02ba03-d392-49f1-b7cf-be3979fb27ab"
+    },
+    "morupule-b": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -22.5364,
+      "lng": 27.125374,
+      "batchId": "batch_45221974-7c1d-45e0-9417-e3711c23fcf9",
+      "words": 4812,
+      "cost": 0.1,
+      "taskId": "d76ce0fd-c73a-4f2f-9ec1-ae99e4e88777"
+    },
+    "minitel": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 48.853495,
+      "lng": 2.348392,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 4098,
+      "cost": 0.1,
+      "taskId": "67f36c0e-d77e-42e8-bb3c-738c229fc86f"
+    },
+    "notre-dame-des-landes": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 47.3818,
+      "lng": -1.710025,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 4408,
+      "cost": 0.1,
+      "taskId": "5c071237-8d94-4449-9b94-595bf3fa5952"
+    },
+    "ber-brandenburg": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 52.517389,
+      "lng": 13.395131,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 4158,
+      "cost": 0.1,
+      "taskId": "14de8966-d0fd-4cf6-a501-d61ec7eca26f"
+    },
+    "elbphilharmonie": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 53.550172,
+      "lng": 10.001317,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 4639,
+      "cost": 0.1,
+      "taskId": "12eaf28c-42fd-4441-bdc3-fcf5d1235aff"
+    },
+    "castellon-airport": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 39.98545,
+      "lng": -0.037994,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 3542,
+      "cost": 0.1,
+      "taskId": "f570d24c-166d-46d3-ab6b-6eba655c9839"
+    },
+    "ciudad-real-airport": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 38.983704,
+      "lng": -3.929158,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 3641,
+      "cost": 0.1,
+      "taskId": "bfaba967-ec26-4f0a-a9e6-65e6042b8cef"
+    },
+    "messina-bridge": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 38.191647,
+      "lng": 15.554921,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 4188,
+      "cost": 0.1,
+      "taskId": "593a850d-c201-4b9e-9827-5de46443e154"
+    },
+    "olivetti": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 45.46694,
+      "lng": 7.876096,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 4647,
+      "cost": 0.1,
+      "taskId": "59e74689-3066-4325-bbbc-28ed0fff2d48"
+    },
+    "ellinikon": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 38.007282,
+      "lng": 23.753486,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 4238,
+      "cost": 0.1,
+      "taskId": "75063e70-cee5-46ca-955a-2342add18bcb"
+    },
+    "lisbon-airport": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 38.7173,
+      "lng": -9.14305,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 3024,
+      "cost": 0.1,
+      "taskId": "dc6ab2ba-7165-4fe1-ab4b-8badf9faa45b"
+    },
+    "hsl-zuid": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 51.92079,
+      "lng": 4.487597,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 3290,
+      "cost": 0.1,
+      "taskId": "632552c9-9d0a-4be0-b2e3-c8cf1fc73084"
+    },
+    "charleroi-metro": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 50.412033,
+      "lng": 4.443624,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 3422,
+      "cost": 0.1,
+      "taskId": "ace358e7-b634-4281-b220-307a344371db"
+    },
+    "swissair": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 47.369733,
+      "lng": 8.541096,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 4151,
+      "cost": 0.1,
+      "taskId": "f140c1b1-4990-4f27-a527-ed097ac5183b"
+    },
+    "brenner": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 47.006798,
+      "lng": 11.508279,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 2730,
+      "cost": 0.1,
+      "taskId": "93f9a37c-d75b-4e23-81d7-23ff95f428e3"
+    },
+    "saab-automobile": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 58.28413,
+      "lng": 12.288765,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 5132,
+      "cost": 0.1,
+      "taskId": "fc7dd421-7cee-4c49-98c2-19cc1ee21315"
+    },
+    "mongstad": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 60.79807,
+      "lng": 5.011573,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 3502,
+      "cost": 0.1,
+      "taskId": "0dbc0fd4-dab6-4414-8a7d-6ae5ead3a685"
+    },
+    "rejsekort": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 55.675313,
+      "lng": 12.569734,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 4435,
+      "cost": 0.1,
+      "taskId": "6f4f8dab-b0ed-4e69-81ae-4acb2af6036e"
+    },
+    "n-gage": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 60.20475,
+      "lng": 24.657211,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 3361,
+      "cost": 0.1,
+      "taskId": "734c7024-e82d-4fff-b417-f65cd238cdd3"
+    },
+    "childrens-hospital-dublin": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 53.34938,
+      "lng": -6.260559,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 4054,
+      "cost": 0.1,
+      "taskId": "2bc01bf8-6323-419b-94b5-4a08654b643e"
+    },
+    "temelin": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 49.192314,
+      "lng": 14.351868,
+      "batchId": "batch_107c9c69-8c60-461d-9c03-02160900ed16",
+      "words": 3514,
+      "cost": 0.1,
+      "taskId": "e0a3c7e3-d63f-4a06-a305-7ca30f84a6b6"
+    },
+    "vistula-spit": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 53.545933,
+      "lng": 17.88139,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 3565,
+      "cost": 0.1,
+      "taskId": "84139d4d-64e9-4796-bb9b-7900f53295c5"
+    },
+    "budapest-belgrade": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 47.497879,
+      "lng": 19.040238,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 4395,
+      "cost": 0.1,
+      "taskId": "1bfe7759-4fd7-4fff-8196-c822012c2543"
+    },
+    "rosia-montana": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 46.306156,
+      "lng": 23.130733,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 4500,
+      "cost": 0.1,
+      "taskId": "68409fa0-1f2a-4d06-aec3-04b987a9eab9"
+    },
+    "belene": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 43.64611,
+      "lng": 25.12614,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 4527,
+      "cost": 0.1,
+      "taskId": "47f63859-452a-40ed-a8c0-63e3d564f48e"
+    },
+    "kyiv-metro": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 50.450034,
+      "lng": 30.524136,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 3669,
+      "cost": 0.1,
+      "taskId": "f5cd86ec-2a7e-43b2-80fb-59d3ea09e205"
+    },
+    "kanal-istanbul": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 39.060481,
+      "lng": 35.179593,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 3292,
+      "cost": 0.1,
+      "taskId": "fcc0d30b-cd0b-4777-a955-df46e4c750c9"
+    },
+    "istanbul-airport": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 39.060481,
+      "lng": 35.179593,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 3355,
+      "cost": 0.1,
+      "taskId": "f87f2004-36e1-41d7-9df4-49a462bc549f"
+    },
+    "neom": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 24.775536,
+      "lng": 46.815759,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 3114,
+      "cost": 0.1,
+      "taskId": "c744be9b-7dd7-4f12-849b-17a2678a29b6"
+    },
+    "palm-jebel-ali": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 25.25809,
+      "lng": 55.297558,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 4614,
+      "cost": 0.1,
+      "taskId": "dab6bfc2-8ac6-4cff-a452-eadfd1a56a87"
+    },
+    "qatar-world-cup": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 25.422998,
+      "lng": 51.51883,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 4353,
+      "cost": 0.1,
+      "taskId": "237053eb-99ff-4cbc-83f3-d9668ebf5d88"
+    },
+    "tehran-metro": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 35.696,
+      "lng": 51.401,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 5099,
+      "cost": 0.1,
+      "taskId": "a8a95683-8e9d-4623-b996-7d4ba1f92d4f"
+    },
+    "iei-oil-shale": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 31.780667,
+      "lng": 34.660441,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 2626,
+      "cost": 0.1,
+      "taskId": "2ccfd97c-1774-4abf-be9b-14e876dd6d91"
+    },
+    "silk-city": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 29.597921,
+      "lng": 48.142097,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 4176,
+      "cost": 0.1,
+      "taskId": "72aa01c6-5980-477a-835f-5075e19595af"
+    },
+    "grand-faw": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 29.974396,
+      "lng": 48.471826,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 4462,
+      "cost": 0.1,
+      "taskId": "6bc51c52-1735-45f5-a030-68565a9a4858"
+    },
+    "damascus-metro": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 33.51307,
+      "lng": 36.309581,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 3894,
+      "cost": 0.1,
+      "taskId": "9dc3cdf1-d4a2-419d-9e1d-4cb7a7198f72"
+    },
+    "beirut-port": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 33.89625,
+      "lng": 35.477367,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 4175,
+      "cost": 0.1,
+      "taskId": "0ffc90b3-14a7-4ce9-a0d4-5c0b2e25522f"
+    },
+    "red-dead-canal": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 31.896705,
+      "lng": 35.851517,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 4569,
+      "cost": 0.1,
+      "taskId": "0afbdbba-929d-43b9-9281-f3f7d384d3a1"
+    },
+    "baku-white-city": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 40.375589,
+      "lng": 49.832801,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 4338,
+      "cost": 0.1,
+      "taskId": "35a51099-713d-4166-abfc-605c4d9c2fc3"
+    },
+    "khorgos": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 44.22364,
+      "lng": 80.384232,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 3081,
+      "cost": 0.1,
+      "taskId": "6a06e08a-7154-4ae5-8783-2b0862bedceb"
+    },
+    "uzbekistan-gtl": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 41.750437,
+      "lng": 63.169372,
+      "batchId": "batch_d0a214f6-2397-41a6-8b70-f535f53df201",
+      "words": 3805,
+      "cost": 0.1,
+      "taskId": "1510a7d8-6fe2-4408-8836-e2ba0237d552"
+    },
+    "kingfisher-airlines": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 19.077793,
+      "lng": 72.87872,
+      "batchId": "batch_73d47c32-3528-4aa2-a9a2-a58351ed5075",
+      "words": 3526,
+      "cost": 0.1,
+      "taskId": "0664bedd-7d5a-4b2a-82c4-01e5baf28150"
+    },
+    "simputer": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 12.979101,
+      "lng": 77.591301,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 5038,
+      "cost": 0.1,
+      "taskId": "d73547bd-b7e3-45ec-bf48-31e56f5d8ed8"
+    },
+    "xiongan": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 35.486703,
+      "lng": 101.901875,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 5276,
+      "cost": 0.1,
+      "taskId": "2cb5f22e-be69-4fea-8395-c4a9d63fbe47"
+    },
+    "hong-kong-zhuhai-macau": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 22.280966,
+      "lng": 113.570786,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 3635,
+      "cost": 0.1,
+      "taskId": "bb43805e-21fc-45e3-b9ce-80584379508b"
+    },
+    "hd-dvd": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 35.68882,
+      "lng": 139.692526,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 3525,
+      "cost": 0.1,
+      "taskId": "fee18d1d-5247-431a-af64-78828c627c0e"
+    },
+    "takata": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 35.68882,
+      "lng": 139.692526,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 5600,
+      "cost": 0.1,
+      "taskId": "11db6724-1b24-4bd4-b270-c57fe6158a06"
+    },
+    "hwang-woo-suk": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 37.566679,
+      "lng": 126.978291,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 5144,
+      "cost": 0.1,
+      "taskId": "b2259f6d-7ae1-401f-bf37-3abc2676d9dd"
+    },
+    "ssangyong": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 36.99238,
+      "lng": 127.11431,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 4255,
+      "cost": 0.1,
+      "taskId": "a6ea5908-6f74-40c0-a60f-29bfb590fb21"
+    },
+    "htc": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 25.011997,
+      "lng": 121.465662,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 3198,
+      "cost": 0.1,
+      "taskId": "e4b59179-be4e-445f-8b07-d191531f80e6"
+    },
+    "thai-high-speed-rail": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 13.752494,
+      "lng": 100.493509,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 4018,
+      "cost": 0.1,
+      "taskId": "f3506be2-1206-4058-bc77-b95a61cb67c0"
+    },
+    "north-south-express": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 10.775525,
+      "lng": 106.702105,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 5620,
+      "cost": 0.1,
+      "taskId": "616f2381-d4f0-4682-8ab5-472904c7d9ec"
+    },
+    "forest-city": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 1.502187,
+      "lng": 103.74854,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 3352,
+      "cost": 0.1,
+      "taskId": "bb7c4537-13e7-4b0b-b444-58058d680c21"
+    },
+    "hyflux": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 1.308519,
+      "lng": 103.77534,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 6317,
+      "cost": 0.1,
+      "taskId": "5d13c81f-48f6-431e-9f2e-391b4a84c81e"
+    },
+    "jakarta-monorail": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -6.175405,
+      "lng": 106.827168,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 4285,
+      "cost": 0.1,
+      "taskId": "38abf541-65a4-433c-9925-08d584b93fca"
+    },
+    "nusantara": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -4.526666,
+      "lng": 129.89705,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 4938,
+      "cost": 0.1,
+      "taskId": "8db054b3-56b9-4b17-a327-7d982226c49c"
+    },
+    "manila-metro": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 14.590449,
+      "lng": 120.980362,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 4674,
+      "cost": 0.1,
+      "taskId": "5e5529b5-09b8-4710-83a0-01f1f79f3797"
+    },
+    "dawei-sez": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 14.073096,
+      "lng": 98.19367,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 3623,
+      "cost": 0.1,
+      "taskId": "2dd12d6a-56fe-4839-b982-55e176a4a4de"
+    },
+    "koh-kong": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 11.61101,
+      "lng": 102.981859,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 3765,
+      "cost": 0.1,
+      "taskId": "c869a614-8b04-44e2-ad24-04ef96f7ac89"
+    },
+    "dhaka-metro": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 23.764288,
+      "lng": 90.38896,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 4484,
+      "cost": 0.1,
+      "taskId": "a5520fd6-aec0-4852-9419-d02a27ba5049"
+    },
+    "diamer-bhasha": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 35.411446,
+      "lng": 74.1044,
+      "batchId": "batch_1da67cc2-01a9-4b7c-940b-2aa6158cb619",
+      "words": 3683,
+      "cost": 0.1,
+      "taskId": "b0577524-65e8-48f9-aae2-d8accc07672f"
+    },
+    "kajaki-dam": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 32.300762,
+      "lng": 65.09635,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 3133,
+      "cost": 0.1,
+      "taskId": "dbbd3f67-a11a-4fb9-8ec4-e7952b2acc92"
+    },
+    "kathmandu-terai": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 27.714186,
+      "lng": 85.31094,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 4314,
+      "cost": 0.1,
+      "taskId": "f6ae7d94-7a10-47c5-bfda-79892475e8c8"
+    },
+    "hambantota": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 6.124867,
+      "lng": 81.12601,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 2570,
+      "cost": 0.1,
+      "taskId": "83fe1a3b-1986-4563-8973-74c158c3ff4e"
+    },
+    "oyu-tolgoi": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 43.19659,
+      "lng": 107.19763,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 3818,
+      "cost": 0.1,
+      "taskId": "305171dc-3c5f-4991-83cb-12b6686a7e9a"
+    },
+    "snowy-2": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -42.685326,
+      "lng": 146.72255,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 3172,
+      "cost": 0.1,
+      "taskId": "b5af7b88-1e34-409b-87bf-b646e1ce3762"
+    },
+    "perth-freight-link": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -31.951263,
+      "lng": 115.85805,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 3815,
+      "cost": 0.1,
+      "taskId": "56527e1e-de47-47e3-823a-851becbb05d2"
+    },
+    "auckland-light-rail": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -36.846996,
+      "lng": 174.76591,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 4582,
+      "cost": 0.1,
+      "taskId": "72730587-9ee9-497d-8abe-7fb43d523a9c"
+    },
+    "pacific-games": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -9.47433,
+      "lng": 147.15995,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 3653,
+      "cost": 0.1,
+      "taskId": "2bd22b3b-c450-4bc3-9e05-55447e56c9a7"
+    },
+    "nadi-port": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -17.773534,
+      "lng": 177.412786,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 2683,
+      "cost": 0.1,
+      "taskId": "d63953e9-c202-4abc-a3d7-09d5bf2acfbc"
+    },
+    "ryugyong-hotel": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 39.01692,
+      "lng": 125.747665,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 3814,
+      "cost": 0.1,
+      "taskId": "64b4ef7c-6250-4878-9428-67843b2a1757"
+    },
+    "transasia": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 25.044743,
+      "lng": 121.53953,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 4044,
+      "cost": 0.1,
+      "taskId": "3e0d699b-739d-41e4-8197-c9663f485963"
+    },
+    "manila-bay": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 14.446297,
+      "lng": 121.038734,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 3682,
+      "cost": 0.1,
+      "taskId": "2afcbf2d-d203-4365-a7ca-45f9ce7325c4"
+    },
+    "tan-son-nhat-t3": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 10.775525,
+      "lng": 106.702105,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 3206,
+      "cost": 0.1,
+      "taskId": "5f7dc2fd-983c-4449-bee5-22e111cc7486"
+    },
+    "laos-china-railway": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 17.964099,
+      "lng": 102.613371,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 3541,
+      "cost": 0.1,
+      "taskId": "03b457d5-2623-46b0-b0b6-b880b32d572e"
+    },
+    "sihanoukville": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 10.622049,
+      "lng": 103.522337,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 2783,
+      "cost": 0.1,
+      "taskId": "fedaa4fa-2dc3-4a65-b110-a81c2523098f"
+    },
+    "gelephu": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 26.763456,
+      "lng": 91.36773,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 3608,
+      "cost": 0.1,
+      "taskId": "4c41571e-e25d-405f-aa01-b8182bffa06e"
+    },
+    "hanimaadhoo": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 6.750262,
+      "lng": 73.171196,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 2542,
+      "cost": 0.1,
+      "taskId": "9ef6fbbd-84ef-4336-a379-dc7698665a7b"
+    },
+    "perseverance-island": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -4.605836,
+      "lng": 55.466064,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 3531,
+      "cost": 0.1,
+      "taskId": "2562d8ce-ffe0-4f57-8b9a-61e30f72fe31"
+    },
+    "mauritius-metro": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -20.162452,
+      "lng": 57.502804,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 3206,
+      "cost": 0.1,
+      "taskId": "701e9eb1-3b8c-4710-972e-2d9ca5690703"
+    },
+    "toamasina": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -34.896512,
+      "lng": -58.702797,
+      "batchId": "batch_2638c29d-ba4d-46fd-b6f2-119779ea45b3",
+      "words": 2322,
+      "cost": 0.1,
+      "taskId": "f401632c-7429-40da-b93f-cfd23a41b424"
+    },
+    "muskrat-falls": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 53.574814,
+      "lng": -114.64051,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 3734,
+      "cost": 0.1,
+      "taskId": "974934a4-1569-4505-bdc8-c0ca65baa853"
+    },
+    "olympic-stadium": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 45.50283,
+      "lng": -73.5728,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 3693,
+      "cost": 0.1,
+      "taskId": "b5ea542f-96f9-42a3-8732-3fecc4f89350"
+    },
+    "big-dig": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 42.35888,
+      "lng": -71.056804,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 3320,
+      "cost": 0.1,
+      "taskId": "ee1704c9-6414-472b-8860-91ed30c0e341"
+    },
+    "segway": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 42.946413,
+      "lng": -71.515893,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 1798,
+      "cost": 0.1,
+      "taskId": "a4a9e1fc-fd37-42f9-84e0-389be448edf8"
+    },
+    "wework": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 40.712749,
+      "lng": -74.005994,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 4729,
+      "cost": 0.1,
+      "taskId": "ea62141f-89c4-4321-b720-254b33bc333e"
+    },
+    "second-avenue-subway": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 40.712749,
+      "lng": -74.005994,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 3486,
+      "cost": 0.1,
+      "taskId": "b2de7b08-97ee-479a-8c05-2dd51a9b7b13"
+    },
+    "naicm": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 19.472388,
+      "lng": -98.878445,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 5529,
+      "cost": 0.1,
+      "taskId": "8bd536bd-4cb9-4488-8602-2d1f678abb52"
+    },
+    "luz-y-fuerza": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 19.43263,
+      "lng": -99.133178,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 4532,
+      "cost": 0.1,
+      "taskId": "f0d4cc39-14e2-49b6-b57c-91f6387987aa"
+    },
+    "odebrecht": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -23.55214,
+      "lng": -46.647198,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 4711,
+      "cost": 0.1,
+      "taskId": "710cc401-6909-4911-bb4a-c3d578801e5f"
+    },
+    "belo-monte": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -3.208107,
+      "lng": -52.215446,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 4523,
+      "cost": 0.1,
+      "taskId": "4b6f0e80-0541-46c4-9b2d-0394fe20b39c"
+    },
+    "buenos-aires-rosario": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -32.960293,
+      "lng": -60.657574,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 3620,
+      "cost": 0.1,
+      "taskId": "73bca049-cdd5-459f-ad6b-d0407f942958"
+    },
+    "aerolineas-argentinas": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -34.609558,
+      "lng": -58.38879,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 3773,
+      "cost": 0.1,
+      "taskId": "6a602767-4305-434e-aa3c-975b55772c29"
+    },
+    "colbun": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -35.69554,
+      "lng": -71.40651,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 4468,
+      "cost": 0.1,
+      "taskId": "bc888dd8-08d0-42ee-b918-76fd35be2ce2"
+    },
+    "la-polar": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -33.440643,
+      "lng": -70.64937,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 5121,
+      "cost": 0.1,
+      "taskId": "fcf8828e-fa9a-4dc0-b1d0-c9e76368c0bb"
+    },
+    "lima-metro": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -12.06973,
+      "lng": -77.03542,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 3324,
+      "cost": 0.1,
+      "taskId": "a8a7de3e-b5f0-4831-a002-1f80f99b6aaa"
+    },
+    "bogota-metro": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 4.653382,
+      "lng": -74.083633,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 3527,
+      "cost": 0.1,
+      "taskId": "91813473-8f56-451a-a090-cf4cef60ef87"
+    },
+    "tren-de-guayana": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 8.322376,
+      "lng": -62.689662,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 5780,
+      "cost": 0.1,
+      "taskId": "4e37aba3-7f22-4ca8-8fb6-0046c28e7410"
+    },
+    "quito-metro": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -0.221173,
+      "lng": -78.51131,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 4607,
+      "cost": 0.1,
+      "taskId": "39fee704-3d88-4b76-81cf-6f2511815d18"
+    },
+    "bioceanico": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -18.968208,
+      "lng": -57.79303,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 3618,
+      "cost": 0.1,
+      "taskId": "8615bf14-f0ca-4e68-a599-d8f51458384c"
+    },
+    "yacyreta": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": -27.388725,
+      "lng": -56.844753,
+      "batchId": "batch_9f6d15c4-893f-4e69-a48f-a68a64a9a598",
+      "words": 4130,
+      "cost": 0.1,
+      "taskId": "38501a04-de46-4d5d-9b28-23c49c45ccce"
+    },
+    "juragua": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 22.09803,
+      "lng": -80.557208,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 4235,
+      "cost": 0.1,
+      "taskId": "1e6fd4a3-bcad-4d81-9e20-fd8b69f87ba3"
+    },
+    "santo-domingo-metro": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 18.479528,
+      "lng": -69.94257,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3456,
+      "cost": 0.1,
+      "taskId": "afa8c889-5395-4b27-a6d9-c0fe63fcc133"
+    },
+    "david-railway": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 8.429157,
+      "lng": -82.428925,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3520,
+      "cost": 0.1,
+      "taskId": "6963f2de-c116-4bf4-9612-b9c0fa7db62e"
+    },
+    "limon-moin": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 9.993571,
+      "lng": -83.03043,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3297,
+      "cost": 0.1,
+      "taskId": "70680022-6565-460f-89ec-5247c57cb757"
+    },
+    "honduras-highways": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 14.105943,
+      "lng": -87.205345,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 4147,
+      "cost": 0.1,
+      "taskId": "b9f39b29-bed0-4162-a40a-4e2e735da7b8"
+    },
+    "rio-hondo": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 15.044611,
+      "lng": -89.58552,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 2916,
+      "cost": 0.1,
+      "taskId": "c60742eb-427b-42a6-a188-3729ae86a1c6"
+    },
+    "pacific-train": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 13.337588,
+      "lng": -87.84341,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3041,
+      "cost": 0.1,
+      "taskId": "c39eb563-37f6-4796-8d64-8db9ed6a9114"
+    },
+    "nicaragua-canal": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 11.398881,
+      "lng": -84.82373,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3008,
+      "cost": 0.1,
+      "taskId": "0d05d40e-667c-458a-99df-a0d35af1df18"
+    },
+    "highway-2000": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 18.017589,
+      "lng": -76.80273,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3860,
+      "cost": 0.1,
+      "taskId": "e3f02ef8-43c5-4737-be0a-0930dc9f322e"
+    },
+    "debe-penal": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 10.210739,
+      "lng": -61.451525,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3046,
+      "cost": 0.1,
+      "taskId": "f9cdad7e-d2c9-4a82-8893-1e60960d6d87"
+    },
+    "karahnjukar": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 64.923076,
+      "lng": -15.763367,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3598,
+      "cost": 0.1,
+      "taskId": "5e54a672-840b-4837-bcac-be94a0f2d4bd"
+    },
+    "kvanefjeld": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 74.720912,
+      "lng": -41.389477,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3859,
+      "cost": 0.1,
+      "taskId": "8fbc17ea-67fa-4626-8018-a7254d473779"
+    },
+    "rail-baltic-estonia": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 59.436745,
+      "lng": 24.746462,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3281,
+      "cost": 0.1,
+      "taskId": "71f5b622-4e96-47f3-aea5-dfcf2420b7ab"
+    },
+    "rail-baltic-latvia": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 56.949398,
+      "lng": 24.105185,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3637,
+      "cost": 0.1,
+      "taskId": "e0cd033b-1c03-4eb6-9469-e08128ad2428"
+    },
+    "visaginas": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 55.601147,
+      "lng": 26.439566,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 4068,
+      "cost": 0.1,
+      "taskId": "fed96ffb-0d17-492d-9450-0243446d6def"
+    },
+    "astravets": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 54.61523,
+      "lng": 25.95879,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3236,
+      "cost": 0.1,
+      "taskId": "5a444e43-b27a-45b4-9594-5192beefb2ac"
+    },
+    "amulsar": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 4.535886,
+      "lng": -75.67241,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3523,
+      "cost": 0.1,
+      "taskId": "fde551e4-4099-41e0-807f-cc1e392f2bc1"
+    },
+    "anaklia": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 42.392071,
+      "lng": 41.562116,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3601,
+      "cost": 0.1,
+      "taskId": "3509b28a-08a3-4c24-997a-2f00bb685fd2"
+    },
+    "chisinau-airport": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 47.024512,
+      "lng": 28.832292,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 2877,
+      "cost": 0.1,
+      "taskId": "2bdb8d49-b83f-4066-aa98-ec22a3db563c"
+    },
+    "rruga-kombit": {
+      "status": "completed",
+      "attempts": 1,
+      "lat": 42.047079,
+      "lng": 20.313109,
+      "batchId": "batch_c3b80362-a6fd-4f60-b6dd-e5879a928c5d",
+      "words": 3882,
+      "cost": 0.1,
+      "taskId": "6d809002-a4f8-4e87-bc77-2b8824458318"
+    }
+  }
+}

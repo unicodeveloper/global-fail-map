@@ -1,7 +1,11 @@
 import { NextResponse } from 'next/server';
 
 export class RequestError extends Error {
-  constructor(public readonly status: number, message: string, public readonly code = 'REQUEST_FAILED') {
+  constructor(
+    public readonly status: number,
+    message: string,
+    public readonly code = 'REQUEST_FAILED',
+  ) {
     super(message);
   }
 }
@@ -17,8 +21,17 @@ export function appOrigin(request: Request): string {
 export function assertSameOrigin(request: Request): void {
   const origin = request.headers.get('origin');
   const fetchSite = request.headers.get('sec-fetch-site');
-  if ((origin && origin !== appOrigin(request) && origin !== new URL(request.url).origin) || fetchSite === 'cross-site') {
-    throw new RequestError(403, 'This request must come from this app.', 'INVALID_ORIGIN');
+  if (
+    (origin &&
+      origin !== appOrigin(request) &&
+      origin !== new URL(request.url).origin) ||
+    fetchSite === 'cross-site'
+  ) {
+    throw new RequestError(
+      403,
+      'This request must come from this app.',
+      'INVALID_ORIGIN',
+    );
   }
 }
 
@@ -27,7 +40,8 @@ export async function readJson(request: Request): Promise<unknown> {
     throw new RequestError(413, 'The request is too large.');
   }
   const body = await request.text();
-  if (body.length > 16000) throw new RequestError(413, 'The request is too large.');
+  if (body.length > 16000)
+    throw new RequestError(413, 'The request is too large.');
   try {
     return JSON.parse(body);
   } catch {
@@ -36,12 +50,21 @@ export async function readJson(request: Request): Promise<unknown> {
 }
 
 export function json(data: unknown, status = 200): NextResponse {
-  return NextResponse.json(data, { status, headers: { 'Cache-Control': 'no-store' } });
+  return NextResponse.json(data, {
+    status,
+    headers: { 'Cache-Control': 'no-store' },
+  });
 }
 
 export function errorResponse(error: unknown): NextResponse {
   if (error instanceof RequestError) {
     return json({ error: error.code, message: error.message }, error.status);
   }
-  return json({ error: 'SERVER_ERROR', message: 'Something interrupted this request. Please try again.' }, 500);
+  return json(
+    {
+      error: 'SERVER_ERROR',
+      message: 'Something interrupted this request. Please try again.',
+    },
+    500,
+  );
 }

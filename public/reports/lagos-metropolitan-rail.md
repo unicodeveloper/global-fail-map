@@ -1,0 +1,27 @@
+# The Lagos Metropolitan Rail
+
+## What Was Planned
+
+In July 1983, Lagos State Governor Lateef Jakande ceremonially flagged off one of Nigeria's most ambitious transport initiatives: the Lagos Metropolitan Rail project, a planned 28.5-kilometre elevated concrete rail corridor stretching from Marina on Lagos Island to Agege on the mainland. The system was designed to carry up to 88,000 passengers per hour across 19 stations, with 30 trains in operation at full capacity, serving Lagos' densest residential and commercial zones along Yaba and Ikorodu Road. [[3]](https://punchng.com/37-years-after-lagos-metro-line-aborted-by-buhari-still-hurting/) [[4]](https://guardian.ng/saturday-magazine/cover/a-decade-after-lagos-rail-project-still-crawling/)
+
+The project's contracted cost was N689 million (approximately \$78 million USD equivalent), financed through federal and state resources. The French multinational consortium Interinfra—composed of 19 firms—was appointed as the lead contractor. The system was projected to reach completion by July 1986. [[3]](https://punchng.com/37-years-after-lagos-metro-line-aborted-by-buhari-still-hurting/) [[4]](https://guardian.ng/saturday-magazine/cover/a-decade-after-lagos-rail-project-still-crawling/) The technical design drew on monorail and light-rail precedents elsewhere in Africa and represented an attempt to address Lagos' chronic traffic congestion during a period when the metropolitan area was expanding rapidly without corresponding transit infrastructure.
+
+## Why It Mattered
+
+By 1983, Lagos already exhibited the congestion patterns that would define the megacity for decades. The proposed Metropolitan Rail would have offered rapid transit for hundreds of thousands of daily commuters in congested zones where road infrastructure was saturated. The route served industrial districts, residential estates (Yaba, Mushin, Ikeja), and commercial hubs that generated enormous commuter traffic. In a city with limited public transit alternatives, the rail system represented a strategic infrastructure intervention to shape urban mobility and reduce transport costs for low-income residents. [[3]](https://punchng.com/37-years-after-lagos-metro-line-aborted-by-buhari-still-hurting/) [[4]](https://guardian.ng/saturday-magazine/cover/a-decade-after-lagos-rail-project-still-crawling/)
+
+Governor Jakande, representing the opposition UPN (Unity Party of Nigeria), had championed the project as a centerpiece of his administration's urban development agenda. The project symbolized Lagos' aspirations to world-class metropolitan status and carried political significance as a flagship development initiative.
+
+## Project Cancellation and Political Aftermath
+
+Eighteen months after the ceremonial flag-off, the project was abruptly cancelled. In January 1985, the incoming military government of Major-General Muhammadu Buhari terminated the Lagos Metro, citing concerns over national debt and fiscal constraints. According to retrospective statements attributed to Buhari, the military regime deemed it fiscally imprudent to "add another N100 million" to the project, viewing the N689 million already expended as a sunk loss that could not be recovered. [[3]](https://punchng.com/37-years-after-lagos-metro-line-aborted-by-buhari-still-hurting/) [[4]](https://guardian.ng/saturday-magazine/cover/a-decade-after-lagos-rail-project-still-crawling/)
+
+The political context surrounding the cancellation remains contested. While the Buhari administration justified the decision on macroeconomic grounds—Nigeria faced acute foreign exchange shortages and debt servicing pressures in the mid-1980s oil recession—critics and Lagos State officials characterized the cancellation as political retaliation against the opposition-led state government. The incoming federal military regime had displaced the UPN from power nationwide, and the abrupt termination of Lagos State's flagship project was widely interpreted as a demonstration of federal dominance.
+
+## The Financial and Physical Legacy
+
+The cancellation resulted in a documented loss of approximately \$78 million in taxpayer funds with no physical infrastructure to show for the investment. [[3]](https://punchng.com/37-years-after-lagos-metro-line-aborted-by-buhari-still-hurting/) [[4]](https://guardian.ng/saturday-magazine/cover/a-decade-after-lagos-rail-project-still-crawling/) The contractor settlement process was protracted, with the federal government owing Interinfra and associated parties more than N70 million in unpaid contract liabilities that stretched into the following years.
+
+By 2020–2021, sources confirmed that **no portion of the Lagos Metro had ever been constructed**, and no physical remnants of the project remained on the ground. The proposed route corridors in Yaba and Ikorodu Road were never acquired for permanent way, no piling or foundations were laid, and no rolling stock or signalling systems were procured. The 37-year gap between the Metro's cancellation (1985) and the emergence of the successful Lagos Light Rail Blue Line (September 2023) represented a lost generation of transit infrastructure development. [[3]](https://punchng.com/37-years-after-lagos-metro-line-aborted-by-buhari-still-hurting/) [[4]](https://guardian.ng/saturday-magazine/cover/a-decade-after-lagos-rail-project-still-crawling/) [[5]](https://guardian.ng/opinion/the-return-of-lagos-rail-project/)
+
+---

@@ -12,6 +12,7 @@ import {
   Github,
   Loader2,
   MapPin,
+  Newspaper,
   Search,
   Shuffle,
   X,
@@ -24,9 +25,11 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { useAuthStore } from '@/lib/stores/use-auth-store';
+import { archiveSearchUrl, isNigerianLocation } from '@/lib/archiving';
 import { ReportPanel } from './report-panel';
 import { ResearchOptions } from './research-options';
 import { AtlasDock } from './atlas-dock';
+import { AtlasLegend } from './atlas-legend';
 import {
   categories,
   type Category,
@@ -106,11 +109,41 @@ export function FailAtlas({
   const [notice, setNotice] = useState('');
   const [historyLoading, setHistoryLoading] = useState(false);
   const [explorerOpen, setExplorerOpen] = useState(false);
+  const [legendOpen, setLegendOpen] = useState(false);
+  const isMobileViewport = useRef(false);
+  const [headingDocked, setHeadingDocked] = useState(false);
+  const headingDockedRef = useRef(false);
+  const [highlightId, setHighlightId] = useState<string | undefined>();
+  const [mapless, setMapless] = useState(false);
   const reportOpen =
     !!selectedExample || (showInvestigation && !!activeInvestigation);
+  /*
+   * The nudge is for a reader who has not started yet, and nobody else. The
+   * marker key lives on the right of the screen, so it does not collide with
+   * the invite.
+   */
+  const inviteHidden =
+    headingDocked || reportOpen || explorerOpen || mapless;
+
+  /**
+   * On desktop the marker key is a permanent part of the atlas. On phones it
+   * is a sheet, so it starts closed and can be opened with the right-hand
+   * toggle.
+   */
+  useEffect(() => {
+    const mql = window.matchMedia('(max-width: 640px)');
+    const update = () => {
+      isMobileViewport.current = mql.matches;
+      setLegendOpen(!mql.matches);
+    };
+    update();
+    mql.addEventListener('change', update);
+    return () => mql.removeEventListener('change', update);
+  }, []);
 
   const openSearch = useCallback(() => {
     focusSearchOnOpen.current = true;
+    if (isMobileViewport.current) setLegendOpen(false);
     setExplorerOpen(true);
     setActiveTab('atlas');
     requestAnimationFrame(() =>
@@ -582,6 +615,31 @@ export function FailAtlas({
     }
   }
 
+  /**
+   * The masthead sits over the whole globe while the whole globe is the
+   * subject. Once the camera commits to a region it slides to the corner,
+   * wordmark and tagline together, and gives the map the middle back. The two
+   * thresholds leave a dead band so a wheel nudge around the boundary cannot
+   * flicker the masthead.
+   */
+  function trackZoom(zoom: number) {
+    const docked = headingDockedRef.current ? zoom > 1.9 : zoom > 2.2;
+    if (docked === headingDockedRef.current) return;
+    headingDockedRef.current = docked;
+    setHeadingDocked(docked);
+  }
+
+  /**
+   * Without WebGL the atlas was a black screen naming an escape hatch it did
+   * not open. Now the story list opens itself and becomes the fallback.
+   */
+  const globeUnavailable = useCallback(() => {
+    setMapless(true);
+    focusSearchOnOpen.current = false;
+    setActiveTab('atlas');
+    setExplorerOpen(true);
+  }, []);
+
   async function disconnect() {
     const result = await signOut();
     if (result.error) {
@@ -599,66 +657,93 @@ export function FailAtlas({
       <a href="#atlas-search-trigger" className="skip-link">
         Skip to search
       </a>
-      <AtlasGlobe
-        examples={filteredExamples}
-        investigations={investigations}
-        paused={reportOpen}
-        focus={focus}
-        onExample={chooseExample}
-        onInvestigation={chooseInvestigation}
-        onLocation={chooseLocation}
-      />
-
-      <header className="atlas-heading">
-        <h1>Global Fail Map</h1>
-        <p>
-          A graveyard of failed companies, cancelled projects and abandoned
-          ideas.
-        </p>
+      <header
+        className="atlas-heading"
+        data-dock={headingDocked ? 'left' : 'center'}
+      >
+        <div className="atlas-heading-inner">
+          <div className="atlas-heading-mark">
+            <h1>Global Fail Map</h1>
+            <span className="atlas-heading-rule" aria-hidden="true" />
+          </div>
+          <p>
+            <span data-line="full">
+              A graveyard of failed companies, cancelled megaprojects, dead
+              science and abandoned futures.
+            </span>
+            {/* The corner has no room for the full line, and the wordmark
+                still needs something under it. */}
+            <span data-line="short" aria-hidden="true">
+              A graveyard of abandoned futures.
+            </span>
+          </p>
+        </div>
       </header>
-      <button className="random-story" onClick={surprise}>
-        <Shuffle size={16} />
-        <span>Random story</span>
-      </button>
       <AtlasDock
         onHome={() => {
           closeReport();
           setExplorerOpen(false);
+          setLegendOpen(false);
           setQuery('');
           setCategory('all');
           setFocus(null);
         }}
-        onSearch={openSearch}
         onStories={() => {
           focusSearchOnOpen.current = false;
+          setLegendOpen(false);
           setExplorerOpen(true);
           setActiveTab('atlas');
           setQuery('');
         }}
         onHistory={() => {
           focusSearchOnOpen.current = false;
+          setLegendOpen(false);
           setExplorerOpen(true);
           setActiveTab('history');
           void loadInvestigations();
         }}
         onAbout={() => setAboutOpen(true)}
+        onRandom={surprise}
         onConnect={connect}
         onDisconnect={disconnect}
         signedIn={signedIn}
         selfHosted={isSelfHosted}
         connecting={submitting || authLoading}
       />
+      <AtlasLegend
+        open={legendOpen}
+        onOpenChange={setLegendOpen}
+        category={category}
+        onCategory={setCategory}
+        showPersonal={investigations.length > 0}
+      />
 
       <div className="atlas-discovery">
-        <button
-          id="atlas-search-trigger"
-          className="search-trigger"
-          onClick={openSearch}
+        <p
+          className="atlas-invite"
+          data-invite={inviteHidden ? 'hidden' : 'shown'}
         >
-          <Search size={18} />
-          <span>Search a place or an idea</span>
-          <kbd>/</kbd>
-        </button>
+          Choose a marker to read what happened
+        </p>
+        <div className="atlas-discovery-row">
+          <button
+            id="atlas-search-trigger"
+            className="search-trigger"
+            onClick={openSearch}
+          >
+            <Search size={18} />
+            <span>Search a place or an idea</span>
+            <kbd>/</kbd>
+          </button>
+          <button
+            className="random-story"
+            onClick={surprise}
+            aria-label="Open a random story"
+          >
+            <Shuffle size={16} />
+            <span>Random story</span>
+          </button>
+        </div>
       </div>
       <footer className="atlas-footer">
         <a
@@ -826,13 +911,17 @@ export function FailAtlas({
                       className="case-row"
                       key={example.id}
                       onClick={() => chooseExample(example)}
+                      onMouseEnter={() => setHighlightId(example.id)}
+                      onMouseLeave={() => setHighlightId(undefined)}
+                      onFocus={() => setHighlightId(example.id)}
+                      onBlur={() => setHighlightId(undefined)}
                     >
-                      <MapPin size={16} />
                       <span>
                         <strong>{example.title}</strong>
-                        <small>
-                          {example.location} · {example.country}
-                        </small>
+                        <small>{example.subtitle}</small>
+                        <em>
+                          {example.period} · {example.country}
+                        </em>
                       </span>
                       <ChevronRight size={15} />
                     </button>
@@ -1034,6 +1123,23 @@ export function FailAtlas({
                     : 'Connect Valyu to start your research.'}
               </p>
             </div>
+            {pendingLocation && isNigerianLocation(pendingLocation) && (
+              <a
+                className="research-archive"
+                href={
+                  archiveSearchUrl({
+                    subject: pendingLocation.name,
+                    category: researchCategory,
+                  }) || undefined
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Newspaper size={15} aria-hidden="true" />
+                <span>Or read the Nigerian press on archivi.ng</span>
+                <ArrowUpRight size={13} aria-hidden="true" />
+              </a>
+            )}
             <ResearchOptions
               mode={researchMode}
               onModeChange={setResearchMode}
@@ -1108,6 +1214,30 @@ export function FailAtlas({
           </div>
         </DialogContent>
       </Dialog>
+
+      {/*
+        Mounted last so the twenty markers no longer sit in front of every
+        control in tab order. The globe is the painted background either way:
+        it takes z-index 0 and the chrome above it keeps z-index 2 and up.
+      */}
+      <AtlasGlobe
+        examples={filteredExamples}
+        investigations={investigations}
+        paused={reportOpen}
+        focus={focus}
+        highlightId={highlightId}
+        onExample={chooseExample}
+        onInvestigation={chooseInvestigation}
+        onLocation={chooseLocation}
+        onZoom={trackZoom}
+        onUnavailable={globeUnavailable}
+        keyOpen={legendOpen}
+        onKey={() => {
+          setExplorerOpen(false);
+          setLegendOpen((open) => !open);
+        }}
+        activeCategory={category}
+      />
     </main>
   );
 }
