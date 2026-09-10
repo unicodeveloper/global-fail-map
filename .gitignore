@@ -69,3 +69,4 @@ scripts/cases/
 scripts/case-verdicts.json
 scripts/verify-schema.json
 scripts/case-places.json
+package-lock.json

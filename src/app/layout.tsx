@@ -34,6 +34,8 @@ export const metadata: Metadata = {
     siteName: 'Global Fail Map',
     type: 'website',
     url: baseUrl,
+    locale: 'en_US',
+    alternateLocale: ['en_GB'],
   },
   twitter: {
     card: 'summary_large_image',
